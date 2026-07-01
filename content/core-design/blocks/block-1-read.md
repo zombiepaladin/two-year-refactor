@@ -26,7 +26,7 @@ Computer science courses (3):
 
 | Code | Course | Cr | Focus |
 |---|---|---|---|
-| CS-101 | **Imperative Programming** | 1 | HTML and CSS as the initial reading substrate — trace a web document (DOM tree, browser rendering) before writing Python or JavaScript; HTML/CSS named as a DECLARATIVE model (first encounter, shallow). State, mutation, control structures via JavaScript/Python acting on the DOM. Lists at shallow depth. |
+| CS-101 | **Imperative Programming** | 1 | State, mutation, control structures — the sequence-of-steps-that-change-things paradigm. HTML and CSS as the initial reading substrate — trace a web document (DOM tree, browser rendering) before writing Python or JavaScript; HTML/CSS named as a DECLARATIVE model (first encounter, shallow). State, mutation, control structures via JavaScript/Python acting on the DOM. Lists at shallow depth. |
 | CS-102 | **Functional Programming** | 1 | Functions as values, composition, immutability, basic recursion — the describe-the-result-as-composed-transformations paradigm. Paired solve-it-both-ways exercise with CS-101 names the idea of more than one computational model. |
 | CS-103 | **Computational Representation** | 1 | Boolean logic, number systems, bitwise operations — applied counterpart to Discrete Math Logic & Sets. Light home for the representation/hiding security question. Programming-centric memory model named: the stack and the heap (stack frames for calls/recursion; heap for dynamic allocation) — absorbing the programmer-facing part of computer architecture. Execution-model seed: a running program is a PROCESS the operating system schedules (single-threaded for now) — the grounding the concurrent models will need later. HDL/FPGA intentionally not produced. |
 

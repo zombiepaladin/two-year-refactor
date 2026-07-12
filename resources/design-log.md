@@ -2811,3 +2811,161 @@ Crystalis captures AI chat prompt/response logs (AI use → Application via auto
 
 **8. Reflection Assessment linked to Crystalis evidence record**
 At B6 and B8, students can be asked to review their own Crystalis competency trajectory as the evidence base for reflection. The employer-facing competency report (capstone of B8 System Integration Project) is the program's capstone reflection artifact.
+
+## CS-101 Block Design Session — 2026-07-09
+
+Completed `content/course-designs/block-1/cs-101.md` (was a stub with only a working description + Competency Assessments table + a "To develop" TODO list). Added: learning outcomes, an 8-week map, expanded competency-assessment mapping, threads-passing-through with pass depth, prerequisites/standalone-extractability, and a new concurrency seed. Also touched `content/core-design/threads/thread-computational-models.md` (B1 row + Connections clause + a new open question) and `resources/reference/block-inventory.md` (new course-level status section, seeded with CS-101 only).
+
+### Reconciliation flag: Go/CSP concurrency decision not found in this log
+
+My briefing for this session asserted as already-established: "multi-paradigm core: Python/Java/Elixir/Prolog/Go; OS concepts woven throughout; Go/CSP concurrency in CS-101/102, Elixir actor model deferred to year two." I grepped this entire log for "Go," "CSP," and "goroutine" and found **zero** prior mentions. I also found that Round 41 explicitly established what looks like the *opposite* general principle: the core is deliberately **language-agnostic** (concepts/paradigms taught without committing to a language stack; language-specific depth deferred to elective "language certificates," with candidates C, C++, Python, JavaScript, Rust, Java — Go, Elixir, and Prolog were never listed as core languages or certificate candidates). The Elixir mention that does exist in this log (Round: Assessment Design Session, 2026-06-24) places Elixir as an *unfamiliar-paradigm reading substrate* for Code Archaeology at B3 — not as a core teaching language, and not tied to concurrency or the actor model. The actor model itself is logged as arriving at B8 via Erlang/OTP, named explicitly but only as an example/vocabulary moment, not as "Elixir taught as a core language."
+
+The user has confirmed (this session) that a decision to introduce Go-goroutine-*inspired* concurrency at CS-101/102 was made in a conversation outside my visible context, and directed me to treat it as authoritative. I am NOT silently merging this into the log as if it always fit. Two things in the briefing are in real tension with each other and with what's logged:
+1. "Concurrency inspired by Go's goroutines, introduced conceptually, not necessarily teaching Go syntax at CS-101" — narrow, concept-level, compatible with the language-agnostic core. **Adopted this session.**
+2. "Multi-paradigm core: Python/Java/Elixir/Prolog/Go" as a named five-language core stack — broader, prescriptive, and in direct tension with Round 41's language-agnostic-core-plus-certificates decision (which is otherwise untouched and not contradicted by anything in this session). **NOT adopted.** I did not rewrite CS-101's working description to name Go, Java, Elixir, or Prolog as taught languages; the course still names only Python/JavaScript (already established, acting on the DOM), and the new concurrency content is introduced without committing to any host language's concurrency syntax.
+
+**Open flag for the user/faculty:** is "Python/Java/Elixir/Prolog/Go" meant literally as the languages used for in-class examples throughout the core (a real, substantial reversal of Round 41's language-agnostic decision, which would need its own reconciliation pass across every block file), or was it shorthand for "multi-paradigm exposure via illustrative snippets" (compatible with the existing design)? Left unresolved pending confirmation; flagged in `cs-101.md`'s own open-questions section and in `block-inventory.md`'s course-level status section so it isn't lost.
+
+### The H5P widget: placement and reasoning
+
+Placed the two-step H5P widget (sheet-music → QBASIC `SOUND` command sequence; then multiple independent parallel voices) at CS-101 Weeks 2 and 6 respectively.
+
+- **Week 2** (Step 1): the melody→command translation is the first concrete embodiment of "imperative = an ordered sequence of steps, executed over time, each producing an effect before the next begins" — deliberately contrasted with Week 1's HTML/DOM reading (declarative: structure, no time dimension). This sharpens the declarative/imperative distinction that gets formally named at Week 5's paired CS-101/CS-102 checkpoint.
+- **Week 6** (Step 2, parallel voices): this is the concrete, experiential vehicle for the Go-goroutine-inspired concurrency seed — several independent, lightweight sequences of steps, explicitly WITHOUT shared mutable state, so races/locks are out of scope until B8. I folded this into the slot Round 6's draft had already reserved for "reading someone else's decomposition choices," reusing the SAME multi-voice material, rather than adding a new week — the block is already flagged dense in `block-1-read.md`'s open questions, and I didn't want to add net-new instructional time to reconcile an instruction that arrived after that density flag was written.
+
+### CS-101 (Week 6) vs. CS-103's process seed: complementary, not conflicting
+
+Concluded these are complementary passes at different grains, not a contradiction, even though CS-103's seed is explicitly logged as "single-threaded for now" (Round 49/50) while CS-101's Week 6 introduces multiple simultaneous voices in the same block. CS-103's seed is the *formal/OS-level* view: your whole program is one process the OS schedules. CS-101's widget is a *concrete/experiential* seed at a smaller grain: *within* a program, several independent sequences can each make progress "at once." Nothing about "the OS schedules your program as one single-threaded process" is violated by "your program can describe several independent lightweight sequences" — this is exactly the same distinction Go itself draws between an OS thread/process and a goroutine, and it's exactly the distinction B8 (CS-210) already plans to formalize (cooperative/green threads vs. OS-scheduled preemptive threads and processes, per Round 49/50). I recommend CS-103's eventual week-map cross-reference the CS-101 widget by name when it's written — flagged in `block-inventory.md`, not implemented, since CS-103 wasn't in scope for this session.
+
+Also flagged (not implemented): a natural same-block companion pass in CS-102, since functional immutability makes "nothing is shared" the *default* rather than an engineered simplification — a strong paired-comparison extension of the existing Week 5 checkpoint. Flagged in `cs-101.md` and `block-inventory.md` for whoever scopes CS-102 next.
+
+### Spiral spacing judgment for the new concurrency seed (qualitative, per topic)
+
+- B1 → B2 (CS-106 async/event-loop): ~1 block/~8 weeks, contiguous same semester — reasonable short-interval reinforcement for a first-encounter concept.
+- B2 → B4 (CS-111 dataflow): ~2 blocks/~16 weeks, crossing a Fall→Spring boundary — acceptable widening since dataflow is an adjacent facet, not a direct rehearsal; recommend B4 explicitly name-check the B1 seed.
+- B4 → B8 (CS-210, OS-grounded comparison + actor model + shared-state complexity finally introduced): ~4 blocks, roughly a full academic year — the longest gap and the highest-stakes reinforcement (it's also where the "no shared state" simplification is deliberately lifted). Flagged: recommend CS-210 include an explicit recall bridge back to the B1 music-widget example rather than relying on latent memory of a first-block activity from a year earlier. This is a judgment call (systems-thinking concepts plausibly tolerate longer gaps than syntax skills), not an assertion that the gap is wrong.
+
+### Unresolved discrepancy noted, not resolved: HTML/CSS framing in CS-101 has no logged rationale
+
+`content/course-designs/block-1/cs-101.md` (stub) and `content/core-design/blocks/block-1-read.md` both describe CS-101 opening with HTML/CSS as a reading substrate (trace markup → DOM → rendered page, before writing code). I grepped this entire log for that framing ("reading substrate," "trace a web document," "DOM tree," "rendering pipeline") and found **no session that logged this decision** — Round 6's week-by-week draft (the log's only prior week-map attempt for CS-101) opens Week 1 with "variables, state, basic control structures," no HTML/CSS at all. This looks like a later, unlogged revision (the repo's git history shows a commit titled "Update CS-101 course description"). I treated the currently-committed stub content as authoritative (per instruction to ground sequencing in what's actually there) and merged it with Round 6's reading-thread scaffold (git/asserts/docs/AI-explainer/errors), since the two are content-compatible even though only one was ever logged. Flagging this rather than silently patching the log on its behalf — recommend a future session backfill the missing rationale, or confirm the framing was intentional and log it retroactively.
+
+### Files touched this session
+- `content/course-designs/block-1/cs-101.md` — completed per the "To develop" list.
+- `content/core-design/threads/thread-computational-models.md` — B1 row rewritten; Connections paragraph and open-questions list each got one clause/item added.
+- `resources/reference/block-inventory.md` — new "Course-level status" section added, seeded with CS-101 only; CS-102/CS-103 flagged, not edited.
+
+### Open items for faculty/human review (consolidated)
+1. Is "Python/Java/Elixir/Prolog/Go" a literal core language-stack decision (reversing Round 41's language-agnostic-core principle) or shorthand for multi-paradigm exposure? Unresolved.
+2. Confirm the HTML/CSS-as-reading-substrate framing for CS-101 was an intentional decision; if so, log it retroactively with rationale.
+3. Confirm the Week 6 concurrency-seed addition doesn't tip B1's already-flagged density problem (block-1-read.md open question #1) — I folded it into an existing slot rather than adding a week, but I'm not certain that's sufficient.
+4. CS-102 and CS-103 need their own scoping passes; both now have explicit, unresolved cross-references pointing at them from CS-101's file. Neither was edited this session.
+5. CS-101's standalone service-extractability claim (in the new file) is my judgment applying the general Round 17/34 service-course principles — it has not been given its own analysis pass the way databases/networking were. Flag before relying on it for a service-course conversation.
+
+## CS-101 Revision Session (follow-on) — 2026-07-09
+
+User-directed revision to `content/course-designs/block-1/cs-101.md`, logged separately from the same-day entry above per instruction (that entry is left unedited).
+
+### 1. HTML/CSS/declarative content removed — resolves last entry's open flag
+
+User confirmed directly: the HTML/CSS-as-reading-substrate content never belonged in CS-101 — it was a misplaced duplication. Checked `content/course-designs/block-2/cs-106.md`: it already fully owns semantic HTML/CSS, DOM, declarative-model naming, async/event-loop, and browser-as-mini-OS framing. Removed the HTML/CSS/declarative-model content entirely from CS-101 (working description, Week 1, learning outcomes, threads table) — pure deduplication, no replacement needed at CS-106 since it's already there. This **resolves** the open flag from the same-day entry above ("HTML/CSS framing has no logged rationale") — it wasn't a missing-rationale problem, it was a duplication error, now corrected by direct instruction. Also lightly corrected `content/core-design/blocks/block-1-read.md`'s Structure-table CS-101 row (which repeated the same HTML/declarative framing) and its Computational Models thread bullet, which had drifted into saying "functional/declarative" was named at B1 — declarative is B2 (CS-106) per `thread-computational-models.md`'s own B1/B2 rows; corrected for internal consistency, not a new decision.
+
+### 2. Language decision: Python primary, Go/C comparative-reading only — stated explicitly
+
+Per instruction, freed the HTML vehicle's Week 1 slot for the widget's melody→QBASIC-command translation (now the block's opener) and committed explicitly to **Python as CS-101's sole produce language**, with **Go and C appearing only as comparative reading material** (same construct, different syntax, no production requirement) threaded through every week. This is a genuinely new, explicit decision — nothing in the log previously named CS-101's produce language this precisely (the removed HTML draft named "JavaScript/Python acting on the DOM," which is now gone along with the DOM vehicle).
+
+Notably, this gives the "Go" part of last entry's unresolved language-stack flag a real, bounded, defensible role for the first time, and it does not contradict Round 41's language-agnostic-core-plus-certificates decision: reading-exposure to a second/third language's syntax is a different claim than deep multi-language production fluency, and doesn't preempt Python/Go/C remaining plausible certificate candidates later. See the consolidated flag-status note below.
+
+### 3. Mutable vs. immutable variable assignment — a real CS-102 pairing point, not just a recommendation
+
+Firmed up last session's "recommended, not yet adopted" CS-102 companion-pass idea into a concrete plan: CS-101 Week 2 introduces mutable variable assignment specifically framed as the same-week counterpart to whatever week CS-102 uses to introduce immutable binding. I did not edit `cs-102.md` (still someone else's scoping pass) but named Week 2 explicitly in CS-101's file and in `block-inventory.md`'s flags so there's a concrete week for that scoping pass to hook into, rather than a vague cross-block gesture.
+
+### 4. GOTO / structured programming — new content, no prior rationale to reconcile
+
+Grepped this log for "goto," "structured programming," and "dijkstra" — zero matches. This is genuinely new content, logged fresh here rather than reconciled against anything. Scoped as a bounded historical aside (Week 3, second use of the QBASIC widget's GOTO capability, refactor GOTO-flow into structured control flow), with Dijkstra's "Go To Statement Considered Harmful" as optional/ungraded reading. It doesn't map onto any of the 13 named spiral threads; I didn't force a mapping — flagged in the file as an unhomed enrichment rather than invented into an existing thread's territory.
+
+### 5. Stack/heap notional machine — new widget, real ownership conflict with CS-103, resolved the same way as the concurrency seed
+
+CS-103's stub already commits to stack/heap content AND a graded assessment row (System Analysis Task — trace stack/heap state through a function call sequence — Analyze System Behavior, SI.1). The user's new CS-101 widget (draw stack/heap/execution-pointer state, used both as demo and as a student assessment) would duplicate that formal claim if added naively. Resolved by applying the same concrete/formative-vs-formal/graded split established last session for the concurrency seed: CS-101 owns the concrete, experiential, *formative* first pass (Tier-1 automated check only, mapped to CR.2 — Develop Abstractions, since drawing a simplified model of program state is abstraction-construction, distinct from CS-103's SI.1 "analyze behavior via observation" framing); CS-103 continues to own the formal, graded instance. This is a recommendation surfaced explicitly in both `cs-101.md` and `block-inventory.md`'s flags, not a unilateral edit to CS-103 — CS-103's stub is unchanged.
+
+Also tied the widget explicitly to the log's own pre-existing "notional machine" framing (the layered People→...→Processes→Memory→...→Networks→Users abstraction, first named around the Computational Models strand's original drafting and reused at the OSI-networking and Sociotechnical-Structure rounds) rather than treating it as an unrelated new idea — per instruction.
+
+The VS Code debugger-visualization plugin was scoped as a same-week tool bridge (steps through the identical worked example), not a separate topic, per instruction.
+
+### 6. Density — an honest read, not forced
+
+Removing HTML freed roughly one week's content. This revision adds back more: per-week Python/Go/C comparison, the mutable/immutable pairing, the GOTO/structured-programming aside, and the new stack/heap widget + VS Code tool + assessment. I fit all of it into 8 weeks by merging the previously-separate "git history applied" week into the errors week (Week 4, via git blame for bug-provenance — a genuine pedagogical fit, not just compression for its own sake) and by keeping GOTO/structured-programming to a bounded discussion rather than a unit. I flagged, rather than asserted, that this fits comfortably: Week 3 (control flow + GOTO + cross-language reading) and Week 6 (wholly new widget + tool + assessment) have little to no slack, and recommended concrete fallback cuts (trim the GOTO discussion further, or move the Week 6 assessment fully to CS-103) if faculty piloting shows either week doesn't fit in the 3-hours/credit-week budget.
+
+### Files touched this session
+- `content/course-designs/block-1/cs-101.md` — substantially revised per items 1–6 above.
+- `content/core-design/blocks/block-1-read.md` — CS-101 Structure-table row rewritten to match; Computational Models thread bullet corrected (declarative is B2, not B1).
+- `resources/reference/block-inventory.md` — flags section updated: HTML flag marked resolved; new flags added for the Week 2 CS-102 pairing point and the Week 6 CS-103 stack/heap split; density flag added.
+- `content/core-design/threads/thread-computational-models.md` — assessed, no changes made. HTML was never referenced in this file's B1 row or open questions (checked); the stack/heap and GOTO additions are not part of this thread's own subject matter (paradigm taxonomy, not memory model or control-flow history) — no edit warranted this session.
+
+### Open items for faculty/human review (this session, consolidated; supersedes the density/HTML items in the prior same-day entry)
+1. Language-stack flag, **narrowed, not resolved**: Python (produce) and Go (comparative reading only) now have a concrete, bounded, defensible role in CS-101 that doesn't conflict with Round 41's language-agnostic-core principle. Java, Elixir, and Prolog each still have only their own separately-logged, narrow roles elsewhere (Java: certificate candidate; Elixir: B3 unfamiliar-paradigm reading; Prolog: B7 light-touch logic/constraint) — none of which, individually or together, amounts to the originally-asserted "these five languages are the core's teaching stack." Lower-risk than before, still open.
+2. CS-103 stack/heap split (concrete/formative in CS-101 vs. formal/graded in CS-103) needs confirmation before CS-103's own scoping pass proceeds on that assumption.
+3. Density: Weeks 3 and 6 of the revised CS-101 map have little slack; recommend piloting before treating the map as final.
+4. CS-102's scoping pass now has two concrete hooks from CS-101 (Week 2 mutable/immutable pairing; Week 7 concurrency companion pass) — still unaddressed, CS-102's stub is unchanged.
+5. CS-103's scoping pass now has two concrete cross-references to address (Week 6 stack/heap split; Week 7 concurrency-seed cross-reference) — still unaddressed, CS-103's stub is unchanged.
+6. GOTO/structured-programming content is new and unreviewed by faculty — confirm scope (bounded aside, optional reading) is the right level, not more.
+
+## Block 1 Coordinated Build Session — 2026-07-12
+
+Coordinator asked for block-scale work: deepen CS-101 further, and take CS-102 and CS-103 from bare stubs to complete block files, resolving the cross-references flagged "unaddressed" across the last two sessions. Read all three CS files plus MATH-101's stub before proposing anything, per instruction. MATH-101 was not edited (external, math-department-owned) — confirmed and respected.
+
+### CS-101: two lightweight additions, not a re-scope
+
+Added a recursion cross-reference (Week 6, same worked function as CS-102's new Week 6) and a shared-memory-hazard glimpse (Week 7 closing beat: a hand-traced lost-update example, problem only, no fix). Both are deliberately small — connective tissue and a bounded discussion extension — and I judged neither materially worsens CS-101's own density picture, which was already flagged twice. Resolved (rather than left dangling) two of CS-101's own open questions: the CS-103 stack/heap split is now confirmed by CS-103's actual build, and the CS-102 Week 2 pairing point is now confirmed by CS-102's actual build.
+
+### CS-102: built from a two-sentence stub to a full block file
+
+Distributed core imperative/functional coverage per the established paradigm split: CS-101 = mutable/imperative vehicle, CS-102 = immutable/functional vehicle. Made an explicit, new language decision for CS-102 (not previously stated anywhere): **Python, disciplined to a functional subset, as the produce language; JavaScript as comparative-reading-only.** Deliberately did NOT bring Elixir into CS-102, even though it would be a natural "real functional language" choice, specifically to preserve Elixir's role as an *unfamiliar* paradigm for B3's Code Archaeology pass (`recurring-assessments.md`: "unfamiliar paradigm (Elixir/Chrysalis)," CS-107) — previewing it here would blunt that later novelty. This is a reasoned, flagged decision, not an assumption.
+
+Firmly adopted the concurrency companion pass that was left as "recommended, not yet adopted" in both prior sessions: CS-102's Week 7 now explicitly contrasts CS-101's *engineered* "nothing shared" simplification with functional immutability's *intrinsic* avoidance of the same hazard, extended to sharpen the new shared-memory glimpse (see below).
+
+Recursion (Week 6) is built to share its worked example with CS-101's Week 6 rather than existing as an unrelated topic — same function, two angles (what it does to memory vs. what it lets you express). The specific function is not chosen in either file; flagged as a shared open item.
+
+### The shared-memory surface pass: where it landed, and why I think it strengthens rather than weakens the B4→B8 spacing case
+
+The user wanted concurrency content to go one step further than "no shared state, full stop" — a light, conceptual glimpse of why shared state is hazardous, without teaching synchronization primitives (still B8's job). I placed this as a closing beat in CS-101's Week 7 (a hand-traced example: two independent voices try to update one shared counter "at the same time," one voice's write gets lost) and a matching contrast in CS-102's Week 7 (immutability avoids this because there's nothing shared to race over). This is a real scope addition, not a reframing — logged as new.
+
+This required revisiting the previously-logged B4→B8 spacing judgment, which had partly justified the year-long gap by "B1 deliberately defers ALL shared-state complexity, so there's nothing more to say until B8." That's no longer accurate. My revised judgment, recorded in both CS-101's and `thread-computational-models.md`'s B1/B8 rows: I think this **strengthens** rather than weakens the case for the long gap — a concrete, motivating, unresolved puzzle left open for a year is a recognized desirable-difficulty technique, and B8 still has substantial, genuinely new material to justify its own pass regardless: the OS-level formalization (processes/threads/scheduling), the actual fix mechanisms (synchronization) that resolve the puzzle B1 only posed, and the architectural alternative that sidesteps the whole problem differently (the actor model/message-passing, Erlang/OTP). I recommended CS-210 open its concurrency unit by explicitly recalling the B1 lost-update example, turning the gap into a deliberate payoff rather than a cold start — added as a new open item on `thread-computational-models.md`'s B8 row.
+
+### CS-103: built from a one-paragraph working description to the densest of the three B1 files
+
+New content, in the requested order: (1) Babbage's Difference/Analytical Engines as a bounded historical aside (same treatment as CS-101's GOTO/Dijkstra aside — not a full week) motivating that number representation is a design choice, before (2) binary representation of integers/characters, (3) a simplified 8-bit float worked by hand, and (4) registers/the register-transfer model of basic operations (two weeks, genuinely new, no prior treatment anywhere in the log to calibrate against).
+
+**8-bit float layout — a specific, justified proposal, not left vague:** 1 sign bit + 4 exponent bits (bias 7, IEEE-754-style reserved patterns for zero/subnormal and inf/NaN at toy scale) + 3 mantissa bits with an implicit leading 1. Chosen for a workable dynamic range at a hand-tractable mantissa size; noted to students as structurally similar to real FP8 E4M3-style formats used in ML accelerator hardware, which is a genuine, motivating connection, not just a toy. Flagged for confirmation — a 1-3-4 split (more precision, less range) is equally defensible.
+
+**Registers + VS Code tool — a real capability question, flagged rather than assumed.** CS-101's existing tool bridge works because it debugs Python, and Python debugging in VS Code doesn't meaningfully expose general-purpose CPU registers (CPython execution doesn't map cleanly to hardware registers). A register-level live-tool view is much more plausible against a small **compiled C** example via GDB/LLDB register views in VS Code's C/C++ extension — which is workable since C is already a CS-101 read-comparison language, but is a bigger ask than CS-101's same-language bridge (Python throughout). I could not confirm the actual plugin's capability from available materials; flagged explicitly rather than assumed, per instruction.
+
+**Stack/heap formal assessment:** given its own Week 6 slot, reusing CS-101's Week 6 widget/tool at a longer call sequence, with the existing System Analysis Task row's "This pass" description expanded to also cover the new register tracing — extending an already-committed claim rather than inventing a new one. Process-execution seed shares the same week, with an explicit cross-reference to CS-101's Week 7 (including the new shared-memory glimpse).
+
+**MATH-101 cross-tie:** proposed CS-103's Week 2 (Boolean logic/bitwise) as the pairing week for MATH-101's truth-tables/predicate-logic/sets content. Did not edit `math-101.md`, per explicit instruction — logged as a confirmation ask for the math department's own eventual week-map.
+
+**Density — the honest read the coordinator asked for, not forced:** CS-103 is genuinely the densest of the three files. I used two compression moves to make an 8-week draft plausible: Babbage stays a bounded aside rather than a full week (mirroring CS-101's GOTO treatment), and Week 7 is scoped as pure consolidation/synthesis (source → binary/float → register → stack, reviewing Weeks 1–6) rather than new content, giving a release valve if Weeks 4–5's register content needs more time in practice. Even with those moves, I flagged CS-103 as the file I'd most want piloted before treating as stable — registers (Weeks 4–5) are the single highest-risk item in the whole B1 build, being both genuinely new and dependent on the unconfirmed tool-capability question above.
+
+**Register-transfer model has no identified forward spiral link** — unlike every other new topic this session (recursion, the shared-memory glimpse, Babbage), I could not find a natural later-block reinforcement point for register/ALU content specifically, and did not force one. Flagged in CS-103's own file and in `block-inventory.md` rather than silently left implicit.
+
+### Competency framework: no gaps found, checked explicitly
+
+Per instruction (a competency-architect agent now owns framework extension, not this role), I checked whether any of this session's new content — recursion, the shared-memory hazard glimpse, Babbage/representation history, binary/float representation, registers/ALU — needed a competency ID not already in `resources/reference/competency-framework.md`. It did not: CR.1, CR.2, CR.3, DI.1, SI.1, PP.1, HCP.3, HCP.4, SD.2, PP.2 covered everything mapped in both new files. Stating this explicitly rather than leaving it implicit, since the instruction was to flag gaps, not silently confirm their absence.
+
+### Files touched this session
+- `content/course-designs/block-1/cs-101.md` — Week 6/7 rows extended (drag-and-drop naming, recursion cross-reference, shared-memory glimpse); "Concurrency seed" section revised (CS-102 companion firmed up, spacing judgment revisited); new "Recursion: one function, two angles" section added; spiral_links yaml updated; open questions updated (two items resolved, one added).
+- `content/course-designs/block-1/cs-102.md` — built in full from stub.
+- `content/course-designs/block-1/cs-103.md` — built in full from stub; densest file in this build.
+- `content/course-designs/block-1/math-101.md` — **not edited**, per instruction.
+- `content/core-design/blocks/block-1-read.md` — CS-102/CS-103 Structure-table rows rewritten; Threads-passing-through list updated (recursion, shared-memory glimpse); new open-question item added.
+- `content/core-design/threads/thread-computational-models.md` — B1 row rewritten (recursion, shared-memory glimpse); B8 row extended (explicit recall-and-resolve recommendation); open questions updated.
+- `resources/reference/block-inventory.md` — CS-102/CS-103 rows added to the course-level status table; all standing two-session-old flags marked resolved with dated notes; new flags added for this session's open items.
+
+### Open items for faculty/human review (this session, consolidated)
+1. CS-103's 8-bit float layout (1-4-3, bias 7) — confirm or propose the 1-3-4 alternative.
+2. CS-103's VS Code register-view tool bridge — unconfirmed capability; may require a C debugging target instead of Python for that one week.
+3. CS-103's MATH-101 week-pairing proposal (Week 2) — needs confirmation from MATH-101's co-designers.
+4. CS-103's register-transfer model has no forward spiral link — may be fine as single-pass content, flagged rather than asserted.
+5. The shared recursive function for CS-101/CS-102's Week 6 is not yet chosen — an authoring decision both files depend on.
+6. CS-103 is the densest of the three B1 files and the one most in need of piloting before being treated as stable.
+7. The revised B4→B8 concurrency spacing judgment (shared-memory glimpse added at B1) — recommend CS-210 (B8) explicitly confirm it will recall/resolve the B1 puzzle rather than introduce synchronization cold; not yet confirmed against CS-210's actual (not-yet-built) content.
+8. Carried forward, unchanged: the broader "Python/Java/Elixir/Prolog/Go as the core's language stack" claim remains only partially grounded (see the 2026-07-09 entries) — CS-102's new Python/JS decision doesn't touch this further.

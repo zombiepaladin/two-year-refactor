@@ -62,17 +62,17 @@ Topics include:
 
 #### ENGL 100  - Expository Writing I
 
-*3 credits, part of the K-State core required of all students. Many students will have credit from high school.*
+*3 credits, part of the K-State core required of all students, KSC 010.*
 
 A first college course in English composition.
 
 #### Core Communication Requirement
 
-*3 credits. Part of the K-State core required of all students.*
+*3 credits. Part of the K-State core required of all students, KSC 020.*
 
 #### Social & Behavioral Sciences Requirement
 
-*3 credits. Part of the K-State Core.*
+*3 credits. Part of the K-State Core required of all students, KSC 050.*
 
 			
 ### Semester 2			
@@ -93,7 +93,7 @@ Focus on  programming Arduino and similar devices.
 
 #### Calculus Slot
 
-*4 credits. Placeholder for calculus course, most likely MATH 220  - Analytic Geometry and Calculus I, but some students may come with high school credit and be ready for Calculus II or III.*
+*4 credits. Placeholder for calculus course, most likely MATH 220  - Analytic Geometry and Calculus I, but some students may come with high school credit and be ready for Calculus II or III. Also fulfils K-State Core requirement KSC 030.*
 
 Choose one of:
 
@@ -131,7 +131,7 @@ Topics include:
 
 #### ENGL 200  - Expository Writing II
 
-*3 credits, part of the K-State core required of all students. Many students will have credit from high school.*
+*3 credits, part of the K-State core required of all students, KSC 010. Many students will have credit from high school.*
 
 A second college course in English composition.
 
@@ -171,7 +171,7 @@ Coverage of the OSI 7-layer model, with exploration of HTTP/HTTPS and web socket
 
 #### Natural & Physical Sciences Requirement - with Lab	
 
-*4 credits.  Required as part of the K-State core.*
+*4 credits.  Required as part of the K-State core, KSC 040.*
 			
 ### Semester 2			
 
@@ -189,14 +189,13 @@ Introduction to the C programming langauge.
 
 *3 credits. Will be heavily refactored - likely will become mid-tier capstone course.*
 
-#### Arts & Humanities Requirement	
+#### Arts & Humanities Requirement
 
-*3 credits, part of K-State core.*
+*3 credits, part of K-State core, KSC 060.*
 
 #### STATS XXX - CS STATS
 
 *4 credits. New stats course developed to support the two-year core.*
-
 
 #### Communication Elective
 
@@ -231,6 +230,12 @@ Note: Taking THTRE 171 also satisfies KSC 060 (core communication requirement)
 
 *3 credits.*
 
+#### Social and Behavioral Sciences Requirement
+
+*3 credits. Fulfills K-State Core KSC 050.*
+
+### Semester 2
+
 #### CIS 560  - Database System Concepts
 
 *3 credits. May become an elective.*
@@ -249,9 +254,9 @@ Deeper coverage of relational databases, relational agebra, no-sql databases.
 
 *3 credits. Any course.*
 
-#### Unrestricted Elective
+#### Free Elective
 
-*3 credits. Any course.*
+*3 credits. Fulfils K-State Core requirement KSC 070.*
 
 ## Fourth Year
 
@@ -338,3 +343,17 @@ Choose one of the following:
 #### Upper Division Elective
 
 *3 credits.*
+
+Any courses at the 300 level or above.
+
+#### Upper Division Elective
+
+*3 credits.*
+
+Any courses at the 300 level or above.
+
+#### Upper Division Elective
+
+*3 credits.*
+
+Any courses at the 300 level or above.

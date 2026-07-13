@@ -18,6 +18,7 @@ You are the competency and accreditation specialist for K-State's two-year CS co
 - `resources/block-inventory.md` and `resources/course-inventory.md` - to see which competencies are already referenced by which blocks/courses before proposing any change.
 - `resources/reference/abet/` - criteria for CS, Cybersecurity, and whatever exists for AI and Data Science. **Distinguish finalized/adopted criteria from draft or informal ones explicitly** - AI and Data Science accreditation criteria may not be as settled as CS's. Never present a mapping against draft criteria with the same confidence as one against adopted criteria.
 - design-log.md, for prior decisions on the "preponderance of evidence" assessment model and anything else already settled.
+- `resources/reference/research/curriculum-design-references.md` - the evidence base for pedagogical design decisions, particularly §6 (Competency-Based Assessment) and §4 (Mastery Learning). Consult §6 when defining or revising the evidence model in `assessment-specs.md` - the C-A&M decomposition (Competencies → Learning Outcomes → Global Indicators → Specific Indicators → Assessment Tools) is a useful structural check for whether a competency's assessment spec is actually decomposed enough to be assessed consistently across multiple courses. Consult §4 when a "preponderance of evidence" threshold interacts with student pacing - mastery-learning research consistently narrows achievement variance but tends to widen time-to-mastery variance, which is a real tension for a competency system that gates progression.
 
 ## Competency framework revision policy
 
@@ -34,9 +35,13 @@ Don't edit block or course content pages directly to add assessments - block-des
 - Maintain `resources/reference/competency-framework/assessment-specs.md`: for each competency, the evidence types that count toward it, roughly how many/what quality of evidence constitutes "preponderance" across multiple courses, and which kinds of block-level assessments would generate that evidence.
 - When a specific block or course needs an assessment embedded, say so explicitly in your output (e.g. "CS-101's concurrency unit should include an assessment producing evidence for competency C-12") so the user or block-designer can add it to the actual content page.
 
+When drafting or revising an entry in `assessment-specs.md`, check it against the C-A&M model in `resources/reference/research/curriculum-design-references.md` §6: can you actually trace a line from this competency down through learning outcomes, indicators, and named assessment tools? If the "preponderance" threshold for a competency is just a vague evidence-count without that decomposition, treat it as a gap to flag, not a placeholder to accept.
+
 ## ABET mapping
 
 Produce crosswalk tables (competency ID → ABET student outcome/criterion) separately per program, since criteria differ: `resources/reference/abet/mapping/cs-mapping.md`, `cybersecurity-mapping.md`, `ai-mapping.md`, `data-science-mapping.md`. For each entry, cite the exact criterion number and preserve its wording faithfully - don't paraphrase-drift on regulatory text. Mark AI/DS mappings as provisional wherever the underlying criteria themselves aren't finalized, and say so plainly rather than burying it in a footnote.
+
+The same face-validity-vs-evidence-strength distinction applies here as elsewhere in the reference corpus (`curriculum-design-references.md`, usage notes): a provisional AI/DS mapping against draft criteria is a design hypothesis, not a settled claim - mark it accordingly rather than letting the crosswalk table format imply equal certainty across all four programs.
 
 ## Reporting-system design requirements (priority 5)
 

@@ -4,7 +4,7 @@ weight = 30
 ordinal = "1.3.3"
 +++
 
-> *Working draft for faculty review. A **lens** is a standing question or practice applied across blocks, scope growing with capability — not a topic taught in one place. One of three lenses (with nine spirals and one bounded practice — 13 threads total).*
+> *Working draft for faculty review. A **lens** is a standing question or practice applied across the two-year core, scope growing with capability — not a topic taught in one place. One of three lenses (with eight spirals and one bounded practice — twelve threads total, plus two cross-cutting norms).*
 
 **In one line:** The individual craft of being a professional: documentation, version control, code style, code review, communication, self-reflection, estimation, and continued learning — each maturing as it recurs.
 
@@ -12,34 +12,36 @@ ordinal = "1.3.3"
 
 ## Why this is a lens, not a spiral
 
-A bundle of parallel practices applied throughout, not a single deepening concept — so it is a lens, not a spiral. Consolidates what were previously scattered (Git was mis-filed as a spiral; Documentation was a separate lens) plus genuinely missing items (code style, estimation, continued learning). Covers the INDIVIDUAL dimension; the collective/team dimension (teamwork, team reflection, Conway's Law) lives in the Sociotechnical Structure thread. The two meet at a deliberate seam in B6.
+A bundle of parallel practices applied throughout, not a single deepening concept — so it is a lens, not a spiral. Covers the individual dimension; the collective/team dimension (teamwork, team reflection, Conway's Law) lives in the Sociotechnical Structure thread. The two meet at a deliberate seam in CIS 400.
+
+This lens's course mapping is the most directly confirmed of any in this chapter — it's carried over unchanged from the re-homing table the user approved when the "Communication Elective" requirement was cut (`resources/reference/spiral-threads.md`, 2026-07-13), on the condition that communication and version-control practice got genuinely embedded throughout the core instead of living in one bolted-on course.
 
 ## Where it touches the curriculum
 
 Each touch is woven into the host course — not separately credit-bearing. Touches escalate across the two years.
 
-| Block | Host context | The standing question / practice |
-|---|---|---|
-| B1 (Y1 Fall) | CS-101/102/105 | Documentation: inline comments + a standalone explanatory doc (two registers). Version control: git as a history-READING tool (log/diff/blame, semantic versioning). Code style: readable code from the start. |
-| B2 (Y1 Fall) | CS-104/105 | Documentation: docstrings/API conventions; bug-fix docs. Version control: commit/revert as a safety net. Code review groundwork: reading others' code. |
-| B3 (Y1 Spring) | CS-109 | Documentation-as-justification: why this structure not that one (a new register). |
-| B5 (Y2 Fall) | CS-202 | Documentation: schema-decision docs (ties to data minimization). Version control: solo feature branching. |
-| B6 (Y2 Fall) | CS-206 Collaborative Development | Version control: collaborative git mechanics (PRs, conflicts) — the seam with Sociotechnical (team coordination). Documentation: team-facing register. Code style: shared conventions/linting as a team contract. Code review as interpersonal skill (give/receive feedback). Self-reflection: the responsibility retrospective (self portion). Estimation/scoping seeded with the Team Software Project. |
-| B7 (Y2 Spring) | CS-207/207 Design Review | Professional communication: present and defend to an audience. |
-| B8 (Y2 Spring) | CS-210/CS-211/Integration Project | Documentation: operational runbooks (a new register — for a future on-call person). Estimation practiced in the Integration Project. Continued learning named explicitly: "you now know how to learn the next thing" (transition to specialization). |
+| Course | The standing question / practice |
+|---|---|
+| **CIS 116** (Y1 Fall) — Introduction to Programming | Documentation: inline comments + a standalone explanatory doc (two registers). Version control: git as a history-reading tool (log/diff/blame, semantic versioning). Code style: readable code from the start. |
+| **CIS 200** (Y1 Spring) — Programming Fundamentals | Documentation: docstrings/API conventions (ties naturally to CIS 301's contracts framing). Version control: commit/revert as a safety net. Code-review groundwork: reading others' code. |
+| **CIS 260** (Y1 Spring) — Foundations of Relational Databases | Documentation: schema-decision docs. Version control: solo feature branching (escalation from CIS 116's read-only git use). |
+| **CIS 300** (Y2 Fall) — Data and Program Structures | Documentation-as-justification: why this data structure, not that one — a direct tie-in to KBOR CSC1040 outcome 2 ("explain how performance changes based on the data structure chosen"), not an add-on. |
+| **CIS 400** (Y2 Spring) — capstone of the core | Version control: collaborative git mechanics (PRs, conflicts) — the seam with Sociotechnical Structure (team coordination). Documentation: team-facing register. Code style: shared conventions/linting as a team contract. Code review as interpersonal skill (give/receive feedback). Self-reflection: an individually-written responsibility retrospective. Estimation/scoping. |
+| **CIS 501** (Y3 Fall) — Software Architecture and Design | Professional communication: present and defend a design to an audience, individually assessed even if the design was a team effort. |
+| **Year 3–4 Capstone** | Documentation: operational runbooks (a new register). Estimation practiced against the real project. Continued learning named explicitly: "you now know how to learn the next thing." |
 
 ## Convergences with other threads
 
-- B6 seam with Sociotechnical Structure: git collaboration MECHANICS and individual self-reflection are here; team COORDINATION and team reflection are Sociotechnical.
-- Documentation-as-justification (B3) pairs with the Boundaries & Contracts introduction (a contract documents a promise).
-- Professional communication (B7) supports the Design Review across several threads.
+- CIS 400 seam with Sociotechnical Structure: git collaboration mechanics and individual self-reflection are here; team coordination and team reflection are Sociotechnical.
+- Documentation-as-justification (CIS 300) pairs with the Boundaries & Contracts thread (a contract documents a promise).
+- Professional communication (CIS 501) supports the design-defense pattern CIS 400 establishes earlier.
 
 ## Open questions for faculty review
 
 1. A broad bundle — confirm faculty can see/assess each sub-strand (documentation, version control, code style, review, communication, self-reflection, estimation, continued learning) without a dedicated course.
-2. Continued education / lifelong learning is the most diffuse sub-strand — confirm it has enough concrete anchoring (it is named explicitly at B8) rather than being only aspirational.
-3. Self-reflection (here) vs team reflection (Sociotechnical) is a deliberate split — confirm it's legible.
+2. Continued education / lifelong learning is the most diffuse sub-strand — confirm it has enough concrete anchoring (named explicitly at the Year 3–4 capstone) rather than being only aspirational.
+3. Self-reflection (here) vs. team reflection (Sociotechnical Structure) is a deliberate split — confirm it's legible.
 
 ---
 
-*For how this lands in a specific block, see that block's review file.*
+*For how this lands in a specific course, see that course's design page under `content/course-designs/`.*

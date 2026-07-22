@@ -4,112 +4,80 @@ weight = 10
 ordinal = "1.0"
 +++
 
-> *Working draft for faculty review. This is the front door to a set of 22 companion files: 8 block files, 9 thread files, 3 lens files, and 1 bounded-practice file. Course codes throughout are placeholders.*
+> *Working draft for faculty review. This is the front door to a set of 12 companion files: 8 thread files, 3 lens files, and 1 bounded-practice file. Course numbers reflect the current proposed degree map (`resources/reference/degree-maps/cs.md`), pending final department approval.*
 
 ## What this is
 
 A competency-based, systems-thinking foundation for a B.S. in Computer Science, shared by students who will go on to specialize (Cybersecurity, Data Science, AI Systems, Software Architecture). It is built as a **spiral curriculum**: ideas recur across the two years, each return deepening or generalizing the last, rather than being taught once and left behind.
 
-The structural unit is the **1-credit, 8-week course**. Courses are deliberately small and short so that prerequisite chains stay short and parallel — a topic that would traditionally be one large course (e.g. databases) is split across several 1-credit courses that can be sequenced flexibly. Eight 8-week blocks span two years (two blocks per semester).
+What's novel here isn't the courses — course-based structure is the familiar unit every CS faculty member already works in. What's novel is the **system underneath the courses**: a small set of threads and lenses that deliberately recur across many courses at increasing depth, and a competency model that treats those courses as evidence of program-level outcomes rather than as isolated, self-contained units. The rest of this chapter describes that system; Chapter 4 (Course Designs) describes the courses that carry it.
 
-## The two-year spine
+## The two-year core
 
-Each block has one cognitive frame. Read in order, the frames tell a single story — each verb escalates on the one before:
+The core spans four 16-week semesters (Years 1–2) and is **identical across every degree** — specialization happens entirely in the upper division. It combines CIS/MATH/STAT courses with K-State Core general-education requirements:
 
-**Read → Modify → Model → Structure → Store → Build responsibly → Judge → Operate**
-
-| Block | Term | Frame |
+| Semester | CS/MATH/STAT courses | K-State Core / other |
 |---|---|---|
-| **B1** | Y1 Fall, Wks 1–8 | **Read** — Read computation (two paradigms) |
-| **B2** | Y1 Fall, Wks 9–16 | **Modify** — Modify data & state |
-| **B3** | Y1 Spring, Wks 1–8 | **Model** — Model & abstract (contracts, ADTs, OOP) |
-| **B4** | Y1 Spring, Wks 9–16 | **Structure** — Structure across scales (data/system/network/human) |
-| **B5** | Y2 Fall, Wks 1–8 | **Store** — Information at rest (store, share, query, describe) |
-| **B6** | Y2 Fall, Wks 9–16 | **Build responsibly** — Responsible development (correct, safe, collaborative) |
-| **B7** | Y2 Spring, Wks 1–8 | **Judge** — Integration & judgment (design under uncertainty) |
-| **B8** | Y2 Spring, Wks 9–16 | **Operate** — In production (deliver, operate, stay accountable) |
+| **Y1, Fall** | CIS 115 Introduction to Computing Science; CIS 116 Introduction to Programming; CIS 120 Web Foundations; MATH — Logic and Sets; MATH — Counting Finite Configurations; DEN 161 Engineering Problem Solving | ENGL 100 Expository Writing I; Communication Requirement (KSC 020) |
+| **Y1, Spring** | CIS 200 Programming Fundamentals; CIS 220 Platform Programming; CIS 260 Foundations of Relational Databases; MATH — Recursive and Modular Computation; MATH — Graphs, Trees, and Maps; ECE 241 Intro to Electrical and Computer Engineering; Calculus I/II/III (KSC 030) | ENGL 200 Expository Writing II |
+| **Y2, Fall** | CIS 300 Data and Program Structures; CIS 301 Logical Foundations of Programming; CIS 320 User Experience Development; CIS 225 Foundations of Computer Networks; CIS 251 Foundations of Cybersecurity; Linear Algebra (choice of MATH 350/515/551) | Natural & Physical Sciences w/ Lab (KSC 040) |
+| **Y2, Spring** | CIS 141 AI/Data Science; CIS 308 C Language Laboratory; CIS 400 Object-Oriented Design, Implementation, and Testing; STAT 410 Statistics for Computing | Arts & Humanities (KSC 060); Social & Behavioral Sciences (KSC 050) |
 
-Year 1 (B1–B4) moves from reading computation to structuring it, and ends at a real **transfer/exit checkpoint**. Year 2 (B5–B8) moves from storing information to operating live systems. Blocks 6 and 8 are the two halves of professional accountability (before release, after release), bracketing Block 7's judgment block.
+61 credits across the two years (14/17/15/15), against a 121-credit degree total. Year 1 moves from reading and writing programs to structuring and querying data; Year 2 moves through networks, security, formal reasoning, and applied statistics, and ends at **CIS 400** — a team-based, ambiguous-requirements capstone-of-the-core built around a real historical-archive project, which validates everything the core taught before a student specializes. See `content/course-designs/` for the per-course detail (outcomes, week maps, assessments) as it's built out.
 
-## The course grid
+## Cross-cutting norms
 
-| Block | CS courses | External (co-designed) |
-|---|---|---|
-| B1 | CS-101 Imperative Programming; CS-102 Functional Programming; CS-103 Computational Representation | MATH-101 Discrete Math: Logic and Sets |
-| B2 | CS-104 Data Transformation & Manipulation; CS-105 Code Reading & Repair; CS-106 Web Foundations & Data-Driven Rendering | MATH-102 Discrete Math: Counting Finite Configurations |
-| B3 | CS-107 Software Modeling and Design; CS-108 Computational Abstractions; CS-109 Abstract Data Types | MATH-103 Discrete Math: Recursive and Modular Computation |
-| B4 | CS-110 Trees, Hashing & Hierarchies; CS-111 Systems & APIs; CS-112 Algorithmic Design Patterns | MATH-104 Discrete Math: Graphs, Trees, and Networks |
-| B5 | CS-201 SQL Fundamentals; CS-202 Database Design; CS-203 Non-Relational Databases | STAT-101 Descriptive Statistics & Data Summarization |
-| B6 | CS-204 Software Testing & Validation; CS-205 Security Fundamentals; CS-206 Collaborative Development | STAT-102 Probability |
-| B7 | CS-207 Graphs & Network Algorithms; CS-208 Data Integration & Application-Database Interfaces; CS-209 OSI Networking Fundamentals | STAT-103 Random Variables, Distributions & Sampling |
-| B8 | CS-210 Deployment & Operations; CS-211 Human-Centered Design & Validation; CS-212 Data Analysis & Responsible AI | STAT-104 Correlation & Regression |
+Two practices don't get their own thread because confining them to one would misrepresent how they actually work: **concurrency** and **networked-computing** are paired to concept-introduction points across many courses from the very start (CIS 116 onward), rather than escalating through a single dedicated arc. Networked-computing used to be its own spiral (APIs & Networked Systems); it's been folded in here instead, because treating "when do students first reason about a network boundary" as a single fixed pass understated how early and how often it actually comes up. Its old escalation — consume → build → integrate → operate — survives as a capability axis inside this norm, now anchored to real courses: APIs as one of several normalized data sources (console, file I/O, sensor feeds) in CIS 200/CIS 300; building and serving APIs in CIS 300; APIs as structural boundaries, in depth, in CIS 220/CIS 320; deployment and operating a live service in CIS 400.
 
-**Totals:** 24 CS credits + 8 external (co-designed) credits = **32 credits currently allocated.** The original target was 26 (22 CS + 4 discrete math). The external sequence has since grown to eight — four discrete math plus a four-course statistics sequence for ML readiness — paced one per block (math B1–B4, statistics B5–B8). A ninth external (linear algebra) remains agreed-in-principle but unplaced. **The credit budget is deliberately left soft** pending the cross-block optimization pass — see open questions.
+## The twelve threads
 
-## The thirteen threads
+Competencies belong to the program, not to individual courses; courses are contexts in which program-level competencies are demonstrated. Twelve named threads run through the core (beyond the two cross-cutting norms above), in three kinds that mature in three different ways.
 
-Competencies belong to the program, not to individual courses; courses are contexts in which program-level competencies are demonstrated. Thirteen named threads run through the blocks, in three kinds that mature in three different ways.
-
-### Spirals (9) — depth increases through the topic's own escalation
+### Spirals (8) — depth increases through the topic's own escalation
 1. **Data Structures & Representation** — primitive → sequence → hierarchy → relational → document; graphs spiral as a strand within (model → represent → persist → algorithms). The cleanest spiral.
 2. **Code Comprehension** — make it work → understand others' → organize → reason about → defend.
-3. **APIs & Networked Systems** — consume → build → integrate → operate.
-4. **Human-Centered Computing** — design FOR, communicate TO, validate WITH people; carries accessibility + data-visualization throughlines and owns acceptance/A-B testing (fitness-for-purpose).
-5. **Algorithmic Thinking & Complexity** — theory → graph optimization → real bottleneck.
-6. **Computational Models** *(flagship)* — the landscape of ways to express computation (imperative, functional, declarative, concurrent), with failure-handling woven through as a property of each.
-7. **Correctness & Verification** — informal reasoning → regression → testing and verification, contrasted. Code-correctness only ('is it correct,' vs Human-Centered Computing's 'is it what they needed').
-8. **Boundaries & Contracts** *(meta-thread)* — a promise at a boundary; unifies ADTs, APIs, schemas, trust boundaries, and versioning. The strongest expression of the systems-thinking ethos.
-9. **Sociotechnical Structure** — systems mirror the orgs that build them (Conway's Law); the collective/team dimension (teamwork, code review as coordination, team reflection).
+3. **Human-Centered Computing** — design FOR, communicate TO, validate WITH people; carries accessibility + data-visualization throughlines and owns acceptance/A-B testing (fitness-for-purpose).
+4. **Algorithmic Thinking & Complexity** — theory → graph optimization → real bottleneck.
+5. **Computational Models** *(flagship)* — the landscape of ways to express computation (imperative, functional, declarative, concurrent), with failure-handling woven through as a property of each.
+6. **Correctness & Verification** — informal reasoning → regression → testing and verification, contrasted. Code-correctness only ('is it correct,' vs Human-Centered Computing's 'is it what they needed').
+7. **Boundaries & Contracts** *(meta-thread)* — a promise at a boundary; unifies ADTs, APIs, schemas, trust boundaries, and versioning. The strongest expression of the systems-thinking ethos.
+8. **Sociotechnical Structure** — systems mirror the orgs that build them (Conway's Law); the collective/team dimension (teamwork, code review as coordination, team reflection). Lands at full expression in CIS 400, the core's team-project host.
 
 ### Lenses (3) — a standing question/practice applied wherever relevant; scope grows with capability
-- **Trustworthy Computing** — can people trust this system and its builders? Security, privacy, ethics; asked wherever content raises it, formalized once (B6, the likely ABET ethics anchor).
-- **Optimization Reasoning** — "best under constraints," named where it already arises; on-ramp to the AI degree.
+- **Trustworthy Computing** — can people trust this system and its builders? Security, privacy, ethics; asked wherever content raises it, formalized in CIS 251 (Foundations of Cybersecurity) — the program's primary ABET ethics anchor.
+- **Optimization Reasoning** — "best under constraints," named where it already arises; on-ramp to the AI specialization.
 - **Professional Practices** — the individual craft bundle: documentation, version control, code style, code review, communication, self-reflection, estimation, continued learning.
 
 ### Bounded practice (1) — scope stays flat; only judgment deepens
 - **AI-Assisted Development** — explain/discuss/quiz/critique only, never "write it for me." Deliberately does NOT grow more autonomous, to protect comprehension before the Year 3–4 Agentic AI specialization.
 
-*Individual vs collective: Professional Practices (lens) holds individual craft; Sociotechnical Structure (spiral) holds the team/collective dimension. They meet at a deliberate seam in B6 (git mechanics + self-reflection here; team coordination + team reflection there).*
-
-## Convergence points
-
-Threads are designed to meet at certain blocks, which is the sign they're integrated rather than scattered:
-
-- **B1** — four "reading" tools converge (git history, asserts/logs, documentation, computational-model naming), all feeding the B2 Code Archaeology assessment.
-- **B2** — two safety nets (git revert, regression tests) land together as students first modify code.
-- **B6** — testing, security, collaboration, team-facing documentation, and errors-as-attack-surface all formalize at once, unified by the "responsible development" frame.
-- **B8** — production concurrency, real-bottleneck performance, fault-tolerance comparison, hardening, versioning (closing the B1 semver loop), and the blameless postmortem all land as terminal passes.
+*Individual vs collective: Professional Practices (lens) holds individual craft; Sociotechnical Structure (spiral) holds the team/collective dimension. Both escalate across several courses (see `resources/reference/spiral-threads.md`'s re-homing table) and meet at their fullest expression in CIS 400, where the team produces something together but every assessed artifact — commits, reflection writeup, portion of a defended presentation — stays individually attributable. That split is a deliberate anti-shortcut mechanism, not an oversight.*
 
 ## The service-course model
 
 Some courses are offered to other departments. The pattern: **we own a domain-neutral foundational unit; the partner department owns the domain-application course; together they form the visiting student's one-semester progression.**
 
-- **Relational Databases** (SQL Fundamentals + Database Design, B5) — a 2-credit foundation, followed by e.g. a business data-applications course.
-- **OSI Networking Fundamentals** (CS-209, B7, 1 credit) — followed by network administration (business), low-level implementation (computer engineering), etc. Physical and Data Link layers are conceptual-only; depth deferred to CompE. This bounds what we own: the shared theoretical trunk (layers 3–7 with full depth, layers 1–2 as orientation).
+- **CIS 260 (Foundations of Relational Databases)** — a 1-credit foundation, followed by e.g. a business data-applications course.
+- **CIS 225 (Foundations of Computer Networks)** — followed by network administration (business), low-level implementation (computer engineering), etc. Physical and Data Link layers are conceptual-only; depth deferred to Computer Engineering. This bounds what we own: the shared theoretical trunk (layers 3–7 with full depth, layers 1–2 as orientation).
 
 This bounds our development cost (no domain-specific variants) and defines a good service-course candidate: domain-neutral, foundational, recognizable, prerequisite-light.
 
 ## How to read the companion files
 
-- **Block files** (8) — the "what happens when" view: each block's frame, courses, threads passing through, and open questions.
-- **Thread files** (9) and the **bounded-practice file** (1) — the "how each idea develops" view: pass-by-pass escalation across blocks.
+- **Thread files** (8) and the **bounded-practice file** (1) — the "how each idea develops" view: pass-by-pass escalation across courses.
 - **Lens files** (3) — cross-cutting concerns: where each touches the curriculum and how it escalates.
 
-The two views cross-reference each other: a block file names the threads passing through it; a thread file names the host course at each pass.
+A thread file names the host course at each pass; the course-design pages (Chapter 4) name the threads passing through a given course. Both views are being reconciled against the real course sequence above — see Status, below.
 
 ## Open questions — program level
 
-These are the decisions that don't belong to any single block or thread:
+These are the decisions that don't belong to any single course or thread:
 
-1. **Credit budget.** Allocation now stands at 32 credits vs. an original 26 target. Linear algebra remains agreed-in-principle but unplaced; a cross-block optimization pass is needed to reconcile the total — grow it, displace content, or move items outside the required core.
-2. **Thread legibility.** Thirteen threads is a lot for a faculty member teaching one 1-credit course to hold. The threads interconnect (the convergence points above are evidence they're integrated, not fragmented), but the program needs a deliberate answer to "how does a course owner see which threads run through their course, and what each expects, without a decoder ring?" The block files are a first attempt; a per-course thread-tag scheme may be needed.
-3. **Statistics sequence & ML prerequisites.** All four statistics courses are now placed (Descriptive @ B5, Probability @ B6, Distributions/Sampling @ B7, Regression @ B8). The AI degree also needs statistical inference, linear algebra, probability, data visualization, and optimization — data visualization lives in the Human-Centered Computing thread, optimization in the Optimization lens, probability ownership is below, and linear algebra is the unplaced ninth external (see #5).
-4. **Probability ownership** — the discrete-math draft already covers finite/counting-based probability; the stats sequence wants continuous probability. Likely split (discrete owns finite, stats owns continuous), but this is for the cross-department co-design meeting.
-5. **Linear algebra** — confirmed missing from the math sequence; placed as a 5th math course (placeholder) but flagged as likely needing a different approach (it is not discrete, and one 1-credit/8-week course is tight).
-6. **Assessment visibility for lenses** — Security, Documentation, and Optimization have no dedicated courses by design; confirm faculty can see/assess that each was actually exercised in its host courses.
-7. **Week-by-week load checks** — B1, B6, and CS-212 (B8) are the density risks; their frames are coherent but a mechanical schedule check is still owed.
-8. **Document reconciliation** — the earlier full architecture document and spiral map predate the block reframes and are now stale; they should be regenerated from the current source before external review.
+1. **Thread legibility.** Twelve threads plus two cross-cutting norms is a lot for a faculty member teaching one course to hold. The threads interconnect deliberately, but the program needs a clear answer to "how does a course owner see which threads run through their course, and what each expects, without a decoder ring?" A per-course thread-tag scheme is the likely answer; not yet built.
+2. **Assessment visibility for lenses.** Security, Documentation, and Optimization have no dedicated courses by design (Security now has CIS 251, but Documentation and Optimization remain lens-only); confirm faculty can see/assess that each lens was actually exercised in its host courses.
+3. **Per-course density.** `cs.md` already flags specific density risks worth watching as courses are built out — CIS 115 (absorbing former computer-architecture content on top of its existing history/overview scope) and CIS 260 (holding what was previously two courses' worth of database content at 1 credit). CIS 300 carries a deliberately large share of thread content (data structures, graphs, algorithmic design patterns) by user decision — controlled through scaffolding and coverage depth rather than redistribution, but worth watching as it's built out.
+4. **CS-203 (Non-Relational Databases) scope reduction.** Confirmed intentional (2026-07-15): NoSQL content no longer appears anywhere in the required core, only in the CIS 560 elective. Every CS student previously saw this; now only students who choose that elective do. Flagged here so it's visible to reviewers, not just buried in the design log.
 
 ## Status
 
-All eight blocks are framed and the two-year arc is complete and internally consistent in the source of record. The work now pending is cross-block optimization (chiefly the credit budget and external-course placement), the week-by-week schedules, and regenerating the two early polished documents from the current design.
+The two-year course structure is settled (`resources/reference/degree-maps/cs.md`). This chapter is being regenerated to present that structure in course, spiral, and competency terms rather than the earlier block-based framing used during design (see `resources/design-log.md`, 2026-07-15). The thread and lens companion files are next, and — per the open question above — some of that work is genuine thread-by-thread re-derivation, not a mechanical renumbering.

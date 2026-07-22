@@ -4,13 +4,13 @@ weight = 30
 ordinal = "3.3"
 +++
 
-> *Working draft for faculty review. This page describes the AI-Assisted Development bounded practice — the one thread whose scope is deliberately held flat while student judgment deepens. For block-by-block expression, see the block files in Chapter 1.*
+> *Working draft for faculty review. This page describes the AI-Assisted Development bounded practice — the one thread whose scope is deliberately held flat while student judgment deepens. For the course-by-course expression, see `content/core-design/threads/practice-ai-assisted.md` in Chapter 1.*
 
 ## The tension this page addresses
 
 AI code generation tools — large language models that write, explain, debug, and review code — are now ubiquitous in professional software development and accessible to first-semester undergraduates. Designing a CS curriculum that ignores them is not realistic. Designing one that hands off cognitive work to them defeats the purpose.
 
-This curriculum takes a third position: **disciplined use**. Students use AI tools throughout all eight blocks. The permitted actions do not expand across the two years — they are defined once and held constant. What changes is the difficulty of the territory in which students exercise those actions, and their capacity to verify whether the AI's output is trustworthy.
+This curriculum takes a third position: **disciplined use**. Students use AI tools throughout the two-year core. The permitted actions do not expand across the two years — they are defined once and held constant. What changes is the difficulty of the territory in which students exercise those actions, and their capacity to verify whether the AI's output is trustworthy.
 
 The boundary: **explain, discuss, quiz, critique — never "write it for me."**
 
@@ -37,66 +37,54 @@ The scope is flat by design, not by oversight. The rationale has two parts.
 
 **First: comprehension must precede autonomy.** This curriculum is the foundation that precedes the Year 3–4 AI Systems specialization. That specialization will teach students to build, evaluate, and deploy AI systems — including AI coding assistants. A student who enters that specialization having spent two years delegating cognitive work to AI arrives without the comprehension the specialization requires. The bounded practice is a prerequisite: you cannot evaluate an AI's code review if you have never done code review yourself. You cannot critique an AI's architectural suggestion if you have never defended an architectural design yourself.
 
-**Second: the verification skill is the transferable skill.** An AI that explains a sorting algorithm is not dangerous. An AI that suggests a schema for a medical records database, or generates an authentication middleware, or proposes a cryptographic key management scheme, can be seriously wrong in ways that are non-obvious and consequential. The most valuable professional skill the next ten years will demand is not the ability to prompt an AI — it is the ability to know whether the AI's output is correct, secure, and appropriate. That skill only develops through years of building the judgment required to evaluate claims in the relevant domain. A student who used AI to write their B3 OOP assignments has not built the judgment required to evaluate AI-generated OOP code in B6.
+**Second: the verification skill is the transferable skill.** An AI that explains a sorting algorithm is not dangerous. An AI that suggests a schema for a medical records database, or generates an authentication middleware, or proposes a cryptographic key management scheme, can be seriously wrong in ways that are non-obvious and consequential. The most valuable professional skill the next ten years will demand is not the ability to prompt an AI — it is the ability to know whether the AI's output is correct, secure, and appropriate. That skill only develops through years of building the judgment required to evaluate claims in the relevant domain. A student who used AI to write their CIS 200 assignments has not built the judgment required to evaluate AI-generated code in CIS 400.
 
 ## How students change across the two years: two-axis escalation
 
-The permitted actions stay flat. What escalates along two independent axes.
+The permitted actions stay flat. What escalates along two independent axes, across the same four-stage progression confirmed for this bounded practice (see `content/core-design/threads/practice-ai-assisted.md`): **CIS 116 / CIS 200 → CIS 260 → CIS 400 → CIS 141.**
 
 ### Axis 1: The domain and stakes of AI use
 
-| Block | What AI is asked about | Consequence of trusting a wrong answer |
+| Course | What AI is asked about | Consequence of trusting a wrong answer |
 |---|---|---|
-| B1 | Explain what this loop does | Student runs the code and sees the answer is wrong — low consequence |
-| B2 | Explain why this bug might be causing this behavior | Student writes a test that passes or fails — testable |
-| B3 | Generate three alternative class hierarchies for this domain | Student must evaluate designs — no automated check |
-| B4 | Review this web component's API design | Student must reason about the contract — partially testable |
-| B5 | Suggest schema alternatives for this data model | Schema errors may surface only at query time — delayed consequence |
-| B6 | Review this authentication code for security issues | A missed vulnerability is exploitable — high consequence |
-| B7 | Critique this data integration design for privacy implications | Privacy harm may never be detectable by automated means — very high consequence |
-| B8 | Verify whether this AI-generated code is correct and secure | Correctness + security failure in a production system — terminal stakes |
+| CIS 116 | Explain what this loop does | Student runs the code and sees the answer is wrong — low consequence |
+| CIS 200 | Explain why this bug might be causing this behavior; generate alternative class designs | Student writes a test that passes or fails, or must evaluate designs with no automated check |
+| CIS 260 | Suggest schema alternatives for this data model | Schema errors may surface only at query time — delayed consequence |
+| CIS 400 | Review this PR's code for correctness and security, as one input among several human reviewers | A missed vulnerability or design flaw is exploitable or costly — high consequence, but not yet the terminal case |
+| CIS 141 | Given AI-generated code, verify it is correct and secure | Correctness + security failure in a system built on everything the core taught — terminal stakes for the core |
 
-By Block 8, AI use at the permitted scope involves asking AI to generate code and then independently verifying that code for both functional correctness and security — a task that requires mastery of every thread from B1 through B7. This is not a harder version of B1's "explain this loop." It is a fundamentally different cognitive act.
+By CIS 141, AI use at the permitted scope involves asking AI to generate code and then independently verifying that code for both functional correctness and security — a task that requires mastery of every thread the core has developed. This is not a harder version of CIS 116's "explain this loop." It is a fundamentally different cognitive act.
 
 ### Axis 2: The student's capacity to verify AI output
 
-| Block | Verification tools available | What "verification" means |
+| Course | Verification tools available | What "verification" means |
 |---|---|---|
-| B1 | Run the code; observe the output; compare to AI's explanation | "The AI said this loop adds all elements; I ran it and it does" |
-| B2 | Asserts, regression tests, debugger | "I wrote a test that would fail if the AI's explanation were wrong; the test passes" |
-| B3 | Boundary analysis, contract reasoning | "I can articulate the ADT contract and check whether the AI's design satisfies it" |
-| B4 | Component API specification, behavioral tests | "I wrote a spec for the component interface and verified the AI's design satisfies it" |
-| B5 | SQL query testing, normalization reasoning | "I wrote queries that would expose the AI's schema design flaw, and found one" |
-| B6 | Security threat modeling, code review checklists | "I applied the threat model from CS-205 and identified a trust boundary violation the AI missed" |
-| B7 | Multi-source data provenance reasoning | "I traced the data flow and found the AI's integration design would silently drop records with conflicting timestamps" |
-| B8 | Formal verification, fuzzing, penetration testing, static analysis | "I ran the static analyzer and found a use-after-free the AI's code introduced; I ran the fuzzer and found the edge case the AI's explanation didn't mention" |
+| CIS 116 | Run the code; observe the output; compare to AI's explanation | "The AI said this loop adds all elements; I ran it and it does" |
+| CIS 200 | Asserts, regression tests, debugger, boundary/contract reasoning | "I wrote a test that would fail if the AI's explanation were wrong; the test passes" |
+| CIS 260 | SQL query testing, normalization reasoning | "I wrote queries that would expose the AI's schema design flaw, and found one" |
+| CIS 400 | Security threat modeling (building on CIS 251), code review checklists, a human reviewer's independent judgment | "I applied a threat model and identified a trust boundary violation the AI missed, and compared notes with a human reviewer" |
+| CIS 141 | Correctness/security critique of AI-generated code as the course's central skill | "I found a flaw the AI's own explanation didn't mention" |
 
-A Block 1 student cannot verify a Block 8 AI claim, even if they wanted to. A Block 8 student can verify a Block 1 AI claim in seconds. The growth is not in what students are permitted to ask — it is in how rigorously, and across what domain, they can answer: *is this right?*
+A CIS 116 student cannot verify a CIS 141-level AI claim, even if they wanted to. A CIS 141 student can verify a CIS 116-level AI claim in seconds. The growth is not in what students are permitted to ask — it is in how rigorously, and across what domain, they can answer: *is this right?*
 
-## Block-by-block: how AI use is framed
+## How AI use is framed, course by course
 
-The AI role is named explicitly at each block, tied to the block's cognitive frame and the student's current verification capacity:
+The AI role is named explicitly at each stage, tied to the course's content and the student's current verification capacity — this table matches `practice-ai-assisted.md`'s confirmed mapping exactly, so the two pages don't drift:
 
-| Block | AI role | How verification works |
+| Course | AI role | How verification works |
 |---|---|---|
-| **B1 — Read** | AI as explainer | Explain unfamiliar code; student verifies against actual behavior using asserts and logs from the same block |
-| **B2 — Repair** | AI as explainer (Code Archaeology) | Explain why a bug might be occurring; student verifies by writing a regression test that confirms or refutes the hypothesis |
-| **B3 — Model** | AI as Socratic design partner | AI asks questions ("what happens if two sensors have the same ID?") that the student answers; the dialogue surfaces gaps in the student's design |
-| **B4 — Structure** | AI as alternative generator | Generate multiple API designs for a new component; student evaluates and chooses, writing their own design justification |
-| **B5 — Store** | AI as design-alternatives partner (medium stakes) | Generate schema alternatives; student writes queries that would expose the weaknesses of each, then justifies their choice |
-| **B6 — Build Responsibly** | AI as code reviewer (one input among several) | AI reviews code the student wrote; student adjudicates the review against their own understanding and a human reviewer's feedback, noting where AI and human agree or differ |
-| **B7 — Judge** | AI as architectural critic | Critique an integration design; student evaluates the critique by tracing the data flow and checking whether the AI's concern materializes in the actual design |
-| **B8 — Operate** | AI as code generator (terminal: high-stakes verification) | AI generates a code artifact; student verifies it independently for correctness and security using the full toolkit — tests, static analysis, formal reasoning, threat modeling |
+| **CIS 116 / CIS 200** | AI as explainer | Explain unfamiliar code or a bug hypothesis; student verifies against actual behavior using asserts, logs, and regression tests from the same courses |
+| **CIS 260** | AI as design-alternatives partner | Generate schema alternatives; student writes queries that would expose the weaknesses of each, then justifies their choice |
+| **CIS 400** | AI as code reviewer (one input among several) | AI reviews code the student wrote as part of the team project; student adjudicates the review against their own understanding and a human reviewer's feedback |
+| **CIS 141** | AI as code generator (terminal: high-stakes verification) | AI generates a code artifact; student verifies it independently for correctness and security using the toolkit built across the core |
 
-Block 8's CS-212 (Data Analysis & Responsible AI) is the terminal pass: verifying and critiquing AI-generated code for correctness and security is the course's central skill, and is named as a prerequisite for the Year 3–4 Agentic AI specialization.
+CIS 141's role as the terminal pass — verifying and critiquing AI-generated code for correctness and security — is named as a prerequisite for the Year 3–4 Agentic AI specialization.
 
 ## How discipline is maintained
 
-**The verification requirement is built in, not bolted on.** Assignments are structured so that the work of verifying — writing the test, running the query, tracing the boundary, applying the threat model — is the assignment. A student who copies an AI answer without doing the verification work has not completed the assignment. The submission is the test, the query, the traced data flow — not just the answer.
+**The verification requirement is built in, not bolted on.** Assignments are structured so that the work of verifying — writing the test, running the query, tracing the boundary, applying the threat model — is the assignment. A student who copies an AI answer without doing the verification work has not completed the assignment. The submission is the test, the query, the traced data flow — not just the answer. CIS 400's own redesign (see `resources/reference/degree-maps/cs.md`) is this principle applied at capstone scale: a prior solo, well-defined-spec project was retired specifically because AI could complete it milestone-by-milestone without the student demonstrating understanding.
 
-**Chrysalis surfaces the pattern over time.** Because Chrysalis records competency evidence across all blocks, the program can detect patterns that individual assignment grades may not reveal: a student who consistently demonstrates shallow explanation-only understanding when asked to apply a concept in a new context is visible in the aggregate competency record. The developmental cycle's Reflect mode — structured reflection posts in Chrysalis — provides longitudinal evidence of whether students' thinking is deepening or staying flat.
-
-**The Code Comprehension thread is the diagnostic.** A student who used AI to write their code cannot fully explain it. Code Comprehension assessments — especially Code Archaeology and the Design Review — require students to explain, trace, and defend code at a level of detail that reveals whether they understand it. This is not infallible, but it is a meaningful signal.
+**The Code Comprehension thread is the diagnostic.** A student who used AI to write their code cannot fully explain it. Code Comprehension assessments — especially Code Archaeology (CIS 200) and the design-defense work in CIS 400 — require students to explain, trace, and defend code at a level of detail that reveals whether they understand it. This is not infallible, but it is a meaningful signal.
 
 **The bounded practice is modeled by instructors.** Instructors who use AI in front of students — and who demonstrate the verification step explicitly — model what disciplined use looks like. "Here is what I asked the AI. Here is what it said. Here is what I did to check it. Here is where I rejected its output and why." This modeling is part of the pedagogy, not incidental to it.
 
@@ -111,6 +99,7 @@ The least likely revision: the core prohibition on "write it for me" as a substi
 ## Open questions for faculty review
 
 1. **Tool specification.** Which AI tools are permitted, and does this list change over time? Is a distinction made between explanation-only tools (e.g., a chatbot asked to explain code) and code-completion tools (e.g., an inline IDE suggestion)? The policy as written focuses on use modes, not tool identities — but instructors may need tool-specific guidance for assignment design.
-2. **Codio and IDE AI suppression.** The CC sequence uses Codio specifically because it suppresses AI code-completion tools. If this program uses a different development environment, does the environment suppress completion tools, or does the policy rely on student honor?
-3. **Assessment design for AI use.** Which assignments explicitly require AI use (so students practice the permitted modes)? Which explicitly prohibit AI use (so students must demonstrate capability without the tool)? Both are necessary. The current block files note AI use where it is relevant but do not provide a complete matrix.
-4. **Disclosure policy.** Should students be required to disclose when they used AI and how in any submitted work? Disclosure supports the program's ability to understand patterns of use without creating an adversarial dynamic. The form of disclosure (Chrysalis reflection post, assignment annotation, or a separate log) needs to be decided.
+2. **IDE AI suppression.** If any course in the core uses a development environment that suppresses AI code-completion tools (as some existing K-State CS courses reportedly do via Codio), does that apply here, or does the policy rely on student honor? Not yet decided for the redesigned core.
+3. **Assessment design for AI use.** Which assignments explicitly require AI use (so students practice the permitted modes)? Which explicitly prohibit AI use (so students must demonstrate capability without the tool)? Both are necessary; a complete matrix doesn't exist yet at the course-design level.
+4. **Disclosure policy.** Should students be required to disclose when they used AI and how in any submitted work? The form of disclosure needs to be decided.
+5. **Only four confirmed stages, down from eight.** The old block design escalated AI stakes across all eight blocks; the real course sequence compresses this to four confirmed stages (CIS 116/200, CIS 260, CIS 400, CIS 141), consistent with `practice-ai-assisted.md`. Confirm four stages still provides enough escalation granularity, or whether intermediate courses (CIS 300, CIS 320, CIS 251) need their own named AI-use stage rather than being folded into the surrounding ones.

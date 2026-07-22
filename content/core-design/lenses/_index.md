@@ -7,4 +7,4 @@ weight = 40
 ordinal = "1.3"
 +++
 
-Three lenses applied across blocks: Trustworthy Computing, Optimization Reasoning, Professional Practices.
+Three lenses applied across the two-year core: Trustworthy Computing, Optimization Reasoning, Professional Practices.

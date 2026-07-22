@@ -7,4 +7,4 @@ weight = 30
 ordinal = "1.2"
 +++
 
-Nine spiraling threads and one bounded practice (AI-Assisted Development).
+Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see `../overview.md`.

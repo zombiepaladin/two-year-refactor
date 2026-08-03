@@ -18,9 +18,9 @@ Models the builders structurally, not just the users. Owns the collective dimens
 
 | Course | What's new at this pass |
 |---|---|
-| **CIS 300 / CIS 320** (Y2 Fall) | SEEDED: Conway's Law — systems mirror the organizations that build them (conceptual; links system structure to human structure), via the client/server pairing. |
-| **CIS 400** (Y2 Spring) — capstone of the core, **confirmed team-project host** | ENACTED: the team *is* an organization. Communication overhead; code review as team coordination; how dividing work shapes what gets built. This is the core's own team project (small teams, rotating scope, building toward the historical-archive real-world asset), not the Year 3–4 program capstone. |
-| **CIS 400**, continued | DEFEND: defend not just the technical structure but how the team organized to produce it — the course's live-walkthrough/architecture-defense assessment. |
+| **CIS 300 / CIS 320** (Y2 Fall) | SEEDED: Conway's Law — systems mirror the organizations that build them (conceptual; links system structure to human structure), via the client/server pairing. **Unconfirmed (2026-08-03):** same client/server-vehicle gap already logged in the Computational Models review — not spelled out in `cis-300.md` (confirmed intentional), and CIS 320 has no drafted schedule yet. |
+| **CIS 400** (Y2 Spring) — capstone of the core, **confirmed team-project host** | ENACTED: the team *is* an organization. Communication overhead; code review as team coordination; how dividing work shapes what gets built. This is the core's own team project (small teams, rotating scope, building toward the historical-archive real-world asset), not the Year 3–4 program capstone. **Confirmed real design intent, not yet in the drafted course page (2026-08-03):** verified against `resources/design-log.md` — genuinely decided, not invented — but `cis-400.md`'s own Topics/Schedule/Assignments never mention teams or group work (SLO 6 even reads "a project of your own design," singular framing). Logged as a new "Confirmed Design Intent" section in `cis-400.md` for whoever drafts its real schedule. |
+| **CIS 400**, continued | DEFEND: defend not just the technical structure but how the team organized to produce it — the course's live-walkthrough/architecture-defense assessment. Same gap as above — confirmed intent, not yet drafted into the course page. |
 
 ## Beyond the core
 

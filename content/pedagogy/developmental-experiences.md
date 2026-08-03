@@ -4,7 +4,7 @@ weight = 20
 ordinal = "3.2"
 +++
 
-> *Working draft for faculty review. This page describes the experiential cycle that grows across the two years. For the real systems that serve as its substrate, see [Signature Applications](../signature-applications) in this chapter.*
+> *Working draft for faculty review. This page describes the experiential cycle that grows across the two years. For the real systems that serve as its substrate, see [Signature Applications](./signature-applications) in this chapter.*
 
 ## The premise: systems-level thinking before programming skill
 
@@ -16,7 +16,7 @@ Reading and reasoning about existing systems is not an advanced skill that emerg
 
 More importantly, engaging with large existing systems from the beginning develops **systems-level thinking** — the capacity to reason about how components relate, where responsibilities lie, and how data flows across boundaries — far earlier than a write-first pedagogy permits.
 
-The [Signature Applications](../signature-applications) — the classroom plant-sensor API, the Kansas Mesonet, the "Where Did They Go?" data-visualization tool, and the historical archive — are real, institutionally-grounded systems students engage with as this substrate, in place of invented toy examples wherever a real one is actually usable.
+The [Signature Applications](./signature-applications) — the classroom plant-sensor API, the Kansas Mesonet, the "Where Did They Go?" data-visualization tool, and the historical archive — are real, institutionally-grounded systems students engage with as this substrate, in place of invented toy examples wherever a real one is actually usable.
 
 ## The growing cycle
 

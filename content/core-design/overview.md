@@ -27,31 +27,29 @@ The core spans four 16-week semesters (Years 1–2) and is **identical across ev
 
 ## Cross-cutting norms
 
-Two practices don't get their own thread because confining them to one would misrepresent how they actually work: **concurrency** and **networked-computing** are paired to concept-introduction points across many courses from the very start (CIS 116 onward), rather than escalating through a single dedicated arc. Networked-computing used to be its own spiral (APIs & Networked Systems); it's been folded in here instead, because treating "when do students first reason about a network boundary" as a single fixed pass understated how early and how often it actually comes up. Its old escalation — consume → build → integrate → operate — survives as a capability axis inside this norm, now anchored to real courses: APIs as one of several normalized data sources (console, file I/O, sensor feeds) in CIS 200/CIS 300; building and serving APIs in CIS 300; APIs as structural boundaries, in depth, in CIS 220/CIS 320; deployment and operating a live service in CIS 400.
+Two practices don't get their own thread because confining them to one would misrepresent how they actually work: **concurrency** and **networked-computing** are paired to concept-introduction points across many courses from the very start (CIS 116 onward), rather than escalating through a single dedicated arc.
 
 ## The twelve threads
 
 Competencies belong to the program, not to individual courses; courses are contexts in which program-level competencies are demonstrated. Twelve named threads run through the core (beyond the two cross-cutting norms above), in three kinds that mature in three different ways.
 
 ### Spirals (8) — depth increases through the topic's own escalation
-1. **Data Structures & Representation** — primitive → sequence → hierarchy → relational → document; graphs spiral as a strand within (model → represent → persist → algorithms). The cleanest spiral.
+1. **Data Structures & Representation** — primitive → sequence → hierarchy → relational → document; graphs spiral as a strand within (model → represent → persist → algorithms).
 2. **Code Comprehension** — make it work → understand others' → organize → reason about → defend.
 3. **Human-Centered Computing** — design FOR, communicate TO, validate WITH people; carries accessibility + data-visualization throughlines and owns acceptance/A-B testing (fitness-for-purpose).
 4. **Algorithmic Thinking & Complexity** — theory → graph optimization → real bottleneck.
-5. **Computational Models** *(flagship)* — the landscape of ways to express computation (imperative, functional, declarative, concurrent), with failure-handling woven through as a property of each.
+5. **Computational Models** — the landscape of ways to express computation (imperative, functional, declarative, concurrent), with failure-handling woven through as a property of each.
 6. **Correctness & Verification** — informal reasoning → regression → testing and verification, contrasted. Code-correctness only ('is it correct,' vs Human-Centered Computing's 'is it what they needed').
-7. **Boundaries & Contracts** *(meta-thread)* — a promise at a boundary; unifies ADTs, APIs, schemas, trust boundaries, and versioning. The strongest expression of the systems-thinking ethos.
+7. **Boundaries & Contracts** — a promise at a boundary; unifies ADTs, APIs, schemas, trust boundaries, and versioning. The strongest expression of the systems-thinking ethos.
 8. **Sociotechnical Structure** — systems mirror the orgs that build them (Conway's Law); the collective/team dimension (teamwork, code review as coordination, team reflection). Lands at full expression in CIS 400, the core's team-project host.
 
 ### Lenses (3) — a standing question/practice applied wherever relevant; scope grows with capability
-- **Trustworthy Computing** — can people trust this system and its builders? Security, privacy, ethics; asked wherever content raises it, formalized in CIS 251 (Foundations of Cybersecurity) — the program's primary ABET ethics anchor.
+- **Trustworthy Computing** — can people trust this system and its builders? Security, privacy, ethics; asked wherever content raises it, formalized in CIS 251 (Foundations of Cybersecurity) and revisited in-depth in CIS 415 (Ethics and Conduct for Computing Professionals).
 - **Optimization Reasoning** — "best under constraints," named where it already arises; on-ramp to the AI specialization.
 - **Professional Practices** — the individual craft bundle: documentation, version control, code style, code review, communication, self-reflection, estimation, continued learning.
 
 ### Bounded practice (1) — scope stays flat; only judgment deepens
 - **AI-Assisted Development** — explain/discuss/quiz/critique only, never "write it for me." Deliberately does NOT grow more autonomous, to protect comprehension before the Year 3–4 Agentic AI specialization.
-
-*Individual vs collective: Professional Practices (lens) holds individual craft; Sociotechnical Structure (spiral) holds the team/collective dimension. Both escalate across several courses (see `resources/reference/spiral-threads.md`'s re-homing table) and meet at their fullest expression in CIS 400, where the team produces something together but every assessed artifact — commits, reflection writeup, portion of a defended presentation — stays individually attributable. That split is a deliberate anti-shortcut mechanism, not an oversight.*
 
 ## The service-course model
 

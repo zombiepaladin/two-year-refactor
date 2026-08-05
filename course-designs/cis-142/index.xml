@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 142 – Artificial Intelligence and Cybersecurity :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-142/index.html</link>
+    <description>Course Description Introduction to the rapidly evolving intersection of Artificial Intelligence and Cybersecurity. Students will explore how AI technologies—such as machine learning algorithms—can enhance system security, while also examining the vulnerabilities that adversaries exploit and the strategies used to defend against them. Through real-world case studies, interactive labs, and hands-on activities, students will gain practical experience with both offensive and defensive techniques in AI security. The course also includes a forward-looking discussion on emerging research, including work being conducted at K-State.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-142/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

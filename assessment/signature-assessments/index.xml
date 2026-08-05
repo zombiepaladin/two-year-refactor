@@ -3,7 +3,7 @@
   <channel>
     <title>Signature Assessments :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/signature-assessments/index.html</link>
-    <description>Signature assessments are the five formal, high-stakes assessment events distributed across the program. Each is a culminating instance of a recurring assessment type — it represents that type at its most consequential, typically involving real artifacts, peer or faculty audience, and no scaffolding.&#xA;Code Archaeology Milestone Block 2 — CS-105 Code Reading &amp; Repair&#xA;Students investigate an unfamiliar, moderately complex codebase — written in languages they know — to explain its behavior, identify sources of unexpected behavior, and propose a repair. This is the first unscaffolded instance of the Code Archaeology recurring type.</description>
+    <description>Signature assessments are the formal, high-stakes assessment events distributed across the program. Each is a culminating instance of a recurring assessment type — it represents that type at its most consequential, typically involving real artifacts, peer or faculty audience, and no scaffolding.&#xA;Five formal, high-stakes signature events are distributed across the program, though not evenly: two converge on the same course (CIS 400), and one no longer fits inside the two-year core at all.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/assessment/signature-assessments/index.xml" rel="self" type="application/rss+xml" />

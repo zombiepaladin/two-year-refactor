@@ -3,7 +3,7 @@
   <channel>
     <title>Program Overview :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/overview/index.html</link>
-    <description>Working draft for faculty review. This is the front door to a set of 22 companion files: 8 block files, 9 thread files, 3 lens files, and 1 bounded-practice file. Course codes throughout are placeholders.&#xA;What this is A competency-based, systems-thinking foundation for a B.S. in Computer Science, shared by students who will go on to specialize (Cybersecurity, Data Science, AI Systems, Software Architecture). It is built as a spiral curriculum: ideas recur across the two years, each return deepening or generalizing the last, rather than being taught once and left behind.</description>
+    <description>Working draft for faculty review. This is the front door to a set of 12 companion files: 8 thread files, 3 lens files, and 1 bounded-practice file. Course numbers reflect the current proposed degree map (resources/reference/degree-maps/cs.md), pending final department approval.&#xA;What this is A competency-based, systems-thinking foundation for a B.S. in Computer Science, shared by students who will go on to specialize (Cybersecurity, Data Science, AI Systems, Software Architecture). It is built as a spiral curriculum: ideas recur across the two years, each return deepening or generalizing the last, rather than being taught once and left behind.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/overview/index.xml" rel="self" type="application/rss+xml" />

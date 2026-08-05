@@ -3,7 +3,7 @@
   <channel>
     <title>Lenses :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/index.html</link>
-    <description>Three lenses applied across blocks: Trustworthy Computing, Optimization Reasoning, Professional Practices.</description>
+    <description>Three lenses applied across the two-year core: Trustworthy Computing, Optimization Reasoning, Professional Practices.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/index.xml" rel="self" type="application/rss+xml" />
@@ -12,21 +12,21 @@
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-trustworthy-computing/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-trustworthy-computing/index.html</guid>
-      <description>Working draft for faculty review. A lens is a standing question or practice applied across blocks, scope growing with capability — not a topic taught in one place. One of three lenses (with nine spirals and one bounded practice — 13 threads total).&#xA;In one line: Can people trust this system, and the people who built it? — security, privacy, and ethical reasoning asked wherever content raises it, formalized once.</description>
+      <description>Working draft for faculty review. A lens is a standing question or practice applied across the two-year core, scope growing with capability — not a topic taught in one place. One of three lenses (with eight spirals and one bounded practice — twelve threads total, plus two cross-cutting norms).&#xA;In one line: Can people trust this system, and the people who built it? — security, privacy, and ethical reasoning asked wherever content raises it, formalized once.</description>
     </item>
     <item>
       <title>Optimization Reasoning</title>
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-optimization/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-optimization/index.html</guid>
-      <description>Working draft for faculty review. A lens is a standing question or practice applied across blocks, scope growing with capability — not a topic taught in one place. One of three lenses (with nine spirals and one bounded practice — 13 threads total).&#xA;In one line: “Best under constraints,” named wherever it already arises, so students reach the AI specialization already thinking in optimization terms.&#xA;Why this is a lens, not a spiral A lightweight lens, not a new spiral, because ‘find the best X under constraints’ already occurs organically at several points — it needs naming, not new content. Mathematical optimization proper (gradient descent, convex methods) is deferred to the specialization; the foundation seeds the reasoning pattern.</description>
+      <description>Working draft for faculty review. A lens is a standing question or practice applied across the two-year core, scope growing with capability — not a topic taught in one place. One of three lenses (with eight spirals and one bounded practice — twelve threads total, plus two cross-cutting norms).&#xA;In one line: “Best under constraints,” named wherever it already arises, so students reach the AI specialization already thinking in optimization terms.</description>
     </item>
     <item>
       <title>Professional Practices</title>
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-professional-practices/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-professional-practices/index.html</guid>
-      <description>Working draft for faculty review. A lens is a standing question or practice applied across blocks, scope growing with capability — not a topic taught in one place. One of three lenses (with nine spirals and one bounded practice — 13 threads total).&#xA;In one line: The individual craft of being a professional: documentation, version control, code style, code review, communication, self-reflection, estimation, and continued learning — each maturing as it recurs.</description>
+      <description>Working draft for faculty review. A lens is a standing question or practice applied across the two-year core, scope growing with capability — not a topic taught in one place. One of three lenses (with eight spirals and one bounded practice — twelve threads total, plus two cross-cutting norms).&#xA;In one line: The individual craft of being a professional: documentation, version control, code style, code review, communication, self-reflection, estimation, and continued learning — each maturing as it recurs.</description>
     </item>
   </channel>
 </rss>

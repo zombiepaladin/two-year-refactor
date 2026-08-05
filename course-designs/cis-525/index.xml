@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 525 - Introduction to Network Programming :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-525/index.html</link>
+    <description>Course Description Basic inter-process communication and network programming concepts including client-server and peer-to-peer, communication protocol use and specification, reliable and secure communication, and network applications including web technologies, electronic mail, and file transfer with a focus on application and implementation.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md lists this as one of three choices (with CIS 520, CIS 625) for the Year 4 Systems Elective, which “fulfils ABET networking and OS requirements; may become a regular tech elective instead.”</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-525/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

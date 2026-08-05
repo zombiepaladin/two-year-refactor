@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 200 - Programming Fundamentals :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-200/index.html</link>
+    <description>Course Description Principles of algorithm design and their application to procedural programming: state, control structures, methods. Patterns of conditional and iterative control structure. Program testing. Introduction to arrays, classes, and objects. Programming projects.&#xA;Credit Hours 3 credits&#xA;Course Overview Learn the fundamentals of writing computer programs – specific instructions in a language that the computer can understand. Every computer application you use and every interactive website you visit is the result of a computer program. In this class, we will learn to write computer programs in Java and C# – however, the skills we will develop will apply to all programming languages.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-200/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

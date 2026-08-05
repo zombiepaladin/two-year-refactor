@@ -3,7 +3,7 @@
   <channel>
     <title>Disciplined Use of AI :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/ai-discipline/index.html</link>
-    <description>Working draft for faculty review. This page describes the AI-Assisted Development bounded practice — the one thread whose scope is deliberately held flat while student judgment deepens. For block-by-block expression, see the block files in Chapter 1.&#xA;The tension this page addresses AI code generation tools — large language models that write, explain, debug, and review code — are now ubiquitous in professional software development and accessible to first-semester undergraduates. Designing a CS curriculum that ignores them is not realistic. Designing one that hands off cognitive work to them defeats the purpose.</description>
+    <description>Working draft for faculty review. This page describes the AI-Assisted Development bounded practice — the one thread whose scope is deliberately held flat while student judgment deepens. For the course-by-course expression, see content/core-design/threads/practice-ai-assisted.md in Chapter 1.&#xA;The tension this page addresses AI code generation tools — large language models that write, explain, debug, and review code — are now ubiquitous in professional software development and accessible to first-semester undergraduates. Designing a CS curriculum that ignores them is not realistic. Designing one that hands off cognitive work to them defeats the purpose.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/ai-discipline/index.xml" rel="self" type="application/rss+xml" />

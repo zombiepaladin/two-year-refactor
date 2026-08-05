@@ -3,7 +3,7 @@
   <channel>
     <title>Two-Year CS Redesign :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/index.html</link>
-    <description>A competency-based, spiral two-year Computer Science foundational core: its structure, the competency assessment that wraps it, the pedagogy that animates it, the individual course designs, the specializations it feeds, and the accreditation analyses that support it.</description>
+    <description>This website presents the Department of Computer Science’s plans for a restructured foundational Computer Science core. This is a two-year course progression incorporating a spiral curricululum design approach that attempts to modernize and streamline core computer science learning, emphasize the development of systems thinking (including humanistic aspects and human interactions with computational systems). This two-year core will serve as a shared starting point for CS specialization degrees (Cybersecurity, AI) and is designed with community college transfer and service courses to other departments in mind.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/index.xml" rel="self" type="application/rss+xml" />
@@ -12,7 +12,7 @@
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/index.html</guid>
-      <description>What the curriculum IS: the eight-block spine, the thirteen threads (nine spirals, three lenses, one bounded practice), and the program overview.</description>
+      <description>What the curriculum IS: the two-year core course sequence, the twelve threads (eight spirals, three lenses, one bounded practice) plus two cross-cutting norms, and the program overview.</description>
     </item>
     <item>
       <title>Competency-Based Assessment</title>
@@ -26,14 +26,14 @@
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/index.html</guid>
-      <description>How the program teaches. The spiral method (ideas recur, each return deepening), practice-before-formal, the recurring developmental experiences, and the disciplined use of AI.&#xA;This chapter is a stub — the principles below are established in the design log but not yet written up as full pages.&#xA;To document: the spiral pedagogy; practice-before-formal sequencing; the recurring developmental experiences (Read → Repair → … → Reflect); the AI-Assisted Development discipline (explain/critique, never write-for-me); concrete-before-general (e.g. browser-as-mini-OS → OS); depth-of-engagement as a load-control lever.</description>
+      <description>How the program teaches. The spiral method (ideas recur, each return deepening), practice-before-formal sequencing, the recurring developmental experiences (Read → Repair → … → Reflect), the disciplined use of AI, and the real institutional systems (signature applications) students learn against.&#xA;This chapter’s principles are regenerated against the real course sequence (resources/reference/degree-maps/cs.md) as of 2026-07-15 — see resources/design-log.md for what changed and what’s still open. Concrete-before-general (e.g. CIS 220’s browser-as-mini-OS framing as an on-ramp to operating-system concepts) and depth-of-engagement as a load-control lever remain live principles, expressed throughout the pages below rather than as separate pages of their own.</description>
     </item>
     <item>
       <title>Course Designs</title>
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/index.html</guid>
-      <description>The individual courses that instantiate the structure — 22 one-credit CS courses and 8 co-designed external courses, grouped by block. Each page starts from the course’s current working description; full course designs (outcomes, week map, assessments, thread touches) are to be developed.</description>
+      <description>The individual courses that instantiate the structure.</description>
     </item>
     <item>
       <title>Specializations</title>

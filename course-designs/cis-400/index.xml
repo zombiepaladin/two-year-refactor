@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 400 - Object-Oriented Design, Implementation, and Testing :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-400/index.html</link>
+    <description>CIS 400 is being reimagined as a mid-level capstone course, where students use what they have learned in the first two years to create a significant programming project. This is not dissimilar to what the course currently does, but the current model utlizes highly prescriptive milestones that are trivialized by generative AI usage.&#xA;Course Description A study of concepts and techniques used to produce quality software programs. Object-oriented concepts, models, execution environments, design and testing techniques. Extensive application of these concepts and techniques to the development of non-trivial software programs.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-400/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

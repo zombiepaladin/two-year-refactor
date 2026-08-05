@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 415 - Ethics and Conduct for Computing Professionals :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-415/index.html</link>
+    <description>Course Description A study of the ethical issues raised by computing technologies and the impact on society. Exploration of how one might justify actions in regard to ethical dilemmas within the fields of technology, computer science, information security, and artificial intelligence. Other topics include an examination of terminology used, Professional Codes of Conduct for computer science professionals, ethics of software development, and ethical issues relating to privacy and intellectual property in cyberspace.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-415/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

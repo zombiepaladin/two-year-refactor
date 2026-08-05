@@ -6,63 +6,51 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.148.1">
     <meta name="generator" content="Relearn 8.0.0">
-    <meta name="description" content="Analyze System Behavior I can investigate the behavior of computing systems by examining interactions among software, hardware, networks, and data.
-I explain system performance, reliability, and resource utilization using evidence gathered from observation and measurement.
-Primary evidence contexts:
-Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running program is a PROCESS the OS schedules”; first named encounter with system execution mechanics B2 CS-106 Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; postMessage as IPC B4 CS-111 Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond; event-driven architecture formalized B4 CS-112 Big-O as a tool for analyzing performance characteristics theoretically B8 CS-210 Primary home — full memory hierarchy (cache, locality, virtual memory, thrashing); OS internals (processes vs. threads, preemptive vs. cooperative scheduling, kernel vs. user space); concurrency model behavior; performance analysis on a real deployed bottleneck Assessment types by level:">
+    <meta name="description" content="Re-checked against real course-design pages, 2026-08-04 — see resources/design-log.md. One structural flag applies throughout, already on record in resources/reference/spiral-threads.md since 2026-07-15: deep OS/concurrency formalization (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has no confirmed new-course home. CIS 220 carries the required ABET OS-exposure anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.">
     <meta name="author" content="Russell Feldhausen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta name="twitter:title" content="Systems and Infrastructure :: CS Two Year Refactor">
-    <meta name="twitter:description" content="Analyze System Behavior I can investigate the behavior of computing systems by examining interactions among software, hardware, networks, and data.
-I explain system performance, reliability, and resource utilization using evidence gathered from observation and measurement.
-Primary evidence contexts:
-Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running program is a PROCESS the OS schedules”; first named encounter with system execution mechanics B2 CS-106 Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; postMessage as IPC B4 CS-111 Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond; event-driven architecture formalized B4 CS-112 Big-O as a tool for analyzing performance characteristics theoretically B8 CS-210 Primary home — full memory hierarchy (cache, locality, virtual memory, thrashing); OS internals (processes vs. threads, preemptive vs. cooperative scheduling, kernel vs. user space); concurrency model behavior; performance analysis on a real deployed bottleneck Assessment types by level:">
+    <meta name="twitter:description" content="Re-checked against real course-design pages, 2026-08-04 — see resources/design-log.md. One structural flag applies throughout, already on record in resources/reference/spiral-threads.md since 2026-07-15: deep OS/concurrency formalization (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has no confirmed new-course home. CIS 220 carries the required ABET OS-exposure anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.">
     <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html">
     <meta property="og:site_name" content="CS Two Year Refactor">
     <meta property="og:title" content="Systems and Infrastructure :: CS Two Year Refactor">
-    <meta property="og:description" content="Analyze System Behavior I can investigate the behavior of computing systems by examining interactions among software, hardware, networks, and data.
-I explain system performance, reliability, and resource utilization using evidence gathered from observation and measurement.
-Primary evidence contexts:
-Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running program is a PROCESS the OS schedules”; first named encounter with system execution mechanics B2 CS-106 Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; postMessage as IPC B4 CS-111 Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond; event-driven architecture formalized B4 CS-112 Big-O as a tool for analyzing performance characteristics theoretically B8 CS-210 Primary home — full memory hierarchy (cache, locality, virtual memory, thrashing); OS internals (processes vs. threads, preemptive vs. cooperative scheduling, kernel vs. user space); concurrency model behavior; performance analysis on a real deployed bottleneck Assessment types by level:">
+    <meta property="og:description" content="Re-checked against real course-design pages, 2026-08-04 — see resources/design-log.md. One structural flag applies throughout, already on record in resources/reference/spiral-threads.md since 2026-07-15: deep OS/concurrency formalization (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has no confirmed new-course home. CIS 220 carries the required ABET OS-exposure anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Competency-Based Assessment">
-    <meta property="article:modified_time" content="2026-06-29T13:35:56-05:00">
+    <meta property="article:modified_time" content="2026-08-05T13:00:32-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta itemprop="name" content="Systems and Infrastructure :: CS Two Year Refactor">
-    <meta itemprop="description" content="Analyze System Behavior I can investigate the behavior of computing systems by examining interactions among software, hardware, networks, and data.
-I explain system performance, reliability, and resource utilization using evidence gathered from observation and measurement.
-Primary evidence contexts:
-Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running program is a PROCESS the OS schedules”; first named encounter with system execution mechanics B2 CS-106 Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; postMessage as IPC B4 CS-111 Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond; event-driven architecture formalized B4 CS-112 Big-O as a tool for analyzing performance characteristics theoretically B8 CS-210 Primary home — full memory hierarchy (cache, locality, virtual memory, thrashing); OS internals (processes vs. threads, preemptive vs. cooperative scheduling, kernel vs. user space); concurrency model behavior; performance analysis on a real deployed bottleneck Assessment types by level:">
-    <meta itemprop="dateModified" content="2026-06-29T13:35:56-05:00">
-    <meta itemprop="wordCount" content="760">
+    <meta itemprop="description" content="Re-checked against real course-design pages, 2026-08-04 — see resources/design-log.md. One structural flag applies throughout, already on record in resources/reference/spiral-threads.md since 2026-07-15: deep OS/concurrency formalization (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has no confirmed new-course home. CIS 220 carries the required ABET OS-exposure anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.">
+    <meta itemprop="dateModified" content="2026-08-05T13:00:32-05:00">
+    <meta itemprop="wordCount" content="1030">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <title>Systems and Infrastructure :: CS Two Year Refactor</title>
     <link href="https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html" rel="canonical" type="text/html" title="Systems and Infrastructure :: CS Two Year Refactor">
     <link href="/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.xml" rel="alternate" type="application/rss+xml" title="Systems and Infrastructure :: CS Two Year Refactor">
     <link href="/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.print.html" rel="alternate" type="text/html" title="Systems and Infrastructure :: CS Two Year Refactor">
     <link href="/two-year-refactor/assessment/competencies/systems-and-infrastructure/tele.html" rel="alternate" type="text/html" title="Systems and Infrastructure :: CS Two Year Refactor">
-    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1782783194" rel="stylesheet">
-    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search-lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search.min.js?1782783194" defer></script>
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1782783194";
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
     </script>
-    <script src="/two-year-refactor/js/lunr/lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet"></noscript>
-    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/theme.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/format-html.min.css?1782783194" rel="stylesheet" id="R-format-style">
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-html.min.css?1785952884" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -121,7 +109,7 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/two-year-refactor/css/custom.css?1782783194" rel="stylesheet">
+    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
   </head>
   <body class="mobile-support embed html" data-url="/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html">
     <div id="R-body" class="default-animation">
@@ -138,6 +126,7 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
 
 <h1 id="systems-and-infrastructure">Systems and Infrastructure</h1>
 
+<p><em>Re-checked against real course-design pages, 2026-08-04 — see <code>resources/design-log.md</code>. One structural flag applies throughout, already on record in <code>resources/reference/spiral-threads.md</code> since 2026-07-15: <strong>deep OS/concurrency formalization</strong> (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has <strong>no confirmed new-course home</strong>. CIS 220 carries the required ABET OS-<em>exposure</em> anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.</em></p>
 <h3 id="analyze-system-behavior">Analyze System Behavior</h3>
 <p><strong>I can investigate the behavior of computing systems by examining interactions among software, hardware, networks, and data.</strong></p>
 <p>I explain system performance, reliability, and resource utilization using evidence gathered from observation and measurement.</p>
@@ -145,36 +134,30 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
 <table>
   <thead>
       <tr>
-          <th>Block</th>
           <th>Course</th>
           <th>Work</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1</td>
-          <td>CS-103</td>
-          <td>Foundation — stack/heap memory model; &ldquo;a running program is a PROCESS the OS schedules&rdquo;; first named encounter with system execution mechanics</td>
+          <td><em>unplaced</em></td>
+          <td>Stack/heap memory model; &ldquo;a running program is a process the OS schedules.&rdquo; Depends on content <code>cs.md</code>&rsquo;s CIS 115 entry explicitly lists as not incorporated there.</td>
       </tr>
       <tr>
-          <td>B2</td>
-          <td>CS-106</td>
-          <td>Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; postMessage as IPC</td>
+          <td>CIS 220 (Y1 Spring)</td>
+          <td>Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; <code>postMessage</code> as IPC. Confirmed.</td>
       </tr>
       <tr>
-          <td>B4</td>
-          <td>CS-111</td>
-          <td>Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond; event-driven architecture formalized</td>
+          <td>CIS 300 (Y2 Fall)</td>
+          <td>Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond (the &ldquo;build&rdquo; side of the CIS 300/CIS 320 pairing).</td>
       </tr>
       <tr>
-          <td>B4</td>
-          <td>CS-112</td>
-          <td>Big-O as a tool for analyzing performance characteristics theoretically</td>
+          <td>CIS 300 (Y2 Fall)</td>
+          <td>Big-O as a tool for analyzing performance characteristics theoretically. Confirmed (SLO 6).</td>
       </tr>
       <tr>
-          <td>B8</td>
-          <td>CS-210</td>
-          <td>Primary home — full memory hierarchy (cache, locality, virtual memory, thrashing); OS internals (processes vs. threads, preemptive vs. cooperative scheduling, kernel vs. user space); concurrency model behavior; performance analysis on a real deployed bottleneck</td>
+          <td>CIS 400 (Y2 Spring)</td>
+          <td>Performance analysis on a real deployed bottleneck. Confirmed against the Confirmed Design Intent section. <strong>The deep-OS-internals half of this old pass (memory hierarchy/cache/virtual-memory/thrashing, processes-vs-threads, preemptive-vs-cooperative scheduling, kernel-vs-user-space) is the same unconfirmed content flagged at the top of this file</strong> — not asserted as CIS 400 content here.</td>
       </tr>
   </tbody>
 </table>
@@ -197,15 +180,15 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       </tr>
       <tr>
           <td>Adaptation</td>
-          <td>Production system analysis (CS-210) — explain a live performance bottleneck using monitoring data; reconcile theoretical and empirical behavior</td>
+          <td>Production system analysis (CIS 400) — explain a live performance bottleneck using monitoring data; reconcile theoretical and empirical behavior</td>
       </tr>
       <tr>
           <td>Leadership</td>
-          <td>TA/LA leading system analysis sessions; leading blameless postmortems</td>
+          <td>TA/LA leading system analysis sessions. (Leading blameless postmortems is now a Year 3–4-capstone-level activity — see <code>signature-assessments.md</code>.)</td>
       </tr>
   </tbody>
 </table>
-<p><strong>Recurring type:</strong> System Analysis Task — deepens from stack/heap trace (B1) through production bottleneck diagnosis using monitoring data (B8). Complementary to Code Archaeology: Code Archaeology traces behavior through code; System Analysis Task traces behavior through system interactions and operational signals.</p>
+<p><strong>Recurring type:</strong> System Analysis Task — deepens from CIS 220&rsquo;s event-loop trace through CIS 400&rsquo;s production bottleneck diagnosis; a stack/heap starting point remains unplaced. Complementary to Code Archaeology: Code Archaeology traces behavior through code; System Analysis Task traces behavior through system interactions and operational signals.</p>
 <hr>
 <h3 id="manage-computing-environments">Manage Computing Environments</h3>
 <p><strong>I can configure and operate computing environments that support software development, deployment, and maintenance.</strong></p>
@@ -214,36 +197,30 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
 <table>
   <thead>
       <tr>
-          <th>Block</th>
           <th>Course</th>
           <th>Work</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B2</td>
-          <td>CS-105</td>
-          <td>Git setup and configuration — first explicit tool configuration in the program</td>
+          <td>CIS 200 (Y1 Spring)</td>
+          <td>Git setup and configuration — first explicit tool configuration in the program.</td>
       </tr>
       <tr>
-          <td>B3</td>
-          <td>CS-107</td>
-          <td>Type checker and linter configuration — static analysis tools as part of the development environment</td>
+          <td>CIS 200 (Y1 Spring)</td>
+          <td>Type checker and linter configuration — static analysis tools as part of the development environment.</td>
       </tr>
       <tr>
-          <td>B6</td>
-          <td>CS-204</td>
-          <td>Test runner configuration — setting up automated test environments, not just writing tests</td>
+          <td>CIS 400 (Y2 Spring), formalized (woven throughout)</td>
+          <td>Test runner configuration — setting up automated test environments, not just writing tests.</td>
       </tr>
       <tr>
-          <td>B6</td>
-          <td>CS-206</td>
-          <td>Collaborative toolchain — shared Git workflow configuration, branch protection, code review tooling</td>
+          <td>CIS 400 (Y2 Spring)</td>
+          <td>Collaborative toolchain — shared Git workflow configuration, branch protection, code review tooling.</td>
       </tr>
       <tr>
-          <td>B8</td>
-          <td>CS-210</td>
-          <td>Primary home — containers as environment abstraction; dependency management; production configuration; monitoring and logging tooling; hardening before live</td>
+          <td>CIS 400 (Y2 Spring)</td>
+          <td>Primary home — containers as environment abstraction; dependency management; production configuration; monitoring and logging tooling; hardening before live. Confirmed — matches the &ldquo;harden the system before it goes live&rdquo; Confirmed Design Intent item added during the lens pass.</td>
       </tr>
   </tbody>
 </table>
@@ -267,7 +244,7 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       </tr>
       <tr>
           <td>Adaptation</td>
-          <td>Container-based deployment (CS-210) — configure a production environment with real security, dependency, and operational constraints</td>
+          <td>Container-based deployment (CIS 400) — configure a production environment with real security, dependency, and operational constraints</td>
       </tr>
       <tr>
           <td>Leadership</td>
@@ -275,7 +252,7 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       </tr>
   </tbody>
 </table>
-<p><strong>Recurring type:</strong> Environment Configuration Task — deepens from single personal tool configuration (B2) through production-grade container and secrets management (B8).</p>
+<p><strong>Recurring type:</strong> Environment Configuration Task — deepens from single personal tool configuration (CIS 200) through CIS 400&rsquo;s production-grade container and secrets management.</p>
 <hr>
 <h3 id="deploy-operational-systems">Deploy Operational Systems</h3>
 <p><strong>I can deploy, monitor, and maintain software systems in operational environments.</strong></p>
@@ -284,40 +261,34 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
 <table>
   <thead>
       <tr>
-          <th>Block</th>
           <th>Course</th>
           <th>Work</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B4</td>
-          <td>CS-111</td>
-          <td>Conceptual seed — client-server decomposition makes &ldquo;where does each component run?&rdquo; a named question</td>
+          <td>CIS 300 / CIS 320 (Y2 Fall)</td>
+          <td>Conceptual seed — client-server decomposition makes &ldquo;where does each component run?&rdquo; a named question.</td>
       </tr>
       <tr>
-          <td>B6</td>
-          <td>CS-204</td>
-          <td>Test suite as pre-deployment validation gate</td>
+          <td>CIS 400 (Y2 Spring), formalized (woven throughout)</td>
+          <td>Test suite as pre-deployment validation gate.</td>
       </tr>
       <tr>
-          <td>B6</td>
-          <td>CS-206</td>
-          <td>Git PR workflow as release mechanism — merge to main as a deployment trigger; semantic versioning as release communication</td>
+          <td>CIS 400 (Y2 Spring)</td>
+          <td>Git PR workflow as release mechanism — merge to main as a deployment trigger; semantic versioning as release communication.</td>
       </tr>
       <tr>
-          <td>B8</td>
-          <td>CS-210</td>
-          <td>Primary home — containerized deployment; monitoring and logging; operational runbooks; harden-before-live; API versioning as backward-compatibility contract; fault-tolerance (actor model, circuit breakers); performance analysis under real load</td>
+          <td>CIS 400 (Y2 Spring)</td>
+          <td>Primary home within the core — containerized deployment; monitoring and logging; operational runbooks; harden-before-live; API versioning as backward-compatibility contract; performance analysis under real load. <strong>Fault-tolerance comparison (actor model, circuit breakers) is the same unconfirmed deep-OS/concurrency content flagged at the top of this file</strong> — plausibly Systems Elective territory, not confirmed core content.</td>
       </tr>
       <tr>
-          <td>B8</td>
-          <td>CS-211</td>
-          <td>System Integration Project — deploy for real user acceptance testing; blameless postmortem as operational retrospective</td>
+          <td>Year 3–4 capstone</td>
+          <td>System Integration Project — deploy for real user acceptance testing; blameless postmortem as operational retrospective. <strong>Moved out of the two-year core</strong>, per <code>signature-assessments.md</code>&rsquo;s Round 1 finding.</td>
       </tr>
   </tbody>
 </table>
-<p>Note: this sub-competency is concentrated at B8. The earlier touchpoints are seeds. This is appropriate — deployment requires security, testing, and environment management foundations that are not complete until B6–B8.</p>
+<p>Note: this sub-competency is concentrated at CIS 400 within the core. The earlier touchpoints are seeds — this is appropriate, deployment requires security, testing, and environment-management foundations that aren&rsquo;t complete until CIS 251/CIS 400. Full acceptance-tested, real-user deployment with a postmortem is a Year 3–4-capstone-level event, not a core one.</p>
 <p><strong>Assessment types by level:</strong></p>
 <table>
   <thead>
@@ -337,15 +308,15 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       </tr>
       <tr>
           <td>Adaptation</td>
-          <td>System Integration Project (B8) — deploy a novel multi-component system with real reliability, security, and performance constraints; monitor and respond to live issues</td>
+          <td>CIS 400&rsquo;s deployment work — deploy with real reliability, security, and performance constraints, within the core&rsquo;s own scope. (The old &ldquo;System Integration Project&rdquo; ceiling — a novel multi-component system with live-issue response — is now at the Year 3–4 capstone.)</td>
       </tr>
       <tr>
           <td>Leadership</td>
-          <td>TA/LA leading deployment workshops; writing operational runbooks for team use; leading incident response and blameless postmortems</td>
+          <td>TA/LA leading deployment workshops; writing operational runbooks for team use. (Leading incident response and blameless postmortems is now a Year 3–4-capstone-level activity.)</td>
       </tr>
   </tbody>
 </table>
-<p><strong>Recurring type:</strong> Deployment Task — starts with release tagging (B6) and deepens through production multi-component deployment with postmortem (B8).</p>
+<p><strong>Recurring type:</strong> Deployment Task — starts with CIS 400&rsquo;s release-tagging content and deepens through its production deployment work; full multi-component deployment with a real-user postmortem now sits at the Year 3–4 capstone.</p>
 
   <footer class="footline">
   </footer>
@@ -356,9 +327,9 @@ Block Course Work B1 CS-103 Foundation — stack/heap memory model; “a running
       
       
     </div>
-    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/theme.min.js?1782783194" defer></script>
-  <script src="/two-year-refactor/js/embed-iframe.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
+  <script src="/two-year-refactor/js/embed-iframe.min.js?1785952884" defer></script>
   </body>
 </html>

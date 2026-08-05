@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 501 - Software Architecture and Design :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-501/index.html</link>
+    <description>Course Description Principles and patterns for design and structure of software, development of object-oriented models, examples of software architecture.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md notes this course will “probably [shift] focus to incorporate more AI usage as a development tool.” It’s also the confirmed host for the Professional Practices lens’s professional-communication pass (presenting and defending a design to an audience, individually assessed even when the design was a team effort) — see content/core-design/lenses/lens-professional-practices.md. This is also the course a dedicated acceptance-testing elective is planned to sit alongside for the Software Architecture specialization (not yet drafted).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-501/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

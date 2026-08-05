@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 643 - Software Engineering Project II :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-643/index.html</link>
+    <description>Course Description Continuation of CIS 642. Final implementation, integration, and testing of a software system. Introduction to configuration management, project management, and software maintenance.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md lists this as one of three choices (with CIS 598, DEN 591) for the Year 4 Capstone. Note the prerequisite below (CIS 642, taken the preceding semester) isn’t itself in the current core’s Year 3–4 elective structure as documented — worth confirming this pathway is actually reachable under the redesigned map before treating it as a settled capstone option.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-643/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

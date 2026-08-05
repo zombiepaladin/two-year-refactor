@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.1">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.
+What it is “Where Did They Go?” (repo: github.com/ksu-cs/development-project-ksds) is an active external project — Vue &#43; JavaScript &#43; D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12&#43; releases as of mid-2026. It’s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.">
+    <meta name="author" content="Russell Feldhausen">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta name="twitter:title" content="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <meta name="twitter:description" content="Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.
+What it is “Where Did They Go?” (repo: github.com/ksu-cs/development-project-ksds) is an active external project — Vue &#43; JavaScript &#43; D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12&#43; releases as of mid-2026. It’s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/data-visualization/index.html">
+    <meta property="og:site_name" content="CS Two Year Refactor">
+    <meta property="og:title" content="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <meta property="og:description" content="Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.
+What it is “Where Did They Go?” (repo: github.com/ksu-cs/development-project-ksds) is an active external project — Vue &#43; JavaScript &#43; D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12&#43; releases as of mid-2026. It’s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Pedagogical Approach">
+    <meta property="article:modified_time" content="2026-07-22T08:08:26-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta itemprop="name" content="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <meta itemprop="description" content="Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.
+What it is “Where Did They Go?” (repo: github.com/ksu-cs/development-project-ksds) is an active external project — Vue &#43; JavaScript &#43; D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12&#43; releases as of mid-2026. It’s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.">
+    <meta itemprop="dateModified" content="2026-07-22T08:08:26-05:00">
+    <meta itemprop="wordCount" content="368">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <title>Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor</title>
+    <link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/data-visualization/index.html" rel="canonical" type="text/html" title="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <link href="/two-year-refactor/pedagogy/signature-applications/data-visualization/index.xml" rel="alternate" type="application/rss+xml" title="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <link href="/two-year-refactor/pedagogy/signature-applications/data-visualization/index.print.html" rel="alternate" type="text/html" title="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <link href="/two-year-refactor/pedagogy/signature-applications/data-visualization/tele.html" rel="alternate" type="text/html" title="Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor">
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
+    </script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-html.min.css?1785952884" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/pedagogy\/signature-applications\/data-visualization\/index.html';
+      window.relearn.relBasePath='..\/..\/..';
+      window.relearn.relBaseUri='..\/..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/two-year-refactor';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
+  </head>
+  <body class="mobile-support embed html" data-url="/two-year-refactor/pedagogy/signature-applications/data-visualization/index.html">
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      
+      
+      
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable pedagogy" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="data-visualization-tool-where-did-they-go">Data-Visualization Tool (&#34;Where Did They Go?&#34;)</h1>
+
+<blockquote>
+<p><em>Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see <a href="/two-year-refactor/pedagogy/index.html">Signature Applications</a> for why the program prefers real assets over invented ones.</em></p></blockquote>
+<h2 id="what-it-is">What it is</h2>
+<p><strong>&ldquo;Where Did They Go?&rdquo;</strong> (repo: <code>github.com/ksu-cs/development-project-ksds</code>) is an active external project — Vue + JavaScript + D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12+ releases as of mid-2026. It&rsquo;s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.</p>
+<p><strong>Being built for eventual multi-state reuse</strong>, not Kansas-only (confirmed 2026-07-15) — worth keeping in mind before treating any Kansas-specific framing as permanent.</p>
+<p><strong>This is a consumption/context asset, not a student build target.</strong> Per the confirmed CIS 400 capstone design, student teams do not modify this codebase directly — it&rsquo;s a live external project with its own release cadence and non-CS stakeholders (Chapman Center historians). It&rsquo;s used as <em>motivating context and a data-consumption source</em>, not something student teams ship changes to.</p>
+<h2 id="whats-actually-real-right-now">What&rsquo;s actually real right now</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Capability</th>
+          <th>Status</th>
+          <th>First curricular need</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Static GeoJSON/JSON consumption</td>
+          <td>requested</td>
+          <td>Data Science track, sequence point TBD</td>
+      </tr>
+  </tbody>
+</table>
+<p>That&rsquo;s the entire confirmed/requested surface — a batch/generated-data consumption pattern, a real contrast to the plant-sensor API&rsquo;s live-request pattern.</p>
+<h2 id="relationship-to-the-historical-archive">Relationship to the historical archive</h2>
+<p>&ldquo;Where Did They Go?&rdquo; consumes static files generated by a separate, not-yet-built system — the <a href="/two-year-refactor/pedagogy/signature-applications/historical-archive/index.html">historical archive</a> — which is where the community-facing correction/versioning/search work (and CIS 400&rsquo;s actual capstone project) lives. Treat the two as coupled but distinct: this page&rsquo;s asset is the existing, external, read-mostly visualization; the historical archive is the green-field system student teams help build.</p>
+<h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
+<ol>
+<li>No course/sequence point confirmed yet — flagged as &ldquo;TBD&rdquo; in the source roadmap itself, not a gap introduced here.</li>
+<li>As an external, actively-developed project, format or endpoint changes are a real risk to assignment stability — the embedding-systems teaching point (&ldquo;what if CS&rsquo;s assumptions about this data silently break&rdquo;) is itself pedagogically useful, but any assignment depending on it needs a stability check before delivery.</li>
+</ol>
+<hr>
+<p><em>See <code>resources/reference/ks-population-trends-roadmap.md</code> for the live capability-tracking table (shared with the historical archive).</em></p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+      
+      
+      
+    </div>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
+  <script src="/two-year-refactor/js/embed-iframe.min.js?1785952884" defer></script>
+  </body>
+</html>

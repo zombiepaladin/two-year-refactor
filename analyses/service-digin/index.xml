@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Service: Digital Innovation in Media (DIGIN) :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-digin/index.html</link>
+    <description>Working draft for faculty review. Maps the B.S. in Digital Innovation in Media (DIGIN, A.Q. Miller School of Media and Communication) Computational Core requirement onto the new course-container structure (resources/reference/degree-maps/cs.md). Source: resources/reference/degree-maps/digin.md (K-State catalog, https://www.k-state.edu/media-communication/academics/bs-digital-innovation-media.html) and resources/reference/kstate-catalog/cc-*.md. Course codes for the new core are the working CIS numbers in cs.md; several are still placeholders (CIS XXX) pending official assignment.&#xA;Context DIGIN is a 120-credit, four-year program that bundles a primary degree with a Minor in Entrepreneurship and Innovation, a Certificate in Digital Engagement, and — the relevant piece here — a Certificate in Computer Science, earned by completing DIGIN’s 17-credit Computational Core:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-digin/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

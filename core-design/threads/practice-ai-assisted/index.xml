@@ -3,7 +3,7 @@
   <channel>
     <title>AI-Assisted Development (bounded practice) :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/practice-ai-assisted/index.html</link>
-    <description>Working draft for faculty review. A bounded practice deepens only in student judgment while its scope deliberately stays flat — the single thread of this type, distinct from the nine spirals and three lenses.&#xA;In one line: Depth increases only in the student’s critical judgment; the SCOPE of permitted AI use stays narrow and constant — explain, discuss, quiz, critique — never “write this for me and I’ll submit it.”</description>
+    <description>Working draft for faculty review. A bounded practice deepens only in student judgment while its scope deliberately stays flat — the single thread of this type, distinct from the eight spirals and three lenses.&#xA;In one line: Depth increases only in the student’s critical judgment; the scope of permitted AI use stays narrow and constant — explain, discuss, quiz, critique — never “write this for me and I’ll submit it.”</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/practice-ai-assisted/index.xml" rel="self" type="application/rss+xml" />

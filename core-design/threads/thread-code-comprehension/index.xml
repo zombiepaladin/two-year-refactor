@@ -3,7 +3,7 @@
   <channel>
     <title>Code Comprehension :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-code-comprehension/index.html</link>
-    <description>Working draft for faculty review. A spiral deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).&#xA;In one line: Understanding programs — your own and others’ — from ‘make it work’ to ‘defend it under scrutiny.’&#xA;Character The lens shifts each pass rather than just raising difficulty: produce → understand others’ → organize → verify → defend. (Renamed from the slash-name ‘Program Correctness / Code Comprehension’; the through-line is comprehension of programs.)</description>
+    <description>Working draft for faculty review. A spiral deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).&#xA;In one line: Understanding programs — your own and others’ — from ‘make it work’ to ‘defend it under scrutiny.’&#xA;Character The lens shifts each pass rather than just raising difficulty: produce → understand others’ → organize → reason about → defend.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-code-comprehension/index.xml" rel="self" type="application/rss+xml" />

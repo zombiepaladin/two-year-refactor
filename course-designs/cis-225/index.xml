@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 225 - Foundations of Computer Networks :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-225/index.html</link>
+    <description>Course Description Survey of computer networking fundamentals, including 7-layer OSI model, common networking protocols, socket-based network programming, network security and encryption, and network performance and reliability basics.&#xA;Credit Hours 1 credit&#xA;Course Overview This course will introduce students to the core concepts of network communication between computing systems. Students will learn about the 7-layer OSI network model and how common networking protocols such as TCP/IP, HTTP, DHCP, DNS, and more work to form the foundation of the modern internet. Students will explore basic socket-based network programming, discuss security and encryption of network communications, and explore concepts related to network performance and reliability.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-225/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

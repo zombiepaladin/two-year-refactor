@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 575 - Introduction to Algorithm Analysis :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-575/index.html</link>
+    <description>Course Description An introduction to mathematical analysis of time- and space-complexity of algorithms, including worst-case, average-case, and amortized complexity. An examination of various algorithmic designs, such as greedy algorithms, divide-and-conquer algorithms, and dynamic programming algorithms. Techniques for proving correctness of algorithms.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md flags this “may become an elective,” and it’s the confirmed elective-depth home for P vs. NP (paired with CIS 560’s own elective-depth NP-completeness content) on top of the required CIS 300/301 algorithmic foundation.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-575/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

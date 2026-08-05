@@ -6,55 +6,55 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.148.1">
     <meta name="generator" content="Relearn 8.0.0">
-    <meta name="description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the spiral’s interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.
-flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;is required by&#39;) subgraph B1[&#34;Block 1 - Read&#34;] direction LR CS101[&#34;CS-101&lt;br/&gt;Imperative Prog&lt;br/&gt;&lt;b&gt;blocks 20&lt;/b&gt;&#34;] CS102[&#34;CS-102&lt;br/&gt;Functional Prog&lt;br/&gt;&lt;b&gt;blocks 16&lt;/b&gt;&#34;] CS103[&#34;CS-103&lt;br/&gt;Computational Rep&lt;br/&gt;&lt;b&gt;blocks 12&lt;/b&gt;&#34;] MATH101[&#34;MATH-101&lt;br/&gt;Logic and Sets&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B2[&#34;Block 2 - Modify&#34;] direction LR CS104[&#34;CS-104&lt;br/&gt;Data Transformation&lt;br/&gt;&lt;b&gt;blocks 14&lt;/b&gt;&#34;] CS105[&#34;CS-105&lt;br/&gt;Code Reading/Repair&#34;] CS106[&#34;CS-106&lt;br/&gt;Web Foundations&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] MATH102[&#34;MATH-102&lt;br/&gt;Counting&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] end subgraph B3[&#34;Block 3 - Model&#34;] direction LR CS107[&#34;CS-107&lt;br/&gt;OOP I&lt;br/&gt;&lt;b&gt;blocks 11&lt;/b&gt;&#34;] CS108[&#34;CS-108&lt;br/&gt;OOP II&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS109[&#34;CS-109&lt;br/&gt;Abstract Data Types&lt;br/&gt;&lt;b&gt;blocks 7&lt;/b&gt;&#34;] MATH103[&#34;MATH-103&lt;br/&gt;Recursive/Modular&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B4[&#34;Block 4 - Structure&#34;] direction LR CS110[&#34;CS-110&lt;br/&gt;Trees/Hashing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS111[&#34;CS-111&lt;br/&gt;Systems and APIs&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] CS112[&#34;CS-112&lt;br/&gt;Algorithmic Complexity&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT101[&#34;STAT-101&lt;br/&gt;Descriptive Stats&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B5[&#34;Block 5 - Store&#34;] direction LR CS201[&#34;CS-201&lt;br/&gt;SQL Fundamentals&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS202[&#34;CS-202&lt;br/&gt;Database Design&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT102[&#34;STAT-102&lt;br/&gt;Probability&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B6[&#34;Block 6 - Build Responsibly&#34;] direction LR CS203[&#34;CS-204&lt;br/&gt;Software Testing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS204[&#34;CS-205&lt;br/&gt;Security Fund.&#34;] CS205[&#34;CS-206&lt;br/&gt;Collaborative Dev&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT103[&#34;STAT-103&lt;br/&gt;Distributions/Sampling&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] end subgraph B7[&#34;Block 7 - Judge&#34;] direction LR CS206[&#34;CS-207&lt;br/&gt;Graphs and Net Algorithms&#34;] CS207[&#34;CS-208&lt;br/&gt;Document DBs/Integration&#34;] MATH104[&#34;MATH-104&lt;br/&gt;Graphs/Trees/Networks&#34;] end subgraph B8[&#34;Block 8 - Operate&#34;] direction LR CS208[&#34;CS-210&lt;br/&gt;Deployment and Ops&#34;] CS209[&#34;CS-211&lt;br/&gt;Human-Centered Design&#34;] CS210[&#34;CS-212&lt;br/&gt;Data Analysis/Resp AI&#34;] STAT104[&#34;STAT-104&lt;br/&gt;Correlation/Regression&#34;] end CS101 ==&gt; CS102 CS101 ==&gt; CS103 CS101 ==&gt; CS104 CS102 ==&gt; CS104 CS101 ==&gt; CS105 CS102 ==&gt; CS105 CS101 ==&gt; CS106 CS103 ==&gt; CS107 CS104 ==&gt; CS107 CS107 ==&gt; CS108 CS107 ==&gt; CS109 CS109 --&gt; CS110 CS106 -.-&gt; CS111 CS109 --&gt; CS111 CS110 --&gt; CS112 CS104 ==&gt; CS201 CS201 --&gt; CS202 CS109 -.-&gt; CS202 CS108 -.-&gt; CS203 MATH103 -.-&gt; CS204 CS203 --&gt; CS205 CS110 -.-&gt; CS206 CS112 -.-&gt; CS206 CS202 -.-&gt; CS207 CS111 -.-&gt; CS208 CS205 -.-&gt; CS208 CS106 -.-&gt; CS209 CS201 -.-&gt; CS210 STAT101 -.-&gt; CS210 MATH101 --&gt; MATH102 MATH102 --&gt; MATH103 STAT101 --&gt; STAT102 STAT102 --&gt; STAT103 STAT103 -.-&gt; STAT104 MATH103 -.-&gt; MATH104 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CS107,CS104,CS101,CS102,CS103 wall; class CS109 mid; class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext; class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term; The central tension The spiral’s strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means early courses carry enormous downstream weight. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.">
+    <meta name="description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the course sequence’s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in resources/reference/degree-maps/cs.md).
+flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced. subgraph Y1F[&#34;Year 1, Semester 1&#34;] direction LR CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;] CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;] CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;] MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;] MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;] end subgraph Y1S[&#34;Year 1, Semester 2&#34;] direction LR CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;] CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;] CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;] MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;] MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;] MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;] end subgraph Y2F[&#34;Year 2, Semester 1&#34;] direction LR CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;] CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;] CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;] CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;] CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;] end subgraph Y2S[&#34;Year 2, Semester 2&#34;] direction LR CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;] CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;] CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;] STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;] end CIS115 &lt;-.-&gt; CIS116 CIS116 ==&gt; CIS200 MCALC ==&gt; CIS200 CIS120 ==&gt; CIS220 CIS200 ==&gt; CIS300 MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300 MCALC -.-&gt;|&#34;either suffices&#34;| CIS300 CIS200 ==&gt; CIS301 CIS120 ==&gt; CIS320 CIS200 ==&gt; CIS320 CIS220 ==&gt; CIS320 CIS300 ==&gt; CIS400 CIS120 ==&gt; CIS400 CIS260 ==&gt; CIS400 MLOGIC -.-&gt; MCOUNT MRECMOD -.-&gt; MGRAPHS CIS116 -.-&gt; CIS260 CIS120 -.-&gt; CIS300 CIS220 -.-&gt; CIS300 CIS301 -.-&gt; CIS400 MRECMOD -.-&gt; CIS251 CIS115 -.-&gt; CIS141 CIS116 -.-&gt; CIS141 CIS260 -.-&gt; CIS141 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CIS116 wall; class CIS200,CIS120 mid; class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext; class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term; The central tension The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.">
     <meta name="author" content="Russell Feldhausen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta name="twitter:title" content="Internal Prerequisite Analysis :: CS Two Year Refactor">
-    <meta name="twitter:description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the spiral’s interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.
-flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;is required by&#39;) subgraph B1[&#34;Block 1 - Read&#34;] direction LR CS101[&#34;CS-101&lt;br/&gt;Imperative Prog&lt;br/&gt;&lt;b&gt;blocks 20&lt;/b&gt;&#34;] CS102[&#34;CS-102&lt;br/&gt;Functional Prog&lt;br/&gt;&lt;b&gt;blocks 16&lt;/b&gt;&#34;] CS103[&#34;CS-103&lt;br/&gt;Computational Rep&lt;br/&gt;&lt;b&gt;blocks 12&lt;/b&gt;&#34;] MATH101[&#34;MATH-101&lt;br/&gt;Logic and Sets&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B2[&#34;Block 2 - Modify&#34;] direction LR CS104[&#34;CS-104&lt;br/&gt;Data Transformation&lt;br/&gt;&lt;b&gt;blocks 14&lt;/b&gt;&#34;] CS105[&#34;CS-105&lt;br/&gt;Code Reading/Repair&#34;] CS106[&#34;CS-106&lt;br/&gt;Web Foundations&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] MATH102[&#34;MATH-102&lt;br/&gt;Counting&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] end subgraph B3[&#34;Block 3 - Model&#34;] direction LR CS107[&#34;CS-107&lt;br/&gt;OOP I&lt;br/&gt;&lt;b&gt;blocks 11&lt;/b&gt;&#34;] CS108[&#34;CS-108&lt;br/&gt;OOP II&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS109[&#34;CS-109&lt;br/&gt;Abstract Data Types&lt;br/&gt;&lt;b&gt;blocks 7&lt;/b&gt;&#34;] MATH103[&#34;MATH-103&lt;br/&gt;Recursive/Modular&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B4[&#34;Block 4 - Structure&#34;] direction LR CS110[&#34;CS-110&lt;br/&gt;Trees/Hashing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS111[&#34;CS-111&lt;br/&gt;Systems and APIs&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] CS112[&#34;CS-112&lt;br/&gt;Algorithmic Complexity&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT101[&#34;STAT-101&lt;br/&gt;Descriptive Stats&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B5[&#34;Block 5 - Store&#34;] direction LR CS201[&#34;CS-201&lt;br/&gt;SQL Fundamentals&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS202[&#34;CS-202&lt;br/&gt;Database Design&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT102[&#34;STAT-102&lt;br/&gt;Probability&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B6[&#34;Block 6 - Build Responsibly&#34;] direction LR CS203[&#34;CS-204&lt;br/&gt;Software Testing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS204[&#34;CS-205&lt;br/&gt;Security Fund.&#34;] CS205[&#34;CS-206&lt;br/&gt;Collaborative Dev&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT103[&#34;STAT-103&lt;br/&gt;Distributions/Sampling&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] end subgraph B7[&#34;Block 7 - Judge&#34;] direction LR CS206[&#34;CS-207&lt;br/&gt;Graphs and Net Algorithms&#34;] CS207[&#34;CS-208&lt;br/&gt;Document DBs/Integration&#34;] MATH104[&#34;MATH-104&lt;br/&gt;Graphs/Trees/Networks&#34;] end subgraph B8[&#34;Block 8 - Operate&#34;] direction LR CS208[&#34;CS-210&lt;br/&gt;Deployment and Ops&#34;] CS209[&#34;CS-211&lt;br/&gt;Human-Centered Design&#34;] CS210[&#34;CS-212&lt;br/&gt;Data Analysis/Resp AI&#34;] STAT104[&#34;STAT-104&lt;br/&gt;Correlation/Regression&#34;] end CS101 ==&gt; CS102 CS101 ==&gt; CS103 CS101 ==&gt; CS104 CS102 ==&gt; CS104 CS101 ==&gt; CS105 CS102 ==&gt; CS105 CS101 ==&gt; CS106 CS103 ==&gt; CS107 CS104 ==&gt; CS107 CS107 ==&gt; CS108 CS107 ==&gt; CS109 CS109 --&gt; CS110 CS106 -.-&gt; CS111 CS109 --&gt; CS111 CS110 --&gt; CS112 CS104 ==&gt; CS201 CS201 --&gt; CS202 CS109 -.-&gt; CS202 CS108 -.-&gt; CS203 MATH103 -.-&gt; CS204 CS203 --&gt; CS205 CS110 -.-&gt; CS206 CS112 -.-&gt; CS206 CS202 -.-&gt; CS207 CS111 -.-&gt; CS208 CS205 -.-&gt; CS208 CS106 -.-&gt; CS209 CS201 -.-&gt; CS210 STAT101 -.-&gt; CS210 MATH101 --&gt; MATH102 MATH102 --&gt; MATH103 STAT101 --&gt; STAT102 STAT102 --&gt; STAT103 STAT103 -.-&gt; STAT104 MATH103 -.-&gt; MATH104 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CS107,CS104,CS101,CS102,CS103 wall; class CS109 mid; class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext; class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term; The central tension The spiral’s strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means early courses carry enormous downstream weight. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.">
+    <meta name="twitter:description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the course sequence’s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in resources/reference/degree-maps/cs.md).
+flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced. subgraph Y1F[&#34;Year 1, Semester 1&#34;] direction LR CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;] CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;] CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;] MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;] MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;] end subgraph Y1S[&#34;Year 1, Semester 2&#34;] direction LR CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;] CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;] CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;] MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;] MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;] MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;] end subgraph Y2F[&#34;Year 2, Semester 1&#34;] direction LR CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;] CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;] CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;] CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;] CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;] end subgraph Y2S[&#34;Year 2, Semester 2&#34;] direction LR CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;] CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;] CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;] STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;] end CIS115 &lt;-.-&gt; CIS116 CIS116 ==&gt; CIS200 MCALC ==&gt; CIS200 CIS120 ==&gt; CIS220 CIS200 ==&gt; CIS300 MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300 MCALC -.-&gt;|&#34;either suffices&#34;| CIS300 CIS200 ==&gt; CIS301 CIS120 ==&gt; CIS320 CIS200 ==&gt; CIS320 CIS220 ==&gt; CIS320 CIS300 ==&gt; CIS400 CIS120 ==&gt; CIS400 CIS260 ==&gt; CIS400 MLOGIC -.-&gt; MCOUNT MRECMOD -.-&gt; MGRAPHS CIS116 -.-&gt; CIS260 CIS120 -.-&gt; CIS300 CIS220 -.-&gt; CIS300 CIS301 -.-&gt; CIS400 MRECMOD -.-&gt; CIS251 CIS115 -.-&gt; CIS141 CIS116 -.-&gt; CIS141 CIS260 -.-&gt; CIS141 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CIS116 wall; class CIS200,CIS120 mid; class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext; class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term; The central tension The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.">
     <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/internal-prerequisites/index.html">
     <meta property="og:site_name" content="CS Two Year Refactor">
     <meta property="og:title" content="Internal Prerequisite Analysis :: CS Two Year Refactor">
-    <meta property="og:description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the spiral’s interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.
-flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;is required by&#39;) subgraph B1[&#34;Block 1 - Read&#34;] direction LR CS101[&#34;CS-101&lt;br/&gt;Imperative Prog&lt;br/&gt;&lt;b&gt;blocks 20&lt;/b&gt;&#34;] CS102[&#34;CS-102&lt;br/&gt;Functional Prog&lt;br/&gt;&lt;b&gt;blocks 16&lt;/b&gt;&#34;] CS103[&#34;CS-103&lt;br/&gt;Computational Rep&lt;br/&gt;&lt;b&gt;blocks 12&lt;/b&gt;&#34;] MATH101[&#34;MATH-101&lt;br/&gt;Logic and Sets&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B2[&#34;Block 2 - Modify&#34;] direction LR CS104[&#34;CS-104&lt;br/&gt;Data Transformation&lt;br/&gt;&lt;b&gt;blocks 14&lt;/b&gt;&#34;] CS105[&#34;CS-105&lt;br/&gt;Code Reading/Repair&#34;] CS106[&#34;CS-106&lt;br/&gt;Web Foundations&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] MATH102[&#34;MATH-102&lt;br/&gt;Counting&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] end subgraph B3[&#34;Block 3 - Model&#34;] direction LR CS107[&#34;CS-107&lt;br/&gt;OOP I&lt;br/&gt;&lt;b&gt;blocks 11&lt;/b&gt;&#34;] CS108[&#34;CS-108&lt;br/&gt;OOP II&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS109[&#34;CS-109&lt;br/&gt;Abstract Data Types&lt;br/&gt;&lt;b&gt;blocks 7&lt;/b&gt;&#34;] MATH103[&#34;MATH-103&lt;br/&gt;Recursive/Modular&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B4[&#34;Block 4 - Structure&#34;] direction LR CS110[&#34;CS-110&lt;br/&gt;Trees/Hashing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS111[&#34;CS-111&lt;br/&gt;Systems and APIs&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] CS112[&#34;CS-112&lt;br/&gt;Algorithmic Complexity&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT101[&#34;STAT-101&lt;br/&gt;Descriptive Stats&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B5[&#34;Block 5 - Store&#34;] direction LR CS201[&#34;CS-201&lt;br/&gt;SQL Fundamentals&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS202[&#34;CS-202&lt;br/&gt;Database Design&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT102[&#34;STAT-102&lt;br/&gt;Probability&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B6[&#34;Block 6 - Build Responsibly&#34;] direction LR CS203[&#34;CS-204&lt;br/&gt;Software Testing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS204[&#34;CS-205&lt;br/&gt;Security Fund.&#34;] CS205[&#34;CS-206&lt;br/&gt;Collaborative Dev&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT103[&#34;STAT-103&lt;br/&gt;Distributions/Sampling&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] end subgraph B7[&#34;Block 7 - Judge&#34;] direction LR CS206[&#34;CS-207&lt;br/&gt;Graphs and Net Algorithms&#34;] CS207[&#34;CS-208&lt;br/&gt;Document DBs/Integration&#34;] MATH104[&#34;MATH-104&lt;br/&gt;Graphs/Trees/Networks&#34;] end subgraph B8[&#34;Block 8 - Operate&#34;] direction LR CS208[&#34;CS-210&lt;br/&gt;Deployment and Ops&#34;] CS209[&#34;CS-211&lt;br/&gt;Human-Centered Design&#34;] CS210[&#34;CS-212&lt;br/&gt;Data Analysis/Resp AI&#34;] STAT104[&#34;STAT-104&lt;br/&gt;Correlation/Regression&#34;] end CS101 ==&gt; CS102 CS101 ==&gt; CS103 CS101 ==&gt; CS104 CS102 ==&gt; CS104 CS101 ==&gt; CS105 CS102 ==&gt; CS105 CS101 ==&gt; CS106 CS103 ==&gt; CS107 CS104 ==&gt; CS107 CS107 ==&gt; CS108 CS107 ==&gt; CS109 CS109 --&gt; CS110 CS106 -.-&gt; CS111 CS109 --&gt; CS111 CS110 --&gt; CS112 CS104 ==&gt; CS201 CS201 --&gt; CS202 CS109 -.-&gt; CS202 CS108 -.-&gt; CS203 MATH103 -.-&gt; CS204 CS203 --&gt; CS205 CS110 -.-&gt; CS206 CS112 -.-&gt; CS206 CS202 -.-&gt; CS207 CS111 -.-&gt; CS208 CS205 -.-&gt; CS208 CS106 -.-&gt; CS209 CS201 -.-&gt; CS210 STAT101 -.-&gt; CS210 MATH101 --&gt; MATH102 MATH102 --&gt; MATH103 STAT101 --&gt; STAT102 STAT102 --&gt; STAT103 STAT103 -.-&gt; STAT104 MATH103 -.-&gt; MATH104 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CS107,CS104,CS101,CS102,CS103 wall; class CS109 mid; class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext; class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term; The central tension The spiral’s strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means early courses carry enormous downstream weight. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.">
+    <meta property="og:description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the course sequence’s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in resources/reference/degree-maps/cs.md).
+flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced. subgraph Y1F[&#34;Year 1, Semester 1&#34;] direction LR CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;] CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;] CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;] MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;] MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;] end subgraph Y1S[&#34;Year 1, Semester 2&#34;] direction LR CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;] CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;] CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;] MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;] MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;] MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;] end subgraph Y2F[&#34;Year 2, Semester 1&#34;] direction LR CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;] CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;] CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;] CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;] CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;] end subgraph Y2S[&#34;Year 2, Semester 2&#34;] direction LR CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;] CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;] CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;] STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;] end CIS115 &lt;-.-&gt; CIS116 CIS116 ==&gt; CIS200 MCALC ==&gt; CIS200 CIS120 ==&gt; CIS220 CIS200 ==&gt; CIS300 MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300 MCALC -.-&gt;|&#34;either suffices&#34;| CIS300 CIS200 ==&gt; CIS301 CIS120 ==&gt; CIS320 CIS200 ==&gt; CIS320 CIS220 ==&gt; CIS320 CIS300 ==&gt; CIS400 CIS120 ==&gt; CIS400 CIS260 ==&gt; CIS400 MLOGIC -.-&gt; MCOUNT MRECMOD -.-&gt; MGRAPHS CIS116 -.-&gt; CIS260 CIS120 -.-&gt; CIS300 CIS220 -.-&gt; CIS300 CIS301 -.-&gt; CIS400 MRECMOD -.-&gt; CIS251 CIS115 -.-&gt; CIS141 CIS116 -.-&gt; CIS141 CIS260 -.-&gt; CIS141 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CIS116 wall; class CIS200,CIS120 mid; class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext; class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term; The central tension The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="article">
     <meta property="article:section" content="Analyses">
-    <meta property="article:modified_time" content="2026-06-29T13:35:56-05:00">
+    <meta property="article:modified_time" content="2026-08-05T13:00:32-05:00">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta itemprop="name" content="Internal Prerequisite Analysis :: CS Two Year Refactor">
-    <meta itemprop="description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the spiral’s interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.
-flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;is required by&#39;) subgraph B1[&#34;Block 1 - Read&#34;] direction LR CS101[&#34;CS-101&lt;br/&gt;Imperative Prog&lt;br/&gt;&lt;b&gt;blocks 20&lt;/b&gt;&#34;] CS102[&#34;CS-102&lt;br/&gt;Functional Prog&lt;br/&gt;&lt;b&gt;blocks 16&lt;/b&gt;&#34;] CS103[&#34;CS-103&lt;br/&gt;Computational Rep&lt;br/&gt;&lt;b&gt;blocks 12&lt;/b&gt;&#34;] MATH101[&#34;MATH-101&lt;br/&gt;Logic and Sets&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B2[&#34;Block 2 - Modify&#34;] direction LR CS104[&#34;CS-104&lt;br/&gt;Data Transformation&lt;br/&gt;&lt;b&gt;blocks 14&lt;/b&gt;&#34;] CS105[&#34;CS-105&lt;br/&gt;Code Reading/Repair&#34;] CS106[&#34;CS-106&lt;br/&gt;Web Foundations&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] MATH102[&#34;MATH-102&lt;br/&gt;Counting&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] end subgraph B3[&#34;Block 3 - Model&#34;] direction LR CS107[&#34;CS-107&lt;br/&gt;OOP I&lt;br/&gt;&lt;b&gt;blocks 11&lt;/b&gt;&#34;] CS108[&#34;CS-108&lt;br/&gt;OOP II&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS109[&#34;CS-109&lt;br/&gt;Abstract Data Types&lt;br/&gt;&lt;b&gt;blocks 7&lt;/b&gt;&#34;] MATH103[&#34;MATH-103&lt;br/&gt;Recursive/Modular&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B4[&#34;Block 4 - Structure&#34;] direction LR CS110[&#34;CS-110&lt;br/&gt;Trees/Hashing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS111[&#34;CS-111&lt;br/&gt;Systems and APIs&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] CS112[&#34;CS-112&lt;br/&gt;Algorithmic Complexity&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT101[&#34;STAT-101&lt;br/&gt;Descriptive Stats&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;] end subgraph B5[&#34;Block 5 - Store&#34;] direction LR CS201[&#34;CS-201&lt;br/&gt;SQL Fundamentals&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;] CS202[&#34;CS-202&lt;br/&gt;Database Design&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT102[&#34;STAT-102&lt;br/&gt;Probability&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] end subgraph B6[&#34;Block 6 - Build Responsibly&#34;] direction LR CS203[&#34;CS-204&lt;br/&gt;Software Testing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;] CS204[&#34;CS-205&lt;br/&gt;Security Fund.&#34;] CS205[&#34;CS-206&lt;br/&gt;Collaborative Dev&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] STAT103[&#34;STAT-103&lt;br/&gt;Distributions/Sampling&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;] end subgraph B7[&#34;Block 7 - Judge&#34;] direction LR CS206[&#34;CS-207&lt;br/&gt;Graphs and Net Algorithms&#34;] CS207[&#34;CS-208&lt;br/&gt;Document DBs/Integration&#34;] MATH104[&#34;MATH-104&lt;br/&gt;Graphs/Trees/Networks&#34;] end subgraph B8[&#34;Block 8 - Operate&#34;] direction LR CS208[&#34;CS-210&lt;br/&gt;Deployment and Ops&#34;] CS209[&#34;CS-211&lt;br/&gt;Human-Centered Design&#34;] CS210[&#34;CS-212&lt;br/&gt;Data Analysis/Resp AI&#34;] STAT104[&#34;STAT-104&lt;br/&gt;Correlation/Regression&#34;] end CS101 ==&gt; CS102 CS101 ==&gt; CS103 CS101 ==&gt; CS104 CS102 ==&gt; CS104 CS101 ==&gt; CS105 CS102 ==&gt; CS105 CS101 ==&gt; CS106 CS103 ==&gt; CS107 CS104 ==&gt; CS107 CS107 ==&gt; CS108 CS107 ==&gt; CS109 CS109 --&gt; CS110 CS106 -.-&gt; CS111 CS109 --&gt; CS111 CS110 --&gt; CS112 CS104 ==&gt; CS201 CS201 --&gt; CS202 CS109 -.-&gt; CS202 CS108 -.-&gt; CS203 MATH103 -.-&gt; CS204 CS203 --&gt; CS205 CS110 -.-&gt; CS206 CS112 -.-&gt; CS206 CS202 -.-&gt; CS207 CS111 -.-&gt; CS208 CS205 -.-&gt; CS208 CS106 -.-&gt; CS209 CS201 -.-&gt; CS210 STAT101 -.-&gt; CS210 MATH101 --&gt; MATH102 MATH102 --&gt; MATH103 STAT101 --&gt; STAT102 STAT102 --&gt; STAT103 STAT103 -.-&gt; STAT104 MATH103 -.-&gt; MATH104 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CS107,CS104,CS101,CS102,CS103 wall; class CS109 mid; class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext; class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term; The central tension The spiral’s strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means early courses carry enormous downstream weight. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.">
-    <meta itemprop="dateModified" content="2026-06-29T13:35:56-05:00">
-    <meta itemprop="wordCount" content="1519">
+    <meta itemprop="description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the course sequence’s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in resources/reference/degree-maps/cs.md).
+flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced. subgraph Y1F[&#34;Year 1, Semester 1&#34;] direction LR CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;] CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;] CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;] MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;] MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;] end subgraph Y1S[&#34;Year 1, Semester 2&#34;] direction LR CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;] CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;] CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;] MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;] MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;] MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;] end subgraph Y2F[&#34;Year 2, Semester 1&#34;] direction LR CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;] CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;] CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;] CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;] CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;] end subgraph Y2S[&#34;Year 2, Semester 2&#34;] direction LR CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;] CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;] CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;] STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;] end CIS115 &lt;-.-&gt; CIS116 CIS116 ==&gt; CIS200 MCALC ==&gt; CIS200 CIS120 ==&gt; CIS220 CIS200 ==&gt; CIS300 MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300 MCALC -.-&gt;|&#34;either suffices&#34;| CIS300 CIS200 ==&gt; CIS301 CIS120 ==&gt; CIS320 CIS200 ==&gt; CIS320 CIS220 ==&gt; CIS320 CIS300 ==&gt; CIS400 CIS120 ==&gt; CIS400 CIS260 ==&gt; CIS400 MLOGIC -.-&gt; MCOUNT MRECMOD -.-&gt; MGRAPHS CIS116 -.-&gt; CIS260 CIS120 -.-&gt; CIS300 CIS220 -.-&gt; CIS300 CIS301 -.-&gt; CIS400 MRECMOD -.-&gt; CIS251 CIS115 -.-&gt; CIS141 CIS116 -.-&gt; CIS141 CIS260 -.-&gt; CIS141 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CIS116 wall; class CIS200,CIS120 mid; class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext; class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term; The central tension The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.">
+    <meta itemprop="dateModified" content="2026-08-05T13:00:32-05:00">
+    <meta itemprop="wordCount" content="1701">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <title>Internal Prerequisite Analysis :: CS Two Year Refactor</title>
     <link href="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/internal-prerequisites/index.html" rel="canonical" type="text/html" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
     <link href="/two-year-refactor/analyses/internal-prerequisites/index.xml" rel="alternate" type="application/rss+xml" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
     <link href="/two-year-refactor/analyses/internal-prerequisites/index.print.html" rel="alternate" type="text/html" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
     <link href="/two-year-refactor/analyses/internal-prerequisites/embed.html" rel="alternate" type="text/html" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
-    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1782783194" rel="stylesheet">
-    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search-lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search.min.js?1782783194" defer></script>
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1782783194";
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
     </script>
-    <script src="/two-year-refactor/js/lunr/lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet"></noscript>
-    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/theme.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/format-html.min.css?1782783194" rel="stylesheet" id="R-format-style">
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-html.min.css?1785952884" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -113,7 +113,7 @@ flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;i
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/two-year-refactor/css/custom.css?1782783194" rel="stylesheet">
+    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
   </head>
   <body class="mobile-support html" data-url="/two-year-refactor/analyses/internal-prerequisites/index.html">
     
@@ -134,147 +134,113 @@ flowchart TB %% Internal hard prerequisites of the two-year core (arrow = &#39;i
 <h1 id="internal-prerequisite-analysis">Internal Prerequisite Analysis</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. This analysis looks <strong>inside</strong> the two-year core — not the upper-division chains — at what the spiral&rsquo;s interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.</em></p></blockquote>
+<p><em>Working draft for faculty review. This analysis looks <strong>inside</strong> the two-year core — not the upper-division chains — at what the course sequence&rsquo;s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in <code>resources/reference/degree-maps/cs.md</code>).</em></p></blockquote>
 <pre class="mermaid align-center zoomable">
 flowchart TB
-  %% Internal hard prerequisites of the two-year core (arrow = &#39;is required by&#39;)
-  subgraph B1[&#34;Block 1 - Read&#34;]
+  %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced.
+  subgraph Y1F[&#34;Year 1, Semester 1&#34;]
     direction LR
-    CS101[&#34;CS-101&lt;br/&gt;Imperative Prog&lt;br/&gt;&lt;b&gt;blocks 20&lt;/b&gt;&#34;]
-    CS102[&#34;CS-102&lt;br/&gt;Functional Prog&lt;br/&gt;&lt;b&gt;blocks 16&lt;/b&gt;&#34;]
-    CS103[&#34;CS-103&lt;br/&gt;Computational Rep&lt;br/&gt;&lt;b&gt;blocks 12&lt;/b&gt;&#34;]
-    MATH101[&#34;MATH-101&lt;br/&gt;Logic and Sets&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;]
+    CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;]
+    CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;]
+    CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;]
+    MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;]
+    MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;]
   end
-  subgraph B2[&#34;Block 2 - Modify&#34;]
+  subgraph Y1S[&#34;Year 1, Semester 2&#34;]
     direction LR
-    CS104[&#34;CS-104&lt;br/&gt;Data Transformation&lt;br/&gt;&lt;b&gt;blocks 14&lt;/b&gt;&#34;]
-    CS105[&#34;CS-105&lt;br/&gt;Code Reading/Repair&#34;]
-    CS106[&#34;CS-106&lt;br/&gt;Web Foundations&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;]
-    MATH102[&#34;MATH-102&lt;br/&gt;Counting&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;]
+    CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;]
+    CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;]
+    CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;]
+    MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;]
+    MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;]
+    MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;]
   end
-  subgraph B3[&#34;Block 3 - Model&#34;]
+  subgraph Y2F[&#34;Year 2, Semester 1&#34;]
     direction LR
-    CS107[&#34;CS-107&lt;br/&gt;OOP I&lt;br/&gt;&lt;b&gt;blocks 11&lt;/b&gt;&#34;]
-    CS108[&#34;CS-108&lt;br/&gt;OOP II&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;]
-    CS109[&#34;CS-109&lt;br/&gt;Abstract Data Types&lt;br/&gt;&lt;b&gt;blocks 7&lt;/b&gt;&#34;]
-    MATH103[&#34;MATH-103&lt;br/&gt;Recursive/Modular&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;]
+    CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;]
+    CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;]
+    CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;]
+    CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;]
+    CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;]
   end
-  subgraph B4[&#34;Block 4 - Structure&#34;]
+  subgraph Y2S[&#34;Year 2, Semester 2&#34;]
     direction LR
-    CS110[&#34;CS-110&lt;br/&gt;Trees/Hashing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;]
-    CS111[&#34;CS-111&lt;br/&gt;Systems and APIs&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;]
-    CS112[&#34;CS-112&lt;br/&gt;Algorithmic Complexity&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;]
-    STAT101[&#34;STAT-101&lt;br/&gt;Descriptive Stats&lt;br/&gt;&lt;b&gt;blocks 4&lt;/b&gt;&#34;]
+    CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;]
+    CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;]
+    CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;]
+    STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;]
   end
-  subgraph B5[&#34;Block 5 - Store&#34;]
-    direction LR
-    CS201[&#34;CS-201&lt;br/&gt;SQL Fundamentals&lt;br/&gt;&lt;b&gt;blocks 3&lt;/b&gt;&#34;]
-    CS202[&#34;CS-202&lt;br/&gt;Database Design&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;]
-    STAT102[&#34;STAT-102&lt;br/&gt;Probability&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;]
-  end
-  subgraph B6[&#34;Block 6 - Build Responsibly&#34;]
-    direction LR
-    CS203[&#34;CS-204&lt;br/&gt;Software Testing&lt;br/&gt;&lt;b&gt;blocks 2&lt;/b&gt;&#34;]
-    CS204[&#34;CS-205&lt;br/&gt;Security Fund.&#34;]
-    CS205[&#34;CS-206&lt;br/&gt;Collaborative Dev&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;]
-    STAT103[&#34;STAT-103&lt;br/&gt;Distributions/Sampling&lt;br/&gt;&lt;b&gt;blocks 1&lt;/b&gt;&#34;]
-  end
-  subgraph B7[&#34;Block 7 - Judge&#34;]
-    direction LR
-    CS206[&#34;CS-207&lt;br/&gt;Graphs and Net Algorithms&#34;]
-    CS207[&#34;CS-208&lt;br/&gt;Document DBs/Integration&#34;]
-    MATH104[&#34;MATH-104&lt;br/&gt;Graphs/Trees/Networks&#34;]
-  end
-  subgraph B8[&#34;Block 8 - Operate&#34;]
-    direction LR
-    CS208[&#34;CS-210&lt;br/&gt;Deployment and Ops&#34;]
-    CS209[&#34;CS-211&lt;br/&gt;Human-Centered Design&#34;]
-    CS210[&#34;CS-212&lt;br/&gt;Data Analysis/Resp AI&#34;]
-    STAT104[&#34;STAT-104&lt;br/&gt;Correlation/Regression&#34;]
-  end
-  CS101 ==&gt; CS102
-  CS101 ==&gt; CS103
-  CS101 ==&gt; CS104
-  CS102 ==&gt; CS104
-  CS101 ==&gt; CS105
-  CS102 ==&gt; CS105
-  CS101 ==&gt; CS106
-  CS103 ==&gt; CS107
-  CS104 ==&gt; CS107
-  CS107 ==&gt; CS108
-  CS107 ==&gt; CS109
-  CS109 --&gt; CS110
-  CS106 -.-&gt; CS111
-  CS109 --&gt; CS111
-  CS110 --&gt; CS112
-  CS104 ==&gt; CS201
-  CS201 --&gt; CS202
-  CS109 -.-&gt; CS202
-  CS108 -.-&gt; CS203
-  MATH103 -.-&gt; CS204
-  CS203 --&gt; CS205
-  CS110 -.-&gt; CS206
-  CS112 -.-&gt; CS206
-  CS202 -.-&gt; CS207
-  CS111 -.-&gt; CS208
-  CS205 -.-&gt; CS208
-  CS106 -.-&gt; CS209
-  CS201 -.-&gt; CS210
-  STAT101 -.-&gt; CS210
-  MATH101 --&gt; MATH102
-  MATH102 --&gt; MATH103
-  STAT101 --&gt; STAT102
-  STAT102 --&gt; STAT103
-  STAT103 -.-&gt; STAT104
-  MATH103 -.-&gt; MATH104
+  CIS115 &lt;-.-&gt; CIS116
+  CIS116 ==&gt; CIS200
+  MCALC ==&gt; CIS200
+  CIS120 ==&gt; CIS220
+  CIS200 ==&gt; CIS300
+  MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300
+  MCALC -.-&gt;|&#34;either suffices&#34;| CIS300
+  CIS200 ==&gt; CIS301
+  CIS120 ==&gt; CIS320
+  CIS200 ==&gt; CIS320
+  CIS220 ==&gt; CIS320
+  CIS300 ==&gt; CIS400
+  CIS120 ==&gt; CIS400
+  CIS260 ==&gt; CIS400
+  MLOGIC -.-&gt; MCOUNT
+  MRECMOD -.-&gt; MGRAPHS
+  CIS116 -.-&gt; CIS260
+  CIS120 -.-&gt; CIS300
+  CIS220 -.-&gt; CIS300
+  CIS301 -.-&gt; CIS400
+  MRECMOD -.-&gt; CIS251
+  CIS115 -.-&gt; CIS141
+  CIS116 -.-&gt; CIS141
+  CIS260 -.-&gt; CIS141
   classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff;
   classDef mid fill:#9a3412,stroke:#fff,color:#fff;
   classDef ext fill:#1e3a5f,stroke:#fff,color:#fff;
   classDef term fill:#14532d,stroke:#fff,color:#fff;
-  class CS107,CS104,CS101,CS102,CS103 wall;
-  class CS109 mid;
-  class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext;
-  class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term;
+  class CIS116 wall;
+  class CIS200,CIS120 mid;
+  class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext;
+  class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term;
 </pre>
 <h2 id="the-central-tension">The central tension</h2>
-<p>The spiral&rsquo;s strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means <strong>early courses carry enormous downstream weight</strong>. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.</p>
-<p>This is not an argument against the design. It is an argument for building the <strong>policies and the competency mechanics</strong> that absorb messiness <em>before</em> launch, because the block structure is less forgiving than the 16-week courses it replaces.</p>
+<p>The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: <strong>CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk</strong> — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.</p>
+<p>This is still worth planning for — a student can fail a course, drop mid-term, or transfer in off-sequence, and those scenarios matter regardless of how narrow the risk is. But the severity to plan for is real and bounded, not sweeping.</p>
 <h2 id="the-dependency-facts">The dependency facts</h2>
-<p>The core contains roughly <strong>35 hard internal prerequisite edges</strong> (where a later course genuinely cannot be done without an earlier one), plus many softer spiral-continuity links. Sorted by how many blocks apart the two courses sit:</p>
+<p>The core contains <strong>13 hard internal prerequisite edges</strong> among real CIS/MATH courses, plus one corequisite pairing (CIS 115 ⇄ CIS 116) and a handful of soft spiral-continuity links that aren&rsquo;t registrar-enforced.</p>
 <table>
   <thead>
       <tr>
-          <th>Block gap</th>
+          <th>Semester gap</th>
           <th>Edges</th>
           <th>Nature</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>0 (same block)</td>
-          <td>7</td>
-          <td>Really <strong>corequisites</strong> taught in one 8-week block (e.g. OOP I → OOP II)</td>
+          <td>0 (same semester)</td>
+          <td>1</td>
+          <td>MATH 220 (Calculus I) → CIS 200, both Y1 Spring — a concurrent-enrollment-allowed prerequisite, not a hard sequential gate</td>
       </tr>
       <tr>
           <td>1</td>
-          <td>12</td>
-          <td>Adjacent-block dependencies — the normal spiral step</td>
+          <td>7</td>
+          <td>Adjacent-semester dependencies — CIS 116→CIS 200, CIS 120→CIS 220, CIS 200→{CIS 300, CIS 301, CIS 320}, CIS 220→CIS 320, MATH (Graphs/Trees/Maps or Calc I)→CIS 300</td>
       </tr>
       <tr>
-          <td>2–3</td>
-          <td>12</td>
-          <td>Medium-range (e.g. data transformation → SQL; OOP II → testing)</td>
+          <td>2</td>
+          <td>3</td>
+          <td>CIS 120→CIS 400, CIS 300→CIS 400, CIS 260→CIS 400 (all landing at the Y2 Spring capstone)</td>
       </tr>
       <tr>
-          <td>4–6</td>
-          <td>4</td>
-          <td>Long-range (e.g. web foundations → human-centered design, six blocks later)</td>
+          <td>3+</td>
+          <td>0</td>
+          <td>Nothing in the sequence reaches across more than two semesters as a hard prerequisite</td>
       </tr>
   </tbody>
 </table>
-<p><a href="#R-image-abc33c50b85a67b09dba939463e82767" class="lightbox-link"><img alt="Core Internal Prerequisites" class="border lazy lightbox figure-image" loading="lazy" src="/two-year-refactor/images/core_internal_prerequisites.svg" style=" height: auto; width: auto;"></a>
-<a href="javascript:history.back();" class="lightbox-back" id="R-image-abc33c50b85a67b09dba939463e82767"><img alt="Core Internal Prerequisites" class="border lazy lightbox lightbox-image" loading="lazy" src="/two-year-refactor/images/core_internal_prerequisites.svg"></a></p>
-<h2 id="blast-radius--the-load-bearing-walls">Blast radius — the load-bearing walls</h2>
+<p>Five courses have <strong>no stated prerequisite at all</strong>: CIS 260, CIS 225, CIS 251, CIS 141, and (unconfirmed either way) CIS 308. Three of those — CIS 225, CIS 251, CIS 308 — explicitly require instructor permission instead of a course prerequisite, a real gatekeeping mechanism in its own right.</p>
+<h2 id="blast-radius--the-load-bearing-courses">Blast radius — the load-bearing courses</h2>
 <p>The decisive measure is <strong>blast radius</strong>: if a course is failed or skipped, how many later courses are hard-blocked (transitively)?</p>
 <table>
   <thead>
@@ -285,61 +251,67 @@ flowchart TB
   </thead>
   <tbody>
       <tr>
-          <td>CS-101 Imperative Programming</td>
-          <td><strong>20</strong> of the remaining 29</td>
+          <td>CIS 116 — Introduction to Programming</td>
+          <td><strong>5</strong> (CIS 200, CIS 300, CIS 301, CIS 320, CIS 400)</td>
       </tr>
       <tr>
-          <td>CS-102 Functional Programming</td>
-          <td>16</td>
+          <td>CIS 200 — Programming Fundamentals</td>
+          <td>4 (CIS 300, CIS 301, CIS 320, CIS 400)</td>
       </tr>
       <tr>
-          <td>CS-104 Data Transformation</td>
-          <td>14</td>
+          <td>CIS 120 — Web Foundations</td>
+          <td>3 (CIS 220, CIS 320, CIS 400)</td>
       </tr>
       <tr>
-          <td>CS-103 Computational Representation</td>
-          <td>12</td>
+          <td>CIS 220 — Platform Programming</td>
+          <td>1 (CIS 320)</td>
       </tr>
       <tr>
-          <td>CS-107 OOP I</td>
-          <td>11</td>
+          <td>CIS 260 — Foundations of Relational Databases</td>
+          <td>1 (CIS 400)</td>
       </tr>
       <tr>
-          <td>CS-109 Abstract Data Types</td>
-          <td>7</td>
+          <td>CIS 300 — Data and Program Structures</td>
+          <td>1 (CIS 400)</td>
       </tr>
   </tbody>
 </table>
-<p>These six are the <strong>load-bearing walls</strong>. Failing CS-101 in week 8 of the first block can, in principle, block two-thirds of the entire CS spine. By contrast, the <strong>terminal courses carry zero downstream risk</strong> — CS-105, CS-205, CS-207, CS-208, CS-210, CS-211, CS-212, MATH-104, and STAT-104 hard-block nothing, so they can be repeated or deferred without cascade.</p>
-<p>The <strong>mathematics and statistics chains are linear and self-contained</strong>: each course blocks only its own successors plus, at the seams, the two CS courses with external-chain dependencies — CS-205 (needs MATH-103 for applied cryptography) and CS-212 (needs STAT-101 for data analysis). A broken math/stats chain delays those two CS courses but does not touch the rest of the CS spine.</p>
+<p><strong>CIS 116 is the single worst case, blocking 5 of the remaining 13 core courses</strong> — real, worth protecting, but a bounded risk, not a cascade across most of the program. <strong>CIS 115, CIS 301, CIS 320, CIS 400, CIS 225, CIS 251, CIS 141, CIS 308, and every MATH/STAT course carry zero downstream hard-block risk</strong> — more than half the core.</p>
+<p>Two structural reasons the risk stays this contained:</p>
+<ol>
+<li><strong>The core has relatively few courses</strong> — 14 CIS courses plus the MATH/STAT sequence — so there are simply fewer links in any given dependency chain.</li>
+<li><strong>Several courses stand outside the hard-prerequisite graph entirely</strong> — CIS 260, CIS 225, CIS 251, and CIS 141 have no stated prerequisite at all, either by design (broad-access intro-style courses) or because their prerequisite structure hasn&rsquo;t been finalized yet (see the open items below).</li>
+</ol>
+<h2 id="two-open-items-surfaced-while-building-this-analysis-not-resolved-here">Two open items surfaced while building this analysis, not resolved here</h2>
+<p>Checking every course&rsquo;s real <code>Course Prerequisites</code> section against what its content actually presupposes surfaced two cases where content and stated prerequisites don&rsquo;t quite line up. Both were checked with the user rather than assumed:</p>
+<ol>
+<li><strong>CIS 301 → CIS 400.</strong> CIS 400&rsquo;s confirmed testing/verification content thematically builds on CIS 301&rsquo;s &ldquo;verification formalized&rdquo; pass (<code>thread-correctness-verification.md</code>), but CIS 400&rsquo;s own prerequisites (CIS 300, CIS 120, CIS 260) don&rsquo;t include CIS 301. <strong>User&rsquo;s call: keep this as a soft/spiral-continuity link only</strong> (shown dotted in the diagram above), not a hard prerequisite — matches what <code>cis-400.md</code> actually states.</li>
+<li><strong>MATH Recursive and Modular Computation → CIS 251.</strong> <code>cs.md</code>&rsquo;s own CIS 251 entry says its applied-cryptography content builds on this course&rsquo;s modular arithmetic, &ldquo;correctly sequenced before this course&rdquo; — but CIS 251&rsquo;s own page lists no prerequisite at all. <strong>User&rsquo;s call: don&rsquo;t add it as a hard prerequisite in this diagram, but log it as a proposed addition</strong> — done, see the &ldquo;Proposed Changes&rdquo; section in <code>cis-251.md</code>.</li>
+</ol>
+<p>CIS 141 was also checked (it has no stated prerequisites despite thematic dependence on CIS 116/200/260&rsquo;s AI-practice progression and CIS 115&rsquo;s processor-architecture seed) — <strong>user&rsquo;s call: leave it prerequisite-free</strong>, matching its current drafted state exactly; shown with soft links only in the diagram.</p>
 <h2 id="the-messy-scenarios">The messy scenarios</h2>
-<h3 id="1-a-student-fails-a-high-radius-course-eg-cs-101">1. A student fails a high-radius course (e.g. CS-101)</h3>
-<p>This is the scenario that decides whether the structure is humane. The severity depends entirely on <strong>re-offering cadence</strong>:</p>
-<ul>
-<li>If foundational blocks run <strong>only annually</strong>, a failed CS-101 means the next attempt is a year away — and because CS-101 gates 20 courses, the student is effectively <strong>a year behind on the whole spine</strong>.</li>
-<li>If foundational blocks run <strong>every 8 weeks</strong>, the student retakes almost immediately and loses one block, not one year.</li>
-</ul>
-<p><strong>This re-offering cadence is the single pivotal feasibility question for the whole model</strong>, and it is a scheduling and faculty-load decision, not a curricular one. The curriculum cannot answer it; the department&rsquo;s capacity to staff repeated sections does.</p>
-<p>The structural escape hatch is the <strong>competency model</strong>. Because competencies belong to the program rather than to courses, a student who fails the <em>course</em> but can later <em>demonstrate the competency</em> could clear the downstream prerequisite without a full re-sit. This is where the competency-based design earns its keep — but only if the assessment system is explicitly built to allow re-demonstration. That places a <strong>concrete requirement on the (currently under-specified) assessment chapter</strong>: it must define how a competency is re-demonstrated outside its home course.</p>
-<h3 id="2-a-student-drops-mid-block-illness-in-week-4">2. A student drops mid-block (illness in week 4)</h3>
-<p>Eight-week blocks are <strong>less forgiving of disruption</strong> than 16-week courses: missing two weeks is 25% of an 8-week course&rsquo;s contact time, versus ~12% of a 16-week course. A three-week illness that a traditional course would survive with an incomplete can sink an 8-week block.</p>
-<p>Two things cut the other way. The <strong>1-credit granularity helps</strong> — the student loses one credit, not a four-credit course. And <strong>per-course (not per-block) incompletes</strong> would let a student finish one 1-credit piece later while keeping the rest. The recommendation: allow incompletes at the course, not block, level, and avoid making intra-block courses strictly sequential within the eight weeks where the dependency allows parallelism.</p>
+<h3 id="1-a-student-fails-a-high-radius-course-cis-116-or-cis-200">1. A student fails a high-radius course (CIS 116 or CIS 200)</h3>
+<p>This is the scenario that decides whether the structure is humane. CIS 116&rsquo;s failure blocks 5 downstream courses; CIS 200&rsquo;s blocks 4. The severity depends on <strong>re-offering cadence</strong> — if these Y1-Fall/Y1-Spring courses run only annually, a failed attempt still costs most of a year on a 5-course chain.</p>
+<p>The competency model is the structural escape hatch: because competencies belong to the program rather than the course, a student who fails CIS 116 or CIS 200 but can demonstrate the relevant competency could clear the downstream prerequisite without a full re-sit — but only if the (still under-specified, per the assessment chapter&rsquo;s own open items) re-demonstration mechanics are built.</p>
+<h3 id="2-a-student-drops-mid-term-illness-in-week-4">2. A student drops mid-term (illness in week 4)</h3>
+<p><code>cs.md</code> notes the degree map is &ldquo;reported in 16-week semesters, not 8-week blocks.&rdquo; But several individual 1-credit courses still run as <strong>8-week half-semester modules within that 16-week frame</strong>: confirmed for CIS 251 (its own drafted schedule is explicitly 8 weeks) and the MATH sequence (each pair of modules is explicitly &ldquo;first 8 weeks&rdquo; / &ldquo;second 8 weeks&rdquo; of its semester). Whether CIS 220, CIS 225, CIS 260, CIS 320, CIS 141, and CIS 308 follow the same pattern isn&rsquo;t confirmed — their schedules are mostly still TBD. So the core risk this scenario describes — a short illness costing a disproportionate share of an 8-week course&rsquo;s contact time — is <strong>real for at least some courses</strong>, though not uniform across the whole program.</p>
+<p>The 1-credit granularity helps: the student loses one credit, not a multi-credit course. Course-level (not term-level) incompletes are the right mitigation.</p>
 <h3 id="3-off-sequence-entry-spring-transfer-or-a-major-change-after-year-1">3. Off-sequence entry (spring transfer, or a major change after year 1)</h3>
-<p>The core is <strong>sequential and fall-started</strong>, which collides with a promise the design made elsewhere. &ldquo;Identical core across degrees → easy transfer&rdquo; is true for movement <em>between our own specializations</em> after the core. But transfer <em>into</em> the core mid-sequence — a spring transfer student, or someone switching into CS in year 2 — is made <strong>harder</strong> by the sequencing: if blocks only start in fall, a spring entrant can face up to a year of bench time before the spine even begins.</p>
-<p>Mitigations exist but each has a cost: a <strong>spring-start cohort</strong> (doubles section count), <strong>summer blocks</strong> (faculty load), or <strong>competency placement</strong> (test out of early blocks — again leaning on the assessment system). This deserves explicit attention because transfer-friendliness was a stated selling point, and sequencing quietly undercuts it.</p>
-<h3 id="4-intra-block-coupling-and-block-integrity">4. Intra-block coupling and block integrity</h3>
-<p>Seven of the hard edges are <em>within</em> a single block (CS-101 → CS-102/103, CS-107 → CS-108/109, CS-201 → CS-202). Taught in the same eight weeks, these are really <strong>coordinated corequisites</strong>, not prerequisites — fine when the block is taught as an integrated whole, but a real risk if different instructors teach the coupled 1-credit pieces without coordination (OOP II assumes OOP I; if the two sections drift, the dependency breaks). <strong>Block integrity therefore requires intra-block instructor coordination</strong> — a faculty-load and scheduling constraint that the curriculum diagram doesn&rsquo;t show but the schedule must.</p>
+<p>CIS 116 → CIS 200 → {CIS 300, CIS 301, CIS 320} → CIS 400 is a real, drafted four-semester chain a spring entrant would need to navigate. Mitigations: a spring-start cohort, summer offerings, or competency placement — each with its own cost (section count, faculty load, and assessment-system readiness, respectively).</p>
+<h3 id="4-the-cis-115--cis-116-corequisite">4. The CIS 115 ⇄ CIS 116 corequisite</h3>
+<p>The one real coupling risk in the current design: CIS 115 lists CIS 116 as a corequisite. If the two are taught by different instructors without coordination, the coupling could break — a single, specific, identifiable pairing to watch, not a program-wide pattern.</p>
 <h2 id="recommendations">Recommendations</h2>
 <ol>
-<li><strong>Protect the six load-bearing walls</strong> (CS-101, 102, 103, 104, 107, 109): offer them most frequently, give them priority tutoring/support, and make them the first courses for which competency re-demonstration is available.</li>
-<li><strong>Resolve the re-offering cadence</strong> for foundational blocks before launch — it is the pivotal feasibility unknown and determines whether a single failure costs a block or a year.</li>
-<li><strong>Specify competency re-demonstration</strong> in the assessment chapter — it is the structural escape hatch for failure, repeat, and placement, and it is currently unspecified.</li>
-<li><strong>Allow course-level (not block-level) incompletes</strong>, and avoid strict intra-block sequencing where the dependency permits parallel teaching.</li>
-<li><strong>Plan an off-sequence entry path</strong> (spring cohort, summer blocks, or placement) so the sequencing doesn&rsquo;t undercut the transfer-friendliness the design promises.</li>
-<li><strong>Treat block integrity as a staffing constraint</strong>: coupled intra-block courses need coordinated instruction, not just a shared time slot.</li>
+<li><strong>Protect CIS 116 and CIS 200</strong> (the only two real load-bearing courses): offer them most frequently, prioritize tutoring/support, and make them the first courses for which competency re-demonstration is available.</li>
+<li><strong>Resolve the re-offering cadence</strong> for CIS 116 and CIS 200 before launch — a scheduling/staffing decision.</li>
+<li><strong>Specify competency re-demonstration</strong> in the assessment chapter — the structural escape hatch for course failure, still flagged as needing definition.</li>
+<li><strong>Confirm which 1-credit courses actually run as 8-week half-semester modules</strong> (beyond the two confirmed cases, CIS 251 and the MATH pairs) before finalizing incomplete/withdrawal policy — this determines how real Scenario 2&rsquo;s risk is on a course-by-course basis.</li>
+<li><strong>Plan an off-sequence entry path</strong> — spring cohort, summer offerings, or placement.</li>
+<li><strong>Coordinate the CIS 115/CIS 116 corequisite</strong> explicitly if taught by different instructors.</li>
+<li><strong>Resolve the two open prerequisite items above</strong> — decide whether to formalize MATH Recursive and Modular Computation as a CIS 251 prerequisite (already logged as a proposed change in <code>cis-251.md</code>), and keep watching whether CIS 301&rsquo;s thematic role in CIS 400 stays informal as content gets drafted further.</li>
 </ol>
 <h2 id="bottom-line">Bottom line</h2>
-<p>The internal prerequisite structure is <strong>steep early and flat late</strong>: the first two blocks are load-bearing walls with blast radius up to 20, while year-2 courses mostly block nothing. That shape concentrates risk exactly where students are newest and most likely to stumble. The block-and-spiral design doesn&rsquo;t remove that risk — it sharpens it, because 8-week units are less forgiving than 16-week ones. The mitigations are real but they nearly all route through two things the project has flagged as unfinished: <strong>the re-offering cadence (a feasibility/staffing decision)</strong> and <strong>the competency-re-demonstration mechanics (an assessment-chapter decision)</strong>. The elegant spiral is sound; what it needs now is the unglamorous machinery that catches the student who falls off it.</p>
+<p>The internal prerequisite structure is genuinely resilient: 13 hard edges, a maximum blast radius of 5, and only two courses (CIS 116, CIS 200) carrying any real multi-course cascade risk. More than half the core — CIS 260, CIS 225, CIS 251, and CIS 141 among them — has no stated prerequisite at all, producing a shallow, resilient dependency graph rather than a tightly-coupled one. The mitigations this document recommends — re-offering cadence for the two real load-bearing courses, competency re-demonstration, confirming which courses actually run as 8-week modules, and an off-sequence entry path — are the unglamorous machinery that catches a student who stumbles, sized to the risk that&rsquo;s actually there.</p>
 
   <footer class="footline">
   </footer>
@@ -350,27 +322,27 @@ flowchart TB
       
       
     </div>
-    <script src="/two-year-refactor/js/js-yaml/js-yaml.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-color.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-dispatch.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-drag.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-ease.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-interpolate.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-selection.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-timer.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-transition.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-zoom.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/mermaid/mermaid.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/js-yaml/js-yaml.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-color.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-dispatch.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-drag.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-ease.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-interpolate.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-selection.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-timer.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-transition.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-zoom.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/mermaid/mermaid.min.js?1785952884" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/theme.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
       
       
       
     </div> 
-  <script src="/two-year-refactor/js/tele-scroll.min.js?1782783194" defer></script>
+  <script src="/two-year-refactor/js/tele-scroll.min.js?1785952884" defer></script>
   </body>
 </html>

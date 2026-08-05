@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 560 - Database System Concepts :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-560/index.html</link>
+    <description>Course Description Concepts, approaches, and techniques in database management. Representation of information as data, data storage techniques, foundations of logical data models, data retrieval, database design, transaction management, integrity and security.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md flags this “may become an elective,” and notes it as the elective-depth capstone on the computability arc seeded in CIS 115 and deepened in CIS 301 (P vs. NP, NP-completeness). It is also, as of the 2026-07-15 core-design regeneration, the only place in the degree map that still covers non-relational/NoSQL databases — that content was dropped from the required core as a confirmed, intentional scope reduction. See content/core-design/threads/thread-data-structures.md for the full note.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-560/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Kansas Mesonet :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/kansas-mesonet/index.html</link>
+    <description>Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.&#xA;What it is The Kansas Mesonet is K-State’s established, live, statewide network of weather observation platforms — precipitation, temperature, humidity, wind, solar radiation, soil conditions, and more. Unlike the plant-sensor API, it isn’t co-developed for this curriculum; K-State is pursuing a collaboration with the Mesonet team to expand its API, but the platform itself is external, existing infrastructure with its own operational priorities.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/kansas-mesonet/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

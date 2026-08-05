@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 598 - Computer Science Project :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-598/index.html</link>
+    <description>Course Description Directed studies: selection, investigation and report on some topic not covered in prior courses; may include an implementation and/or experimentation component; may be done in collaboration with other students. Completion of a plan, two reviews, and a final report with literature review and project evaluation.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md lists this as one of three choices (with CIS 643, DEN 591) for the Year 4 Capstone. This is distinct in purpose from CIS 400’s capstone-of-the-core: the Year 4 Capstone validates the whole degree plus specialization work, where CIS 400 validates the two-year core alone.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-598/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

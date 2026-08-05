@@ -3,7 +3,7 @@
   <channel>
     <title>Service: Geographic Information Systems &amp; Technology :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-gist/index.html</link>
-    <description>Working draft for faculty review. Maps the B.S. in Geographic Information Systems &amp; Technology Computational Core requirement onto the redesigned modular curriculum. Based on syllabi for CC 110, 210, 310, 315, 410, and 520 on file in resources/syllabai/. Course codes for the new core are placeholders.&#xA;Context The B.S. in Geographic Information Systems &amp; Technology (GIST) requires a Computational Core (CC) as its computing foundation — seven courses from K-State’s Computational Core sequence, plus a web fundamentals course:</description>
+    <description>Working draft for faculty review. Regenerated 2026-07-14 against the new course-container structure (resources/reference/degree-maps/cs.md) — the prior version of this analysis was written against the retired 8-week-block structure and is no longer current. Based on syllabi for CC 110, 210, 310, 315, 410, and 520 on file in resources/syllabai/; those facts are unchanged by this regeneration. Course codes for the new core are the working CIS numbers in cs.md; several are still placeholders (CIS XXX) pending official assignment.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-gist/index.xml" rel="self" type="application/rss+xml" />

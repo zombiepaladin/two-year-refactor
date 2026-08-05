@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Historical Archive :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/historical-archive/index.html</link>
+    <description>Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.&#xA;What it is A green-field replacement for a commercial tool the Chapman Center for Rural Studies (History department) currently uses and needs to move away from. Not yet built — a prior student-built prototype exists from a past web development course, but it was too closely modeled on the commercial platform it was replacing, and a cleaner rebuild is intended rather than a port.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/historical-archive/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

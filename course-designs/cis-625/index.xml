@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 625 - Concurrent Software Systems :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-625/index.html</link>
+    <description>Course Description Architecture, design, modeling, implementation, and verification of concurrent, parallel, and distributed software; aspects such as real-time programming, parallel simulation; fault-tolerant programming; grid computing, embedded systems control.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md lists this as one of three choices (with CIS 520, CIS 525) for the Year 4 Systems Elective, and confirms it as legitimate elective depth sitting on top of CIS 300’s required concurrent-algorithms/thread-safe-data-structures content — the same “required foundation, elective depth” pattern used elsewhere (e.g., CIS 560/575 on top of CIS 300/301).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-625/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

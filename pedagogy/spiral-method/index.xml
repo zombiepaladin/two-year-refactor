@@ -3,7 +3,7 @@
   <channel>
     <title>The Spiral Method :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/spiral-method/index.html</link>
-    <description>Working draft for faculty review. This page describes the pedagogical principles behind the curriculum’s spiral structure. For the block-by-block expression of those principles, see the block files in Chapter 1.&#xA;What a spiral curriculum is — and isn’t A spiral curriculum is one in which ideas recur — not as review, but as return. Each time a concept appears, the context is richer, the student’s tools are sharper, and the encounter goes deeper. The alternative is coverage: teach a topic once, test it, and move on. Coverage is efficient but brittle; the spiral is slower but builds genuine understanding.</description>
+    <description>Working draft for faculty review. This page describes the pedagogical principles behind the curriculum’s spiral structure. For the course-by-course expression of those principles, see the thread files in Chapter 1 (Core Design) and the course pages in Chapter 4 (Course Designs).&#xA;What a spiral curriculum is — and isn’t A spiral curriculum is one in which ideas recur — not as review, but as return. Each time a concept appears, the context is richer, the student’s tools are sharper, and the encounter goes deeper. The alternative is coverage: teach a topic once, test it, and move on. Coverage is efficient but brittle; the spiral is slower but builds genuine understanding.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/spiral-method/index.xml" rel="self" type="application/rss+xml" />

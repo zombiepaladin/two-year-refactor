@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 300 - Data and Program Structures :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-300/index.html</link>
+    <description>Course Description A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-300/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

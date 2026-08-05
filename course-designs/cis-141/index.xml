@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 141 - AI/Data Science :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-141/index.html</link>
+    <description>Course Description A new course created for the two-year core redesign — no existing K-State catalog entry.&#xA;Credit Hours 1 credit (per resources/reference/degree-maps/cs.md)&#xA;Course Overview Not yet drafted as a full syllabus. resources/reference/degree-maps/cs.md confirms this as the natural home for GPU and TPU content specifically, completing a CPU (seeded in CIS 115) → CPU-vs-GPU parallel execution contrast (CIS 200/300) → GPU/TPU-for-AI escalation: why AI/ML training leans on GPUs and TPUs (matrix-multiplication-heavy, data-parallel work these architectures accelerate directly). Conceptual/awareness-level, not a hardware-programming unit. This is also the confirmed terminal pass for the AI-Assisted Development bounded practice — see content/core-design/threads/practice-ai-assisted.md — where students critique AI-generated code for correctness and security as a prerequisite skill for the Year 3–4 Agentic AI specialization.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-141/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

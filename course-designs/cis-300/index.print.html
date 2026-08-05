@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="print">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.1">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="Course Description A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.">
+    <meta name="author" content="Russell Feldhausen">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta name="twitter:title" content="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <meta name="twitter:description" content="Course Description A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-300/index.html">
+    <meta property="og:site_name" content="CS Two Year Refactor">
+    <meta property="og:title" content="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <meta property="og:description" content="Course Description A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Course Designs">
+    <meta property="article:modified_time" content="2026-08-03T16:42:20-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta itemprop="name" content="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <meta itemprop="description" content="Course Description A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.">
+    <meta itemprop="dateModified" content="2026-08-03T16:42:20-05:00">
+    <meta itemprop="wordCount" content="925">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <title>CIS 300 - Data and Program Structures :: CS Two Year Refactor</title>
+    <link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-300/index.html" rel="canonical" type="text/html" title="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/cis-300/index.xml" rel="alternate" type="application/rss+xml" title="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/cis-300/tele.html" rel="alternate" type="text/html" title="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/cis-300/embed.html" rel="alternate" type="text/html" title="CIS 300 - Data and Program Structures :: CS Two Year Refactor">
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
+    </script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-print.min.css?1785952884" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/course-designs\/cis-300\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/two-year-refactor';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
+  </head>
+  <body class="mobile-support print" data-url="/two-year-refactor/course-designs/cis-300/index.html">
+    
+    <div id="tele" class="tele mirror">
+    
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      
+      
+      
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable course-designs" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="cis-300---data-and-program-structures">CIS 300 - Data and Program Structures</h1>
+
+<h2 id="course-description">Course Description</h2>
+<p>A study of common data and program structures together with associated algorithms. Topics include interfaces, design patterns, and common data structures (such as arrays, stacks, queues, lists, trees, graphs, hash tables), as well as common algorithms that utilize these structures. Students will gain experience with both use and implementation of these structures and algorithms using a modern programming language. Students will also learn the various tradeoffs involving performance and software maintainability in data structure choice.</p>
+<h2 id="credit-hours">Credit Hours</h2>
+<p>3 credits</p>
+<h2 id="course-overview">Course Overview</h2>
+<p>This course examines the fundamental data structures, algorithms, and software design principles used in modern computing. Students will learn to analyze, implement, and apply common data structures such as arrays, stacks, queues, lists, trees, graphs, hash tables and more, along with the algorithms that operate on them. Through hands-on programming experiences, students will explore interfaces, abstraction, and design patterns while developing solutions to computational problems and data structures. Emphasis is placed on evaluating algorithm efficiency, understanding performance tradeoffs, and selecting appropriate data structures to create efficient and maintainable software.</p>
+<h2 id="course-goals-and-learning-outcomes">Course Goals and Learning Outcomes</h2>
+<ol>
+<li>
+<p>Write programs which implement and use abstract and reference-type data structures, including, but not limited to:</p>
+<ul>
+<li>Strings and string parsing (and related structures like string builders)</li>
+<li>Lists and arrays</li>
+<li>Linked lists</li>
+<li>Stacks</li>
+<li>Queues and priority queues</li>
+<li>Trees (including, but not limited to binary search trees, AVL trees, and tries)</li>
+<li>Sets</li>
+<li>Hash tables</li>
+<li>Dictionaries</li>
+<li>Heaps</li>
+<li>Graphs</li>
+</ul>
+</li>
+<li>
+<p>Select and use appropriate data structures to solve real-world problems.</p>
+</li>
+<li>
+<p>Understand and explain how the performance of a program may change based on the data structure chosen.</p>
+</li>
+<li>
+<p>Implement and apply algorithms for searching, sorting, and manipulating a data structure.</p>
+</li>
+<li>
+<p>Understand and use fundamental algorithms for data structures listed in SLO #1, including, but not limited to:</p>
+<ul>
+<li>Standard sorting/search algorithms (e.g., insertion sort, merge sort, quicksort, etc.)</li>
+<li>Advanced sorting/searching algorithms (e.g., Dijkstra&rsquo;s algorithm, greedy algorithms, bucket sort, radix sort, etc.)</li>
+<li>Tree algorithms</li>
+<li>Graph algorithms</li>
+<li>Recursive and iterative algorithms</li>
+</ul>
+</li>
+<li>
+<p>Analyze performance differences and complexity between various algorithms and data structures as outlined in SLO #1.</p>
+</li>
+<li>
+<p>Utilize advanced object-oriented concepts, such as generics, interfaces, indexers, and enumerators, to implement or partially implement data structures.</p>
+</li>
+</ol>
+<h2 id="course-prerequisites">Course Prerequisites</h2>
+<p>The prerequisites for this course are CIS 200 and either DISCRETE MATH 4 or MATH 220. A grade of a C or better is required for each prerequisite.</p>
+<h2 id="required-textbooks-and-equipment">Required Textbooks and Equipment</h2>
+<p>Textbook will be freely available at textbooks.cs.ksu.edu.</p>
+<h2 id="grading">Grading</h2>
+<p>Grading Modality:  Graded (A, B, C, D, F, I)</p>
+<h2 id="course-schedule">Course Schedule</h2>
+<table>
+  <thead>
+      <tr>
+          <th>Week</th>
+          <th>Topics</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>1</td>
+          <td>Course Introduction, Development Environment, Source Control, File I/O Fundamentals</td>
+      </tr>
+      <tr>
+          <td>2</td>
+          <td>Strings, String Processing, Stack Applications</td>
+      </tr>
+      <tr>
+          <td>3</td>
+          <td>Stack Implementation, Queue Fundamentals, Queue Applications</td>
+      </tr>
+      <tr>
+          <td>4</td>
+          <td>Queue Implementations, Linked Lists, Dynamic Data Structures</td>
+      </tr>
+      <tr>
+          <td>5</td>
+          <td>Algorithm Analysis and Problem Solving with Lists</td>
+      </tr>
+      <tr>
+          <td>6</td>
+          <td>Exam 1, Dictionaries and Associative Data Structures</td>
+      </tr>
+      <tr>
+          <td>7</td>
+          <td>Dictionary Implementations, Arrays vs. Linked Structures, Introduction to Trees</td>
+      </tr>
+      <tr>
+          <td>8</td>
+          <td>Binary Search Trees, Tree Operations, Tree Traversals, Balanced Trees</td>
+      </tr>
+      <tr>
+          <td>9</td>
+          <td>Tries and Advanced Tree Structures</td>
+      </tr>
+      <tr>
+          <td>10</td>
+          <td>Trie Applications, Priority Queues, Huffman Coding</td>
+      </tr>
+      <tr>
+          <td>11</td>
+          <td>Exam 2, Hash Tables and Rehashing</td>
+      </tr>
+      <tr>
+          <td>12</td>
+          <td>Hashing Techniques, Equality, Memoization, Enumerators</td>
+      </tr>
+      <tr>
+          <td>13</td>
+          <td>Graph Fundamentals and Shortest Path Algorithms</td>
+      </tr>
+      <tr>
+          <td>14</td>
+          <td>Graph Implementations, Graph Algorithms, Exam 3, Elementary Sorting Algorithms</td>
+      </tr>
+      <tr>
+          <td>15</td>
+          <td>Advanced Sorting Algorithms, Merge Sort, Hybrid Sorting, Course Review</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="assignments">Assignments</h2>
+<p>Student performance is assessed through review quizzes, lab assignments, homework projects, and exams. Review quizzes help prepare students for upcoming labs and may be taken twice, with the higher score recorded. Weekly lab assignments provide hands-on programming experience and must be completed during the lab period for credit. Large programming homework assignments are completed throughout the semester, with the final assignment serving as a comprehensive project. Students will also complete coding-based exams. Together, these assessments emphasize preparation, participation, programming practice, and mastery of data structures and algorithms.</p>
+<h2 id="proposed-changes">Proposed Changes</h2>
+<ul>
+<li><strong>Spatial indexing (quadtrees, R-trees, geohashing).</strong> <code>thread-data-structures.md</code> (Data Structures &amp; Representation spiral) describes CIS 300 carrying an applied geospatial-representation touchpoint alongside the graph sub-spiral, riding on the trees/hashing content already in this course. Not currently in the schedule above — proposed as an addition to the Week 13-14 graph/hashing span rather than a displacement of existing content. Needs a course-designer/faculty decision on exact placement and whether it fits without growing the course&rsquo;s already-flagged density.</li>
+<li><strong>Client/server vehicle not reflected in this page.</strong> <code>cs.md</code> confirms (2026-07-13) this course&rsquo;s practice vehicle is a server layer in a client/server web architecture, deliberately paired with CIS 320 as the client side — but that&rsquo;s a program-specific implementation detail of <em>how</em> the data structures are exercised, not itself a catalog-facing learning outcome, so it&rsquo;s deliberately not spelled out in the description/schedule above the way a generic syllabus wouldn&rsquo;t name its specific project scaffolding. Noting it here so the omission reads as intentional rather than a stale/dropped design decision.</li>
+<li><strong>Reorder divide-and-conquer/sorting ahead of the graph unit.</strong> <code>thread-algorithmic.md</code> (Algorithmic Thinking &amp; Complexity spiral) describes a Step 2 → Step 3 escalation — design-pattern strategies (divide and conquer via mergesort, greedy algorithms, an introduction to dynamic programming) generalizing into Step 3&rsquo;s harder-structure optimization (shortest path/MST, graph algorithms). The real schedule above teaches it backwards: Week 15 (Advanced Sorting, Merge Sort) comes <em>after</em> Weeks 13-14&rsquo;s graph/shortest-path work, not before. Proposed: move the sorting-algorithms content (currently Week 15) to precede Week 13&rsquo;s graph unit, so mergesort&rsquo;s divide-and-conquer framing is available before shortest-path/MST is taught as a harder instance of the same design-pattern reasoning. Also worth naming greedy algorithms and dynamic programming/memoization explicitly wherever they land, since the current schedule only names &ldquo;memoization&rdquo; (Week 12, paired with hashing) without a clear DP framing. Needs a course-designer/faculty decision — this is a real reordering of confirmed content, not just an addition.</li>
+</ul>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+      
+      
+      
+    </div>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
+      
+      
+      
+    </div> 
+  <script src="/two-year-refactor/js/tele-scroll.min.js?1785952884" defer></script>
+  </body>
+</html>

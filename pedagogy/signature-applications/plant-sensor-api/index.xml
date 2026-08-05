@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classroom Plant-Sensor API :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/plant-sensor-api/index.html</link>
+    <description>Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.&#xA;What it is An instrumented-classroom project, led by Nathan: Raspberry Pi sensors in classrooms where the program is taught, publishing readings through a live JSON API. It is co-developed alongside the curriculum — capability requests from course design feed back into the project’s own roadmap, rather than the curriculum only consuming whatever already happens to exist.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/plant-sensor-api/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

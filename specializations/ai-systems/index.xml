@@ -3,7 +3,7 @@
   <channel>
     <title>A.I. Systems :: CS Two Year Refactor</title>
     <link>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/ai-systems/index.html</link>
-    <description>Working draft for faculty review. A proposal for an A.I. Systems specialization built on the shared two-year core, using real K-State courses. The catalog reveals a genuine undergraduate 500-level A.I. suite — the earlier worry that A.I. depth was graduate-only was mistaken. Core course codes are placeholders; CIS/STAT/MATH numbers are actual K-State courses.&#xA;Premise Under the specialization model, every degree is the identical two-year core plus a degree-specific upper division. A.I. is the most mathematics-dependent specialization; the core pre-positions students through several on-ramp threads, and K-State has real undergraduate A.I. courses to build the upper division.</description>
+    <description>Working draft for faculty review.&#xA;Premise The B.S. in Artificial Intelligence shares its first two years in full with the B.S. in Computer Science — the same core, course for course. The upper division is where the two degrees diverge: A.I. adds a dedicated sequence covering AI foundations, machine learning, knowledge engineering, and an applied domain, built primarily from K-State’s existing undergraduate CIS course suite together with a small number of new courses proposed alongside this degree.</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/specializations/ai-systems/index.xml" rel="self" type="application/rss+xml" />

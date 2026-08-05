@@ -2,71 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/abet-cs/index.html</loc>
-    <lastmod>2026-06-23T14:52:38-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-1/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-1-read/index.html</loc>
-    <lastmod>2026-06-29T20:33:02-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/computational-reasoning/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-1/cs-101/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-2/cs-104/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-3/cs-107/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-4/cs-110/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-5/cs-201/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-6/cs-204/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-7/cs-207/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-8/cs-210/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-data-structures/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/internal-prerequisites/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/overview/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competency-model/index.html</loc>
@@ -74,31 +30,19 @@
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/specialization-model/index.html</loc>
-    <lastmod>2026-06-23T14:52:38-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/spiral-method/index.html</loc>
-    <lastmod>2026-06-22T16:44:13-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-trustworthy-computing/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-2-modify/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-2/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-code-comprehension/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/index.html</loc>
@@ -109,303 +53,275 @@
     <lastmod>2026-06-21T19:29:55-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-1/cs-102/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-2/cs-105/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-3/cs-108/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-4/cs-111/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-5/cs-202/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-6/cs-205/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-7/cs-208/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-8/cs-211/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/cybersecurity/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/kstate-replacement/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-optimization/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/developmental-experiences/index.html</loc>
-    <lastmod>2026-06-22T16:44:13-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/signature-assessments/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/software-development/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-apis-networked/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-3-model/index.html</loc>
-    <lastmod>2026-06-22T22:15:30-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-3/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-1/cs-103/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-2/cs-106/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-3/cs-109/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-4/cs-112/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-5/cs-203/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-6/cs-206/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-7/cs-209/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-8/cs-212/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/data-and-information/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/data-science/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/ai-discipline/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/lens-professional-practices/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/recurring-assessments/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-computer-engineering/index.html</loc>
-    <lastmod>2026-06-22T22:15:30-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-5/stat-101/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-7/stat-103/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/ai-systems/index.html</loc>
-    <lastmod>2026-06-22T15:18:16-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-4-structure/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-4/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/curriculum-transition/index.html</loc>
-    <lastmod>2026-06-29T14:43:29-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-human-centered/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/lenses/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-1/math-101/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-2/math-102/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-3/math-103/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-4/math-104/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-gist/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/index.html</loc>
-    <lastmod>2026-06-22T16:44:13-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-6/stat-102/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-8/stat-104/index.html</loc>
-    <lastmod>2026-06-29T16:55:36-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-algorithmic/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/ap-cybersecurity/index.html</loc>
-    <lastmod>2026-06-29T13:45:43-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-5-store/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-5/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/plant-sensor-api/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/human-centered-practice/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/software-architecture/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/specializations/index.html</loc>
     <lastmod>2026-06-21T19:29:55-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/tallgrass/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/index.html</loc>
     <lastmod>2026-06-21T19:29:55-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-6-build-responsibly/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-6/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-computational-models/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/internal-prerequisites/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/kansas-mesonet/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/professional-practice/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/rhizome/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-7-judge/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-7/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
-  </url>
-  <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/chrysalis/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-correctness-verification/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/blocks/block-8-operate/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/data-visualization/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
-    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/block-8/index.html</loc>
-    <lastmod>2026-06-21T19:29:55-05:00</lastmod>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/service-digin/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-boundaries-contracts/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/historical-archive/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-sociotechnical/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/practice-ai-assisted/index.html</loc>
-    <lastmod>2026-06-29T13:35:56-05:00</lastmod>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/categories/index.html</loc>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-115/index.html</loc>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-116/index.html</loc>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-120/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-140/index.html</loc>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-141/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-142/index.html</loc>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-200/index.html</loc>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-220/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-225/index.html</loc>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-251/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-260/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-300/index.html</loc>
+    <lastmod>2026-08-03T16:42:20-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-301/index.html</loc>
+    <lastmod>2026-08-03T15:08:05-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-308/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-320/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-400/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-415/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-450/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-501/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-505/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-520/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-525/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-560/index.html</loc>
+    <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-575/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-598/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-625/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-643/index.html</loc>
+    <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/tags/index.html</loc>

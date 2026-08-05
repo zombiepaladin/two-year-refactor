@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Data-Visualization Tool (&#34;Where Did They Go?&#34;) :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/data-visualization/index.html</link>
+    <description>Working draft for faculty review. This page describes a real institutional asset, not a hypothetical example — see Signature Applications for why the program prefers real assets over invented ones.&#xA;What it is “Where Did They Go?” (repo: github.com/ksu-cs/development-project-ksds) is an active external project — Vue + JavaScript + D3.js frontend, Node.js backend, static JSON/GeoJSON data, MIT license, 12+ releases as of mid-2026. It’s a partnership between K-State CS and the Chapman Center for Rural Studies (History department), visualizing rural population migration in Kansas — county borders, rail/interstate infrastructure, Army Corps of Engineers lakes, town populations, hospitals, schools — with playback over time.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/pedagogy/signature-applications/data-visualization/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

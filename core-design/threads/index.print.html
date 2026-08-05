@@ -6,49 +6,49 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.148.1">
     <meta name="generator" content="Relearn 8.0.0">
-    <meta name="description" content="Nine spiraling threads and one bounded practice (AI-Assisted Development).">
+    <meta name="description" content="Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see ../overview.md.">
     <meta name="author" content="Russell Feldhausen">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta name="twitter:title" content="Threads :: CS Two Year Refactor">
-    <meta name="twitter:description" content="Nine spiraling threads and one bounded practice (AI-Assisted Development).">
+    <meta name="twitter:description" content="Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see ../overview.md.">
     <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/index.html">
     <meta property="og:site_name" content="CS Two Year Refactor">
     <meta property="og:title" content="Threads :: CS Two Year Refactor">
-    <meta property="og:description" content="Nine spiraling threads and one bounded practice (AI-Assisted Development).">
+    <meta property="og:description" content="Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see ../overview.md.">
     <meta property="og:locale" content="en_us">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta itemprop="name" content="Threads :: CS Two Year Refactor">
-    <meta itemprop="description" content="Nine spiraling threads and one bounded practice (AI-Assisted Development).">
-    <meta itemprop="dateModified" content="2026-06-21T19:29:55-05:00">
-    <meta itemprop="wordCount" content="9">
+    <meta itemprop="description" content="Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see ../overview.md.">
+    <meta itemprop="dateModified" content="2026-07-22T08:08:26-05:00">
+    <meta itemprop="wordCount" content="30">
     <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <title>Threads :: CS Two Year Refactor</title>
     <link href="https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/index.html" rel="canonical" type="text/html" title="Threads :: CS Two Year Refactor">
     <link href="/two-year-refactor/core-design/threads/index.xml" rel="alternate" type="application/rss+xml" title="Threads :: CS Two Year Refactor">
     <link href="/two-year-refactor/core-design/threads/tele.html" rel="alternate" type="text/html" title="Threads :: CS Two Year Refactor">
     <link href="/two-year-refactor/core-design/threads/embed.html" rel="alternate" type="text/html" title="Threads :: CS Two Year Refactor">
-    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1782783194" rel="stylesheet">
-    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search-lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/search.min.js?1782783194" defer></script>
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1782783194";
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
     </script>
-    <script src="/two-year-refactor/js/lunr/lunr.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1782783194" rel="stylesheet"></noscript>
-    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/theme.min.css?1782783194" rel="stylesheet">
-    <link href="/two-year-refactor/css/format-print.min.css?1782783194" rel="stylesheet" id="R-format-style">
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-print.min.css?1785952884" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -107,7 +107,7 @@
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/two-year-refactor/css/custom.css?1782783194" rel="stylesheet">
+    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
   </head>
   <body class="mobile-support embed print" data-url="/two-year-refactor/core-design/threads/index.html">
     <div id="R-body" class="default-animation">
@@ -124,7 +124,7 @@
 
 <h1 id="threads">Threads</h1>
 
-<p>Nine spiraling threads and one bounded practice (AI-Assisted Development).</p>
+<p>Eight spiraling threads and one bounded practice (AI-Assisted Development). Two related cross-cutting norms (concurrency, networked-computing) are documented in the Program Overview rather than as standalone thread files — see <code>../overview.md</code>.</p>
 
   <footer class="footline">
   </footer>
@@ -138,59 +138,70 @@
 <h1 id="data-structures--representation">Data Structures &amp; Representation</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
 <p><strong>In one line:</strong> From the most primitive representation to the most general, each pass a genuine generalization — with graphs spiraling as a strand within.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>The strongest spiral in the design. Each pass is a real generalization, not a harder repeat. After B3 it is taught contract-first (ADT interface before implementation), which lets B4 ask &lsquo;how do we choose among implementations of the same contract?&rsquo; Graphs are a deliberate sub-spiral inside this thread (B3 model → B4 represent+theory → B5 persist → B7 algorithms) rather than a single terminal pass. Geospatial data rides the thread as an applied representation sub-theme (B3 vector/raster representation → B4 spatial indexing via trees/hashing), which also deepens the GIS service relationship.</p>
+<p>The strongest spiral in the design. Each pass is a real generalization, not a harder repeat. After the ADT pass it is taught contract-first (interface before implementation), which lets the next pass ask &ldquo;how do we choose among implementations of the same contract?&rdquo; Graphs are a deliberate sub-spiral inside this thread (model → represent + theory → algorithms) rather than a single terminal pass. Geospatial data rides the thread as an applied representation sub-theme (vector/raster representation → spatial indexing via trees/hashing), which also deepens the GIS service relationship. A tree-shaped structure is also met informally, twice, before CIS 300 gives it a name: the DOM in CIS 120, deepened in CIS 220.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1 (Y1 Fall)</td>
-          <td>CS-103 Computational Representation</td>
-          <td>Bits, booleans, numbers — the most primitive representation.</td>
+          <td><strong>CIS 115</strong> (Y1 Fall) — Introduction to Computing Science</td>
+          <td>Bits, booleans, numbers — the most primitive representation. Carries the former Computational Representation content (binary, Boolean logic, a simplified float format, register-level state).</td>
       </tr>
       <tr>
-          <td>B3 (Y1 Spring)</td>
-          <td>CS-109 Abstract Data Types</td>
-          <td>Linear structures (lists, stacks, queues) as ADTs — contract first, implementation hidden. Graph sub-spiral begins: graphs as a MODEL for relationship-structured data. Geospatial representation seed: points/lines/polygons (vector) and rasters (grids).</td>
+          <td><strong>CIS 120</strong> (Y1 Fall) — Web Foundations</td>
+          <td>First informal encounter with a tree-shaped structure: the Document Object Model, navigated and manipulated with no formal &ldquo;tree&rdquo; vocabulary yet — just the intuition that a page&rsquo;s content has hierarchical shape.</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-110 Trees, Hashing &amp; Hierarchies + MATH-104</td>
-          <td>Hierarchical/associative structure; contracts continue. Graph sub-spiral: representing and building graphs (adjacency list/matrix — the matrix also seeds basic linear algebra), basic traversal. MATH-104 concurrent: formal graph theory (graphs, trees, networks) as students begin the graph sub-spiral. Spatial indexing as applied trees/hashing: quadtrees, R-trees, geohashing.</td>
+          <td><strong>CIS 200</strong> (Y1 Spring) — Programming Fundamentals</td>
+          <td>Collections and iterators used informally, ahead of CIS 300&rsquo;s formal ADT treatment — arrays/lists as containers, iteration over them, functional-style data transformation (map/filter/reduce-style operations) applied to collections. Carries content originally scoped as separate data-transformation and computational-abstractions courses.</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-201/202 + graph DB</td>
-          <td>Relational data as a formal, queryable model. Graph sub-spiral: a brief touch of a graph database (Neo4j/Cypher) as another persistent store alongside relational.</td>
+          <td><strong>CIS 220</strong> (Y1 Spring) — Platform Programming</td>
+          <td>Deepens the CIS 120 DOM touch: programmatically manipulating a platform&rsquo;s structured content/state model, still ahead of CIS 300&rsquo;s formal tree ADTs.</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207/207</td>
-          <td>Graph sub-spiral capstone: graph algorithms, landing on several blocks of prior graph use. Document/NoSQL: representation when the relational model doesn&rsquo;t fit — closes the loop.</td>
+          <td><strong>MATH — Graphs, Trees, and Maps</strong> (Y1 Spring)</td>
+          <td>Formal graph theory (graphs, trees, networks), positioned the semester before CIS 300&rsquo;s hands-on graph work — a deliberate theory-then-practice sequence, not concurrent as originally planned.</td>
+      </tr>
+      <tr>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
+          <td>Relational data as a formal, queryable model.</td>
+      </tr>
+      <tr>
+          <td><strong>CIS 300</strong> (Y2 Fall) — Data and Program Structures</td>
+          <td>Linear structures (lists, stacks, queues) as ADTs — contract first, implementation hidden. Hierarchical/associative structure (trees, hashing). Graph sub-spiral begins: graphs as a model for relationship-structured data, then representing and building them (adjacency list/matrix — the matrix also seeds basic linear algebra), basic traversal. Spatial indexing as applied trees/hashing (quadtrees, R-trees, geohashing) is a <strong>proposed addition, not yet in the confirmed course schedule</strong> — see the &ldquo;Proposed Changes&rdquo; section of <code>cis-300.md</code>. This is a dense pass — see the density note below.</td>
+      </tr>
+      <tr>
+          <td><strong>CIS 300</strong> (Y2 Fall), continued</td>
+          <td>Graph sub-spiral capstone: graph algorithms (shortest path, MST), landing on the representation and traversal work earlier in the same course.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Hands off to Algorithmic Thinking at B4 (same contract, different cost). Carries Boundaries &amp; Contracts from B3. The graph sub-spiral opens with MATH-104 concurrent at B4 — formal theory lands at the same block as the first hands-on graph representation work.</li>
+<li><strong>CIS 301</strong> revisits arrays through a correctness-verification lens (loop invariants, global invariants over array state) — the same structure this thread builds, now reasoned about formally instead of built. See the Correctness &amp; Verification thread.</li>
+<li><strong>CIS 141</strong> revisits the CIS 300 matrix/graph representation from a different angle: matrices as the core data structure for AI/ML (tensors), reinforcing the linear-algebra seed planted when adjacency matrices were introduced.</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>Confirm contract-first ADT teaching is acceptable as the thread&rsquo;s style.</li>
-<li>The graph database (Neo4j) touch at B5 is genuinely new content — small, embedded, but an addition to a lean block.</li>
+<li><strong>CIS 300 density, confirmed acceptable (2026-07-15).</strong> This thread&rsquo;s ADT, hierarchical-structure, and full graph sub-spiral (model → represent → algorithms) all land in one 3-credit course, alongside algorithmic design patterns (see the Algorithmic Thinking &amp; Complexity thread). User&rsquo;s explicit call: controlled through scaffolding and coverage depth, not by displacing content elsewhere — flagged for the later credit-optimization pass, same treatment as CIS 115/260&rsquo;s existing density flags.</li>
+<li><strong>Document/NoSQL representation no longer closes the loop for every student.</strong> The original design closed this thread with a required touch on document/NoSQL representation (&ldquo;when the relational model doesn&rsquo;t fit&rdquo;). That content has no home in the required core — confirmed 2026-07-15 that this is an intentional scope reduction, not an oversight (see <code>resources/design-log.md</code>). It now lives only in the CIS 560 elective. This thread&rsquo;s escalation is genuinely narrower for students who don&rsquo;t take that elective: relational is the terminal formal model they see. Flag for the competency/ABET mapping pass if &ldquo;exposure to multiple data models&rdquo; was assumed as universal coverage anywhere.</li>
+<li><strong>Graph-database touch (Neo4j) — still an open placement question, not yet a course-designer decision.</strong> A brief graph-database touch, alongside the CIS 300 graph algorithms pass, was proposed as small additional content. Given CIS 260 is already flagged as dense and this doesn&rsquo;t have a confirmed course host, treat as unplaced rather than assumed-covered.</li>
+<li><strong>Contract-first ADT teaching, confirmed (2026-08-03).</strong> CIS 300&rsquo;s actual week-by-week schedule bears this out directly: applications precede implementations at every ADT pass (Stack Applications wk2 → Stack Implementation wk3; Queue Fundamentals/Applications wk3 → Queue Implementations wk4; Dictionaries wk6 → Dictionary Implementations wk7).</li>
+<li><strong>Spatial indexing (quadtrees, R-trees, geohashing) — not actually in CIS 300, confirmed a gap (2026-08-03).</strong> Neither the real CIS 300 schedule nor <code>cs.md</code>&rsquo;s degree-map entry for CIS 300 ever included this content; the claim in this thread&rsquo;s pass table was aspirational, not built. Logged as a proposed addition in <code>cis-300.md</code>&rsquo;s own &ldquo;Proposed Changes&rdquo; section pending a course-designer/faculty placement decision.</li>
+<li><strong>CIS 200&rsquo;s collections/iterators touch, added 2026-08-03 — confirm it stays genuinely informal.</strong> CIS 200&rsquo;s SLO 5 (&ldquo;collection classes and iterators&rdquo;) is real, confirmed content, but its course schedule is still TBD, so there&rsquo;s no way yet to confirm it stays a light, informal preview rather than drifting into territory CIS 300 is supposed to formalize a semester later. Revisit once CIS 200&rsquo;s schedule is drafted.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -202,116 +213,49 @@
 <h1 id="code-comprehension">Code Comprehension</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
 <p><strong>In one line:</strong> Understanding programs — your own and others&rsquo; — from &lsquo;make it work&rsquo; to &lsquo;defend it under scrutiny.&rsquo;</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>The lens shifts each pass rather than just raising difficulty: produce → understand others&rsquo; → organize → verify → defend. (Renamed from the slash-name &lsquo;Program Correctness / Code Comprehension&rsquo;; the through-line is comprehension of programs.)</p>
+<p>The lens shifts each pass rather than just raising difficulty: produce → understand others&rsquo; → organize → reason about → defend.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1 (Y1 Fall)</td>
-          <td>CS-101/102</td>
-          <td>Write small correct programs across two paradigms; &ldquo;make it work.&rdquo;</td>
+          <td><strong>CIS 116</strong> (Y1 Fall) — Introduction to Programming</td>
+          <td>Write small correct programs across the paradigms it introduces (imperative and functional, with the same widgets carried forward from the original design); &ldquo;make it work.&rdquo; Also a first, informal comprehension touch in the same course — SLO 4 is explicitly &ldquo;read, interpret, and modify existing computer programs,&rdquo; ahead of CIS 200&rsquo;s formal Code Archaeology pass.</td>
       </tr>
       <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-105 Code Reading &amp; Repair</td>
-          <td>Read others&rsquo; code, explain unfamiliar behavior (Code Archaeology); &ldquo;understand before judging.&rdquo;</td>
+          <td><strong>CIS 200</strong> (Y1 Spring) — Programming Fundamentals</td>
+          <td>Read others&rsquo; code, explain unfamiliar behavior — the thread&rsquo;s signature &ldquo;Code Archaeology&rdquo; assessment; &ldquo;understand before judging.&rdquo; Encapsulation/abstraction as comprehension tools (tied to the course&rsquo;s OOP introduction) and functional-pattern formalization (map/filter/reduce): organize so intent is legible.</td>
       </tr>
       <tr>
-          <td>B3 (Y1 Spring)</td>
-          <td>CS-107 Software Modeling and Design / CS-108 Computational Abstractions</td>
-          <td>Encapsulation/abstraction as comprehension tools; organize so intent is legible.</td>
+          <td><strong>CIS 301</strong> (Y2 Fall) — Logical Foundations of Programming</td>
+          <td>Reason systematically about whether code does what it should — this course&rsquo;s own confirmed purpose is deepening propositional/predicate logic into program verification, a natural extension of comprehension into formal reasoning.</td>
       </tr>
       <tr>
-          <td>B6 (Y2 Fall)</td>
-          <td>CS-204 Correctness work</td>
-          <td>Reason systematically about whether code does what it should.</td>
-      </tr>
-      <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207/207 Design Review</td>
-          <td>Defend your understanding and choices under scrutiny.</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>Defend your understanding and choices under scrutiny — a live walkthrough / architecture defense is the course&rsquo;s actual assessment mechanism, not spec-compliance alone. <strong>Confirmed real design intent, not yet in the drafted course page (2026-08-03).</strong> Verified against <code>resources/design-log.md</code> — genuinely decided, not invented — but not yet reflected in <code>cis-400.md</code>&rsquo;s own Topics/Schedule/Assignments, which are still generic/TBD. See the new &ldquo;Confirmed Design Intent&rdquo; section added to that page.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Code Archaeology (B2) is the signature assessment this thread builds toward. Adjacent to Correctness &amp; Verification (reasoning about code) and Professional Practices (documentation as explanation).</li>
+<li>Code Archaeology (CIS 200) is the signature assessment this thread builds toward. Adjacent to Correctness &amp; Verification (reasoning about code) and Professional Practices (documentation as explanation).</li>
+<li><strong>CIS 141</strong> applies this thread&rsquo;s terminal &ldquo;defend under scrutiny&rdquo; skill to a narrower, specific case: critiquing AI-generated code for correctness and security, the confirmed prerequisite skill for the Year 3-4 Agentic AI specialization. Owned by the AI-Assisted Development practice (<code>practice-ai-assisted.md</code>) as its own terminal pass, not claimed here as a separate escalation step.</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>None outstanding; coherent in the original architecture.</li>
+<li>None outstanding; coherent in the current course mapping.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
-
-  <footer class="footline">
-  </footer>
-</article>
-<article class="default">
-  <header class="headline">
-  </header>
-
-<h1 id="apis--networked-systems">APIs &amp; Networked Systems</h1>
-
-<blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
-<p><strong>In one line:</strong> Consume → build → integrate multiple → operate in production.</p>
-<hr>
-<h2 id="character">Character</h2>
-<p>A clean four-pass escalation in what the student does with a networked boundary.</p>
-<h2 id="passes-across-the-two-years">Passes across the two years</h2>
-<table>
-  <thead>
-      <tr>
-          <th>Block</th>
-          <th>Host context</th>
-          <th>What&rsquo;s new at this pass</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-106 Web Foundations</td>
-          <td>Consume a basic, read-only API.</td>
-      </tr>
-      <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-111 Systems &amp; APIs</td>
-          <td>Build and consume your own API; system structure across a network boundary.</td>
-      </tr>
-      <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-208 Data Integration</td>
-          <td>Integrate multiple sources — combine, not just call.</td>
-      </tr>
-      <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-210 Deployment &amp; Operations</td>
-          <td>Operate a live service in production.</td>
-      </tr>
-  </tbody>
-</table>
-<h2 id="connections">Connections</h2>
-<ul>
-<li>The network boundary is the B4 pass of Boundaries &amp; Contracts. If OSI Networking Fundamentals is adopted, it becomes the theory this practical thread applies.</li>
-</ul>
-<h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
-<ol>
-<li>OSI Networking Fundamentals placement and credits remain deferred to cross-block optimization.</li>
-</ol>
-<hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -323,59 +267,59 @@
 <h1 id="human-centered-computing">Human-Centered Computing</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
 <p><strong>In one line:</strong> Computing in service of human needs: design FOR, communicate TO, and validate WITH people — perceive → represent → comprehend → defend → fitness-for-purpose.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Renamed and rescoped from the old HCI thread. Carries two embedded throughlines (accessibility + data visualization) and now owns validation-with-users (acceptance testing, A/B testing), which is the &lsquo;is it what they needed&rsquo; question — distinct from the &lsquo;is it correct&rsquo; question that Correctness &amp; Verification keeps.</p>
+<p>Carries two embedded throughlines (accessibility + data visualization) and owns validation-with-users (acceptance testing, A/B testing), which is the &ldquo;is it what they needed&rdquo; question — distinct from the &ldquo;is it correct&rdquo; question that Correctness &amp; Verification keeps.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-106 Web Foundations</td>
+          <td><strong>CIS 120</strong> (Y1 Fall) — Web Foundations</td>
           <td>Accessibility basics + visual hierarchy as human comprehension (PERCEIVE).</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-111 (embedded)</td>
-          <td>Honest data visualization — represent data for humans (REPRESENT).</td>
+          <td><strong>CIS 140</strong> (semester not yet confirmed in <code>cs.md</code>) — Foundations of Artificial Intelligence</td>
+          <td>SLO 4 explicitly requires &ldquo;introductory data analysis tools to explore and visualize datasets&rdquo; — a real, confirmed visualization touchpoint, pending this course&rsquo;s formal addition to the degree map (see open questions).</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-202 (embedded)</td>
-          <td>Visualization as investigation — comprehend data (COMPREHEND).</td>
+          <td><strong>CIS 320</strong> (Y2 Fall) — User Experience Development</td>
+          <td>Honest data visualization — represent data for humans (REPRESENT), on the client side of the CIS 300/320 pairing. <strong>Proposed addition, not yet in CIS 320&rsquo;s drafted content</strong> — see the &ldquo;Proposed Changes&rdquo; section of <code>cis-320.md</code>.</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207/207 Design Review</td>
-          <td>Defend human-facing choices; introduce ACCEPTANCE CRITERIA (what makes this acceptable to the user?).</td>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
+          <td>SQL as an investigation tool — writing queries to find, filter, and summarize real-world data to answer questions (COMPREHEND). Not a visualization touchpoint; the course&rsquo;s actual content is query-writing only.</td>
       </tr>
       <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-211 Human-Centered Design &amp; Validation</td>
-          <td>Formal requirements gathering + UX + ACCEPTANCE TESTING + A/B TESTING — design from others&rsquo; needs and prove you met them (FITNESS).</td>
+          <td><strong>CIS 320</strong> (Y2 Fall), continued</td>
+          <td>Formal, bounded exposure to acceptance-criteria and A/B-testing process work (FITNESS) — every student gets this once. <code>cs.md</code> is explicit that a <em>full</em> acceptance-testing deep dive is deliberately deferred to a Software Architecture specialization elective instead, not duplicated here.</td>
+      </tr>
+      <tr>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>Defend human-facing choices under scrutiny — applying, not introducing, the acceptance-criteria concept CIS 320 already gave every student.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Data-viz throughline converges with the Trustworthy Computing lens (honest charts). At B8 it sits beside Correctness &amp; Verification — two kinds of &ldquo;does it work&rdquo; (fitness vs correctness) converge but answer different questions.</li>
+<li>Data-viz throughline converges with the Trustworthy Computing lens (honest charts). CIS 400&rsquo;s defend pass sits beside Correctness &amp; Verification — two kinds of &ldquo;does it work&rdquo; (fitness vs correctness) converge but answer different questions.</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
 <li>Data visualization is embedded, never a course slot — confirm faculty can see/assess it.</li>
 <li>Confirm the two throughlines (accessibility + data viz) read clearly as one thread.</li>
+<li><strong>CIS 320 density, sharpened (2026-08-03).</strong> It now carries the data-visualization (REPRESENT, proposed) and acceptance-testing (FITNESS, confirmed) passes on a 1-credit course — worth watching alongside the program&rsquo;s other density flags (CIS 115, CIS 260, CIS 300), though smaller in scale than those. The visualization content is still only proposed, not drafted, so this will get more concrete once <code>cis-320.md</code> is fleshed out.</li>
+<li><strong>CIS 140 and CIS 142 are confirmed real, separate courses (2026-08-03) but are missing from <code>cs.md</code> entirely</strong> — unlike CIS 141 and CIS 251, which are both confirmed there. Neither has a semester, credit-hour, or prerequisite entry in the degree map yet. This thread&rsquo;s CIS 140 pass can&rsquo;t be placed with real confidence in the two-year sequence until that&rsquo;s resolved — flagged as a needed follow-up for whoever owns <code>cs.md</code> (course-designer/packaging-mapper territory), not something to guess here.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -387,63 +331,56 @@
 <h1 id="algorithmic-thinking--complexity">Algorithmic Thinking &amp; Complexity</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
 <p><strong>In one line:</strong> From Big-O as a diagnosis tool, to structural cost, to design patterns, to graph optimization, to a real bottleneck under load.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Its first pass moved from B3 to B4 so it can answer the question B3&rsquo;s contract-first ADTs raise: how do you choose among implementations of the same contract? Closely shadowed by the Optimization Reasoning lens. Geospatial algorithms ride the graph pass at B7 (road-network routing is graph shortest-path). The B8 pass surfaces a key limit: systems reality (memory hierarchy, paging/thrashing) can invert asymptotic predictions — Big-O is necessary but not sufficient.</p>
+<p>Closely shadowed by the Optimization Reasoning lens. Geospatial algorithms ride the graph pass (road-network routing is graph shortest-path). The final pass surfaces a key limit: systems reality (memory hierarchy, paging/thrashing) can invert asymptotic predictions — Big-O is necessary but not sufficient. Three consecutive escalation steps — structural-cost formalization, design-pattern strategy, and graph optimization — now land inside the same course (CIS 300) rather than three separate ones; see the density note under Open Questions.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-105 Code Reading &amp; Repair</td>
-          <td>Big-O introduced <strong>conceptually</strong> as a diagnosis tool: &ldquo;how does cost grow with input size?&rdquo; — recognized while reading and repairing slow code (nested loops, repeated scans). Memory architecture introduced conceptually: stack vs heap, structural choices carry memory cost. No formal notation at this pass.</td>
+          <td><strong>CIS 116</strong> (Y1 Fall) — Introduction to Programming</td>
+          <td>Informal seed, ahead of CIS 200&rsquo;s conceptual introduction: its own CSC1010 transfer SLOs require &ldquo;designing and implementing basic algorithms&rdquo; and &ldquo;structured problem-solving techniques to decompose complex problems and develop effective, efficient solutions&rdquo; — efficiency-consciousness without any formal cost language yet.</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-110 Trees, Hashing &amp; Hierarchies</td>
-          <td>Big-O <strong>formalized</strong> as the cost of structural choices: O(log n) tree operations vs O(n) unsorted scan; O(1) amortized hash table access — choosing among ADT contract-satisfying implementations (handoff from B3). Sorting/searching as canonical examples. Memory layout: tree nodes vs contiguous arrays at conceptual level; full cache mechanics deferred to B8.</td>
+          <td><strong>CIS 200</strong> (Y1 Spring) — Programming Fundamentals</td>
+          <td>Big-O introduced <strong>conceptually</strong> as a diagnosis tool: &ldquo;how does cost grow with input size?&rdquo; — recognized while reading and repairing slow code (nested loops, repeated scans). Memory architecture introduced conceptually: stack vs heap, structural choices carry memory cost. No formal notation at this pass. <strong>Partially unconfirmed:</strong> CIS 200&rsquo;s schedule is still TBD; its drafted SLOs support a general efficiency emphasis (SLO 6) but don&rsquo;t yet confirm this specific framing.</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-112 Algorithmic Design Patterns</td>
-          <td><strong>Design</strong> strategies, not just measurement. Divide and conquer (mergesort, binary search; recurrence relations as analysis tool — builds on MATH-103 B3 recursion). Greedy algorithms (when local optima compose — Dijkstra previewed). Introduction to dynamic programming (memoization as the insight). Vocabulary CS-207 assumes.</td>
+          <td><strong>CIS 300</strong> (Y2 Fall) — Data and Program Structures</td>
+          <td><em>Step 1:</em> Big-O <strong>formalized</strong> as the cost of structural choices — O(log n) tree operations vs O(n) unsorted scan; O(1) amortized hash table access — choosing among ADT contract-satisfying implementations. Sorting/searching as canonical examples. <em>Step 2:</em> <strong>Design</strong> strategies, not just measurement — divide and conquer (mergesort, binary search; recurrence relations as analysis tool, building on the recursion formalized in MATH — Recursive and Modular Computation), greedy algorithms (when local optima compose — Dijkstra previewed), an introduction to dynamic programming (memoization as the insight). <em>Step 3:</em> Design patterns applied to harder structures — shortest path/MST as explicit optimization; geospatial algorithms (road-network routing, spatial joins and nearest-neighbor/range queries using the spatial indexes from the data-structures pass). <strong>Confirmed gap (2026-08-03):</strong> the real 15-week schedule only weakly supports Steps 2-3 — &ldquo;memoization&rdquo; appears once (wk12, not framed as DP), &ldquo;Shortest Path Algorithms&rdquo; appears (wk13), but greedy algorithms, explicit dynamic programming, and geospatial algorithms are never named. Worse, the real order is backwards: mergesort/advanced sorting lands at wk15, <em>after</em> the wk13-14 graph unit, reversing this row&rsquo;s Step-2-before-Step-3 claim. Proposed fix (reorder sorting ahead of graphs, name greedy/DP explicitly) logged in <code>cis-300.md</code>&rsquo;s &ldquo;Proposed Changes&rdquo; section, pending a course-designer/faculty decision.</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-201 SQL Fundamentals</td>
-          <td>Applied to query optimization — indexes, query plans, the cost of a full-table scan vs an indexed lookup. The query planner does the complexity reasoning; students read it.</td>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
+          <td>Applied to query optimization — indexes, query plans, the cost of a full-table scan vs an indexed lookup. The query planner does the complexity reasoning; students read it. <strong>Proposed addition, not yet in CIS 260&rsquo;s confirmed content</strong> — its real 8-module schedule is query-writing only (SELECT/JOIN/subqueries/design), with no indexing or query-plan content. See the &ldquo;Proposed Changes&rdquo; section of <code>cis-260.md</code>.</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207 Graphs &amp; Network Algorithms</td>
-          <td>Design patterns applied to harder structures; shortest path/MST as explicit optimization. Geospatial algorithms: road-network routing (Dijkstra, A*), spatial joins and nearest-neighbor/range queries using B4 spatial indexes.</td>
-      </tr>
-      <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-210 Deployment &amp; Operations</td>
-          <td>Complexity reasoning meets a real deployed bottleneck. The memory hierarchy (cache misses, and — the dramatic case — virtual memory, paging, THRASHING) can TRUMP Big-O: good locality can beat better asymptotics. Asymptotic analysis is necessary but not sufficient. Requires the virtual-memory grounding.</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>Complexity reasoning meets a real deployed bottleneck. The memory hierarchy (cache misses, and — the dramatic case — virtual memory, paging, thrashing) can trump Big-O: good locality can beat better asymptotics. Asymptotic analysis is necessary but not sufficient. <strong>Unconfirmed:</strong> CIS 400&rsquo;s schedule is still TBD, so this pass can&rsquo;t yet be checked against real content.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>The Optimization Reasoning lens names the optimization character of the B7/B8 passes. B8 converges with Computational Models (why slow under concurrent load).</li>
+<li>The Optimization Reasoning lens names the optimization character of the CIS 300 design-pattern/graph passes and the CIS 400 pass. CIS 400 converges with Computational Models (why slow under concurrent load).</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>Recursion is needed informally (B3/B4) before MATH-103 formalizes it (B3 in the new external pacing) — now well-aligned; confirm.</li>
+<li><strong>CIS 300 density, confirmed acceptable (2026-07-15).</strong> This thread now runs three consecutive escalation steps (structural-cost formalization, design-pattern strategy, graph optimization) inside one 3-credit course, on top of the Data Structures thread&rsquo;s own load there. User&rsquo;s explicit call: controlled through scaffolding and coverage depth, not by displacing content elsewhere — same flag as the Data Structures thread carries.</li>
+<li>Recursion is needed informally before MATH — Recursive and Modular Computation formalizes it — confirm the CIS 300 / math sequencing stays well-aligned now that both moved off the old block calendar.</li>
+<li><strong>CIS 300&rsquo;s Step 2/3 content confirmed thinner than described, and out of order (2026-08-03).</strong> See the CIS 300 row above — real schedule doesn&rsquo;t name greedy algorithms, dynamic programming, or geospatial algorithms, and teaches sorting <em>after</em> graphs rather than before. Proposed reordering logged in <code>cis-300.md</code>; needs a course-designer/faculty decision, not just a wording fix, since it&rsquo;s a real content-sequencing change.</li>
+<li><strong>CIS 260&rsquo;s query-optimization pass confirmed unbuilt (2026-08-03).</strong> Logged as a proposed addition in <code>cis-260.md</code>&rsquo;s &ldquo;Proposed Changes&rdquo; section — same open scope-vs-density question as the spatial-indexing and data-visualization proposals elsewhere in the core (this is a 1-credit intro-SQL course already thin on room).</li>
+<li><strong>CIS 200 and CIS 400 passes unconfirmed, not contradicted (2026-08-03).</strong> Both courses&rsquo; schedules are still TBD. Revisit this thread once real schedules exist for either.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -455,68 +392,63 @@
 <h1 id="computational-models">Computational Models</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the flagship spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
-<p><strong>In one line:</strong> The landscape of ways to express computation — imperative, functional, declarative, concurrent — with &lsquo;how does each model handle failure&rsquo; woven through.</p>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the flagship spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
+<p><strong>In one line:</strong> The landscape of ways to express computation — imperative, functional, declarative, dataflow, logic/constraint — with &lsquo;how does each model handle failure&rsquo; woven through.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>FLAGSHIP. Reframed so the spine is the TAXONOMY of models rather than control flow (which it had drifted into). Error-handling is now a cross-cutting PROPERTY of each model, not the spine. Genuinely uncommon undergraduate content — most programs teach imperative + try/catch as the only model and never surface declarative, dataflow, logic/constraint, or actor models. The model taxonomy: imperative, functional, declarative (markup/query/logic-constraint), concurrent/reactive, and dataflow (data flowing through transformation stages). A message-queue/event-loop through-line unifies the concurrent/reactive/actor family — met concretely in the browser (B2), generalized to OS message passing and actor mailboxes (B8).</p>
+<p>FLAGSHIP. The spine is the TAXONOMY of models, not control flow. Error-handling is a cross-cutting property of each model, not the spine. Genuinely uncommon undergraduate content — most programs teach imperative + try/catch as the only model and never surface declarative, dataflow, or logic/constraint models.</p>
+<p><strong>Refactored 2026-07-15: concurrency content moved out.</strong> This thread previously carried a full concurrency arc of its own (goroutine-inspired seeds, event-loop mechanics, OS process/thread formalization, the actor model). That&rsquo;s now owned by the <strong><code>concurrency</code> cross-cutting norm</strong> (see the Program Overview) instead of duplicated here — concurrency is paired to concept-introduction points across many courses from day one, not confined to a handful of passes inside this one thread. This is a de-duplication, not a content cut: nothing about the ABET operating-systems/parallel-computing exposure was lost in the move, because <code>cs.md</code>&rsquo;s own coverage-check work already anchors that exposure independently (CIS 220&rsquo;s browser-as-mini-OS framing for OS, CIS 200/300&rsquo;s woven-in parallel-processing content for parallel/distributed) — see the Correctness &amp; Verification and norm documentation for the current anchor, not this thread.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1 (Y1 Fall)</td>
-          <td>CS-101/102 / CS-103</td>
-          <td>IMPERATIVE (steps that change state) &amp; FUNCTIONAL (composition of transformations). Errors as ordinary (read a stack trace). Execution-model seed: a running program is a PROCESS the OS schedules (the grounding the concurrent models will need).</td>
+          <td><strong>CIS 116</strong> (Y1 Fall) — Introduction to Programming</td>
+          <td>IMPERATIVE (steps that change state) &amp; FUNCTIONAL (composition of transformations), using the same widgets carried forward from the original design, with RECURSION given two explicit angles on the same worked function (call-stack effects vs. what it lets you express without a mutable accumulator). Errors as ordinary (read a stack trace). Some of this introduction may shift to CIS 115 — not yet decided which pieces (see <code>resources/design-log.md</code>, 2026-07-15).</td>
       </tr>
       <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-106 / CS-104</td>
-          <td>DECLARATIVE introduced (HTML/CSS: state what, not how) + CONCURRENT/REACTIVE (async/event-loop). DATAFLOW seeded: transformation pipelines (parse → filter → reshape) as proto-dataflow. The event loop processes a QUEUE of callbacks/events — first encounter with message-queue mechanics; the browser as a MINI-OS (scheduling, origin isolation, workers, postMessage) is a concrete on-ramp to the OS concepts at B8. Failure looks different across models.</td>
+          <td><strong>CIS 120</strong> (Y1 Fall) — Web Foundations</td>
+          <td>DECLARATIVE introduced: HTML/CSS states <em>what</em>, not <em>how</em>.</td>
       </tr>
       <tr>
-          <td>B3 (Y1 Spring)</td>
-          <td>CS-107 Software Modeling and Design / CS-108 Computational Abstractions</td>
-          <td>OOP as a named model (CS-107); exceptions introduced as the mechanism for signaling boundary/contract violations (try/catch named, CS-107); map/filter/reduce and functional patterns formalized (CS-108).</td>
+          <td><strong>CIS 200</strong> (Y1 Spring) — Programming Fundamentals</td>
+          <td>DATAFLOW seeded: transformation pipelines (parse → filter → reshape) as proto-dataflow. OOP named as a model, with exceptions (try/catch) introduced as the mechanism for signaling boundary/contract violations. Map/filter/reduce and functional patterns formalized — explicitly as a comparison point against the course&rsquo;s OOP focus, reflecting that the languages actually taught blend all three paradigms.</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-111 Systems &amp; APIs</td>
-          <td>DATAFLOW named: web-server request pipelines (parse → auth → route → handle → serialize → respond) and D3 data-join/method-chaining (client-side) — computation as data flowing through stages. Network failures/timeouts — errors you don&rsquo;t control.</td>
+          <td><strong>CIS 300 / CIS 320</strong> (Y2 Fall)</td>
+          <td>DATAFLOW named at system scale: CIS 300&rsquo;s server-side request pipeline (parse → auth → route → handle → serialize → respond) and CIS 320&rsquo;s client-side data-join/method-chaining pattern — computation as data flowing through stages, now across a network boundary rather than within one program. <strong>Not visible in either course&rsquo;s drafted page (2026-08-03), confirmed intentional:</strong> the client/server vehicle is program-specific project scaffolding, not a catalog-facing outcome, so <code>cis-300.md</code>&rsquo;s description/schedule don&rsquo;t spell it out the way a generic syllabus wouldn&rsquo;t — noted in its &ldquo;Proposed Changes&rdquo; section so the omission reads as deliberate. CIS 320 has no drafted schedule yet to check against.</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-201 SQL</td>
-          <td>DECLARATIVE QUERYING (SQL = the same &lsquo;state what, not how&rsquo; idea as HTML, now for data). Transactional rollback (a failure model).</td>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
+          <td>DECLARATIVE QUERYING: SQL is the same &ldquo;state what, not how&rdquo; idea as HTML, now for data. Transactional rollback as a failure model. <strong>Rollback content is a proposed addition, not yet in CIS 260&rsquo;s confirmed content</strong> — see the &ldquo;Proposed Changes&rdquo; section of <code>cis-260.md</code>.</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207 (light)</td>
-          <td>LOGIC &amp; CONSTRAINT models — see and explore a small example (a few Prolog-style facts/rules + a query, or a small constraint problem a solver resolves).</td>
+          <td><strong>CIS 301</strong> (Y2 Fall) — Logical Foundations of Programming <em>(placement not yet confirmed — see below)</em></td>
+          <td>LOGIC &amp; CONSTRAINT models — see-and-explore depth (a few Prolog-style facts/rules and a query, or a small constraint problem a solver resolves). <strong>Confirmed absent from the real course (2026-08-03):</strong> CIS 301&rsquo;s drafted content is purely formal logic/proof/verification (propositional/predicate logic, induction, program-correctness proofs) — no Prolog or constraint-solver material anywhere. Strengthens, doesn&rsquo;t change, open question #1 below.</td>
       </tr>
       <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-210 Deployment &amp; Operations</td>
-          <td>OS grounding makes the concurrent-model choice meaningful: processes vs threads (shared vs isolated memory), preemptive (OS threads) vs cooperative (green threads) scheduling, and MESSAGE QUEUES / IPC — generalizing the B2 browser event loop (the browser was a mini-OS all along). Actor mailboxes ARE message queues, tying the actor model to its substrate. The ACTOR MODEL named explicitly (Erlang/OTP). Fault-tolerance compared: try/catch vs actor/supervision vs circuit-breaker. (Without the process/thread grounding, these are vocabulary, not a reasoned choice.)</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>EVENT-DRIVEN / DATAFLOW revisited at project scale: &ldquo;Event-based programming&rdquo; is a confirmed topic in CIS 400&rsquo;s course-design page, alongside its OOP/testing focus — a capstone-level return to the dataflow/event model in the context of a real, non-trivial project rather than a single-course exercise.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Declarative passes (HTML B2, SQL B5) connect to Boundaries &amp; Contracts (a contract is declarative about behavior). Logic/constraint (B7) connects to Trustworthy Computing&rsquo;s predicate logic and the Optimization lens. The concurrent models (B8) rest on programmer-facing OS grounding (processes, threads, scheduling) seeded at B1 — this also supplies the ABET operating-systems exposure. B8 converges with Algorithmic Thinking (slow under load) and Sociotechnical (blameless postmortem).</li>
+<li>Declarative passes (CIS 120, CIS 260) connect to Boundaries &amp; Contracts (a contract is declarative about behavior). Logic/constraint connects to Trustworthy Computing&rsquo;s predicate logic and the Optimization lens.</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>The logic/constraint example (B7) and actor naming (B8) are small new content — confirm they fit at conceptual/see-and-explore depth in 1-credit courses.</li>
+<li><strong>Logic/constraint placement in CIS 301 is soft, not confirmed — and confirmed absent from the real course (2026-08-03).</strong> <code>cs.md</code>&rsquo;s own CIS 301 entry flags this as unresolved: whether to introduce logic programming (Prolog-style) as real practiced instruction, keep it at the lighter &ldquo;see and explore&rdquo; touch, or whether Prolog belongs in the core&rsquo;s language stack at all. CIS 301&rsquo;s actual drafted content contains no logic-programming or constraint-solver material at all, which is consistent with &ldquo;not yet decided&rdquo; but means the row above is aspirational, not built. Don&rsquo;t read the table row above as settled.</li>
+<li><strong>Deep OS/concurrency formalization&rsquo;s new home is unconfirmed.</strong> A final pass covering process/thread formalization, preemptive vs. cooperative scheduling, the actor model, and fault-tolerance comparison doesn&rsquo;t have a clear successor course. CIS 220 now carries the required ABET OS-<em>exposure</em> anchor at a lighter level (&ldquo;browser as mini-OS&rdquo;), and CIS 400 absorbed general deployment/operations content — but whether the deeper theoretical generalization (processes vs. threads, actor model) still gets taught anywhere, or was intentionally narrowed to CIS 220&rsquo;s exposure-level treatment, hasn&rsquo;t been decided. Flag for <code>course-designer</code> when CIS 400 and the Systems Elective are actually built out.</li>
+<li>Confirm the original interactive widgets this thread relies on carry over into CIS 116 without displacing existing content there, given CIS 116 is also the confirmed landing point for the thread&rsquo;s own competency-assessment artifacts (see the design log, 2026-07-15).</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -528,58 +460,53 @@
 <h1 id="correctness--verification">Correctness &amp; Verification</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
 <p><strong>In one line:</strong> Does the code do what it&rsquo;s specified to do? — informal reasoning → regression → testing and verification, named and contrasted.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Sharpened to CODE-CORRECTNESS only. Acceptance/fitness testing moved to Human-Centered Computing; this thread answers &lsquo;is it correct,&rsquo; that one answers &lsquo;is it what they needed.&rsquo; Testing and verification are dual-tracked (testing checks specific cases; verification reasons about all cases). Practice precedes formal naming.</p>
+<p>Code-correctness only. Acceptance/fitness testing lives in Human-Centered Computing; this thread answers &ldquo;is it correct,&rdquo; that one answers &ldquo;is it what they needed.&rdquo; Testing and verification are dual-tracked (testing checks specific cases; verification reasons about all cases). Practice precedes formal naming.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1 (Y1 Fall)</td>
-          <td>CS-101/102 (embedded)</td>
-          <td>Asserts/logs to explore code; informal pre/post-condition reasoning.</td>
+          <td><strong>CIS 116</strong> (Y1 Fall) — Introduction to Programming (embedded)</td>
+          <td>Asserts/logs to explore code; informal pre/post-condition reasoning. <strong>Unconfirmed (2026-08-03):</strong> CIS 116&rsquo;s Topics/Assignments are still TBD, so this can&rsquo;t yet be checked against real content.</td>
       </tr>
       <tr>
-          <td>B2 (Y1 Fall)</td>
-          <td>CS-105 Code Reading &amp; Repair</td>
-          <td>Tests for regression — verify a change didn&rsquo;t break prior function.</td>
+          <td><strong>CIS 200</strong> (Y1 Spring) — Programming Fundamentals</td>
+          <td>Tests for regression — verify a change didn&rsquo;t break prior function. Testing habits continue to be woven in at each subsequent programming-track course. <strong>Unconfirmed (2026-08-03):</strong> CIS 200&rsquo;s schedule is still TBD; its SLO 4 confirms general testing as part of class design, but not the specific regression framing.</td>
       </tr>
       <tr>
-          <td>B3 (Y1 Spring)</td>
-          <td>CS-109 Abstract Data Types</td>
-          <td>Recursion correctness (termination, base cases); contracts as pre/post-conditions made into design.</td>
+          <td><strong>CIS 300</strong> (Y2 Fall) — Data and Program Structures</td>
+          <td>Recursion correctness (termination, base cases); contracts as pre/post-conditions made into design, tied to the ADT introduction. <strong>Confirmed via SLO, not a named week (2026-08-03):</strong> CIS 300&rsquo;s SLO 5 explicitly lists &ldquo;recursive and iterative algorithms,&rdquo; but recursion isn&rsquo;t a dedicated schedule unit — it&rsquo;s folded into the tree/graph/sorting weeks rather than called out on its own.</td>
       </tr>
       <tr>
-          <td>B6 (Y2 Fall)</td>
-          <td>CS-204 (correctness work)</td>
-          <td>Testing AND verification named and contrasted: &ldquo;testing shows the presence of bugs; verification can show their absence.&rdquo;</td>
+          <td><strong>CIS 301</strong> (Y2 Fall) — Logical Foundations of Programming</td>
+          <td><strong>Verification, formalized.</strong> This course&rsquo;s confirmed purpose is deepening propositional/predicate logic into program verification — giving every student at least a brush with formal verification, and depth for interested students to pursue further. Testing and verification named and contrasted: &ldquo;testing shows the presence of bugs; verification can show their absence.&rdquo;</td>
       </tr>
       <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-210 (harder cases)</td>
-          <td>Both applied to deployed systems (still code-correctness; fitness lives in Human-Centered Computing).</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>Testing, formalized (the course&rsquo;s full title retains &ldquo;…and Testing&rdquo;), applied to deployed systems — still code-correctness; fitness lives in Human-Centered Computing.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Pre/post-condition reasoning (B1) becomes Boundaries &amp; Contracts at B3. Converges with Trustworthy Computing at B6. At B8, sits beside Human-Centered Computing&rsquo;s acceptance/A-B testing — correctness vs fitness.</li>
+<li>Pre/post-condition reasoning (CIS 116) becomes Boundaries &amp; Contracts at CIS 300. Converges with Trustworthy Computing at CIS 251. At CIS 400, sits beside Human-Centered Computing&rsquo;s acceptance/A-B testing — correctness vs. fitness.</li>
+<li><strong>CIS 141</strong> applies this thread&rsquo;s verification skill to a specific new case: critiquing AI-generated code for correctness (and security), the confirmed prerequisite for the Year 3-4 Agentic AI specialization. Same treatment as the Code Comprehension thread&rsquo;s CIS 141 connection — owned by <code>practice-ai-assisted.md</code> as its terminal pass, not claimed here as a separate escalation step.</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>Confirm verification doesn&rsquo;t need its own credit-bearing space rather than living inside the B6 correctness work.</li>
+<li>None outstanding — the prior open question here (&ldquo;does verification need its own credit-bearing space?&rdquo;) is resolved: yes, CIS 301. See <code>cs.md</code>&rsquo;s CIS 301 entry.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -591,63 +518,60 @@
 <h1 id="boundaries--contracts">Boundaries &amp; Contracts</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral (meta-thread); one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
-<p><strong>In one line:</strong> A promise about behavior at a boundary, independent of what&rsquo;s hidden behind it — escalating by the KIND of boundary the contract spans.</p>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral (meta-thread); one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
+<p><strong>In one line:</strong> A promise about behavior at a boundary, independent of what&rsquo;s hidden behind it — escalating by the kind of boundary the contract spans.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Both a spiral and a META-thread: it names the common structure beneath ADTs, APIs, schemas, trust boundaries, versioning, and verification. Arguably the strongest expression of the program&rsquo;s systems-thinking ethos.</p>
+<p>Both a spiral and a meta-thread: it names the common structure beneath ADTs, APIs, schemas, trust boundaries, versioning, and verification. Arguably the strongest expression of the program&rsquo;s systems-thinking ethos — and the thread that absorbed the &ldquo;boundaries and contracts&rdquo; idea the now-retired APIs &amp; Networked Systems spiral also carried (confirmed sufficient on its own, 2026-07-15; see <code>resources/design-log.md</code>).</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B3 (Y1 Spring)</td>
-          <td>CS-107 Software Modeling and Design / CS-109 Abstract Data Types (INTRODUCED)</td>
-          <td>Boundary = an interface within one program: ADT contracts, class encapsulation, function pre/post-conditions (names B1&rsquo;s informal verification reasoning).</td>
+          <td><strong>CIS 200 / CIS 300</strong> (Y1 Spring / Y2 Fall)</td>
+          <td>Boundary = an interface within one program: class encapsulation (CIS 200&rsquo;s OOP introduction) and ADT contracts (CIS 300) — names the informal pre/post-condition reasoning seeded earlier.</td>
       </tr>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-111 Systems &amp; APIs</td>
-          <td>Boundary becomes a process/network boundary: an API contract (request → response), the other side unseen.</td>
+          <td><strong>CIS 220 / CIS 300 / CIS 320</strong> (Y1 Spring / Y2 Fall)</td>
+          <td>Boundary becomes a process/network boundary: an API contract (request → response), the other side unseen — the CIS 300 (server) / CIS 320 (client) pairing, with CIS 220 carrying the structural-boundary depth. <strong>Partially confirmed (2026-08-03):</strong> CIS 220&rsquo;s part is well-supported — its real content explicitly names &ldquo;origins as a security/process boundary.&rdquo; CIS 300/320&rsquo;s API-contract specifics remain unconfirmed for the reasons already logged in the Computational Models review: the client/server vehicle isn&rsquo;t spelled out in <code>cis-300.md</code> (confirmed intentional, see its &ldquo;Proposed Changes&rdquo;), and CIS 320 has no drafted schedule yet.</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-202 Database Design</td>
-          <td>Boundary becomes a data/persistence boundary: schema as contract; transaction as all-or-nothing contract.</td>
+          <td><strong>CIS 225</strong> (Y2 Fall) — Foundations of Computer Networks</td>
+          <td>Boundary becomes a protocol layer: the OSI 7-layer model as a stack of contracts, each layer promising an interface to the one above regardless of what&rsquo;s underneath — a protocol <em>is</em> a contract about message format. Confirmed directly by CIS 225&rsquo;s real SLOs (&ldquo;explain the 7-level OSI model, and discuss where various protocols sit within that model&rdquo;; &ldquo;differentiate between common networking protocols&rdquo;).</td>
       </tr>
       <tr>
-          <td>B6 (Y2 Fall)</td>
-          <td>CS-204/204</td>
-          <td>Contracts meet verification and trust: testing checks a contract is honored; a trust boundary is a contract about what each side may assume.</td>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
+          <td>Boundary becomes a data/persistence boundary: schema as contract; transaction as all-or-nothing contract. <strong>Transaction content is a proposed addition, not yet in CIS 260&rsquo;s confirmed content</strong> — see the &ldquo;Proposed Changes&rdquo; section of <code>cis-260.md</code> (same gap already logged from the Computational Models review).</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207/207 Design Review</td>
-          <td>Defend the boundaries and contracts you designed.</td>
+          <td><strong>CIS 251</strong> (Y2 Fall) — Foundations of Cybersecurity</td>
+          <td>A trust boundary is a contract about what each side may assume — the formalized pass.</td>
       </tr>
       <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-210 Deployment &amp; Operations</td>
-          <td>Contracts over TIME: API/semantic versioning as a compatibility contract — closes the loop opened by semver in B1.</td>
+          <td><strong>CIS 301 / CIS 400</strong> (Y2 Fall / Y2 Spring)</td>
+          <td>Contracts meet verification and testing: CIS 301 reasons formally about whether a contract holds; CIS 400 checks it empirically (testing, formalized).</td>
+      </tr>
+      <tr>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>Defend the boundaries and contracts you designed — the course&rsquo;s live-walkthrough/architecture-defense assessment. Contracts over time: API/semantic versioning as a compatibility contract, closing the loop opened by semver&rsquo;s introduction in CIS 116&rsquo;s professional-practices touch. CIS 400&rsquo;s own &ldquo;Software Versioning&rdquo; topic confirms its half of this claim; <strong>CIS 116&rsquo;s semver introduction is unconfirmed</strong> (Topics/Assignments still TBD). <strong>The live-walkthrough/architecture-defense assessment claim is confirmed real design intent but not yet in the drafted course page (2026-08-03)</strong> — see the &ldquo;Confirmed Design Intent&rdquo; section added to <code>cis-400.md</code>.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>Unifies semantic versioning (Professional Practices, B1), Correctness &amp; Verification (B1 seed), APIs (B4), Data Structures (schemas/ADTs), Trustworthy Computing (trust boundaries, B6), and versioning (B8).</li>
+<li>Unifies semantic versioning (Professional Practices), Correctness &amp; Verification (informal-reasoning seed), the networked-computing norm (API contracts), Data Structures (schemas/ADTs), Trustworthy Computing (trust boundaries), and versioning (CIS 400).</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>As a meta-thread it adds tracking overhead. Part of the broader thread-legibility question.</li>
+<li>As a meta-thread it adds tracking overhead. Part of the broader thread-legibility question (see Program Overview, Open Questions).</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -659,53 +583,47 @@
 <h1 id="sociotechnical-structure">Sociotechnical Structure</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across blocks. This is the spiral; one of nine spirals (with three lenses and one bounded practice — 13 threads total).</em></p></blockquote>
-<p><strong>In one line:</strong> Systems and the humans who build them are one structural fabric (Conway&rsquo;s Law) — observe → live → defend → reflect; the collective/team counterpart to Professional Practices.</p>
+<p><em>Working draft for faculty review. A <strong>spiral</strong> deepens through escalating passes across the two-year core. This is the spiral; one of eight spirals (with three lenses and one bounded practice — twelve threads total, plus two cross-cutting norms).</em></p></blockquote>
+<p><strong>In one line:</strong> Systems and the humans who build them are one structural fabric (Conway&rsquo;s Law) — seed → enact → defend, continuing to reflect beyond the core.</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Models the BUILDERS structurally, not just the users. Owns the COLLECTIVE dimension: teamwork, code review as team coordination, team reflection (retrospectives, blameless postmortem), and Conway&rsquo;s Law. (Individual craft — documentation, version-control mechanics, self-reflection — lives in the Professional Practices lens; there is a deliberate seam at B6 between the two.)</p>
+<p>Models the builders structurally, not just the users. Owns the collective dimension: teamwork, code review as team coordination, and Conway&rsquo;s Law. (Individual craft — documentation, version-control mechanics, self-reflection — lives in the Professional Practices lens; the two meet at a deliberate seam in CIS 400, where the team produces something together but every assessed artifact stays individually attributable — see the Program Overview.)</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s new at this pass</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B4 (Y1 Spring)</td>
-          <td>CS-111 Systems &amp; APIs</td>
-          <td>SEEDED: Conway&rsquo;s Law — systems mirror the organizations that build them (conceptual; links system structure to human structure).</td>
+          <td><strong>CIS 300 / CIS 320</strong> (Y2 Fall)</td>
+          <td>SEEDED: Conway&rsquo;s Law — systems mirror the organizations that build them (conceptual; links system structure to human structure), via the client/server pairing. <strong>Unconfirmed (2026-08-03):</strong> same client/server-vehicle gap already logged in the Computational Models review — not spelled out in <code>cis-300.md</code> (confirmed intentional), and CIS 320 has no drafted schedule yet.</td>
       </tr>
       <tr>
-          <td>B6 (Y2 Fall)</td>
-          <td>CS-206 Collaborative Development</td>
-          <td>ENACTED: the team IS an organization. Communication overhead, Brooks&rsquo;s Law; code review as team coordination; how dividing work shapes what gets built.</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core, <strong>confirmed team-project host</strong></td>
+          <td>ENACTED: the team <em>is</em> an organization. Communication overhead; code review as team coordination; how dividing work shapes what gets built. This is the core&rsquo;s own team project (small teams, rotating scope, building toward the historical-archive real-world asset), not the Year 3–4 program capstone. <strong>Confirmed real design intent, not yet in the drafted course page (2026-08-03):</strong> verified against <code>resources/design-log.md</code> — genuinely decided, not invented — but <code>cis-400.md</code>&rsquo;s own Topics/Schedule/Assignments never mention teams or group work (SLO 6 even reads &ldquo;a project of your own design,&rdquo; singular framing). Logged as a new &ldquo;Confirmed Design Intent&rdquo; section in <code>cis-400.md</code> for whoever drafts its real schedule.</td>
       </tr>
       <tr>
-          <td>B7 (Y2 Spring)</td>
-          <td>CS-207/207 Design Review</td>
-          <td>DEFEND/RETROSPECT: defend not just technical structure but how the team organized to produce it.</td>
-      </tr>
-      <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-211 / System Integration Project</td>
-          <td>REFLECT: blameless postmortem — the org-culture expression of &ldquo;errors are normative.&rdquo;</td>
+          <td><strong>CIS 400</strong>, continued</td>
+          <td>DEFEND: defend not just the technical structure but how the team organized to produce it — the course&rsquo;s live-walkthrough/architecture-defense assessment. Same gap as above — confirmed intent, not yet drafted into the course page.</td>
       </tr>
   </tbody>
 </table>
+<h2 id="beyond-the-core">Beyond the core</h2>
+<p>The full <strong>REFLECT</strong> pass — a team-level blameless postmortem — is placed at the <strong>Year 3–4 program capstone</strong>, not inside the two-year core (<code>resources/reference/spiral-threads.md</code>&rsquo;s 2026-07-13 re-homing table). CIS 400 does carry an <em>individual</em> responsibility retrospective (see the Professional Practices lens), which is a deliberate, narrower piece — the collective blameless-postmortem practice itself is out of this chapter&rsquo;s scope.</p>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>B8 blameless postmortem converges with Computational Models (errors normative). Complements Professional Practices (Git collaboration mechanics vs. team coordination — the B6 seam).</li>
+<li>The eventual Year 3–4 blameless postmortem converges with Computational Models (errors as normative, not exceptional). Complements Professional Practices (git collaboration mechanics vs. team coordination — the CIS 400 seam).</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
-<li>Confirm the individual (Professional Practices) vs collective (here) split of reflection and collaboration is clear to faculty, especially the B6 overlap.</li>
+<li>Confirm the individual (Professional Practices) vs. collective (here) split of reflection and collaboration is clear to faculty, especially the CIS 400 seam.</li>
+<li>Confirm the REFLECT pass landing at the Year 3–4 capstone, rather than somewhere in the core, is the intended design and not a gap.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -717,46 +635,41 @@
 <h1 id="ai-assisted-development-bounded-practice">AI-Assisted Development (bounded practice)</h1>
 
 <blockquote>
-<p><em>Working draft for faculty review. A <strong>bounded practice</strong> deepens only in student judgment while its scope deliberately stays flat — the single thread of this type, distinct from the nine spirals and three lenses.</em></p></blockquote>
-<p><strong>In one line:</strong> Depth increases only in the student&rsquo;s critical judgment; the SCOPE of permitted AI use stays narrow and constant — explain, discuss, quiz, critique — never &ldquo;write this for me and I&rsquo;ll submit it.&rdquo;</p>
+<p><em>Working draft for faculty review. A <strong>bounded practice</strong> deepens only in student judgment while its scope deliberately stays flat — the single thread of this type, distinct from the eight spirals and three lenses.</em></p></blockquote>
+<p><strong>In one line:</strong> Depth increases only in the student&rsquo;s critical judgment; the scope of permitted AI use stays narrow and constant — explain, discuss, quiz, critique — never &ldquo;write this for me and I&rsquo;ll submit it.&rdquo;</p>
 <hr>
 <h2 id="character">Character</h2>
-<p>Structurally different from spirals and lenses by deliberate constraint. The Year 3–4 Agentic AI specialization depends on comprehension built here; if AI use grew more autonomous over the two years, it would become the crutch the foundation must avoid. So what grows is student judgment, not AI&rsquo;s role. What is EXCLUDED — AI generating substantial code the student merely reviews and submits — should be named explicitly in every host syllabus.</p>
+<p>Structurally different from spirals and lenses by deliberate constraint. The Year 3–4 Agentic AI specialization depends on comprehension built here; if AI use grew more autonomous over the two years, it would become the crutch the foundation must avoid. So what grows is student judgment, not AI&rsquo;s role. What is excluded — AI generating substantial code the student merely reviews and submits — should be named explicitly in every host syllabus. CIS 400&rsquo;s own redesign is this bounded practice&rsquo;s clearest expression at scale: the course&rsquo;s prior form (a well-defined-spec solo project) was retired specifically because AI could complete it milestone-by-milestone without the student demonstrating understanding.</p>
 <h2 id="passes-across-the-two-years">Passes across the two years</h2>
 <table>
   <thead>
       <tr>
-          <th>Block</th>
-          <th>Host context</th>
+          <th>Course</th>
           <th>What&rsquo;s escalating (scope stays constant)</th>
       </tr>
   </thead>
   <tbody>
       <tr>
-          <td>B1 (Y1 Fall)</td>
-          <td>CS-101/102 / CS-105</td>
-          <td>AI as explainer for unfamiliar code; student verifies the explanation against actual behavior using the same block&rsquo;s asserts/logs.</td>
+          <td><strong>CIS 116 / CIS 200</strong> (Y1 Fall / Y1 Spring)</td>
+          <td>AI as explainer for unfamiliar code; student verifies the explanation against actual behavior using the same course&rsquo;s asserts/logs and regression tests.</td>
       </tr>
       <tr>
-          <td>B5 (Y2 Fall)</td>
-          <td>CS-202 Database Design</td>
+          <td><strong>CIS 260</strong> (Y1 Spring) — Foundations of Relational Databases</td>
           <td>AI as a design-alternatives / tradeoff discussion partner; the final choice and justification are the student&rsquo;s own.</td>
       </tr>
       <tr>
-          <td>B6 (Y2 Fall)</td>
-          <td>CS-206 Collaborative Development</td>
-          <td>AI-assisted code review as ONE input among several — not a replacement for human review.</td>
+          <td><strong>CIS 400</strong> (Y2 Spring) — capstone of the core</td>
+          <td>AI-assisted code review as one input among several — not a replacement for human review — within the team project.</td>
       </tr>
       <tr>
-          <td>B8 (Y2 Spring)</td>
-          <td>CS-212 Data Analysis &amp; Responsible AI</td>
-          <td>High-stakes: given AI-GENERATED code, critique it for correctness and security. Prerequisite skill for the Year 3–4 specialization, which this precedes but does not duplicate.</td>
+          <td><strong>CIS 141</strong> (Y2 Spring) — AI/Data Science</td>
+          <td>High-stakes: given AI-generated code, critique it for correctness and security. Prerequisite skill for the Year 3–4 specialization, which this precedes but does not duplicate.</td>
       </tr>
   </tbody>
 </table>
 <h2 id="connections">Connections</h2>
 <ul>
-<li>B8 converges with Trustworthy Computing and Correctness &amp; Verification (verifying AI output for safety and correctness).</li>
+<li>The CIS 141 pass converges with Trustworthy Computing and Correctness &amp; Verification (verifying AI output for safety and correctness).</li>
 </ul>
 <h2 id="open-questions-for-faculty-review">Open questions for faculty review</h2>
 <ol>
@@ -764,7 +677,7 @@
 <li>The exclusion (no AI writing substantial submitted code) should be stated in every host course&rsquo;s syllabus.</li>
 </ol>
 <hr>
-<p><em>For how this lands in a specific block, see that block&rsquo;s review file.</em></p>
+<p><em>For how this lands in a specific course, see that course&rsquo;s design page under <code>content/course-designs/</code>.</em></p>
 
   <footer class="footline">
   </footer>
@@ -776,9 +689,9 @@
       
       
     </div>
-    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1782783194" defer></script>
-    <script src="/two-year-refactor/js/theme.min.js?1782783194" defer></script>
-  <script src="/two-year-refactor/js/embed-iframe.min.js?1782783194" defer></script>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
+  <script src="/two-year-refactor/js/embed-iframe.min.js?1785952884" defer></script>
   </body>
 </html>

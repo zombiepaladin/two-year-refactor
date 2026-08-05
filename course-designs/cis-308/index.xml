@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CIS 308 - C Language Laboratory :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-308/index.html</link>
+    <description>Course Description Fundamentals of programming in C.&#xA;Credit Hours 1 credit&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md notes this course “might be replaced with any 1-credit programming language course” — not yet decided whether C specifically remains the vehicle under the redesign.&#xA;Course Goals and Learning Outcomes Not yet drafted — pending course-designer’s detailed pass.&#xA;Course Prerequisites Prerequisite: CIS 300 (current catalog).</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-308/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

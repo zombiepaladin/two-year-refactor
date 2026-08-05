@@ -30,13 +30,13 @@ For reference, what **stays** (500-level CIS and the non-CIS requirement): CIS 5
 
 The two-year core is a **different shape** than the 23 credits it would replace. Three things are true at once:
 
-1. **It cleanly covers the programming spine.** CIS 115/116/200 (intro + programming) map to our Blocks 1–2; CIS 300 (data structures) maps to Blocks 3–4; CIS 400 (OOP) maps to Block 3. This is the clean part.
+1. **It cleanly covers the programming spine.** The new core's CIS 115/116/200 (intro + programming) cover the same ground as the current CIS 115/116/200; CIS 300 (data structures) and CIS 400 (OOP) likewise map cleanly onto their current-catalog namesakes. This is the clean part.
 
 2. **It leaves four gaps** — content in sub-500 CIS that the core does not fully cover:
-   - **Computer architecture (CIS 450)** — largely *not* in the core. We have CS-103 Computational Representation (boolean logic, number systems, bits) but not computer organization, assembly, or memory hierarchy. We also deliberately cut HDL/FPGA earlier in the redesign. This is the biggest gap.
-   - **Formal logic (CIS 301)** — partially covered. Our external MATH-101 (Logic & Sets), the Correctness & Verification thread (pre/post-conditions, verification), and Boundaries & Contracts touch this, but CIS 301 is a dedicated logic-of-programming course and ours is distributed.
-   - **Ethics (CIS 415)** — covered *differently*. Our Trustworthy Computing lens and the Block 6 "Responsible Development" frame weave ethics throughout, by design. CIS 415 is a standalone 3-credit ethics course. Replacing a dedicated course with embedded treatment is a genuine pedagogical/philosophical choice, not an automatic substitution.
-   - **C/C++ specifics (CIS 308)** — not covered. Our core is deliberately language-agnostic; CIS 308 is a specific C/C++ lab.
+   - **Computer architecture (CIS 450)** — largely *not* in the core as originally scoped. Boolean logic, number systems, and bits are covered, but not computer organization, assembly, or memory hierarchy. We also deliberately cut HDL/FPGA earlier in the redesign. This is the biggest gap. *(Later resolution below: this content lands in CIS 115.)*
+   - **Formal logic (CIS 301)** — partially covered. Our discrete-math sequence, the Correctness & Verification thread (pre/post-conditions, verification), and Boundaries & Contracts touch this, but CIS 301 is a dedicated logic-of-programming course and ours is distributed. *(Later resolution below: CIS 301 survives as its own real course.)*
+   - **Ethics (CIS 415)** — covered *differently*. Our Trustworthy Computing lens and an embedded "Responsible Development" frame weave ethics throughout, by design. CIS 415 is a standalone 3-credit ethics course. Replacing a dedicated course with embedded treatment is a genuine pedagogical/philosophical choice, not an automatic substitution.
+   - **C/C++ specifics (CIS 308)** — not covered. Our core is deliberately language-agnostic; CIS 308 is a specific C/C++ lab. *(Later resolution below: CIS 308 survives as its own real course too.)*
 
 3. **It reaches *upward* into current 500-level content.** Our core teaches database design, algorithmic complexity, software/systems design, testing, security, and human-centered computing — material K-State currently places at 500-level (CIS 560 Databases, CIS 575 Algorithm Analysis, CIS 501 Software Architecture). So the core not only replaces sub-500 CIS, it **overlaps several 500-level courses that are supposed to stay.**
 
@@ -65,17 +65,19 @@ the CS Requirements. Our core embeds its *own* discrete-math sequence (4 × 1cr)
 
 ## Course-by-course mapping
 
-| Current sub-500 CIS | Maps to (new core) | Assessment |
+**This table captures the initial, exploratory mapping — see "Resolutions" below for what was actually decided.** By the time the core was fleshed out into real courses, CIS 301, 308, and 450 all survived as their own real numbered courses rather than being fully absorbed, which the resolutions below reflect but this original table (kept for the record) does not.
+
+| Current sub-500 CIS | Initial mapping thinking | Assessment |
 |---|---|---|
-| CIS 115 Intro to Computing Science (2) | B1 reading-first framing + CS-101/103 | Covered |
-| CIS 116 Intro to Programming (1) | CS-101 Imperative Programming | Covered |
-| CIS 200 Programming Fundamentals (4) | CS-101 + CS-102 + CS-104 | Covered (and broader — adds functional + data transformation) |
-| CIS 300 Data and Program Structures (3) | CS-109 + CS-110 + CS-112 | Covered |
-| CIS 301 Logical Foundations of Programming (3) | MATH-101 + Correctness & Verification thread + Boundaries & Contracts | **Partial — distributed, not a dedicated course** |
+| CIS 115 Intro to Computing Science (2) | Reading-first framing plus computational-representation content | Covered |
+| CIS 116 Intro to Programming (1) | Imperative-programming content | Covered |
+| CIS 200 Programming Fundamentals (4) | Imperative + functional + data-transformation content | Covered (and broader — adds functional + data transformation) |
+| CIS 300 Data and Program Structures (3) | Abstract-data-types, trees/hashing, and algorithmic-design-pattern content | Covered |
+| CIS 301 Logical Foundations of Programming (3) | Discrete-math logic content + the Correctness & Verification thread + Boundaries & Contracts | **Partial — distributed, not a dedicated course** |
 | CIS 308 C/C++ Lab (1) | — | **Gap — core is language-agnostic** |
-| CIS 400 OOD, Implementation & Testing (3) | CS-107 Software Modeling and Design + CS-108 Computational Abstractions (+ Correctness & Verification) | Covered |
-| CIS 415 Ethics & Conduct (3) | Trustworthy Computing lens + B6 Responsible Development | **Covered differently — embedded, not standalone** |
-| CIS 450 Computer Architecture & Operations (3) | CS-103 (partial) | **Gap — architecture largely absent** |
+| CIS 400 OOD, Implementation & Testing (3) | Software-modeling/design content + computational-abstractions content (+ Correctness & Verification) | Covered |
+| CIS 415 Ethics & Conduct (3) | Trustworthy Computing lens + embedded Responsible Development content | **Covered differently — embedded, not standalone** |
+| CIS 450 Computer Architecture & Operations (3) | Computational-representation content (partial) | **Gap — architecture largely absent** |
 
 ## Decisions needed
 
@@ -83,8 +85,8 @@ The replacement can't be finalized without these. Grouped by urgency:
 
 **The four gap courses:**
 1. **Computer architecture (CIS 450).** The core does not cover it. Options: keep CIS 450 as a separate surviving requirement; move architecture to a 500-level course; add an architecture unit to the core; or rely on ECE 241 (Intro to Computer Engineering, which stays) to carry it. Which?
-2. **Ethics (CIS 415).** Replace the standalone 3-credit ethics course with the core's embedded ethics (Trustworthy Computing + B6), or keep a dedicated ethics course alongside the core? This is a philosophy decision with ABET professional-responsibility implications.
-3. **Formal logic (CIS 301).** Is the core's distributed coverage (MATH-101 + verification + contracts) sufficient, or is a dedicated logic-of-programming course still required?
+2. **Ethics (CIS 415).** Replace the standalone 3-credit ethics course with the core's embedded ethics (Trustworthy Computing, formalized in CIS 251), or keep a dedicated ethics course alongside the core? This is a philosophy decision with ABET professional-responsibility implications.
+3. **Formal logic (CIS 301).** Is the core's distributed coverage (discrete-math logic + verification + contracts) sufficient, or is a dedicated logic-of-programming course still required?
 4. **C/C++ (CIS 308).** Does the program need specific C/C++ exposure (systems-adjacent, CompE-adjacent), or is the language-agnostic core acceptable here?
 
 **The external-course collision:**
@@ -114,22 +116,24 @@ The analysis above captured the *initial* mapping. The following decisions have 
 
 ## Resolved
 
-- **Discrete math + statistics — the core's embedded sequences replace MATH 510 and STAT 510.** No duplication. The foundation math footprint is exactly 8 one-credit courses: four discrete (MATH-101–104) and four **non-calculus** statistics (STAT-101–104), one external per block.
-- **Computer architecture (CIS 450) — absorbed.** Its content is programming-centric (stack/heap, cache misses, memory model from the programmer's view), not digital-logic/hardware design. Now named explicitly in the core: the stack/heap memory model at CS-103 (B1), and cache misses / memory-hierarchy / locality in the B8 performance pass (CS-210).
-- **Formal logic (CIS 301) — absorbed.** The distributed coverage (MATH-101 Logic & Sets + the Correctness & Verification thread + Boundaries & Contracts) is accepted as sufficient.
-- **C/C++ (CIS 308) — handled by a language certificate.** Rather than forcing a specific language into the deliberately language-agnostic core, the program will offer **language certificates** (~1 credit each, a single language taught deeply) as **supplementary micro-credentials outside the 120-credit degree**. The core teaches paradigms and the ability to read any language (Code Comprehension thread); a certificate adds deep single-language fluency. This also serves other departments (e.g. a Computer Engineering student takes a C/C++ certificate).
-- **Databases (CIS 560) — narrows to an elective.** The core's B5 (SQL Fundamentals + Database Design) is the foundation; CIS 560 spirals deeper on relational algebra and relational theory as **elective depth**, likely no longer required. The core feeds it rather than replacing it.
-- **Algorithm analysis (CIS 575) — likely narrows to an elective**, same pattern: the core's B4 complexity + B7 graph algorithms are the foundation; 575 becomes optional deeper analysis.
-- **Calculus — moved to year 3** (Calc 2 possibly not required). Never part of the two-year core. Its move confirms the statistics sequence must be **non-calculus / intro-level** in the foundation, with calculus-based statistical rigor deferred to year 3+.
-- **Linear algebra — moved to year 3** with calculus (both ML prerequisites). The foundation keeps only the adjacency-matrix seed at CS-110 (B4). This resolves the long-open "ninth external" question — the foundation has exactly 8 externals, one per block.
+**Note (2026-08-05):** the bullets below originally cited an early, more granular course design that predates the real course sequence. The decisions themselves still hold; updated to cite the real courses that ended up carrying them.
+
+- **Discrete math + statistics — the core's embedded sequences replace MATH 510 and STAT 510.** No duplication. The foundation math footprint is 4 credits of discrete math (Logic and Sets, Counting Finite Configurations, Recursive and Modular Computation, Graphs/Trees/Maps) and 4 credits of **non-calculus** statistics, now STAT 410.
+- **Computer architecture (CIS 450) — partially absorbed, not fully.** Its content is programming-centric (stack/heap, cache misses, memory model from the programmer's view), not digital-logic/hardware design. CIS 115 absorbed the number-representation/Boolean-logic/register-transfer-model piece of this. **Correction, 2026-08-04:** the deeper piece (cache misses, memory hierarchy, OS/concurrency formalization) was never actually built into the core as drafted — CIS 450 itself (which survives as a real, required course in the Cybersecurity and AI Systems degree maps) is the confirmed carrier for this content, not core content. See `resources/reference/spiral-threads.md`'s correction note.
+- **Formal logic (CIS 301) — survives as its own real course, not fully absorbed.** MATH Logic and Sets, the Correctness & Verification thread, and Boundaries & Contracts all touch this territory, but CIS 301 itself remains a real, required course (Y2 Fall) rather than being fully distributed away — it's now confirmed as the strongest real home for pre/post-condition and correctness-proof content (see `resources/design-log.md`'s 2026-08-04 assessment-chapter findings).
+- **C/C++ (CIS 308) — survives as its own real course, not a certificate.** The earlier plan was a supplementary language certificate outside the 120-credit degree; the real degree maps (`cybersecurity.md`, `ai-systems.md`) instead confirm CIS 308 (C Language Laboratory) as a required core course in Y2 Spring.
+- **Databases (CIS 560) — narrows to an elective for the general CS degree; required for Cybersecurity and AI Systems.** CIS 260 (Foundations of Relational Databases) is the foundation; CIS 560 spirals deeper on relational algebra and relational theory as elective depth for students who don't need it required. The core feeds it rather than replacing it.
+- **Algorithm analysis (CIS 575) — same pattern**: CIS 300's complexity/graph-algorithm content is the foundation; CIS 575 becomes optional deeper analysis for the general CS degree, required for Cybersecurity and AI Systems.
+- **Calculus — moved to year 1 spring**, not year 3 as originally planned (see `cs.md`'s real degree map). Its earlier deferral had confirmed the statistics sequence must be **non-calculus / intro-level** in the foundation; that conclusion held even though the actual calculus placement moved.
+- **Linear algebra — moved to year 2 fall** (a required course choice, MATH 515 or 551), paired with calculus as an ML prerequisite. The foundation keeps only an adjacency-matrix seed in CIS 300.
 
 ## Soft-resolved
 
-- **Ethics (CIS 415).** The plan is **embedded ethics** (the Trustworthy Computing lens + the Block 6 "Responsible Development" frame) as the primary and load-bearing treatment. A standalone year-3 ethics course *may* be retained but is uncertain (the ethics faculty member is retiring). **Design implication:** the embedded ethics must be strong enough to carry the ABET professional-responsibility outcome on its own, since the standalone course cannot be relied upon.
+- **Ethics (CIS 415).** The plan is **embedded ethics** (the Trustworthy Computing lens, formalized in CIS 251, plus embedded "Responsible Development" content elsewhere in the core) as the primary and load-bearing treatment. A standalone year-3 ethics course *may* be retained but is uncertain (the ethics faculty member is retiring). **Design implication:** the embedded ethics must be strong enough to carry the ABET professional-responsibility outcome on its own, since the standalone course cannot be relied upon.
 
 ## The emerging structural pattern
 
-Several currently-required 500-level courses (560, 575, and likely 501 Software Architecture and 505 Programming Languages) are becoming **elective depth that the core feeds** rather than required courses. This is the spiral philosophy extended across the whole degree: the core spirals *broadly* (years 1–2); electives spiral *deeper* on chosen topics (years 3–4).
+**Correction, 2026-08-04:** this section originally predicted CIS 501 (Software Architecture) and CIS 505 (Programming Languages) would likely become elective, alongside CIS 560 and CIS 575. That turned out not to hold — both real specialization degree maps built so far (`cybersecurity.md`, `ai-systems.md`) require CIS 501 and CIS 505, and `cs.md` itself calls CIS 505 "leaning required" specifically because it anchors ABET's CS-theory formal-languages coverage (see `abet-cs.md`'s 2026-08-04 rewrite). CIS 560 and CIS 575 are the ones that actually became elective-for-the-general-degree, required-for-specializations — not all four. This is still the spiral philosophy extended across the whole degree: the core spirals *broadly* (years 1–2); electives spiral *deeper* on chosen topics (years 3–4) — just with a narrower set of courses actually becoming elective than this section first predicted.
 
 **This escalates the scope of the project.** What began as "replace sub-500 CIS with the two-year core" is becoming a **restructuring of the entire required CS core**, with required courses migrating to elective status. That requires its own dedicated analysis with **ABET student outcomes as the binding constraint**: the *required* path (core + whatever 500-levels remain required + capstone) must satisfy every ABET outcome on its own, with electives as genuine depth, not load-bearing coverage. This is the recommended next analysis.
 

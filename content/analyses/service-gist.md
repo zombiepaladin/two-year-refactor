@@ -28,9 +28,9 @@ The B.S. in Geographic Information Systems & Technology (GIST) requires a **Comp
 
 **Content:** History of computing, binary representation, Boolean logic, data encoding and encryption, computational thinking, internet technology, AI/HCI/cybersecurity/data science breadth survey, basic programming exposure.
 
-**Maps to:** **CIS 115** (Introduction to Computing Science). As of 2026-07-14, CIS 115 explicitly carries what was previously a separate course's content (v1's CS-103 "Computational Representation"): number representation as a design choice, binary representation of integers/characters, Boolean logic and bitwise operations, a worked 8-bit float format, and the register/register-transfer model — run side by side with CIS 115's existing history/overview thread, not as two disconnected topics (the Babbage decimal-vs-binary framing is the explicit bridge between them).
+**Maps to:** **CIS 115** (Introduction to Computing Science). As of 2026-07-14, CIS 115 explicitly carries what was previously a separate course's content ("Computational Representation"): number representation as a design choice, binary representation of integers/characters, Boolean logic and bitwise operations, a worked 8-bit float format, and the register/register-transfer model — run side by side with CIS 115's existing history/overview thread, not as two disconnected topics (the Babbage decimal-vs-binary framing is the explicit bridge between them).
 
-**Fit:** Good, and arguably a cleaner single-course match than before, when this content was split across two separate courses (CS-101's opening weeks + a dedicated CS-103). The breadth survey of CS fields (AI, robotics, HCI) still has no single dedicated equivalent — that content would need to be distributed across later courses' framing as they're built out to block-file detail, which hasn't happened yet for the new map. **Open, unresolved from before:** CIS 115's own credit count is still hedged (1 or 2, trending toward 2 given the added content) — confirm before finalizing this mapping's credit accounting.
+**Fit:** Good, and arguably a cleaner single-course match than before, when this content was split across two separate courses. The breadth survey of CS fields (AI, robotics, HCI) still has no single dedicated equivalent — that content would need to be distributed across later courses' framing as they're built out to full detail, which hasn't happened yet for the new map. **Open, unresolved from before:** CIS 115's own credit count is still hedged (1 or 2, trending toward 2 given the added content) — confirm before finalizing this mapping's credit accounting.
 
 ---
 
@@ -70,7 +70,7 @@ The B.S. in Geographic Information Systems & Technology (GIST) requires a **Comp
 
 **Content:** Software engineering methodologies, design patterns and architectures, computer security, advanced OOP, **GUI programming**, **event-driven programming**, professional communication and collaboration, iterative milestone project serving as a capstone. 3 credits. Prerequisite: CC 315.
 
-**This is the mapping that changed the most, and needs the most faculty attention.** The prior analysis mapped CC 410 largely onto v1's B6 (Collaborative Development, Security Fundamentals, Testing) plus B3's advanced OOP courses. Those don't exist in that form anymore. The new map splits CC 410's content much more widely:
+**This is the mapping that needs the most faculty attention.** CC 410's content splits widely across the real course sequence rather than concentrating in one or two courses:
 
 | CC 410 component | New home | Notes |
 |---|---|---|
@@ -127,7 +127,7 @@ The B.S. in Geographic Information Systems & Technology (GIST) requires a **Comp
 - **Heaps are no longer a gap.** CSC1040's required outcomes explicitly include heaps; CIS 300 must cover them.
 - **Concurrent algorithms and thread-safe data structures are new, required content in CIS 300** — not something CC 310/315 asked for, but relevant to GIST students doing any compute-heavy spatial processing.
 
-## What's weaker or unconfirmed, not carried forward from the old analysis without a flag
+## What's weaker or unconfirmed
 
 - **Design patterns has no confirmed home.** `cs.md` names CIS 400 or CIS 501 as candidates, not a decision.
 - **CIS 260's density and credit size are a real, already-flagged concern** — it's the weakest link in this mapping against CC 520.

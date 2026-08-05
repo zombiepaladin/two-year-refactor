@@ -4,198 +4,47 @@ weight = 40
 ordinal = "6.4"
 +++
 
-> *Working draft for faculty review. Maps the old sub-500 CIS courses and ECE 241 to new core equivalents so that students on the old B.S. in Computer Science curriculum can be supported for five years without running parallel old-course sections. Course codes for the new core are placeholders.*
+> *Working draft for faculty review. Maps the old sub-500 CIS courses and ECE 241 to new core equivalents so that students on the old B.S. in Computer Science curriculum can be supported for five years without running parallel old-course sections.*
+>
+> **Rewritten 2026-08-05.** The original version of this document assumed the new core would introduce entirely new course numbers (a distinct, more granular course-by-course design), requiring a complex many-to-one substitution mapping for every old course. **That assumption no longer holds.** The real redesign, once course-designer fleshed it out, reused the *same* catalog numbers for nearly every course this document worried about — CIS 115, 116, 200, 300, 301, 308, 400, 415, and 450 are all still those numbers, redesigned underneath. That eliminates most of the substitution problem this document exists to solve. See "The headline finding" below.
 
 ## The problem
 
-When the two-year core is adopted, students who enrolled under the old curriculum must still be able to complete their degree. The old curriculum requires courses that the department will no longer run. The solution is course substitution: identify which old courses are fully covered by new core courses and establish official equivalencies, so that old-track students take new courses that satisfy their old requirements.
+When the two-year core is adopted, students who enrolled under the old curriculum must still be able to complete their degree. The solution is course substitution: identify which old courses are fully covered by new core courses and establish official equivalencies, so that old-track students take new courses that satisfy their old requirements.
 
 This document answers: *which old courses need to keep running, and which can be retired on day one?*
 
-## Scope
+## The headline finding: there's much less to solve than the substitution-mapping approach implied
 
-The courses being retired or restructured are:
+Checked every course in scope against the real, current degree map (`resources/reference/degree-maps/cs.md`) and the fleshed-out `content/course-designs/*.md` pages. Result:
 
-| Course | Cr | Disposition |
-|---|---|---|
-| CIS 115 Introduction to Computing Science | 2 | Replaced by new core |
-| CIS 116 Introduction to Programming | 1 | **Standalone — redesigned as Python course** |
-| CIS 200 Programming Fundamentals | 4 | Replaced by new core |
-| CIS 300 Data and Program Structures | 3 | Replaced by new core |
-| CIS 301 Logical Foundations of Programming | 3 | Replaced by new core |
-| CIS 308 C Language Laboratory | 1 | **Standalone — continues unchanged** |
-| CIS 400 Object-Oriented Design, Implementation and Testing | 3 | Replaced by new core |
-| CIS 415 Ethics and Conduct for Computing Professionals | 3 | Replaced by new core + new CIS 3xx |
-| CIS 450 Computer Architecture and Operations | 3 | Replaced by new core |
-| ECE 241 Introduction to Computer Engineering | 3 | **Dropped — no longer required for CS students** |
-
-**CIS 116** is being redesigned as a dedicated Python course and will continue to run as a standalone entry-point course for both tracks. **CIS 308** continues as a standalone C language course. Both serve old-track students directly and require no substitution mapping. **ECE 241** is taught by the ECE department, continues for ECE students, but is dropped as a CS requirement; its CS-relevant content is absorbed into the new core.
-
-The remaining eight courses require substitution mapping.
-
----
-
-## Course-by-course substitution map
-
-### CIS 115 → CS-101 + CS-103 (2 cr for 2 cr; grouped in Block 1)
-
-CIS 115 is a survey course covering computing history, paradigms, tools, web technologies, security, simulation, and data science. The new core replaces the survey by having students *do* the breadth rather than observe it. The two closest individual courses are:
-
-- **CS-101 Imperative Programming** — introduces the imperative and declarative computational models using JavaScript/Python acting on the DOM; covers the theories-and-tools orientation of CIS 115
-- **CS-103 Computational Representation** — covers number systems, Boolean logic, bitwise operations, and the programmer-facing memory model; covers the hardware/representation literacy piece of CIS 115
-
-Other survey topics (web technologies, security, data science) are covered in greater depth in CS-106, CS-205, and CS-212 later in the core.
-
-*Credit: 2 old → 2 new. Even.*
-
----
-
-### CIS 200 → CS-102 + CS-104 + CS-105 + CS-106 (4 cr for 4 cr; grouped in Blocks 1 & 2)
-
-CIS 200 covers algorithm design and procedural programming (state, control structures, methods), testing, arrays, classes, and objects. Since CIS 116 (now Python) remains as the entry point and satisfies the prior programming baseline, CIS 200's remaining content maps across Block 2 of the new core:
-
-- **CS-102 Functional Programming** — functions as values, composition, recursion; the "methods and functions" abstraction
-- **CS-104 Data Transformation & Manipulation** — parsing, filtering, reshaping arrays and collections; data manipulation algorithms
-- **CS-105 Code Reading & Repair** — debugging reframed as tracing data flow; git and regression tests as safety nets; Big-O introduced conceptually as a diagnostic tool for slow code
-- **CS-106 Web Foundations & Data-Driven Rendering** — async/event-loop, fetch-and-render; provides the programming-in-context framing CIS 200 uses for its projects
-
-Classes and objects are treated more deeply in CS-107 (B3) than CIS 200's introduction; old-track students will exceed what CIS 200 required in this area.
-
-*Credit: 4 old → 4 new. Even.*
-
----
-
-### CIS 301 → MATH-101 + MATH-103 + CS-109 (3 cr for 3 cr; grouped in Blocks 1 & 3)
-
-CIS 301 covers propositional and predicate logic, proof theory, soundness and completeness, mathematical induction, and program verification (invariants, program logics, pre/post-conditions).
-
-- **MATH-101 Discrete Math: Logic and Sets** — propositional and predicate logic, syntax, semantics, soundness and completeness; the formal logic core of CIS 301
-- **MATH-103 Discrete Math: Recursive and Modular Computation** — mathematical induction; direct counterpart to CIS 301's induction content
-- **CS-109 Abstract Data Types** — contract-first pedagogy; function pre/post-conditions named and used explicitly; the program-verification reasoning of CIS 301 applied to ADT contracts
-
-Note: this omits Math-102; need to verify this ommission is acceptable.
-
-*Credit: 3 old → 3 new. Even.*
-
----
-
-### CIS 300 → CS-108 + CS-110 + CS-112 (3 cr for 3 cr; grouped in Blocks 3 & 4)
-
-CIS 300 covers interfaces, design patterns, stacks, queues, lists, trees, hash tables, recursion, binary search, and tree traversals, with explicit attention to performance tradeoffs.
-
-- **CS-108 Computational Abstractions** — higher-order patterns (map, filter, reduce), iterator protocol; covers the design-patterns and interface-abstraction content of CIS 300
-- **CS-110 Trees, Hashing & Hierarchies** — trees, hash tables, sorting, searching; Big-O formalized as the cost of structural choices; the performance-tradeoffs discussion CIS 300 emphasizes
-- **CS-112 Algorithmic Design Patterns** — divide-and-conquer, greedy algorithms, introduction to dynamic programming; covers recursion and binary search as exemplars
-
-Note: stacks, queues, and lists are taught in CS-109 (mapped to CIS 301 above). CS-109 is a prerequisite for CS-110, so the CIS 300 content is available to students in the correct order.
-
-*Credit: 3 old → 3 new. Even.*
-
----
-
-### CIS 400 → CS-107 + CS-204 + CS-206 (3 cr for 3 cr; grouped in Blocks 3 & 6)
-
-CIS 400 covers object-oriented concepts, models, execution environments, design techniques, and testing, with extensive application to non-trivial software development.
-
-- **CS-107 Software Modeling and Design** — encapsulation as boundary-drawing, OOP in Python and JavaScript, type annotations as interface specifications, inheritance tradeoffs, exceptions as contract violations; the design concepts of CIS 400
-- **CS-204 Software Testing & Validation** — automated tests, unit and integration testing; the testing component of CIS 400
-- **CS-206 Collaborative Development** — collaborative git, pull requests, code review, conflict resolution, team practices; the "non-trivial software development" context CIS 400 emphasizes
-
-*Credit: 3 old → 3 new. Even.*
-
----
-
-### CIS 415 → CS-205 + CS-212 + New CIS 3xx Ethics (3 cr for 3 cr; Block 6 & 8, plus out-of-core professional ethics course)
-
-CIS 415 covers ethical issues raised by computing technologies, societal impact, professional codes of conduct, ethics of software development, and intellectual property.
-
-- **CS-205 Security Fundamentals** — threat identification, authentication, authorization; principle of least privilege extended to principle of least data collection; covers CIS 415's privacy and information-security ethics content
-- **CS-212 Data Analysis & Responsible AI** — honest visualization, data ethics, high-stakes verification of AI-generated code; covers CIS 415's AI ethics and ethics of software development content
-- **New CIS 3xx Ethics (1 cr, Year 3)** — a new 1-credit course to be authored, covering professional codes of conduct (ACM/IEEE), intellectual property and licensing in software, and the ethics of software development as a professional practice; fills the content gap not addressed by the two embedded courses above
-
-The embedded ethics distributed through the Trustworthy Computing lens and the Block 6 Responsible Development frame covers societal impact throughout. The new CIS 3xx formalizes professional conduct and IP — content that is genuinely standalone in character and maps poorly to any single existing new core course.
-
-Aternatively, we could retain CIS 415 and drop it back to a 1-credit offering.
-
-*Credit: 3 old → 3 new. Even.*
-
----
-
-### CIS 450 → CS-103 + CS-209 + CS-210 (3 cr for 3 cr; Grouped in Blocks 1, 7, & 8)
-
-CIS 450 covers computer architectures (register transfer, addressing modes, data transfer, arithmetic/logic, and control operations), basic OS concepts and operations, relationships of higher-level constructs to assembly, and interrupts and low-level I/O.
-
-The new core covers the *operations* half of CIS 450 thoroughly and the *architecture* half at the programmer-model level only — consistent with the new curriculum's deliberate decision to abstract above the ISA.
-
-- **CS-103 Computational Representation** — Boolean logic, number systems, bitwise operations; the programmer-facing memory model (stack, heap, process); the representation foundation CIS 450 built on
-- **CS-209 OSI Networking Fundamentals** — the full network stack from physical through application layer; covers the I/O and communications aspects of CIS 450; routing as the concrete realization of shortest-path algorithms (bridging CS-207)
-- **CS-210 Deployment & Operations** — OS concepts at the programmer-facing level: processes vs. threads, preemptive vs. cooperative scheduling, kernel/user space, IPC; the full memory hierarchy including cache misses, locality, virtual memory, and paging
-
-**Known scope shift:** register transfer abstraction, addressing modes, assembly language, compiler output, and hardware interrupts are not covered in the new core. CIS 450's old prerequisites (ECE 241 + CIS 308) gave students the background for this content; the new curriculum draws its boundary above the ISA and treats those topics as belonging to computer engineering rather than computer science.
-
-*Credit: 3 old → 3 new. Even.*
-
----
-
-### ECE 241 → CS-103 (1 cr — scope reduction, intentional)
-
-ECE 241 covers embedded systems (C programming, number systems, data/logical operations) and DC circuitry (voltage, current, Ohm's law, basic components), with laboratory work using multimeters and oscilloscopes.
-
-- **CS-103 Computational Representation** — covers ECE 241's number systems and data/logical operations content
-- C programming from ECE 241 is served by CIS 308 (standalone)
-- DC circuitry, circuit theory, and lab work with test equipment are **out of scope for a CS degree** — this is the deliberate scoping decision
-
-The 2-credit reduction from 3 to 1 reflects removal of EE content, not a content gap. ECE 241 continues for ECE students; CS students no longer need it because neither the ISA layer nor electrical engineering is part of the new curriculum's scope.
-
-*Credit: 3 old → 1 new. 2-credit reduction is intentional scope reduction.*
-
----
-
-## Consolidated substitution table
-
-| Old course | Cr | Standalone? | Substitution | Cr | Credit balance |
-|---|---|---|---|---|---|
-| CIS 115 | 2 | No | CS-101 + CS-103 | 2 | Even |
-| CIS 116 | 1 | **Yes (Python)** | — | — | — |
-| CIS 200 | 4 | No | CS-102 + CS-104 + CS-105 + CS-106 | 4 | Even |
-| CIS 301 | 3 | No | MATH-101 + MATH-103 + CS-109 | 3 | Even |
-| CIS 300 | 3 | No | CS-108 + CS-110 + CS-112 | 3 | Even |
-| CIS 308 | 1 | **Yes (C)** | — | — | — |
-| CIS 400 | 3 | No | CS-107 + CS-204 + CS-206 | 3 | Even |
-| CIS 415 | 3 | No | CS-205 + CS-212 + New CIS 3xx | 3 | Even |
-| CIS 450 | 3 | No | CS-103 + CS-209 + CS-210 | 3 | Even |
-| ECE 241 | 3 | **Dropped** | CS-103 | 1 | −2 cr (scope reduction) |
-
-All substituted courses are credit-exact. The ECE 241 reduction is intentional and reflects a boundary decision about the CS degree's scope, not missing content.
-
----
-
-## Prerequisite sequencing for old-track students
-
-Old-track students take the new core in block sequence. The following table shows how the old prerequisite chain is satisfied at each stage.
-
-| After completing | Old prerequisites satisfied |
+| Old course | Real new-core status |
 |---|---|
-| CIS 116 (standalone Python) | Entry to new core |
-| Block 1 (CS-101 + CS-103) | CIS 115 requirement |
-| Block 2 (CS-102 + CS-104 + CS-105 + CS-106) | CIS 200 requirement |
-| Block 3 (CS-107 + CS-108 + CS-109 + MATH-101 + MATH-103) | CIS 301 requirement; partial CIS 300 |
-| Block 4 (CS-110 + CS-111 + CS-112) | CIS 300 requirement → unlocks CIS 308 (standalone C); clears the prerequisite for CIS 308 since CS-108 + CS-110 + CS-112 substitute for CIS 300 |
-| CIS 308 (standalone C, taken after Block 4) | CIS 308 requirement satisfied |
-| Block 6 (CS-107 + CS-204 + CS-206) | CIS 400 requirement |
-| Block 7 (CS-209) + Block 8 (CS-210) with Block 1 (CS-103) | CIS 450 requirement; unlocks former CIS 450-gated upper-division courses |
-| Block 6 (CS-205) + Block 8 (CS-212) + New CIS 3xx | CIS 415 requirement |
+| CIS 115 Introduction to Computing Science | **Same number, survives.** Redesigned content (history + computational-representation seed), credit hedge 1–2 (was 2). |
+| CIS 116 Introduction to Programming | **Same number, survives.** Redesigned as a Python course, now 2 credits (was 1) — a real credit-hour increase, not a substitution question. |
+| CIS 200 Programming Fundamentals | **Same number, survives.** Now 3 credits (was 4, confirmed intentional reduction — Windows Forms/Visual Studio dropped). |
+| CIS 300 Data and Program Structures | **Same number, survives.** Same 3 credits; redesigned practice vehicle (client/server web architecture, not desktop). |
+| CIS 301 Logical Foundations of Programming | **Same number, survives.** Now 2 credits (was 3) — the new discrete-math sequence absorbs the introductory logic content CIS 301 used to carry, so CIS 301 itself deepens rather than introduces. |
+| CIS 308 C Language Laboratory | **Same number, survives, unchanged** — standalone, still 1 credit. |
+| CIS 400 Object-Oriented Design, Implementation and Testing | **Same number, survives.** Same 3 credits; content substantially redesigned (capstone-of-the-core team project, not the old solo point-of-sale app). |
+| CIS 415 Ethics and Conduct for Computing Professionals | **Same number, survives** — still in the real degree map (Year 3, Semester 2), credit possibly reducing from 3 to 1 as ethics gets embedded elsewhere in the core, but **not retired**. |
+| CIS 450 Computer Architecture and Operations | **Same number, survives** — still in the real degree map (Year 3, Semester 1), same 3 credits, flagged as possibly becoming an elective as some content migrates to CIS 115, but **not retired**. |
+| ECE 241 Introduction to Electrical and Computer Engineering | **Survives** — still in the real degree map (Year 1, Semester 2 in the current map, moved earlier than its old placement), 3 credits. **Not dropped**, contrary to what this document originally assumed. |
 
-**Timing note:** CIS 450 in the old curriculum was typically taken in the third or fourth semester (after ECE 241 + CIS 308). In the new sequence, its substitution (CS-103 + CS-209 + CS-210) is not complete until the end of Year 2. This is later than the old placement. Upper-division courses that gated on CIS 450 will need their prerequisite statements reviewed to determine whether an earlier-in-the-core substitution can be accepted (e.g., CS-103 alone for courses that only needed the architecture foundation), or whether core completion is the right gate.
+**What this means for old-track students: for every course above, "already completed the old version" satisfies "requirement met."** A course being redesigned under its own number doesn't require a substitution decision — a student's transcript already shows they passed CIS 300 (or 415, or 450); that the content underneath has changed doesn't retroactively unsatisfy the requirement. **None of these ten courses need the complex multi-course substitution mapping this document originally built.**
 
----
+## What's actually left to solve
+
+Given the finding above, the real transition questions are narrower than originally scoped:
+
+1. **Credit-hour changes on four courses** (CIS 116: 1→2; CIS 200: 4→3; CIS 301: 3→2; CIS 415: possibly 3→1) don't block individual students' requirement satisfaction, but do affect **total-degree credit-count accounting** for the transition period — worth a registrar/advising check that a mixed old-credits/new-credits transcript still totals correctly, not a substitution mapping.
+2. **Content redesign on CIS 300 and CIS 400** is substantial enough that old-track students completing these under the *old* content and new-track students completing them under the *new* content will have learned genuinely different things, even though both satisfy "CIS 300" / "CIS 400" on a transcript. Worth flagging to advisors and to whichever upper-division courses assume specific prerequisite content (e.g., CIS 400's old solo-project skills vs. its new team-project skills) — not a credit or substitution problem, a content-continuity one.
+3. **ECE 241 and CIS 415's survival should be confirmed as final**, not assumed temporary. This document's original premise (ECE 241 dropped, CIS 415 replaced by a new standalone ethics course) never actually happened — the real degree map keeps both. If that's the settled answer, this document's original "Remaining action items" #1 and #4 below (author a new ethics course; remove ECE 241 from the catalog) are moot and should be dropped, not just deferred.
+4. **Upper-division prerequisite audit is still real** — any 500-level course that lists CIS 450, ECE 241, CIS 300, CIS 301, CIS 400, or CIS 415 as a prerequisite should have its prerequisite statement re-checked against the *redesigned* content of those same-numbered courses, since a student satisfying the prerequisite via the old content vs. the new content may arrive with different preparation. This is a content-currency check, not a substitution-table lookup.
 
 ## Remaining action items
 
-1. **Author New CIS 3xx Ethics (1 cr, Year 3).** Content scope: professional codes of conduct (ACM/IEEE Code of Ethics), intellectual property and software licensing, ethics of software development as professional practice. This course serves both old-track students satisfying the CIS 415 requirement and new-track students as a 3rd-year complement to the embedded ethics in the core.
-
-2. **Upper-division prerequisite audit.** Every 500-level course that lists CIS 450, ECE 241, CIS 300, CIS 301, CIS 400, or CIS 415 as a prerequisite needs an updated prerequisite statement for the transition period. The substitution table above is the mapping basis.
-
-3. **CIS 308 prerequisite clarification for new-track students.** CIS 308 remains standalone and is still required for old-track students. For new-track students it is neither required nor mapped. Upper-division courses that depended on C language knowledge (particularly those that formerly gated on CIS 450 + CIS 308) should clarify whether C exposure is still expected.
-
-4. **ECE 241 catalog language.** ECE 241 should be removed from the CS major requirements in the catalog for new-track students. The course description for CIS 450 (while it remains in the catalog for old-track completions) should note the substitution.
+1. **Confirm ECE 241 and CIS 415's survival is the final, intended answer** (not a transition-period holdover) — this document's original plan assumed both would eventually be retired/replaced; the real degree map keeps both indefinitely. If that's not actually settled, flag it explicitly rather than let this document's stale assumption stand uncorrected elsewhere.
+2. **Upper-division prerequisite audit**, scoped to content-currency (see item 4 above), not course-substitution.
+3. **Confirm the credit-hour changes on CIS 116/200/301/415 don't create a total-credit-count problem** for students transitioning mid-degree.
+4. **CIS 308 status for new-track students** — it remains standalone and required for old-track students; for new-track students it's now a required Year 2 Spring core course too (per the real degree map), so this is no longer an open question the way it was in the original version of this document.

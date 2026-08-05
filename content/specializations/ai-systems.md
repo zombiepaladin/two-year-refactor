@@ -113,7 +113,7 @@ ABET's Computer Science criteria require at least 30 semester credit hours of co
 
 **General-purpose language**: CIS 116 and CIS 200/300 provide sustained, substantial work in a single general-purpose language across three courses.
 
-**Exposure areas**: computer architecture (CIS 115); information management (CIS 260, CIS 560); networking (CIS 225); operating systems (CIS 220, via the browser's process/scheduling model); parallel and distributed computing (CIS 200 and CIS 300, both required to include concurrent algorithms and thread-safe data structures).
+**Exposure areas**: computer architecture (CIS 115); information management (CIS 260, CIS 560); networking (CIS 225); operating systems and parallel/distributed computing — **corrected 2026-08-04**: CIS 220 gives a light, genuine OS-exposure touch ("browser as mini-OS"), but the deeper formalization this row used to attribute to CIS 220/CIS 300 core content was never actually built there (see `resources/reference/spiral-threads.md`'s correction note). This map already requires the **Systems Elective** (CIS 520, 525, or 625, Year 4 Semester 1) — that's the real, confirmed source of this coverage, not the core courses.
 
 **Abstraction across scales**: the core's progression from representation (CIS 115) through data structures (CIS 300) to systems and architecture (CIS 450, CIS 501) demonstrates computing systems at multiple levels of abstraction.
 

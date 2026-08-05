@@ -121,12 +121,6 @@ Processor-architecture touchpoint (2026-07-14): CPU multi-threading — a handfu
 
 CS-theory touchpoint (2026-07-14): wherever regex/pattern-matching is taught as a practical string-processing tool, name explicitly that a regex is a finite automaton under the hood — the automata-theory sub-area of the ABET CS-theory gap, applied rather than invented. Same treatment in CIS 300 if the fit lands better there instead.
 
-#### ECE 241  - Introduction to Electrical and Computer Engineering
-
-*3 credits, controled by Computer Engineering. Potentially removable in updated curriuclum, but politically tricky. Might be convertable to an elective.*
-
-Focus on  programming Arduino and similar devices.
-
 #### Calculus Slot
 
 *4 credits. Placeholder for calculus course, most likely MATH 220  - Analytic Geometry and Calculus I, but some students may come with high school credit and be ready for Calculus II or III. Also fulfils K-State Core requirement KSC 030.*
@@ -265,6 +259,12 @@ Coverage of the OSI 7-layer model, with exploration of HTTP/HTTPS and web socket
 *1 credit. Might be replaced with any 1-credit programming language course?*
 
 Introduction to the C programming langauge.
+
+#### ECE 241  - Introduction to Electrical and Computer Engineering
+
+*3 credits, controled by Computer Engineering. Potentially removable in updated curriuclum, but politically tricky. Might be convertable to an elective.*
+
+Focus on  programming Arduino and similar devices.
 
 #### CIS 400  - Object-Oriented Design, Implementation, and Testing
 

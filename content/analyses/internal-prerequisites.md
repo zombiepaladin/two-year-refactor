@@ -1,189 +1,159 @@
 +++
 title = "Internal Prerequisite Analysis"
-weight = 10
-ordinal = "6.1"
+weight = 60
+ordinal = "6.6"
 +++
 
-> *Working draft for faculty review. This analysis looks **inside** the two-year core — not the upper-division chains — at what the spiral's interconnection means when reality intrudes: a student fails a 1-credit course, drops mid-block, or enters off-sequence. The design is elegant on paper; this is the stress test. Course codes are placeholders.*
+> *Working draft for faculty review. This analysis looks **inside** the two-year core — not the upper-division chains — at what the course sequence's interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in `resources/reference/degree-maps/cs.md`).*
 
 {{< mermaid align="center" zoom="true" >}}
 flowchart TB
-  %% Internal hard prerequisites of the two-year core (arrow = 'is required by')
-  subgraph B1["Block 1 - Read"]
+  %% Internal prerequisites of the two-year core (arrow = 'is required by'). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced.
+  subgraph Y1F["Year 1, Semester 1"]
     direction LR
-    CS101["CS-101<br/>Imperative Prog<br/><b>blocks 20</b>"]
-    CS102["CS-102<br/>Functional Prog<br/><b>blocks 16</b>"]
-    CS103["CS-103<br/>Computational Rep<br/><b>blocks 12</b>"]
-    MATH101["MATH-101<br/>Logic and Sets<br/><b>blocks 4</b>"]
+    CIS115["CIS 115<br/>Intro to Computing Sci"]
+    CIS116["CIS 116<br/>Intro to Programming"]
+    CIS120["CIS 120<br/>Web Foundations"]
+    MLOGIC["MATH<br/>Logic and Sets"]
+    MCOUNT["MATH<br/>Counting Finite Config."]
   end
-  subgraph B2["Block 2 - Modify"]
+  subgraph Y1S["Year 1, Semester 2"]
     direction LR
-    CS104["CS-104<br/>Data Transformation<br/><b>blocks 14</b>"]
-    CS105["CS-105<br/>Code Reading/Repair"]
-    CS106["CS-106<br/>Web Foundations<br/><b>blocks 3</b>"]
-    MATH102["MATH-102<br/>Counting<br/><b>blocks 3</b>"]
+    CIS260["CIS 260<br/>Rel. Databases"]
+    CIS220["CIS 220<br/>Platform Programming"]
+    CIS200["CIS 200<br/>Programming Fundamentals"]
+    MCALC["MATH 220<br/>Calculus I"]
+    MRECMOD["MATH<br/>Recursive/Modular"]
+    MGRAPHS["MATH<br/>Graphs/Trees/Maps"]
   end
-  subgraph B3["Block 3 - Model"]
+  subgraph Y2F["Year 2, Semester 1"]
     direction LR
-    CS107["CS-107<br/>OOP I<br/><b>blocks 11</b>"]
-    CS108["CS-108<br/>OOP II<br/><b>blocks 3</b>"]
-    CS109["CS-109<br/>Abstract Data Types<br/><b>blocks 7</b>"]
-    MATH103["MATH-103<br/>Recursive/Modular<br/><b>blocks 2</b>"]
+    CIS300["CIS 300<br/>Data & Program Structures"]
+    CIS320["CIS 320<br/>User Experience Dev"]
+    CIS301["CIS 301<br/>Logical Foundations"]
+    CIS225["CIS 225<br/>Computer Networks"]
+    CIS251["CIS 251<br/>Foundations of Cybersecurity"]
   end
-  subgraph B4["Block 4 - Structure"]
+  subgraph Y2S["Year 2, Semester 2"]
     direction LR
-    CS110["CS-110<br/>Trees/Hashing<br/><b>blocks 2</b>"]
-    CS111["CS-111<br/>Systems and APIs<br/><b>blocks 1</b>"]
-    CS112["CS-112<br/>Algorithmic Complexity<br/><b>blocks 1</b>"]
-    STAT101["STAT-101<br/>Descriptive Stats<br/><b>blocks 4</b>"]
+    CIS141["CIS 141<br/>AI/Data Science"]
+    CIS308["CIS 308<br/>C Language Lab"]
+    CIS400["CIS 400<br/>Capstone of the Core"]
+    STAT410["STAT 410<br/>Statistics for Computing"]
   end
-  subgraph B5["Block 5 - Store"]
-    direction LR
-    CS201["CS-201<br/>SQL Fundamentals<br/><b>blocks 3</b>"]
-    CS202["CS-202<br/>Database Design<br/><b>blocks 1</b>"]
-    STAT102["STAT-102<br/>Probability<br/><b>blocks 2</b>"]
-  end
-  subgraph B6["Block 6 - Build Responsibly"]
-    direction LR
-    CS203["CS-204<br/>Software Testing<br/><b>blocks 2</b>"]
-    CS204["CS-205<br/>Security Fund."]
-    CS205["CS-206<br/>Collaborative Dev<br/><b>blocks 1</b>"]
-    STAT103["STAT-103<br/>Distributions/Sampling<br/><b>blocks 1</b>"]
-  end
-  subgraph B7["Block 7 - Judge"]
-    direction LR
-    CS206["CS-207<br/>Graphs and Net Algorithms"]
-    CS207["CS-208<br/>Document DBs/Integration"]
-    MATH104["MATH-104<br/>Graphs/Trees/Networks"]
-  end
-  subgraph B8["Block 8 - Operate"]
-    direction LR
-    CS208["CS-210<br/>Deployment and Ops"]
-    CS209["CS-211<br/>Human-Centered Design"]
-    CS210["CS-212<br/>Data Analysis/Resp AI"]
-    STAT104["STAT-104<br/>Correlation/Regression"]
-  end
-  CS101 ==> CS102
-  CS101 ==> CS103
-  CS101 ==> CS104
-  CS102 ==> CS104
-  CS101 ==> CS105
-  CS102 ==> CS105
-  CS101 ==> CS106
-  CS103 ==> CS107
-  CS104 ==> CS107
-  CS107 ==> CS108
-  CS107 ==> CS109
-  CS109 --> CS110
-  CS106 -.-> CS111
-  CS109 --> CS111
-  CS110 --> CS112
-  CS104 ==> CS201
-  CS201 --> CS202
-  CS109 -.-> CS202
-  CS108 -.-> CS203
-  MATH103 -.-> CS204
-  CS203 --> CS205
-  CS110 -.-> CS206
-  CS112 -.-> CS206
-  CS202 -.-> CS207
-  CS111 -.-> CS208
-  CS205 -.-> CS208
-  CS106 -.-> CS209
-  CS201 -.-> CS210
-  STAT101 -.-> CS210
-  MATH101 --> MATH102
-  MATH102 --> MATH103
-  STAT101 --> STAT102
-  STAT102 --> STAT103
-  STAT103 -.-> STAT104
-  MATH103 -.-> MATH104
+  CIS115 <-.-> CIS116
+  CIS116 ==> CIS200
+  MCALC ==> CIS200
+  CIS120 ==> CIS220
+  CIS200 ==> CIS300
+  MGRAPHS -.->|"either suffices"| CIS300
+  MCALC -.->|"either suffices"| CIS300
+  CIS200 ==> CIS301
+  CIS120 ==> CIS320
+  CIS200 ==> CIS320
+  CIS220 ==> CIS320
+  CIS300 ==> CIS400
+  CIS120 ==> CIS400
+  CIS260 ==> CIS400
+  MLOGIC -.-> MCOUNT
+  MRECMOD -.-> MGRAPHS
+  CIS116 -.-> CIS260
+  CIS120 -.-> CIS300
+  CIS220 -.-> CIS300
+  CIS301 -.-> CIS400
+  MRECMOD -.-> CIS251
+  CIS115 -.-> CIS141
+  CIS116 -.-> CIS141
+  CIS260 -.-> CIS141
   classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff;
   classDef mid fill:#9a3412,stroke:#fff,color:#fff;
   classDef ext fill:#1e3a5f,stroke:#fff,color:#fff;
   classDef term fill:#14532d,stroke:#fff,color:#fff;
-  class CS107,CS104,CS101,CS102,CS103 wall;
-  class CS109 mid;
-  class MATH101,MATH102,MATH103,STAT101,STAT102,STAT103,MATH104,STAT104 ext;
-  class CS105,CS204,CS206,CS207,CS208,CS209,CS210 term;
+  class CIS116 wall;
+  class CIS200,CIS120 mid;
+  class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext;
+  class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term;
 {{< /mermaid >}}
 
 ## The central tension
 
-The spiral's strength — every idea connects to and builds on the others — is also its structural fragility. Tight interconnection means **early courses carry enormous downstream weight**. The same property that makes the curriculum coherent makes a single early failure potentially cascade across two years.
+The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: **CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk** — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.
 
-This is not an argument against the design. It is an argument for building the **policies and the competency mechanics** that absorb messiness *before* launch, because the block structure is less forgiving than the 16-week courses it replaces.
+This is still worth planning for — a student can fail a course, drop mid-term, or transfer in off-sequence, and those scenarios matter regardless of how narrow the risk is. But the severity to plan for is real and bounded, not sweeping.
 
 ## The dependency facts
 
-The core contains roughly **35 hard internal prerequisite edges** (where a later course genuinely cannot be done without an earlier one), plus many softer spiral-continuity links. Sorted by how many blocks apart the two courses sit:
+The core contains **13 hard internal prerequisite edges** among real CIS/MATH courses, plus one corequisite pairing (CIS 115 ⇄ CIS 116) and a handful of soft spiral-continuity links that aren't registrar-enforced.
 
-| Block gap | Edges | Nature |
+| Semester gap | Edges | Nature |
 |---|---|---|
-| 0 (same block) | 7 | Really **corequisites** taught in one 8-week block (e.g. OOP I → OOP II) |
-| 1 | 12 | Adjacent-block dependencies — the normal spiral step |
-| 2–3 | 12 | Medium-range (e.g. data transformation → SQL; OOP II → testing) |
-| 4–6 | 4 | Long-range (e.g. web foundations → human-centered design, six blocks later) |
+| 0 (same semester) | 1 | MATH 220 (Calculus I) → CIS 200, both Y1 Spring — a concurrent-enrollment-allowed prerequisite, not a hard sequential gate |
+| 1 | 7 | Adjacent-semester dependencies — CIS 116→CIS 200, CIS 120→CIS 220, CIS 200→{CIS 300, CIS 301, CIS 320}, CIS 220→CIS 320, MATH (Graphs/Trees/Maps or Calc I)→CIS 300 |
+| 2 | 3 | CIS 120→CIS 400, CIS 300→CIS 400, CIS 260→CIS 400 (all landing at the Y2 Spring capstone) |
+| 3+ | 0 | Nothing in the sequence reaches across more than two semesters as a hard prerequisite |
 
+Five courses have **no stated prerequisite at all**: CIS 260, CIS 225, CIS 251, CIS 141, and (unconfirmed either way) CIS 308. Three of those — CIS 225, CIS 251, CIS 308 — explicitly require instructor permission instead of a course prerequisite, a real gatekeeping mechanism in its own right.
 
-![Core Internal Prerequisites](/images/core_internal_prerequisites.svg)
-
-## Blast radius — the load-bearing walls
+## Blast radius — the load-bearing courses
 
 The decisive measure is **blast radius**: if a course is failed or skipped, how many later courses are hard-blocked (transitively)?
 
 | Course | Downstream courses blocked |
 |---|---|
-| CS-101 Imperative Programming | **20** of the remaining 29 |
-| CS-102 Functional Programming | 16 |
-| CS-104 Data Transformation | 14 |
-| CS-103 Computational Representation | 12 |
-| CS-107 OOP I | 11 |
-| CS-109 Abstract Data Types | 7 |
+| CIS 116 — Introduction to Programming | **5** (CIS 200, CIS 300, CIS 301, CIS 320, CIS 400) |
+| CIS 200 — Programming Fundamentals | 4 (CIS 300, CIS 301, CIS 320, CIS 400) |
+| CIS 120 — Web Foundations | 3 (CIS 220, CIS 320, CIS 400) |
+| CIS 220 — Platform Programming | 1 (CIS 320) |
+| CIS 260 — Foundations of Relational Databases | 1 (CIS 400) |
+| CIS 300 — Data and Program Structures | 1 (CIS 400) |
 
-These six are the **load-bearing walls**. Failing CS-101 in week 8 of the first block can, in principle, block two-thirds of the entire CS spine. By contrast, the **terminal courses carry zero downstream risk** — CS-105, CS-205, CS-207, CS-208, CS-210, CS-211, CS-212, MATH-104, and STAT-104 hard-block nothing, so they can be repeated or deferred without cascade.
+**CIS 116 is the single worst case, blocking 5 of the remaining 13 core courses** — real, worth protecting, but a bounded risk, not a cascade across most of the program. **CIS 115, CIS 301, CIS 320, CIS 400, CIS 225, CIS 251, CIS 141, CIS 308, and every MATH/STAT course carry zero downstream hard-block risk** — more than half the core.
 
-The **mathematics and statistics chains are linear and self-contained**: each course blocks only its own successors plus, at the seams, the two CS courses with external-chain dependencies — CS-205 (needs MATH-103 for applied cryptography) and CS-212 (needs STAT-101 for data analysis). A broken math/stats chain delays those two CS courses but does not touch the rest of the CS spine.
+Two structural reasons the risk stays this contained:
+1. **The core has relatively few courses** — 14 CIS courses plus the MATH/STAT sequence — so there are simply fewer links in any given dependency chain.
+2. **Several courses stand outside the hard-prerequisite graph entirely** — CIS 260, CIS 225, CIS 251, and CIS 141 have no stated prerequisite at all, either by design (broad-access intro-style courses) or because their prerequisite structure hasn't been finalized yet (see the open items below).
 
+## Two open items surfaced while building this analysis, not resolved here
+
+Checking every course's real `Course Prerequisites` section against what its content actually presupposes surfaced two cases where content and stated prerequisites don't quite line up. Both were checked with the user rather than assumed:
+
+1. **CIS 301 → CIS 400.** CIS 400's confirmed testing/verification content thematically builds on CIS 301's "verification formalized" pass (`thread-correctness-verification.md`), but CIS 400's own prerequisites (CIS 300, CIS 120, CIS 260) don't include CIS 301. **User's call: keep this as a soft/spiral-continuity link only** (shown dotted in the diagram above), not a hard prerequisite — matches what `cis-400.md` actually states.
+2. **MATH Recursive and Modular Computation → CIS 251.** `cs.md`'s own CIS 251 entry says its applied-cryptography content builds on this course's modular arithmetic, "correctly sequenced before this course" — but CIS 251's own page lists no prerequisite at all. **User's call: don't add it as a hard prerequisite in this diagram, but log it as a proposed addition** — done, see the "Proposed Changes" section in `cis-251.md`.
+
+CIS 141 was also checked (it has no stated prerequisites despite thematic dependence on CIS 116/200/260's AI-practice progression and CIS 115's processor-architecture seed) — **user's call: leave it prerequisite-free**, matching its current drafted state exactly; shown with soft links only in the diagram.
 
 ## The messy scenarios
 
-### 1. A student fails a high-radius course (e.g. CS-101)
+### 1. A student fails a high-radius course (CIS 116 or CIS 200)
 
-This is the scenario that decides whether the structure is humane. The severity depends entirely on **re-offering cadence**:
+This is the scenario that decides whether the structure is humane. CIS 116's failure blocks 5 downstream courses; CIS 200's blocks 4. The severity depends on **re-offering cadence** — if these Y1-Fall/Y1-Spring courses run only annually, a failed attempt still costs most of a year on a 5-course chain.
 
-- If foundational blocks run **only annually**, a failed CS-101 means the next attempt is a year away — and because CS-101 gates 20 courses, the student is effectively **a year behind on the whole spine**.
-- If foundational blocks run **every 8 weeks**, the student retakes almost immediately and loses one block, not one year.
+The competency model is the structural escape hatch: because competencies belong to the program rather than the course, a student who fails CIS 116 or CIS 200 but can demonstrate the relevant competency could clear the downstream prerequisite without a full re-sit — but only if the (still under-specified, per the assessment chapter's own open items) re-demonstration mechanics are built.
 
-**This re-offering cadence is the single pivotal feasibility question for the whole model**, and it is a scheduling and faculty-load decision, not a curricular one. The curriculum cannot answer it; the department's capacity to staff repeated sections does.
+### 2. A student drops mid-term (illness in week 4)
 
-The structural escape hatch is the **competency model**. Because competencies belong to the program rather than to courses, a student who fails the *course* but can later *demonstrate the competency* could clear the downstream prerequisite without a full re-sit. This is where the competency-based design earns its keep — but only if the assessment system is explicitly built to allow re-demonstration. That places a **concrete requirement on the (currently under-specified) assessment chapter**: it must define how a competency is re-demonstrated outside its home course.
+`cs.md` notes the degree map is "reported in 16-week semesters, not 8-week blocks." But several individual 1-credit courses still run as **8-week half-semester modules within that 16-week frame**: confirmed for CIS 251 (its own drafted schedule is explicitly 8 weeks) and the MATH sequence (each pair of modules is explicitly "first 8 weeks" / "second 8 weeks" of its semester). Whether CIS 220, CIS 225, CIS 260, CIS 320, CIS 141, and CIS 308 follow the same pattern isn't confirmed — their schedules are mostly still TBD. So the core risk this scenario describes — a short illness costing a disproportionate share of an 8-week course's contact time — is **real for at least some courses**, though not uniform across the whole program.
 
-### 2. A student drops mid-block (illness in week 4)
-
-Eight-week blocks are **less forgiving of disruption** than 16-week courses: missing two weeks is 25% of an 8-week course's contact time, versus ~12% of a 16-week course. A three-week illness that a traditional course would survive with an incomplete can sink an 8-week block.
-
-Two things cut the other way. The **1-credit granularity helps** — the student loses one credit, not a four-credit course. And **per-course (not per-block) incompletes** would let a student finish one 1-credit piece later while keeping the rest. The recommendation: allow incompletes at the course, not block, level, and avoid making intra-block courses strictly sequential within the eight weeks where the dependency allows parallelism.
+The 1-credit granularity helps: the student loses one credit, not a multi-credit course. Course-level (not term-level) incompletes are the right mitigation.
 
 ### 3. Off-sequence entry (spring transfer, or a major change after year 1)
 
-The core is **sequential and fall-started**, which collides with a promise the design made elsewhere. "Identical core across degrees → easy transfer" is true for movement *between our own specializations* after the core. But transfer *into* the core mid-sequence — a spring transfer student, or someone switching into CS in year 2 — is made **harder** by the sequencing: if blocks only start in fall, a spring entrant can face up to a year of bench time before the spine even begins.
+CIS 116 → CIS 200 → {CIS 300, CIS 301, CIS 320} → CIS 400 is a real, drafted four-semester chain a spring entrant would need to navigate. Mitigations: a spring-start cohort, summer offerings, or competency placement — each with its own cost (section count, faculty load, and assessment-system readiness, respectively).
 
-Mitigations exist but each has a cost: a **spring-start cohort** (doubles section count), **summer blocks** (faculty load), or **competency placement** (test out of early blocks — again leaning on the assessment system). This deserves explicit attention because transfer-friendliness was a stated selling point, and sequencing quietly undercuts it.
+### 4. The CIS 115 ⇄ CIS 116 corequisite
 
-### 4. Intra-block coupling and block integrity
-
-Seven of the hard edges are *within* a single block (CS-101 → CS-102/103, CS-107 → CS-108/109, CS-201 → CS-202). Taught in the same eight weeks, these are really **coordinated corequisites**, not prerequisites — fine when the block is taught as an integrated whole, but a real risk if different instructors teach the coupled 1-credit pieces without coordination (OOP II assumes OOP I; if the two sections drift, the dependency breaks). **Block integrity therefore requires intra-block instructor coordination** — a faculty-load and scheduling constraint that the curriculum diagram doesn't show but the schedule must.
+The one real coupling risk in the current design: CIS 115 lists CIS 116 as a corequisite. If the two are taught by different instructors without coordination, the coupling could break — a single, specific, identifiable pairing to watch, not a program-wide pattern.
 
 ## Recommendations
 
-1. **Protect the six load-bearing walls** (CS-101, 102, 103, 104, 107, 109): offer them most frequently, give them priority tutoring/support, and make them the first courses for which competency re-demonstration is available.
-2. **Resolve the re-offering cadence** for foundational blocks before launch — it is the pivotal feasibility unknown and determines whether a single failure costs a block or a year.
-3. **Specify competency re-demonstration** in the assessment chapter — it is the structural escape hatch for failure, repeat, and placement, and it is currently unspecified.
-4. **Allow course-level (not block-level) incompletes**, and avoid strict intra-block sequencing where the dependency permits parallel teaching.
-5. **Plan an off-sequence entry path** (spring cohort, summer blocks, or placement) so the sequencing doesn't undercut the transfer-friendliness the design promises.
-6. **Treat block integrity as a staffing constraint**: coupled intra-block courses need coordinated instruction, not just a shared time slot.
+1. **Protect CIS 116 and CIS 200** (the only two real load-bearing courses): offer them most frequently, prioritize tutoring/support, and make them the first courses for which competency re-demonstration is available.
+2. **Resolve the re-offering cadence** for CIS 116 and CIS 200 before launch — a scheduling/staffing decision.
+3. **Specify competency re-demonstration** in the assessment chapter — the structural escape hatch for course failure, still flagged as needing definition.
+4. **Confirm which 1-credit courses actually run as 8-week half-semester modules** (beyond the two confirmed cases, CIS 251 and the MATH pairs) before finalizing incomplete/withdrawal policy — this determines how real Scenario 2's risk is on a course-by-course basis.
+5. **Plan an off-sequence entry path** — spring cohort, summer offerings, or placement.
+6. **Coordinate the CIS 115/CIS 116 corequisite** explicitly if taught by different instructors.
+7. **Resolve the two open prerequisite items above** — decide whether to formalize MATH Recursive and Modular Computation as a CIS 251 prerequisite (already logged as a proposed change in `cis-251.md`), and keep watching whether CIS 301's thematic role in CIS 400 stays informal as content gets drafted further.
 
 ## Bottom line
 
-The internal prerequisite structure is **steep early and flat late**: the first two blocks are load-bearing walls with blast radius up to 20, while year-2 courses mostly block nothing. That shape concentrates risk exactly where students are newest and most likely to stumble. The block-and-spiral design doesn't remove that risk — it sharpens it, because 8-week units are less forgiving than 16-week ones. The mitigations are real but they nearly all route through two things the project has flagged as unfinished: **the re-offering cadence (a feasibility/staffing decision)** and **the competency-re-demonstration mechanics (an assessment-chapter decision)**. The elegant spiral is sound; what it needs now is the unglamorous machinery that catches the student who falls off it.
+The internal prerequisite structure is genuinely resilient: 13 hard edges, a maximum blast radius of 5, and only two courses (CIS 116, CIS 200) carrying any real multi-course cascade risk. More than half the core — CIS 260, CIS 225, CIS 251, and CIS 141 among them — has no stated prerequisite at all, producing a shallow, resilient dependency graph rather than a tightly-coupled one. The mitigations this document recommends — re-offering cadence for the two real load-bearing courses, competency re-demonstration, confirming which courses actually run as 8-week modules, and an off-sequence entry path — are the unglamorous machinery that catches a student who stumbles, sized to the risk that's actually there.

@@ -29,7 +29,7 @@ Each course adds engagement modes on top of what came before, always ending in r
 | **CIS 260** (Y1 Spring) | **Query** | Chronologically earlier than Model/Build below — a real inversion of the old block order, not a simplification. |
 | **CIS 300 / CIS 320** (Y2 Fall) | **Model, Build** | ADT/contract modeling (CIS 300) and building a new component against a provided API (CIS 320) — the client/server pairing introduces both at once. |
 | **CIS 251** (Y2 Fall) | *(Secure, folded into Test below rather than tracked separately)* | Formalizes trust/security; the full "Test" mode doesn't converge until CIS 400 the following semester. |
-| **CIS 400** (Y2 Spring) | **Test, Integrate, Operate** | The core's capstone converges three modes at once — a real structural change from the old design, where these were three separate blocks (B6, B7, B8). This is where the growing cycle reaches its fullest expression in the core. |
+| **CIS 400** (Y2 Spring) | **Test, Integrate, Operate** | The core's capstone converges three modes at once, rather than spreading them across separate courses. This is where the growing cycle reaches its fullest expression in the core. |
 | **Reflect** (constant) | — | Present from CIS 116 onward, not a terminal phase. |
 
 By CIS 400, engagement with a signature application involves every mode developed before it, converging in one course rather than unfolding one mode per touchpoint the way the old block design implied.
@@ -69,7 +69,7 @@ The traditional model is not wrong — it produces capable programmers. But it p
 
 ## Connection to the signature assessments
 
-**A structural change from the old design, worth naming plainly:** two of the four signature assessments — Team Software Project and Design Review — now converge on the same course (CIS 400), where the old block design kept them a full block apart (B6, B7). Whether that convergence needs its own pacing decision is an open question, not resolved here.
+**Worth naming plainly:** two of the four signature assessments — Team Software Project and Design Review — converge on the same course (CIS 400). Whether that convergence needs its own pacing decision is an open question, not resolved here.
 
 - **Code Archaeology:** the Repair mode, formalized as an assessed exercise — lands in **CIS 200**.
 - **Data Investigation:** the Query mode, extended to a full research question with visualization and presentation — the most likely host is **CIS 260**, based on the Human-Centered Computing thread's "comprehend" pass, but this is an inference, not a confirmed placement.

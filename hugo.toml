@@ -45,7 +45,7 @@ cleanDestinationDir = true
   # This will be used in HTML meta tags, the open graph protocol and twitter
   # cards.
   # TODO changeme
-  author.name = 'Russell Feldhausen'
+  author.name = 'Department of Computer Science'
 
   # The author's email address of your site.
   # Default: not set

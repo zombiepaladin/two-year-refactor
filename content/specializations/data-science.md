@@ -4,7 +4,9 @@ weight = 30
 ordinal = "5.3"
 +++
 
-> *Working draft for faculty review. A proposal for a CS-housed Data Science specialization built on the shared two-year core, using real K-State courses. Note up front: the **Statistics department already offers a B.S. in Data Science**, so this proposal is framed as a CS-flavored, partnership-oriented specialization rather than a duplicate. Core course codes are placeholders; CIS/STAT/MATH numbers are actual K-State courses.*
+> *Working draft for faculty review. A proposal for a CS-housed Data Science specialization built on the shared two-year core, using real K-State courses. Note up front: the **Statistics department already offers a B.S. in Data Science**, so this proposal is framed as a CS-flavored, partnership-oriented specialization rather than a duplicate. CIS/STAT/MATH numbers are actual K-State courses.*
+>
+> **Updated 2026-08-04** — this page's core-facing claims were still in old block/CS-1xx-2xx terms; rewritten against the real course sequence. **Unlike `cybersecurity.md` and `ai-systems.md`, this page still has no real, semester-by-semester degree-map table** — bringing it up to that standard (with a confirmed Year 3–4 course sequence and a matching ABET table format) is a real gap, flagged here rather than invented in this pass.
 
 ## Premise and positioning
 
@@ -12,7 +14,7 @@ Under the specialization model, every degree is the identical two-year core plus
 
 ## What the core already provides (the on-ramps)
 
-Data-science-bound students arrive having spiraled through Data Structures & Representation (including geospatial), the full (non-calculus) statistics sequence, the Human-Centered Computing visualization throughline, declarative SQL and dataflow in Computational Models, Optimization Reasoning, and a notebook data-analysis capstone with responsible-AI judgment.
+Data-science-bound students arrive having spiraled through Data Structures & Representation (CIS 300; the geospatial sub-theme is still a proposed addition, not built — see `cis-300.md`'s "Proposed Changes"), STAT 410 (no drafted content yet — the confirmed successor to the non-calculus statistics sequence), the Human-Centered Computing visualization throughline (confirmed at CIS 320, still proposed/undrafted there), declarative SQL (CIS 260) and dataflow (CIS 300/CIS 320) in Computational Models, and Optimization Reasoning. **A "notebook data-analysis capstone with responsible-AI judgment" has no confirmed course home** — the 2026-08-04 assessment-chapter pass found this unplaced except for its AI-code-critique slice (confirmed at CIS 141).
 
 ## Prerequisite mapping (core → specialization)
 
@@ -20,11 +22,11 @@ K-State's DS-relevant courses carry prerequisites the core satisfies by design:
 
 | Course prerequisite | Satisfied by |
 |---|---|
-| CIS 300 (data structures) | Data Structures & Representation thread (B3–B4) |
-| CIS 301 (logic) | Absorbed (MATH-101 + Correctness & Verification) |
+| CIS 300 (data structures) | Data Structures & Representation thread — CIS 300 (Y2 Fall) |
+| CIS 301 (logic) | **CIS 301** (Y2 Fall, Logical Foundations of Programming) — confirmed real content: pre/post-conditions, loop invariants, proof by induction. MATH Logic and Sets (Y1 Fall) contributes the propositional/predicate-logic substrate. |
 | CC 310 (Python) | Core language-agnostic foundation + an optional Python certificate |
-| STAT 225 / STAT 510 (intro stats) | The core's STAT-101–104 sequence (non-calculus) |
-| MATH 510 (discrete) | The core's MATH-101–104 sequence |
+| STAT 225 / STAT 510 (intro stats) | **STAT 410** (Y2 Spring) — confirmed successor to the old non-calculus statistics sequence, but has no drafted content yet to verify this claim against |
+| MATH 510 (discrete) | The core's MATH discrete sequence: Logic and Sets, Counting Finite Configurations (Y1 Fall), Recursive and Modular Computation, Graphs/Trees/Maps (Y1 Spring) |
 
 ## CS-side specialization stack (real undergraduate courses)
 
@@ -34,7 +36,7 @@ K-State has built a genuine undergraduate 500-level data-science suite — the e
 |---|---|
 | **CIS 533 Introduction to Data Science Foundations** | Data wrangling, feature engineering, classification, regression, clustering, outlier detection, **and societal aspects** — covers much of the ABET lifecycle in one course |
 | **CIS 531 Introduction to Programming Techniques for Data Science** | MapReduce, big-data tooling, data integration and transformation |
-| **CIS 560 Database System Concepts** | Data management depth (the core's B5 is the foundation) |
+| **CIS 560 Database System Concepts** | Data management depth (CIS 260, Y1 Spring, is the core's foundation) |
 | **CIS 561 Introduction to Data Science in Practice** | A **capstone-bearing practicum** — directly serves the ABET major-project requirement |
 | Graduate electives (CIS 731/733/860/864) | Further depth (data engineering, advanced databases) via accelerated access |
 
@@ -73,11 +75,11 @@ ABET requires **≥45 SCH of data science coursework** covering lifecycle topics
 
 | ABET topic | Coverage | Status |
 |---|---|---|
-| Data acquisition & representativeness | CIS 531 (acquisition/integration); core; sampling in the core stats | Partial — name *representativeness/sampling bias* explicitly |
-| Data management | CIS 560; core B5 | Covered |
+| Data acquisition & representativeness | CIS 531 (acquisition/integration); core; sampling in STAT 410 | Partial — name *representativeness/sampling bias* explicitly |
+| Data management | CIS 560; CIS 260 (core foundation) | Covered |
 | Data preparation & integration | CIS 531, CIS 533 (wrangling/feature engineering) | Covered |
-| Data analysis | CIS 533; STAT 705/766; core CS-212 | Covered |
-| Model development & deployment | STAT 766 / CIS 532 (models); deployment via core B8 | Covered |
+| Data analysis | CIS 533; STAT 705/766 | A core-level notebook-analysis course has no confirmed course home (see the on-ramps note above). CIS 533/STAT 705/766 carry this on their own; no core-level notebook-analysis pass to lean on |
+| Model development & deployment | STAT 766 / CIS 532 (models); deployment via CIS 400 | Covered for modeling; **deployment coverage via CIS 400 is partial** — CIS 400's confirmed deployment content (containers, hardening) doesn't include deep OS/concurrency formalization, which has no confirmed course home (see `resources/reference/spiral-threads.md`'s correction note) |
 | Visualization & communication | **STAT 745** + core Human-Centered visualization throughline | Covered |
 
 ## Spanning concepts
@@ -97,7 +99,7 @@ ABET requires **≥45 SCH of data science coursework** covering lifecycle topics
 
 ## The 45-credit accounting
 
-Not all of the core counts as "data science coursework." DS-counting core (~12–15) + CS-side stack (CIS 531/533/560/561 ≈ 12) + Statistics stack (STAT 705/745/760/766 ≈ 12) + math (MATH 551 + calculus-based stats ≈ 6–9) clears 45 comfortably — more easily than the earlier draft suggested, because the real course suite exists. Size the *required* (not merely available) courses to clear the floor.
+Not all of the core counts as "data science coursework." DS-counting core (~12–15) + CS-side stack (CIS 531/533/560/561 ≈ 12) + Statistics stack (STAT 705/745/760/766 ≈ 12) + math (MATH 551 + calculus-based stats ≈ 6–9) clears 45 comfortably, because the real course suite exists. Size the *required* (not merely available) courses to clear the floor.
 
 ## Bottom line
 

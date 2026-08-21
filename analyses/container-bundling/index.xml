@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Administrative Container Bundling Analysis :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/container-bundling/index.html</link>
+    <description>Working draft for faculty review. Examines the costs and benefits of grouping the 24 proposed 1-credit, 8-week CS courses into semester-length “administrative containers” for enrollment and transcript purposes, while preserving the internal 8-week block structure. Identifies recommended bundlings, prerequisite chain implications, required restructuring, and alignment with Kansas Board of Regents (KBOR) statewide transfer course outcomes. Course codes are placeholders.&#xA;The problem containers solve The proposed core contains 24 CS courses, each carrying 1 credit and spanning 8 weeks. From a pedagogical standpoint this is a deliberate choice: 1-credit modules allow tighter competency targeting, sharper assessment, and a spiral revisit structure that 3-credit courses would make administratively cumbersome. From an administrative standpoint, 24 separate course records per student create friction at every interface: the university workload policy (calibrated for 3-credit courses), degree-audit systems, transcript legibility, and transfer articulation with other institutions.</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/container-bundling/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

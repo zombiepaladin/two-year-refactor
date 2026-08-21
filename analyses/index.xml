@@ -43,6 +43,20 @@
       <description>Working draft for faculty review. Regenerated 2026-07-14 against the new course-container structure (resources/reference/degree-maps/cs.md) — the prior version of this analysis was written against the retired 8-week-block structure and is no longer current. Based on syllabi for CC 110, 210, 310, 315, 410, and 520 on file in resources/syllabai/; those facts are unchanged by this regeneration. Course codes for the new core are the working CIS numbers in cs.md; several are still placeholders (CIS XXX) pending official assignment.</description>
     </item>
     <item>
+      <title>Staffing Requirements Analysis</title>
+      <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/staffing-requirements/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/staffing-requirements/index.html</guid>
+      <description>Working draft for faculty review. Analyzes teaching-load requirements for the proposed two-year CS core under three offering-frequency models, anchored to the K-State faculty workload policy (FHXY). Enrollment figures assume 60–100 incoming students per year. Core course codes are placeholders.&#xA;Policy baseline Kansas State University Faculty Handbook policy FHXY establishes that the representative nine-month workload for tenure-track faculty is 40% teaching / 40% research / 20% service, with 40% teaching translating to approximately 12 section credit hours (SCH) per academic year. The conversion scales proportionally:</description>
+    </item>
+    <item>
+      <title>Administrative Container Bundling Analysis</title>
+      <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/container-bundling/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/container-bundling/index.html</guid>
+      <description>Working draft for faculty review. Examines the costs and benefits of grouping the 24 proposed 1-credit, 8-week CS courses into semester-length “administrative containers” for enrollment and transcript purposes, while preserving the internal 8-week block structure. Identifies recommended bundlings, prerequisite chain implications, required restructuring, and alignment with Kansas Board of Regents (KBOR) statewide transfer course outcomes. Course codes are placeholders.&#xA;The problem containers solve The proposed core contains 24 CS courses, each carrying 1 credit and spanning 8 weeks. From a pedagogical standpoint this is a deliberate choice: 1-credit modules allow tighter competency targeting, sharper assessment, and a spiral revisit structure that 3-credit courses would make administratively cumbersome. From an administrative standpoint, 24 separate course records per student create friction at every interface: the university workload policy (calibrated for 3-credit courses), degree-audit systems, transcript legibility, and transfer articulation with other institutions.</description>
+    </item>
+    <item>
       <title>AP Cybersecurity Alignment Analysis</title>
       <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/ap-cybersecurity/index.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

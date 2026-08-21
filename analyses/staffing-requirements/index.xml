@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Staffing Requirements Analysis :: CS Two Year Refactor</title>
+    <link>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/staffing-requirements/index.html</link>
+    <description>Working draft for faculty review. Analyzes teaching-load requirements for the proposed two-year CS core under three offering-frequency models, anchored to the K-State faculty workload policy (FHXY). Enrollment figures assume 60–100 incoming students per year. Core course codes are placeholders.&#xA;Policy baseline Kansas State University Faculty Handbook policy FHXY establishes that the representative nine-month workload for tenure-track faculty is 40% teaching / 40% research / 20% service, with 40% teaching translating to approximately 12 section credit hours (SCH) per academic year. The conversion scales proportionally:</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="https://textbooks.cs.ksu.edu/two-year-refactor/analyses/staffing-requirements/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

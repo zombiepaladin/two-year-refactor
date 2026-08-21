@@ -196,5 +196,12 @@
       <guid>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-643/index.html</guid>
       <description>Course Description Continuation of CIS 642. Final implementation, integration, and testing of a software system. Introduction to configuration management, project management, and software maintenance.&#xA;Credit Hours 3 credits&#xA;Course Overview Not yet drafted — pending course-designer’s detailed pass. resources/reference/degree-maps/cs.md lists this as one of three choices (with CIS 598, DEN 591) for the Year 4 Capstone. Note the prerequisite below (CIS 642, taken the preceding semester) isn’t itself in the current core’s Year 3–4 elective structure as documented — worth confirming this pathway is actually reachable under the redesigned map before treating it as a settled capstone option.</description>
     </item>
+    <item>
+      <title>STAT [410/XXX] - Computational Statistics</title>
+      <link>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/stat-410/index.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/stat-410/index.html</guid>
+      <description>This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.&#xA;Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.</description>
+    </item>
   </channel>
 </rss>

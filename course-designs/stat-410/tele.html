@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+
+<html lang="en-us" dir="ltr" itemscope itemtype="http://schema.org/Article" data-r-output-format="html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <meta name="generator" content="Hugo 0.148.1">
+    <meta name="generator" content="Relearn 8.0.0">
+    <meta name="description" content="This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.
+Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.">
+    <meta name="author" content="Department of Computer Science">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta name="twitter:title" content="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <meta name="twitter:description" content="This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.
+Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.">
+    <meta property="og:url" content="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/stat-410/index.html">
+    <meta property="og:site_name" content="CS Two Year Refactor">
+    <meta property="og:title" content="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <meta property="og:description" content="This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.
+Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.">
+    <meta property="og:locale" content="en_us">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Course Designs">
+    <meta property="article:modified_time" content="2026-08-21T13:39:33-05:00">
+    <meta property="og:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <meta itemprop="name" content="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <meta itemprop="description" content="This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.
+Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.">
+    <meta itemprop="dateModified" content="2026-08-21T13:39:33-05:00">
+    <meta itemprop="wordCount" content="1241">
+    <meta itemprop="image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
+    <title>STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor</title>
+    <link href="https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/stat-410/index.html" rel="canonical" type="text/html" title="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/stat-410/index.xml" rel="alternate" type="application/rss+xml" title="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/stat-410/index.print.html" rel="alternate" type="text/html" title="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <link href="/two-year-refactor/course-designs/stat-410/embed.html" rel="alternate" type="text/html" title="STAT [410/XXX] - Computational Statistics :: CS Two Year Refactor">
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1787337600" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1787337600" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1787337600";
+    </script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1787337600" defer></script>
+    <script>
+      window.relearn = window.relearn || {};
+      window.relearn.contentLangs=['en'];
+    </script>
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1787337600" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1787337600" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1787337600" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1787337600" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-html.min.css?1787337600" rel="stylesheet" id="R-format-style">
+    <script>
+      window.relearn = window.relearn || {};
+      // configuration
+      window.relearn.min = `.min`;
+      window.relearn.path='\/course-designs\/stat-410\/index.html';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..\/..';
+      window.relearn.absBaseUri='https:\/\/textbooks.cs.ksu.edu\/two-year-refactor';
+      window.relearn.disableAnchorCopy=false;
+      window.relearn.disableAnchorScrolling=false;
+      window.relearn.disableInlineCopyToClipboard=true;
+      window.relearn.enableBlockCodeWrap=false;
+      // legal
+      window.relearn.getItem = (s,n) => {return s.getItem(n)};
+      window.relearn.setItem = (s,n,v) => {return s.setItem(n,v)};
+      window.relearn.removeItem = (s,n) => {return s.removeItem(n)};
+      // translations
+      window.T_Copy_to_clipboard = `Copy to clipboard`;
+      window.T_Copied_to_clipboard = `Copied to clipboard!`;
+      window.T_Copy_link_to_clipboard = `Copy link to clipboard`;
+      window.T_Link_copied_to_clipboard = `Copied link to clipboard!`;
+      window.T_Reset_view = `Reset view`;
+      window.T_View_reset = `View reset!`;
+      window.T_No_results_found = `No results found for "{0}"`;
+      window.T_N_results_found = `{1} results found for "{0}"`;
+      // variant stuff
+      window.relearn.themevariants = [ 'light-theme' ];
+      window.relearn.customvariantname = "my-custom-variant";
+      // [x] russfeld
+      window.relearn.writeVariant=false;
+      window.relearn.changeVariant = function(variant) {
+        var oldVariant = document.documentElement.dataset.rThemeVariant;
+        window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+        document.documentElement.dataset.rThemeVariant = variant;
+        if (oldVariant != variant) {
+          document.dispatchEvent( new CustomEvent('themeVariantLoaded', { detail: { variant, oldVariant } }) );
+          window.relearn.markVariant();
+        }
+      }
+      window.relearn.markVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant");
+        document.querySelectorAll(".R-variantswitcher select").forEach((select) => {select.value = variant;});
+      }
+      window.relearn.initVariant = function() {
+        var variant = window.relearn.getItem(window.localStorage, window.relearn.absBaseUri + "/variant") ?? "";
+        if( variant == window.relearn.customvariantname ){
+        }else if( !variant || !window.relearn.themevariants.includes(variant) ){
+          variant = window.relearn.themevariants[0];
+          
+          if (window.relearn.writeVariant) {
+            window.relearn.setItem(window.localStorage, window.relearn.absBaseUri + "/variant", variant);
+          }
+        }
+        document.documentElement.dataset.rThemeVariant = variant;
+      }
+      window.relearn.initVariant();
+      window.relearn.markVariant();
+    </script>
+    <link href="/two-year-refactor/css/custom.css?1787337600" rel="stylesheet">
+  </head>
+  <body class="mobile-support html" data-url="/two-year-refactor/course-designs/stat-410/index.html">
+    
+    <div id="tele" class="tele mirror">
+    
+    <div id="R-body" class="default-animation">
+      <div id="R-body-overlay"></div>
+      
+      
+      
+      <div id="R-main-overlay"></div>
+      <main id="R-body-inner" class="highlightable course-designs" tabindex="-1">
+        <div class="flex-block-wrapper">
+<article class="default">
+  <header class="headline">
+  </header>
+
+<h1 id="stat-410xxx---computational-statistics">STAT [410/XXX] - Computational Statistics</h1>
+
+<blockquote>
+<p>This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.</p></blockquote>
+<blockquote>
+<p>Also important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: <em>At least 9 semester credit hours (or equivalent) must include <strong>statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.</strong></em></p></blockquote>
+<h2 id="course-description">Course Description</h2>
+<p>Descriptive statistics and graphical methods; probability, distributions, and simulation, presented through both frequentist and Bayesian perspectives; estimation, hypothesis testing, and resampling; regression and optimization-based modeling. Emphasizes statistical computing and real-world data.</p>
+<h2 id="credit-hours">Credit Hours</h2>
+<p>4 credits</p>
+<h2 id="course-overview">Course Overview</h2>
+<p>This course serves as the statistical foundation for all bachelor degrees offered by the Department of Computer Science, and is a part of the proposed two-year common computing core coursework. It falls in the fourth semester (Spring of the Sophomore year) providing ample time for students interested in pursuing deeper statistical knowledge to take additional courses, or even double-major in statistics or data science.</p>
+<p>The two-year common computing core adopts a spiral curriculum model across the full program, concepts are introduced early and deepened through deliberate repeated exposure at greater depths and multiple contexts across multiple courses. Thus, while this course formalizes statistical reasoning and techniques, students will have had both exposure and practical hands-on experience with statistical concepts and tools the course leverages and builds upon, including:</p>
+<ul>
+<li>Significant Python programming experience, including consuming data from multiple sources (files, databases, web APIs), programmatically creating web visualizations including charts and graphs, working with Python libraries including Pandas and NumPy.</li>
+<li>Mathematical foundations from the new discrete math chain, including sets, counting principles, permutations, combinations, binomial coefficients, finite cardinality, and inclusion-exclusion.</li>
+<li>Foundational linear algebra experience including vectors, matrices, and associated operations (multiplication, transpose, inverse, dot product), systems of linear equations, projections onto a subspace</li>
+<li>Experience with real-world data sets, including climate and weather data from Kansas Mesonet, sensor data logs from instrumented classroom plants, and historical Kansas population, geographic, educational, and economic data sets.</li>
+<li>Students will have also computed and displayed descriptive statistics on datasets in earlier programming courses (mean, median, mode, and standard deviation).</li>
+</ul>
+<p>Additionally, a focus of the two-year curriculum is to approach topics from multiple lenses encouraging students to develop a deeper, more robust foundational understanding. For this course, that goal would include teaching both Frequentist and Bayesian perspectives side-by-side, often working through the same problems.</p>
+<h2 id="course-goals-and-learning-outcomes">Course Goals and Learning Outcomes</h2>
+<p>Upon completing this course, students should be able to:</p>
+<ol>
+<li>Summarize and visualize a dataset using descriptive statistics and graphical methods, evaluating whether a visualization represents data honestly and effectively.</li>
+<li>Compute probabilities and describe random variables using discrete and continuous distributions, expectation, and variance.</li>
+<li>For a given estimation problem, construct and interpret the solution under both a frequentist framing (point estimates, confidence intervals, hypothesis tests) and a Bayesian framing (Bayes&rsquo; theorem, posterior estimates, credible intervals), explicitly contrasting what each does and does not establish.</li>
+<li>Use Monte Carlo simulation and bootstrap resampling as computational alternatives to closed-form probability and inference methods, including empirical verification of results such as the Central Limit Theorem.</li>
+<li>Design and analyze a basic hypothesis test or controlled experiment (e.g., an A/B test), correctly stating the conclusions the method does and does not support and distinguishing correlation from causation.</li>
+<li>Fit and interpret simple and multiple linear regression — expressed in matrix/vector form via least squares — and logistic regression for binary classification.</li>
+<li>Formulate a model-fitting problem as an optimization problem and apply gradient descent to minimize a loss function.</li>
+<li>Evaluate a fitted model&rsquo;s performance using a train/test split, identifying overfitting and underfitting.</li>
+<li>Communicate statistical findings — numerically, visually, and in writing — to technical and non-technical audiences.</li>
+</ol>
+<h2 id="course-requisites">Course Requisites</h2>
+<p>Prerequisites:</p>
+<ul>
+<li><strong>CIS 116</strong> Introduction to Programming</li>
+<li><strong>MATH XX2</strong> Counting and Finite Configurations (new discrete math course being developed for the core)</li>
+<li><strong>MATH 220</strong> Calculus I</li>
+<li><strong>MATH 551</strong> Matrix Theory or <strong>MATH 515</strong> Introduction to Linear Algebra</li>
+</ul>
+<h2 id="course-topics">Course Topics</h2>
+<ul>
+<li>Measures of center, spread, and shape</li>
+<li>Exploratory data analysis</li>
+<li>Principles of honest, effective graphical communication; common visualization pitfalls</li>
+<li>Sample spaces, events, and set-based probability notation</li>
+<li>Counting-based probability: permutations, combinations, binomial coefficients</li>
+<li>Random variables; discrete distributions (binomial, Poisson) and continuous distributions (normal)</li>
+<li>Expectation, variance, joint and conditional distributions</li>
+<li>Central Limit Theorem</li>
+<li>Bayes&rsquo; theorem; Bayesian vs. frequentist interpretations of probability</li>
+<li>Monte Carlo simulation</li>
+<li>Point estimation</li>
+<li>Confidence intervals</li>
+<li>Hypothesis testing: parametric tests, p-values, Type I/II error</li>
+<li>Chi-square tests: goodness of fit, independence</li>
+<li>Analysis of variance (ANOVA); effect size measures</li>
+<li>Bootstrap resampling</li>
+<li>Bayesian credible intervals and posterior estimation</li>
+<li>Experimental design and A/B testing; correlation vs. causation</li>
+<li>Simple and multiple linear regression</li>
+<li>Least squares in matrix/vector form (leans on the linear algebra prerequisite)</li>
+<li>Optimization: loss functions, gradient descent</li>
+<li>Logistic regression for binary classification</li>
+<li>ANOVA reframed as regression with categorical predictors</li>
+<li>Model evaluation: train/test split, overfitting and underfitting</li>
+</ul>
+<h2 id="course-schedule">Course Schedule</h2>
+<p><strong>Data &amp; Description</strong></p>
+<ul>
+<li>Week 1: Measures of center, spread, and shape; working with real datasets in Python</li>
+<li>Week 2: Exploratory data analysis; honest/effective graphical communication and common visualization pitfalls</li>
+</ul>
+<p><strong>Probability &amp; Simulation</strong></p>
+<ul>
+<li>Week 3: Sample spaces, events, set-based probability notation; counting-based probability (permutations, combinations, binomial coefficients)</li>
+<li>Week 4: Random variables; discrete (binomial, Poisson) and continuous (normal) distributions; expectation and variance</li>
+<li>Week 5: Joint and conditional distributions; Central Limit Theorem; Monte Carlo simulation (empirically verifying CLT)</li>
+<li>Week 6: Bayes&rsquo; theorem; Bayesian vs. frequentist interpretations of probability — the dual-lens anchor point for the rest of the course</li>
+</ul>
+<p><strong>Estimation, Both Lenses</strong></p>
+<ul>
+<li>Week 7: Point estimation and confidence intervals, paired directly against Bayesian posterior estimation and credible intervals for the same problem</li>
+</ul>
+<p><strong>Checkpoint</strong></p>
+<ul>
+<li>Week 8: Midterm assessment and review, covering description through estimation</li>
+</ul>
+<p><strong>Inference &amp; Experimentation</strong></p>
+<ul>
+<li>Week 9: Hypothesis testing — parametric tests, p-values, Type I/II error</li>
+<li>Week 10: Chi-square tests (goodness of fit, independence); ANOVA and effect size</li>
+<li>Week 11: Bootstrap resampling; experimental design and A/B testing; correlation vs. causation</li>
+</ul>
+<p><strong>Modeling &amp; Optimization</strong></p>
+<ul>
+<li>Week 12: Simple and multiple linear regression; least squares in matrix/vector form</li>
+<li>Week 13: Optimization — loss functions, gradient descent; logistic regression for binary classification</li>
+<li>Week 14: ANOVA reframed as regression with categorical predictors; model evaluation (train/test split, over/underfitting)</li>
+</ul>
+<p><strong>Synthesis</strong></p>
+<ul>
+<li>Week 15: Final project/presentations — applying descriptive, inferential, and modeling tools (both lenses) to a real dataset; communicating findings to technical and non-technical audiences</li>
+</ul>
+<p>Running case studies/datasets threaded across the whole semester rather than siloed by week: education-research scenarios, marketing/business A-B examples, agricultural applications anchored on the Kansas Mesonet dataset already used elsewhere in the core.</p>
+<h2 id="k-state-catalog-listings">K-State Catalog Listings</h2>
+<p><em>For reference, the current catalog listings for STAT 410 (the former statistics service course for computer science) and STAT 510 (the currently used statistics service course for computer science) are included below.</em></p>
+<h3 id="stat-410---probabilistic-systems-modeling">STAT 410 - Probabilistic Systems Modeling</h3>
+<p><strong>3 Credits</strong> Descriptive statistics and graphical methods; basic probability; probability distributions; several random variable; Poisson processes; computer simulation of random phenomena; confidence interval estimation; hypothesis testing.</p>
+<p><strong>Prerequsite</strong> MATH 221 (Calculus II) and CIS 300</p>
+<h3 id="stat-510---introductory-probability-and-statistics-i">STAT 510 - Introductory Probability and Statistics I</h3>
+<p><strong>3 Credits</strong> Descriptive statistics, probability concepts and laws, sample spaces; random variables; binomial, uniform, normal, and Poisson; two-dimensional variates; expected values; confidence intervals; binomial parameter, median, mean, and variance; testing simple hypotheses using CIs and X2 ; goodness of fit. Numerous applications.</p>
+<p><strong>Prerequsite</strong> MATH 221 (Calculus II)</p>
+
+  <footer class="footline">
+  </footer>
+</article>
+        </div>
+      </main>
+      
+      
+      
+    </div>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1787337600" defer></script>
+      
+      
+      
+    </div> 
+  <script src="/two-year-refactor/js/tele-scroll.min.js?1787337600" defer></script>
+  </body>
+</html>

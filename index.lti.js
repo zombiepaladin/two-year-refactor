@@ -272,12 +272,28 @@ var relearn_lti_index = [
     "uri": "/two-year-refactor/pedagogy/signature-applications/index.html"
   },
   {
+    "breadcrumb": "Analyses",
+    "description": "Working draft for faculty review. Analyzes teaching-load requirements for the proposed two-year CS core under three offering-frequency models, anchored to the K-State faculty workload policy (FHXY). Enrollment figures assume 60–100 incoming students per year. Core course codes are placeholders.\nPolicy baseline Kansas State University Faculty Handbook policy FHXY establishes that the representative nine-month workload for tenure-track faculty is 40% teaching / 40% research / 20% service, with 40% teaching translating to approximately 12 section credit hours (SCH) per academic year. The conversion scales proportionally:",
+    "modified": "2026-07-01T13:01:34-05:00",
+    "tags": [],
+    "title": "Staffing Requirements Analysis",
+    "uri": "/two-year-refactor/analyses/staffing-requirements/index.html"
+  },
+  {
     "breadcrumb": "Competency-Based Assessment \u003e Competencies",
     "description": "Re-checked against real course-design pages, 2026-08-04 — see resources/design-log.md. One structural flag applies throughout, already on record in resources/reference/spiral-threads.md since 2026-07-15: deep OS/concurrency formalization (processes vs. threads, scheduling, kernel/user space, the actor model, comparative fault-tolerance patterns) has no confirmed new-course home. CIS 220 carries the required ABET OS-exposure anchor at a lighter level; whether the deeper theoretical material survives in the core or only at the Systems Elective (CIS 520/525/625) was never decided. Rows depending on it are marked accordingly.",
     "modified": "2026-08-05T13:00:32-05:00",
     "tags": [],
     "title": "Systems and Infrastructure",
     "uri": "/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html"
+  },
+  {
+    "breadcrumb": "Analyses",
+    "description": "Working draft for faculty review. Examines the costs and benefits of grouping the 24 proposed 1-credit, 8-week CS courses into semester-length “administrative containers” for enrollment and transcript purposes, while preserving the internal 8-week block structure. Identifies recommended bundlings, prerequisite chain implications, required restructuring, and alignment with Kansas Board of Regents (KBOR) statewide transfer course outcomes. Course codes are placeholders.\nThe problem containers solve The proposed core contains 24 CS courses, each carrying 1 credit and spanning 8 weeks. From a pedagogical standpoint this is a deliberate choice: 1-credit modules allow tighter competency targeting, sharper assessment, and a spiral revisit structure that 3-credit courses would make administratively cumbersome. From an administrative standpoint, 24 separate course records per student create friction at every interface: the university workload policy (calibrated for 3-credit courses), degree-audit systems, transcript legibility, and transfer articulation with other institutions.",
+    "modified": "2026-07-01T13:01:34-05:00",
+    "tags": [],
+    "title": "Administrative Container Bundling Analysis",
+    "uri": "/two-year-refactor/analyses/container-bundling/index.html"
   },
   {
     "breadcrumb": "Core Design \u003e Threads",
@@ -646,6 +662,14 @@ var relearn_lti_index = [
     "tags": [],
     "title": "CIS 643 - Software Engineering Project II",
     "uri": "/two-year-refactor/course-designs/cis-643/index.html"
+  },
+  {
+    "breadcrumb": "Course Designs",
+    "description": "This document describes a proposed computational statistics course to serve the common computing foundation being developed by the department of computing science. This course is intended to be housed in the Department of Statistics and will be co-designed with computer science faculty. Exact numbering is not yet determined - the STAT 410 number (a previous service course for CS) is used as a placeholder and potential choice.\nAlso important to note is that between this course, the discrete mathematics sequence, and calculus, the following ABET accreditation requirements must be met: At least 9 semester credit hours (or equivalent) must include statistical inference and modeling, linear algebra, probability, data visualization, and optimization topics.",
+    "modified": "2026-08-21T13:39:33-05:00",
+    "tags": [],
+    "title": "STAT [410/XXX] - Computational Statistics",
+    "uri": "/two-year-refactor/course-designs/stat-410/index.html"
   },
   {
     "breadcrumb": "",

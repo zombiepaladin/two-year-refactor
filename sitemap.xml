@@ -137,8 +137,16 @@
     <lastmod>2026-07-22T08:08:26-05:00</lastmod>
   </url>
   <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/staffing-requirements/index.html</loc>
+    <lastmod>2026-07-01T13:01:34-05:00</lastmod>
+  </url>
+  <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/assessment/competencies/systems-and-infrastructure/index.html</loc>
     <lastmod>2026-08-05T13:00:32-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/analyses/container-bundling/index.html</loc>
+    <lastmod>2026-07-01T13:01:34-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/core-design/threads/thread-algorithmic/index.html</loc>
@@ -322,6 +330,10 @@
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/cis-643/index.html</loc>
     <lastmod>2026-07-22T08:08:26-05:00</lastmod>
+  </url>
+  <url>
+    <loc>https://textbooks.cs.ksu.edu/two-year-refactor/course-designs/stat-410/index.html</loc>
+    <lastmod>2026-08-21T13:39:33-05:00</lastmod>
   </url>
   <url>
     <loc>https://textbooks.cs.ksu.edu/two-year-refactor/tags/index.html</loc>

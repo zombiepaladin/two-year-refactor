@@ -8,7 +8,7 @@
     <meta name="generator" content="Relearn 8.0.0">
     <meta name="description" content="Working draft for faculty review. This analysis looks inside the two-year core — not the upper-division chains — at what the course sequence’s interconnection means when reality intrudes: a student fails a course, drops mid-term, or enters off-sequence. CIS/MATH/STAT numbers are actual K-State courses (or, for the MATH/STAT modules, confirmed course slots in resources/reference/degree-maps/cs.md).
 flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is required by&#39;). Solid/thick = hard prerequisite. Dotted = soft/spiral-continuity, not registrar-enforced. subgraph Y1F[&#34;Year 1, Semester 1&#34;] direction LR CIS115[&#34;CIS 115&lt;br/&gt;Intro to Computing Sci&#34;] CIS116[&#34;CIS 116&lt;br/&gt;Intro to Programming&#34;] CIS120[&#34;CIS 120&lt;br/&gt;Web Foundations&#34;] MLOGIC[&#34;MATH&lt;br/&gt;Logic and Sets&#34;] MCOUNT[&#34;MATH&lt;br/&gt;Counting Finite Config.&#34;] end subgraph Y1S[&#34;Year 1, Semester 2&#34;] direction LR CIS260[&#34;CIS 260&lt;br/&gt;Rel. Databases&#34;] CIS220[&#34;CIS 220&lt;br/&gt;Platform Programming&#34;] CIS200[&#34;CIS 200&lt;br/&gt;Programming Fundamentals&#34;] MCALC[&#34;MATH 220&lt;br/&gt;Calculus I&#34;] MRECMOD[&#34;MATH&lt;br/&gt;Recursive/Modular&#34;] MGRAPHS[&#34;MATH&lt;br/&gt;Graphs/Trees/Maps&#34;] end subgraph Y2F[&#34;Year 2, Semester 1&#34;] direction LR CIS300[&#34;CIS 300&lt;br/&gt;Data &amp; Program Structures&#34;] CIS320[&#34;CIS 320&lt;br/&gt;User Experience Dev&#34;] CIS301[&#34;CIS 301&lt;br/&gt;Logical Foundations&#34;] CIS225[&#34;CIS 225&lt;br/&gt;Computer Networks&#34;] CIS251[&#34;CIS 251&lt;br/&gt;Foundations of Cybersecurity&#34;] end subgraph Y2S[&#34;Year 2, Semester 2&#34;] direction LR CIS141[&#34;CIS 141&lt;br/&gt;AI/Data Science&#34;] CIS308[&#34;CIS 308&lt;br/&gt;C Language Lab&#34;] CIS400[&#34;CIS 400&lt;br/&gt;Capstone of the Core&#34;] STAT410[&#34;STAT 410&lt;br/&gt;Statistics for Computing&#34;] end CIS115 &lt;-.-&gt; CIS116 CIS116 ==&gt; CIS200 MCALC ==&gt; CIS200 CIS120 ==&gt; CIS220 CIS200 ==&gt; CIS300 MGRAPHS -.-&gt;|&#34;either suffices&#34;| CIS300 MCALC -.-&gt;|&#34;either suffices&#34;| CIS300 CIS200 ==&gt; CIS301 CIS120 ==&gt; CIS320 CIS200 ==&gt; CIS320 CIS220 ==&gt; CIS320 CIS300 ==&gt; CIS400 CIS120 ==&gt; CIS400 CIS260 ==&gt; CIS400 MLOGIC -.-&gt; MCOUNT MRECMOD -.-&gt; MGRAPHS CIS116 -.-&gt; CIS260 CIS120 -.-&gt; CIS300 CIS220 -.-&gt; CIS300 CIS301 -.-&gt; CIS400 MRECMOD -.-&gt; CIS251 CIS115 -.-&gt; CIS141 CIS116 -.-&gt; CIS141 CIS260 -.-&gt; CIS141 classDef wall fill:#7c2d12,stroke:#fff,stroke-width:2px,color:#fff; classDef mid fill:#9a3412,stroke:#fff,color:#fff; classDef ext fill:#1e3a5f,stroke:#fff,color:#fff; classDef term fill:#14532d,stroke:#fff,color:#fff; class CIS116 wall; class CIS200,CIS120 mid; class MLOGIC,MCOUNT,MCALC,MRECMOD,MGRAPHS,STAT410 ext; class CIS115,CIS220,CIS260,CIS300,CIS301,CIS320,CIS400,CIS225,CIS251,CIS141,CIS308 term; The central tension The tight interconnection that makes the spiral coherent is also a structural risk: early courses can carry outsized downstream weight if a student fails or delays them. In practice, that risk is narrow: CIS 116 and CIS 200, both taken in the first year, are the only courses whose failure has any real multi-course cascade risk — everything else in the two-year core either blocks nothing, or blocks at most one downstream course.">
-    <meta name="author" content="Russell Feldhausen">
+    <meta name="author" content="Department of Computer Science">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image" content="https://textbooks.cs.ksu.edu/two-year-refactor/images/hero.png">
     <meta name="twitter:title" content="Internal Prerequisite Analysis :: CS Two Year Refactor">
@@ -35,26 +35,26 @@ flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is req
     <link href="/two-year-refactor/analyses/internal-prerequisites/index.xml" rel="alternate" type="application/rss+xml" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
     <link href="/two-year-refactor/analyses/internal-prerequisites/tele.html" rel="alternate" type="text/html" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
     <link href="/two-year-refactor/analyses/internal-prerequisites/embed.html" rel="alternate" type="text/html" title="Internal Prerequisite Analysis :: CS Two Year Refactor">
-    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1785952884" rel="stylesheet">
-    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/search-lunr.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/search.min.js?1785952884" defer></script>
+    <link href="/two-year-refactor/css/auto-complete/auto-complete.min.css?1787337600" rel="stylesheet">
+    <script src="/two-year-refactor/js/auto-complete/auto-complete.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/search-lunr.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/search.min.js?1787337600" defer></script>
     <script>
       window.relearn = window.relearn || {};
-      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1785952884";
+      window.relearn.index_js_url="/two-year-refactor/searchindex.en.js?1787337600";
     </script>
-    <script src="/two-year-refactor/js/lunr/lunr.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.stemmer.support.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.multi.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/lunr/lunr.en.min.js?1787337600" defer></script>
     <script>
       window.relearn = window.relearn || {};
       window.relearn.contentLangs=['en'];
     </script>
-    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1785952884" rel="stylesheet"></noscript>
-    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1785952884" rel="stylesheet">
-    <link href="/two-year-refactor/css/theme.min.css?1785952884" rel="stylesheet">
-    <link href="/two-year-refactor/css/format-print.min.css?1785952884" rel="stylesheet" id="R-format-style">
+    <link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1787337600" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/two-year-refactor/fonts/fontawesome/css/fontawesome-all.min.css?1787337600" rel="stylesheet"></noscript>
+    <link href="/two-year-refactor/css/perfect-scrollbar/perfect-scrollbar.min.css?1787337600" rel="stylesheet">
+    <link href="/two-year-refactor/css/theme.min.css?1787337600" rel="stylesheet">
+    <link href="/two-year-refactor/css/format-print.min.css?1787337600" rel="stylesheet" id="R-format-style">
     <script>
       window.relearn = window.relearn || {};
       // configuration
@@ -113,12 +113,9 @@ flowchart TB %% Internal prerequisites of the two-year core (arrow = &#39;is req
       window.relearn.initVariant();
       window.relearn.markVariant();
     </script>
-    <link href="/two-year-refactor/css/custom.css?1785952884" rel="stylesheet">
+    <link href="/two-year-refactor/css/custom.css?1787337600" rel="stylesheet">
   </head>
-  <body class="mobile-support print" data-url="/two-year-refactor/analyses/internal-prerequisites/index.html">
-    
-    <div id="tele" class="tele mirror">
-    
+  <body class="mobile-support embed print" data-url="/two-year-refactor/analyses/internal-prerequisites/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       
@@ -322,27 +319,23 @@ flowchart TB
       
       
     </div>
-    <script src="/two-year-refactor/js/js-yaml/js-yaml.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-color.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-dispatch.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-drag.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-ease.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-interpolate.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-selection.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-timer.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-transition.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/d3/d3-zoom.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/mermaid/mermaid.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/js-yaml/js-yaml.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-color.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-dispatch.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-drag.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-ease.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-interpolate.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-selection.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-timer.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-transition.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/d3/d3-zoom.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/mermaid/mermaid.min.js?1787337600" defer></script>
     <script>
       window.relearn.themeUseMermaid = JSON.parse("{ \"securityLevel\": \"loose\" }");
     </script>
-    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1785952884" defer></script>
-    <script src="/two-year-refactor/js/theme.min.js?1785952884" defer></script>
-      
-      
-      
-    </div> 
-  <script src="/two-year-refactor/js/tele-scroll.min.js?1785952884" defer></script>
+    <script src="/two-year-refactor/js/clipboard/clipboard.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/perfect-scrollbar/perfect-scrollbar.min.js?1787337600" defer></script>
+    <script src="/two-year-refactor/js/theme.min.js?1787337600" defer></script>
+  <script src="/two-year-refactor/js/embed-iframe.min.js?1787337600" defer></script>
   </body>
 </html>

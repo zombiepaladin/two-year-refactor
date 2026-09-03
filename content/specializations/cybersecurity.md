@@ -99,7 +99,7 @@ ABET's Cybersecurity criteria require at least 45 semester credit hours of compu
 | Area | Coverage |
 |---|---|
 | Data Security | CIS 260, CIS 251 (Week 2 authn/authz, Week 5 encryption/backups — generic, intro-level), CIS 553 |
-| Software Security | CIS 400, CIS 551. **CIS 251 removed 2026-08-04** — its real content has no software-security material (no secure coding, no vulnerability classes like injection/buffer overflow); the earlier citation overclaimed |
+| Software Security | CIS 400, CIS 551. **CIS 251 removed 2026-08-04** — its real content has no software-security material (no secure coding, no weakness classes like injection/buffer overflow); the earlier citation overclaimed |
 | Component Security | CIS 300 (interfaces, contracts), CIS 501 — see faculty concerns below |
 | Connection Security | CIS 225, CIS 525. (CIS 251's Week 3 — IP addresses, DNS, packets — touches this lightly, but CIS 225 already owns the depth here.) |
 | System Security | CIS 400, CIS 450, CIS 551 |

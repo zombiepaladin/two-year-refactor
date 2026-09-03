@@ -10,7 +10,7 @@ weight: 20
 
 **I can design software systems that satisfy identified requirements and constraints.**
 
-I create and communicate system designs that consider functionality, maintainability, security, usability, and performance.
+I create and communicate system designs that consider functionality, maintainability, privacy, security, usability, and performance.
 
 **Primary evidence contexts:**
 
@@ -21,7 +21,7 @@ I create and communicate system designs that consider functionality, maintainabi
 | CIS 300 (Y2 Fall) / CIS 220 & CIS 320 (Y1 Spring / Y2 Fall) | Client-server decomposition; API design across a network boundary (CIS 300, build side); web component architecture (CIS 220/CIS 320, integrate side). |
 | CIS 260 (Y1 Spring) | Schema design — modeling a real-world domain with formal relational structure. |
 | CIS 400 (Y2 Spring), formalized (woven throughout) | Designing for testability — testability as a first-class design quality. |
-| CIS 251 (Y2 Fall) | Security as a design concern — threat modeling, least-privilege, data minimization embedded in design. Confirmed directly against CIS 251's real SLOs. |
+| CIS 251 (Y2 Fall) | Privacy and cybersecurity as design concerns — threat | modeling, least-privilege, data minimization embedded in design. Confirmed | directly against CIS 251's real SLOs. |
 | CIS 400 (Y2 Spring) | Design Review — defend system design choices including algorithm selection, data model, and tradeoffs. Re-homed here to CIS 400, per `signature-assessments.md`. |
 | CIS 400 (Y2 Spring) | Deployment architecture, fault-tolerance design, API versioning as a compatibility contract. |
 | CIS 320 (Y2 Fall) | Requirements-driven design — designing from stakeholder needs outward, at CIS 320's bounded acceptance-criteria scope. **The full multi-stakeholder, System-Integration-Project-scale version of this pass has moved to the Year 3–4 capstone** (Round 1) — this row is the core's own, smaller-scoped version, not a stand-in for the relocated event. |
@@ -35,7 +35,7 @@ I create and communicate system designs that consider functionality, maintainabi
 | Adaptation | CIS 400's team-project design work — novel multi-stakeholder system requiring synthesis of all design concerns, within the core's own scope (the old "System Integration Project" ceiling for this level is now at the Year 3–4 capstone, a later and larger event, not this one) |
 | Leadership | Design Review critique (TA/LA role) — evaluating whether a peer's design satisfies stated requirements and constraints |
 
-**Recurring type:** Design Brief (shared with Develop Abstractions and Design Human-Centered Solutions) — the rubric criteria here focus on functionality, maintainability, security, usability, and performance tradeoffs rather than abstraction structure.
+**Recurring type:** Design Brief (shared with Develop Abstractions and Design Human-Centered Solutions) — the rubric criteria here focus on functionality, maintainability, privacy, security, usability, and performance tradeoffs rather than abstraction structure.
 
 ---
 

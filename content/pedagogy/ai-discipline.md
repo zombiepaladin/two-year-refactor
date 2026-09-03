@@ -50,10 +50,10 @@ The permitted actions stay flat. What escalates along two independent axes, acro
 | CIS 116 | Explain what this loop does | Student runs the code and sees the answer is wrong — low consequence |
 | CIS 200 | Explain why this bug might be causing this behavior; generate alternative class designs | Student writes a test that passes or fails, or must evaluate designs with no automated check |
 | CIS 260 | Suggest schema alternatives for this data model | Schema errors may surface only at query time — delayed consequence |
-| CIS 400 | Review this PR's code for correctness and security, as one input among several human reviewers | A missed vulnerability or design flaw is exploitable or costly — high consequence, but not yet the terminal case |
+| CIS 400 | Review this PR's code for correctness and security, as one input among several human reviewers | A missed cybersecurity weakness or design flaw is exploitable or costly — high consequence, but not yet the terminal case |
 | CIS 141 | Given AI-generated code, verify it is correct and secure | Correctness + security failure in a system built on everything the core taught — terminal stakes for the core |
 
-By CIS 141, AI use at the permitted scope involves asking AI to generate code and then independently verifying that code for both functional correctness and security — a task that requires mastery of every thread the core has developed. This is not a harder version of CIS 116's "explain this loop." It is a fundamentally different cognitive act.
+By CIS 141, AI use at the permitted scope involves asking AI to generate code and then independently verifying that code for both functional correctness and misuse resistance (cybersecurity) — a task that requires mastery of every thread the core has developed. This is not a harder version of CIS 116's "explain this loop." It is a fundamentally different cognitive act.
 
 ### Axis 2: The student's capacity to verify AI output
 
@@ -62,7 +62,11 @@ By CIS 141, AI use at the permitted scope involves asking AI to generate code an
 | CIS 116 | Run the code; observe the output; compare to AI's explanation | "The AI said this loop adds all elements; I ran it and it does" |
 | CIS 200 | Asserts, regression tests, debugger, boundary/contract reasoning | "I wrote a test that would fail if the AI's explanation were wrong; the test passes" |
 | CIS 260 | SQL query testing, normalization reasoning | "I wrote queries that would expose the AI's schema design flaw, and found one" |
-| CIS 400 | Security threat modeling (building on CIS 251), code review checklists, a human reviewer's independent judgment | "I applied a threat model and identified a trust boundary violation the AI missed, and compared notes with a human reviewer" |
+| CIS 400 | Threat modeling (building on CIS 251), code security, code style
+| (in aid of maintainability, correctness, and security), code review
+| checklists, human reviewers' independent judgment | "I applied a threat model
+| and identified a trust boundary violation the AI missed, and compared notes
+| with a human reviewer" |
 | CIS 141 | Correctness/security critique of AI-generated code as the course's central skill | "I found a flaw the AI's own explanation didn't mention" |
 
 A CIS 116 student cannot verify a CIS 141-level AI claim, even if they wanted to. A CIS 141 student can verify a CIS 116-level AI claim in seconds. The growth is not in what students are permitted to ask — it is in how rigorously, and across what domain, they can answer: *is this right?*

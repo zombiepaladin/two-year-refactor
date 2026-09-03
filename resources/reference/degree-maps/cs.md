@@ -8,11 +8,11 @@ This is a proposed degree map based on the revised 2-year curriculum created fro
 
 ### Semester 1
 
-#### CIS 115  - Introduction to Computing Science
+#### CIS 115 - Introduction to Computing Science
 
 *1 or 2 credits, to be refactored as needed as part of the revision.*
 
-This course contains computing history and a broad overview of the field of computing with the goal of introcuding much at the surface level that will be picked up more deeply in later courses. It is completely up for revision/adapatation.
+This course contains computing history and a broad overview of the field of computing with the goal of introducing much at the surface level that will be picked up more deeply in later courses. It is completely up for revision/adaptation.
 
 Confirmed (2026-07-13): v1's CS-103 "Computational Representation" content moves here — an exploration of how digital computers work, run side-by-side with the history thread. Pulled from `content-archive/v1/course-designs/block-1/cs-103.md`: number representation as a design choice (Babbage's decimal mechanical engines vs. why electronic computers standardized on binary — this is the natural bridge between the history thread and the "how computers work" thread, not two unrelated topics), binary representation of integers/characters, Boolean logic and bitwise operations (originally scoped as the applied counterpart to MATH XXX Logic and Sets, same semester — the pairing still fits), and a simplified 8-bit float format worked by hand, plus the register/register-transfer model (load-operate-store). This is the required-content fix for the ABET "computer architecture & organization" gap (see design-log.md 2026-07-13 coverage check).
 
@@ -24,9 +24,9 @@ Confirmed (2026-07-13): v1's CS-103 "Computational Representation" content moves
 
 **CS-theory touchpoint, seeded here (2026-07-14):** a single unit on computability theory (confirmed already a fit for this course's breadth-survey character) — awareness-level, e.g. the halting problem as a concrete instance of "some problems have no algorithm that solves them," not formal proof. This is the entry point for the ABET "computer science theory" gap's computability sub-area, deepened in CIS 301 (decidability as the ceiling on formal verification) and CIS 575 (P vs. NP, elective depth). See design-log.md 2026-07-14.
 
-#### CIS 116  - Introduction to Programming
+#### CIS 116 - Introduction to Programming
 
-*2 credits, likely will need to continue to be taught in smilar form; an important service course for other departments. Needs to contiue to serve as eqivalent to KBOR CSC1020.*
+*2 credits, likely will need to continue to be taught in similar form; an important service course for other departments. Needs to continue to serve as equivalent to KBOR CSC1020.*
 
 A traditional first programming course for students with no prior experience in programming.  Taught in Python.
 
@@ -40,7 +40,7 @@ This is a creative thinking and problem-solving course.  While not CS-specific, 
 
 *1 credit, a new course that is part of the proposed core packaging*
 
-This would be an introductory course in HTML, CSS, and JavaScript.  Intended to introduce students to web interfaces, as we will use those as the primary visualizaiton/GUI tool in later courses.
+This would be an introductory course in HTML, CSS, and JavaScript.  Intended to introduce students to web interfaces, as we will use those as the primary visualization/GUI tool in later courses.
 
 #### MATH XXX - Logic and Sets
 
@@ -70,9 +70,9 @@ Topics include:
 5. Pigeonhole principle
 6. Permutations
 7. Combinations
-8. Binomial Coefficients  
+8. Binomial Coefficients
 
-#### ENGL 100  - Expository Writing I
+#### ENGL 100 - Expository Writing I
 
 *3 credits, part of the K-State core required of all students, KSC 010.*
 
@@ -84,8 +84,8 @@ A first college course in English composition.
 
 *(Social & Behavioral Sciences Requirement, KSC 050, relocated to Y2S2 — 2026-07-14, credit-balancing pass. See design-log.md. The other KSC 050 course stays in Y3S1 per KBOR's seven-bucket framework, which requires two.)*
 
-			
-### Semester 2			
+
+### Semester 2
 
 #### CIS 260 - Foundations of Relational Databases
 
@@ -109,7 +109,7 @@ Also serves as real prerequisite depth for CIS 320 (User Experience Development,
 
 **CS-theory touchpoint (2026-07-14):** a light formal-languages callout — the browser parses HTML against a formal grammar; worth one line naming that explicitly (not a unit) when DOM parsing comes up. Free content, not new instructional time — the connection is already latent in what this course teaches. Part of the same ABET "computer science theory" coverage as CIS 115/301/505/575/225/200/300, below.
 
-#### CIS 200  - Programming Fundamentals
+#### CIS 200 - Programming Fundamentals
 
 *3 credits (confirmed 2026-07-13, reduced from 4 — see design-log.md shakedown). Another course that will be heavily refactored for the two-year core.  Needs to continue to serve as equivalent to KBOR CSC1030.*
 
@@ -123,7 +123,10 @@ CS-theory touchpoint (2026-07-14): wherever regex/pattern-matching is taught as 
 
 #### Calculus Slot
 
-*4 credits. Placeholder for calculus course, most likely MATH 220  - Analytic Geometry and Calculus I, but some students may come with high school credit and be ready for Calculus II or III. Also fulfils K-State Core requirement KSC 030.*
+*4 credits. Placeholder for calculus course, most likely MATH 220 - Analytic
+Geometry and Calculus I, but some students may come with high school credit and
+be ready for Calculus II or III. Also fulfills K-State Core requirement KSC
+030.*
 
 Choose one of:
 
@@ -143,7 +146,7 @@ Topics include:
 4. Modular arithmetic
 5. Common divisors
 6. Fundamental Theorem of Arithmetic
-7. Euclid’s Algorithm
+7. Euclid's Algorithm
 
 #### MATH XXX - Graphs, Trees, and Maps
 
@@ -151,15 +154,15 @@ Topics include:
 
 Topics include:
 
-1. Basic Vocabulary of Graphs 
-2. Weighted graphs 
-3. Shortest paths 
-4. Traversals 
-5. Euler paths 
-6. Hamiltonian paths 
-7. Matrix representations of graphs 
+1. Basic Vocabulary of Graphs
+2. Weighted graphs
+3. Shortest paths
+4. Traversals
+5. Euler paths
+6. Hamiltonian paths
+7. Matrix representations of graphs
 
-#### ENGL 200  - Expository Writing II
+#### ENGL 200 - Expository Writing II
 
 *3 credits, part of the K-State core required of all students, KSC 010. Many students will have credit from high school.*
 
@@ -169,7 +172,7 @@ A second college course in English composition.
 
 ### Semester 1
 
-#### CIS 300  - Data and Program Structures
+#### CIS 300 - Data and Program Structures
 
 *3 credits. Will be subject to refactoring under the new core. Needs to provide equivalence with KBOR 1040.*
 
@@ -199,7 +202,7 @@ Open, not yet decided: "design patterns" (in the current topic blurb, not a CSC1
 
 Open, not yet decided: the specific component-library choice. The Y1S2 spacing gap this course's prerequisite chain used to rely on a light CIS 200 touchpoint for is now closed by CIS 220 (Platform Programming, Web section) instead (see design-log.md 2026-07-13).
 
-#### CIS 301  - Logical Foundations of Programming 
+#### CIS 301 - Logical Foundations of Programming
 
 *2 credits. May be broken up and placed in other courses as part of the refactor...* (2026-07-13: no clear case for cutting has emerged yet — see design-log.md shakedown; new goals below may absorb time freed elsewhere rather than reduce the total.)
 
@@ -242,11 +245,11 @@ Coverage of the OSI 7-layer model, with exploration of HTTP/HTTPS and web socket
 - **Later reinforcement**: CIS 400's capstone-of-the-core project (the historical archive) needs real contributor accounts — distinguishing historian/community-contributor edit rights from public anonymous viewing is a genuine, substantial application of what's learned here, at integration scale.
 - Earlier, lighter touches already exist in the security/privacy thread too (CIS 115's representation-and-hiding question from the CS-103 content, CIS 260's schema-level access control) — CIS 251 is this thread's formalized capstone, not its first appearance.
 
-#### Natural & Physical Sciences Requirement - with Lab	
+#### Natural & Physical Sciences Requirement - with Lab
 
 *4 credits.  Required as part of the K-State core, KSC 040.*
-			
-### Semester 2			
+
+### Semester 2
 
 #### CIS 141 - AI/Data Science
 
@@ -254,19 +257,19 @@ Coverage of the OSI 7-layer model, with exploration of HTTP/HTTPS and web socket
 
 **Processor-architecture touchpoint, deepened here (2026-07-14):** the natural home for GPU and TPU content specifically, completing the CPU (CIS 115, seeded) → CPU-vs-GPU parallel execution contrast (CIS 200/300) → GPU/TPU-for-AI escalation. Why AI/ML training leans on GPUs and TPUs: neural network training is dominated by matrix multiplication, an embarrassingly data-parallel operation GPUs' SIMD/SIMT design and TPUs' matrix-multiply-specialized ASIC design both accelerate directly, in a way general-purpose CPU cores don't. Conceptual/awareness-level, matching this course's other content — not a hardware-programming unit (no CUDA/kernel-writing expected at this credit size).
 
-#### CIS 308  - C Language Laboratory
+#### CIS 308 - C Language Laboratory
 
 *1 credit. Might be replaced with any 1-credit programming language course?*
 
-Introduction to the C programming langauge.
+Introduction to the C programming language.
 
-#### ECE 241  - Introduction to Electrical and Computer Engineering
+#### ECE 241 - Introduction to Electrical and Computer Engineering
 
-*3 credits, controled by Computer Engineering. Potentially removable in updated curriuclum, but politically tricky. Might be convertable to an elective.*
+*3 credits, controlled by Computer Engineering. Potentially removable in updated curriculum, but politically tricky. Might be convertable to an elective.*
 
 Focus on  programming Arduino and similar devices.
 
-#### CIS 400  - Object-Oriented Design, Implementation, and Testing
+#### CIS 400 - Object-Oriented Design, Implementation, and Testing
 
 *3 credits. Will be heavily refactored - likely will become mid-tier capstone course.*
 
@@ -296,15 +299,15 @@ This makes CIS 400 a **capstone of the core** — validating everything through 
 
 ### Semester 1
 
-##### CIS 450  - Computer Architecture and Operations
+##### CIS 450 - Computer Architecture and Operations
 
 *3 credits. May become an elective in new program as some content migrates down to earlier courses.*
 
-#### CIS 501  - Software Architecture and Design
+#### CIS 501 - Software Architecture and Design
 
 *3 credits. Probably will be shifting focus to incorporate more AI usage as a development tool.*
 
-#### CIS 505  - Introduction to Programming Languages
+#### CIS 505 - Introduction to Programming Languages
 
 *3 credits. Leaning required (2026-07-14) — not fully settled, but no longer just "may become an elective." Confirmed as the home for most of the core's formal-language content (grammars, parsing) — the required-content anchor for the ABET "computer science theory" formal-languages sub-area. See design-log.md 2026-07-14.*
 
@@ -318,19 +321,19 @@ This makes CIS 400 a **capstone of the core** — validating everything through 
 
 ### Semester 2
 
-#### CIS 560  - Database System Concepts
+#### CIS 560 - Database System Concepts
 
 *3 credits. May become an elective.*
 
 **CS-theory touchpoint (2026-07-14):** P vs. NP and NP-completeness as the elective-depth capstone on the computability arc seeded in CIS 115 and deepened in CIS 301 — same "required foundation, elective depth" pattern already used for CIS 560's relationship to CIS 260.
 
-Deeper coverage of relational databases, relational agebra, no-sql databases.
+Deeper coverage of relational databases, relational algebra, no-SQL databases.
 
-#### CIS 575  - Introduction to Algorithm Analysis
+#### CIS 575 - Introduction to Algorithm Analysis
 
 *3 credits. May become an elective.*
 
-#### CIS 415  - Ethics and Conduct for Computing
+#### CIS 415 - Ethics and Conduct for Computing
 
 *3 credits. May reduce to 1 as ethics is integrated into the core.*
 
@@ -348,7 +351,7 @@ Deeper coverage of relational databases, relational agebra, no-sql databases.
 
 #### Systems Elective
 
-*3 credits. Fufils ABET networking and OS requirements; may become a regular tech elective instead.*
+*3 credits. Fulfills ABET networking and OS requirements; may become a regular tech elective instead.*
 
 Choose one of the following:
 
@@ -395,8 +398,8 @@ Any CIS course at the 500-level or above OR any of the following:
 #### Unrestricted Elective
 
 *3 credits. Any course.*
-			
-### Semester 2			
+
+### Semester 2
 
 #### Required Technical Elective
 

@@ -331,10 +331,10 @@ Students identify and reason about the ethical implications of a computational d
 |--------|------|-------------------|
 | CIS 200 / CIS 120 (Y1 Spring / Y1 Fall) | Data minimization analysis — given a pipeline or form, identify what data is collected and argue for what should be removed. The confirmed carrier is CIS 120 (per the lens pass's narrowed row); the CIS 200 half of this claim is thin. | Single decision, guided framework |
 | CIS 260 (Y1 Spring) | Schema ethics documentation — justify access control and data minimization decisions in a schema design. Confirmed design intent, undrafted — see `cis-260.md`'s "Proposed Changes." | Design-level, formal documentation |
-| CIS 251 (Y2 Fall) / CIS 400 (Y2 Spring) | Security threat analysis (CIS 251, confirmed against its real SLOs) + responsibility retrospective (CIS 400, confirmed). | System-level, collaborative accountability |
+| CIS 251 (Y2 Fall) / CIS 400 (Y2 Spring) | Threat analysis (CIS 251, confirmed | against its real SLOs) + responsibility retrospective (CIS 400, | confirmed). | System-level, collaborative accountability |
 | *unplaced* | Re-identification risk analysis — identify risks from dataset combination and propose mitigations. Same orphaned data-integration content flagged throughout this pass. | Integration-level, emergent harm |
-| CIS 141 (Y2 Spring) / *unplaced* | AI-assisted analysis critique — evaluate an AI-generated artifact for correctness, bias, security risk (confirmed, CIS 141 is the terminal pass for the AI-Assisted Development practice). Broader data-ethics content beyond the AI-critique slice remains unconfirmed. | Novel context, high stakes |
-
+| CIS 141 (Y2 Spring) / *unplaced* | AI-assisted analysis critique — evaluate
+an AI-generated artifact for correctness, bias, privacy, and security risk (confirmed, CIS 141 is the terminal pass for the AI-Assisted Development practice). Broader data-ethics content beyond the AI-critique slice remains unconfirmed. | Novel context, high stakes |
 *This type's "blameless postmortem" component of the Adaptation level lives at the Year 3–4 capstone, not the core — see `signature-assessments.md`.*
 
 ---
@@ -380,7 +380,7 @@ Students use AI tools for a specified purpose and are assessed on their evaluati
 | CIS 116 / CIS 200 (Y1 Fall / Y1 Spring) | AI-as-explainer — use AI to explain unfamiliar code; verify the explanation against actual runtime behavior. Confirmed, stage 1 of `practice-ai-assisted.md`'s four-stage progression. | Low stakes; verification by empirical observation |
 | CIS 260 (Y1 Spring) | AI design brainstorm — generate alternatives with AI, select and justify one, document where AI reasoning was flawed. Confirmed, stage 2. | Medium stakes; verification by design argument |
 | CIS 400 (Y2 Spring), formalized (woven throughout) | AI-generated tests — evaluate coverage, find gaps, verify test correctness and adequacy. Confirmed, stage 3. | Medium stakes; verification by coverage analysis |
-| CIS 141 (Y2 Spring) | AI code critique — evaluate AI-generated code for correctness, security vulnerabilities, and bias. Confirmed, stage 4 — the terminal pass, also the prerequisite skill for the Year 3–4 Agentic AI specialization. | High stakes; verification by security and correctness analysis |
+| CIS 141 (Y2 Spring) | AI code critique — evaluate AI-generated code for correctness, security weaknesses, and bias. Confirmed, stage 4 — the terminal pass, also the prerequisite skill for the Year 3–4 Agentic AI specialization. | High stakes; verification by security and correctness analysis |
 
 ---
 

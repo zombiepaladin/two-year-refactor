@@ -28,7 +28,7 @@ Each course adds engagement modes on top of what came before, always ending in r
 | **CIS 200** (Y1 Spring) | **Repair** | Code Archaeology lands here (see below). |
 | **CIS 260** (Y1 Spring) | **Query** | Chronologically earlier than Model/Build below — a real inversion of the old block order, not a simplification. |
 | **CIS 300 / CIS 320** (Y2 Fall) | **Model, Build** | ADT/contract modeling (CIS 300) and building a new component against a provided API (CIS 320) — the client/server pairing introduces both at once. |
-| **CIS 251** (Y2 Fall) | *(Secure, folded into Test below rather than tracked separately)* | Formalizes trust/security; the full "Test" mode doesn't converge until CIS 400 the following semester. |
+| **CIS 251** (Y2 Fall) | *(Secure, folded into Test below rather than tracked separately)* | Formalizes security/trust/isolation; the full "Test" mode doesn't converge until CIS 400 the following semester. |
 | **CIS 400** (Y2 Spring) | **Test, Integrate, Operate** | The core's capstone converges three modes at once, rather than spreading them across separate courses. This is where the growing cycle reaches its fullest expression in the core. |
 | **Reflect** (constant) | — | Present from CIS 116 onward, not a terminal phase. |
 
@@ -71,7 +71,7 @@ The traditional model is not wrong — it produces capable programmers. But it p
 
 **Worth naming plainly:** two of the four signature assessments — Team Software Project and Design Review — converge on the same course (CIS 400). Whether that convergence needs its own pacing decision is an open question, not resolved here.
 
-- **Code Archaeology:** the Repair mode, formalized as an assessed exercise — lands in **CIS 200**.
+- **Code Archeology:** the Repair mode, formalized as an assessed exercise — lands in **CIS 200**.
 - **Data Investigation:** the Query mode, extended to a full research question with visualization and presentation — the most likely host is **CIS 260**, based on the Human-Centered Computing thread's "comprehend" pass, but this is an inference, not a confirmed placement.
 - **Team Software Project:** the Build + Test modes, performed collaboratively on a real codebase with real code review — lands in **CIS 400**, the confirmed team-project host.
 - **Design Review:** the Integrate mode, formalized as a presentation-and-defense exercise — also lands in **CIS 400**, as part of its live-walkthrough/architecture-defense assessment.

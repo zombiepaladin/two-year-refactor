@@ -1,6 +1,6 @@
 # Competency Framework
 
-The computer science two-year core utilizes a program-wide competency framework overlayed on a traditional curriculum structure. Evidence of the development of these competencies are gathered continously as the student progresses through the curriculum through a combination of automated and faculty evaluations. Competencies and associated confidence are continually calculated based on a prepoderance of evidence.  These estimates are provided to both students and faculty through a web dashboard. This dashboard also shows the evidence supporting the estimate, with a timeline of assignments with links to collected artifacts. Students can also prepare a customized competency report to share with employers, curating the list of displayed evidence.  
+The computer science two-year core utilizes a program-wide competency framework overlayed on a traditional curriculum structure. Evidence of the development of these competencies are gathered continuously as the student progresses through the curriculum through a combination of automated and faculty evaluations. Competencies and associated confidence are continually calculated based on a preponderance of evidence.  These estimates are provided to both students and faculty through a web dashboard. This dashboard also shows the evidence supporting the estimate, with a timeline of assignments with links to collected artifacts. Students can also prepare a customized competency report to share with employers, curating the list of displayed evidence.
 
 The competency-based web application that manages these tasks, Crystalis, is separate from K-State's student information system (KSIS) and LMS (Canvas).
 
@@ -107,7 +107,7 @@ I create documentation, presentations, visualizations, and explanations that sup
 
 **I can design software systems that satisfy identified requirements and constraints.**
 
-I create and communicate system designs that consider functionality, maintainability, security, usability, and performance.
+I create and communicate system designs that consider functionality, maintainability, cybersecurity, usability, and performance.
 
 ### SD.2 Implement Software Solutions
 
@@ -153,7 +153,7 @@ I establish and manage the tools, services, dependencies, and resources needed f
 
 **I can deploy, monitor, and maintain software systems in operational environments.**
 
-I prepare systems for use, manage releases, and support ongoing operation while addressing reliability, security, and performance concerns.
+I prepare systems for use, manage releases, and support ongoing operation while addressing reliability, cybersecurity, and performance concerns.
 
 ## Professional Practice
 

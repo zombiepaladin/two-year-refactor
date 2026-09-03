@@ -1,6 +1,6 @@
 # Computational Data Science
 
-Proposed degree map swapping the new two-year core into a B.S. in Computational Data Science, assembled from existing K-State CIS and Statistics courses — no prior official degree to draw from, so this is a first construction. Checked against both `resources/reference/abet/cs.md` (Computer Science criteria) and `resources/reference/abet/ds.md` (Data Science criteria), on the same dual-degree premise as the Cybersecurity and A.I. maps.
+Proposed degree map swapping the new two-year core into a B.S. in Computational Data Science, assembled from existing K-State CIS and Statistics courses — no prior official degree to draw from, so this is a first construction. Checked against both `resources/reference/abet/cs.md` (Computer Science criteria) and `resources/reference/abet/ds.md` (Data Science criteria), on the same dual-degree premise as the Cybersecurity and AI maps.
 
 **Positioning note**: K-State's Statistics department already offers a B.S. in Statistics and Data Science (`stats-ds.md`), built on a calculus-first, mathematical-statistics spine. This degree is deliberately **CS-flavored** rather than a duplicate — heavier on programming, data engineering, and systems, drawing on Statistics coursework for inferential depth rather than rebuilding it.
 

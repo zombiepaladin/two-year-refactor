@@ -49,7 +49,7 @@ I evaluate AI-generated outputs, verify correctness, address risks, and exercise
 | CIS 116 / CIS 200 (Y1 Fall / Y1 Spring) | First named pass — AI-as-explainer for unfamiliar code; explanation verified empirically against actual code behavior. Confirmed, stage 1 of the four-stage progression. |
 | CIS 260 (Y1 Spring) | AI as design partner — brainstorm design alternatives with AI; human selects and justifies; document what AI got right and wrong. Confirmed, stage 2. |
 | CIS 400 (Y2 Spring), formalized (woven throughout) | AI-generated tests — use AI to generate test cases; evaluate coverage, identify gaps, verify correctness of generated tests. Confirmed, stage 3. |
-| CIS 141 (Y2 Spring) | Culminating pass — high-stakes verification and critique of AI-generated code for correctness, security vulnerabilities, and bias. Confirmed, stage 4 — the terminal pass, also the prerequisite skill for the Year 3–4 Agentic AI specialization. |
+| CIS 141 (Y2 Spring) | Culminating pass — high-stakes verification and critique of AI-generated code for correctness, security weaknesses, and bias. Confirmed, stage 4 — the terminal pass, also the prerequisite skill for the Year 3–4 Agentic AI specialization. |
 
 Note: Crystalis captures AI chat prompt and response logs directly — automated evidence can demonstrate that a student *used* AI (Application level). Demonstrating *responsible* use — verification, judgment, risk awareness — requires direct assessment at every level above Application. This is the one sub-competency where the gap between telemetry evidence and competency evidence is structurally significant.
 
@@ -62,7 +62,7 @@ Note: Crystalis captures AI chat prompt and response logs directly — automated
 | Adaptation | CIS 141 critique — evaluate AI-generated code for correctness, security, and bias in a novel high-stakes context with real consequences |
 | Leadership | TA/LA modeling responsible AI use for students; leading peer discussions on AI limitations and failure modes; mentoring on verification practices |
 
-**Recurring type:** AI-Assisted Practice Task — deepens from low-stakes code explanation with empirical verification (CIS 116/200) through high-stakes AI code critique for correctness, security, and bias (CIS 141). Stakes escalate: misunderstanding code (CIS 200) → deploying code with security vulnerabilities (CIS 141). This is the cleanest recurring type in the whole assessment-chapter pass — every stage confirmed against real course content, no unplaced rows.
+**Recurring type:** AI-Assisted Practice Task — deepens from low-stakes code explanation with empirical verification (CIS 116/200) through high-stakes AI code critique for correctness, security, and bias (CIS 141). Stakes escalate: misunderstanding code (CIS 200) → deploying code with security weaknesses (CIS 141). This is the cleanest recurring type in the whole assessment-chapter pass — every stage confirmed against real course content, no unplaced rows.
 
 ---
 

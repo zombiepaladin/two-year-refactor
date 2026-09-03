@@ -18,8 +18,7 @@ An instrumented-classroom project, led by Nathan: Raspberry Pi sensors in classr
 |---|---|---|
 | GET room temperature (no auth) | **requested** | The networking norm's convergence point (shared state + a remote boundary, currently sequenced in CIS 116) |
 
-That's it — a single unauthenticated GET endpoint returning JSON. The no-auth design is deliberate and temporary: it's flagged as a future pairing point for whenever the core's security content lands (CIS 251 now carries that content) — "why would you not leave a write endpoint open the way this read endpoint is" is the intended prompt.
-
+That's it — a single unauthenticated GET endpoint returning JSON. The no-auth design is deliberate and temporary: it's flagged as a future pairing point for whenever the core's cybersecurity content lands (CIS 251 now carries that content) — "why would you not leave a write endpoint open the way this read endpoint is" is the intended prompt.
 **Deferred, not yet scheduled:** additional sensor readings (humidity, light, soil moisture); authenticated endpoints / write access; historical/time-series data; real-time/streaming access. Each is a plausible future pairing point (security/auth, data structures, concurrency-networking) but none is committed.
 
 ## Why a real asset

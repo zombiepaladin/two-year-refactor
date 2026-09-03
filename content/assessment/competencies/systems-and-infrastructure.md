@@ -16,7 +16,7 @@ I explain system performance, reliability, and resource utilization using eviden
 
 | Course | Work |
 |--------|------|
-| *unplaced* | Stack/heap memory model; "a running program is a process the OS schedules." Depends on content `cs.md`'s CIS 115 entry explicitly lists as not incorporated there. | 
+| *unplaced* | Stack/heap memory model; "a running program is a process the OS schedules." Depends on content `cs.md`'s CIS 115 entry explicitly lists as not incorporated there. |
 | CIS 220 (Y1 Spring) | Browser as mini-OS — tracing async requests through the event loop; origin isolation; web workers as concurrent processes; `postMessage` as IPC. Confirmed. |
 | CIS 300 (Y2 Fall) | Client-server dataflow — tracing a request through parse → auth → route → handle → serialize → respond (the "build" side of the CIS 300/CIS 320 pairing). |
 | CIS 300 (Y2 Fall) | Big-O as a tool for analyzing performance characteristics theoretically. Confirmed (SLO 6). |
@@ -70,7 +70,8 @@ Note: automated evidence (IDE telemetry, git logs) captures environment *use* bu
 
 **I can deploy, monitor, and maintain software systems in operational environments.**
 
-I prepare systems for use, manage releases, and support ongoing operation while addressing reliability, security, and performance concerns.
+I prepare systems for use, manage releases, and support ongoing operation while
+addressing reliability, privacy, security, and performance concerns.
 
 **Primary evidence contexts:**
 
